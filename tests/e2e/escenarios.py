@@ -14,7 +14,7 @@ def ok(c, m, x=''):
 G = {'jefe': 'Ana', 'crear': {'ocasion': 'porque', 'titulo': 'Prueba escenarios', 'integrantes': ['Pol', 'Leo'], 'destModo': 'no', 'fModo': 'mes', 'mes': 6, 'dias': 4, 'pres': 400, 'obs': []}}
 P = {'Ana': {'origen': ('es', 'Madrid'), 'prioridades': ['playa', 'gastronomia', 'postal'], 'innegociable': 'nada', 'clima': 'calor', 'noche': 'aperitivo', 'presIdeal': 450, 'presMax': 600},
      'Pol': {'origen': ('es', 'Barcelona'), 'prioridades': ['fiesta', 'playa'], 'innegociable': 'nada', 'clima': 'calor', 'noche': 'fiesta', 'presIdeal': 300, 'presMax': 380},
-     'Leo': {'origen': ('es', 'Madrid'), 'prioridades': ['cultura', 'gastronomia'], 'innegociable': 'nada', 'clima': 'templado', 'noche': 'calma', 'presIdeal': 400, 'presMax': 500}}
+     'Leo': {'origen': ('es', 'Madrid'), 'prioridades': ['cultura', 'gastronomia'], 'innegociable': 'nada', 'clima': 'templado', 'noche': 'calma', 'presIdeal': 400, 'presMax': 500, 'afinar': False}}
 
 def entrar(b, token, nombre, nuevo=False):
     ctx, pg = Hn.device(b, nombre); pg.goto(URL + '#i-' + token); pg.wait_for_selector('.flow', timeout=9000); pg.wait_for_timeout(300)
@@ -182,7 +182,12 @@ def main():
         ints = [i['nombre'] for k, v in (lambda d: d.get('docs', d))(A.evaluate("window.__mock.dump()")).items() if k == 'viajes2/%s' % code for i in (v.get('data', v) if isinstance(v, dict) else {}).get('integrantes', [])]
         ok(len(ints)==3 and 'Mar' not in ints, 'La organizadora quita a alguien y desaparece del grupo', ints)
         # 7. Leo responde → ya no es provisional; Leo se va y vuelve a serlo… (probamos solo el primer paso)
-        cL, L = entrar(b, token, 'Leo'); RG.answer(L, P['Leo'], [])
+        cL, L = entrar(b, token, 'Leo'); logL = []; RG.answer(L, P['Leo'], logL)
+        ok('afinar' in logL and 'momento' not in logL and 'nota' not in logL and logL.index('afinar') <= 11,
+           'Cuestionario corto: Leo ve la puerta «Afinar» tras ~10 pantallas y puede terminar sin las opcionales', logL)
+        dumpL = (lambda d: d.get('docs', d))(L.evaluate("window.__mock.dump()"))
+        ok(any(k.startswith('viajes2/%s/resp/' % code) and '"done": true' in json.dumps(v) and 'Leo' in json.dumps(v) for k, v in dumpL.items()),
+           'Terminar en la puerta «Afinar» guarda las respuestas como hechas')
         abrir(A, code); A.wait_for_timeout(2000)
         ok('Con todo el grupo' in A.text_content('body'), 'Cuando responde todo el grupo, las propuestas dejan de ser provisionales')
         props = A.locator('.prop h3').all_inner_texts(); ok(len(props) >= 2 and len(set(props)) == len(props), 'Salen varias propuestas distintas', props)
