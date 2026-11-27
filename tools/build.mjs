@@ -45,7 +45,7 @@ cp('public/icons', 'icons');
 cp('public/fotos', 'fotos');
 cp('src/app/local-db.js', 'local-db.js');
 // config.js: si existe public/config.js (el tuyo, con tus claves públicas) se usa; si no, la plantilla vacía (modo prueba)
-cp(fs.existsSync(path.join(H, 'public/config.js')) ? 'public/config.js' : 'config.ejemplo.js', 'config.js');
+cp(fs.existsSync(path.join(H, 'public/config.js')) ? 'public/config.js' : (process.env.ZAINO_PROD || process.env.WORKERS_CI || process.env.CF_PAGES) ? 'config.produccion.js' : 'config.ejemplo.js', 'config.js');
 fs.writeFileSync(path.join(OUT, 'sw.js'), rd('src/app/sw.js').replace('__VERSION__', VERSION));
 fs.writeFileSync(path.join(OUT, 'manifest.webmanifest'), JSON.stringify({
   name: 'Zaino · viajes en grupo', short_name: 'Zaino', start_url: './', scope: './', display: 'standalone',
