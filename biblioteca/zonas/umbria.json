@@ -1,0 +1,718 @@
+{
+ "id": "umbria",
+ "nombre": "Umbria",
+ "nombre_corto": "Umbría",
+ "lema": "Pueblos de piedra sin la multitud",
+ "descripcion": "El corazón verde de Italia: Perugia universitaria, Asís, Spello y Orvieto en tren, y cascadas y lago a medio día de distancia. Más barato y tranquilo que la Toscana.",
+ "perfil": {
+  "mar": 0,
+  "montana": 2,
+  "ciudad": 2,
+  "campo": 3,
+  "fiesta": 1,
+  "calma": 3,
+  "cultura": 3,
+  "gastronomia": 3,
+  "naturaleza": 3,
+  "playa": 0,
+  "aventura": 1,
+  "postal": 2
+ },
+ "nivel_precio": "medio",
+ "nivel_precio_nota": "Menos turismo masivo que la Toscana, con alojamiento y comida algo más baratos.",
+ "meses": {
+  "ideales": [
+   4,
+   5,
+   6,
+   9,
+   10
+  ],
+  "aceptables": [
+   3,
+   7,
+   11
+  ],
+  "evitar": [
+   8
+  ],
+  "nota": "Primavera y otoño: temperatura agradable; agosto agobia en los valles."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "util",
+  "nota": "Perugia, Asís, Spello y Orvieto funcionan en tren, con minimetro en Perugia; Gubbio, Marmore y el lago tienen bus. Montefalco y Norcia solo van bien con coche. Los centros tienen ZTL.",
+  "aeropuerto_recogida": "PEG",
+  "operadores": [
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.it/noleggio-auto/Hertz-Perugia.PEG.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Hertz-Perugia.PEG.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.it/noleggio-auto/Europcar-Perugia.PEG.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Europcar-Perugia.PEG.EUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.it/noleggio-auto/Avis-Perugia.PEG.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Avis-Perugia.PEG.AVIS.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "perugia",
+   "nombre": "Perugia",
+   "por_que": "Capital universitaria con ambiente de noche, minimetro desde la estación y trenes a Asís, Spello y Terni.",
+   "sin_coche": true,
+   "ambiente": "fiesta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Perugia%2C+Italia"
+  },
+  {
+   "id": "asis",
+   "nombre": "Asís",
+   "por_que": "Tranquila y barata, con Spello a pocos minutos en tren, pero sin vida nocturna.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=As%C3%ADs%2C+Italia"
+  },
+  {
+   "id": "orvieto",
+   "nombre": "Orvieto",
+   "por_que": "Pueblo sobre una roca con tren directo desde Roma y Florencia; plan de una noche o de excursión.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Orvieto%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "PEG",
+    "nombre": "Perugia – San Francesco d'Assisi",
+    "ciudad": "Perugia",
+    "a_la_base": "Está a pocos km de Perugia; comprobad en la web del aeropuerto el medio de conexión."
+   },
+   {
+    "iata": "FCO",
+    "nombre": "Roma – Fiumicino",
+    "ciudad": "Roma",
+    "a_la_base": "Tren a Roma Termini y, desde allí, tren a Orvieto o Perugia, con trasbordo."
+   }
+  ],
+  "desde_espana": "Ryanair ha volado Barcelona–Perugia en verano de 2026; desde otras ciudades lo normal es volar a Roma y seguir en tren.",
+  "rutas_directas": [
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "PEG",
+    "aerolinea": "Ryanair",
+    "nota": "estacional, verano 2026; comprobad otras temporadas",
+    "fuente": "https://corporate.ryanair.com/novita/ryanair-lancia-loperativo-per-lestate-2026-a-perugia/"
+   }
+  ],
+  "desde_italia": "Orvieto está en la línea Roma–Florencia; Perugia y Asís tienen trenes regionales desde Roma y Florencia; FlixBus también cubre Perugia.",
+  "novedades": [
+   {
+    "nota": "Ryanair confirmó para verano 2026 Barcelona–Perugia entre las 10 rutas de su temporada.",
+    "fuente": "https://corporate.ryanair.com/novita/ryanair-lancia-loperativo-per-lestate-2026-a-perugia/"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "Tren regional entre Perugia, Asís, Spello y Orvieto. Para Norcia, Montefalco y el Trasimeno, el coche manda.",
+  "tren": {
+   "nota": "Trenitalia cubre Perugia–Asís–Spello y Orvieto.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Cubre Perugia y otras ciudades dentro de Italia; para pueblos pequeños hay bus regional con pocas frecuencias.",
+   "enlace": "https://www.flixbus.it/autobus/perugia",
+   "fuente": "https://www.flixbus.it/azienda/stampa/flixbus-offerta-estiva-2026"
+  },
+  "ferry": [],
+  "camper": {
+   "operador": "Roadsurfer",
+   "nota": "Alquiler de campers en Italia; enlace a la página general.",
+   "enlace": "https://roadsurfer.com/es/alquilar-camper/italia/",
+   "fuente": "https://roadsurfer.com/es/alquilar-camper/italia/"
+  }
+ },
+ "actividades": [
+  {
+   "id": "perugia-centro",
+   "nombre": "Perugia: Corso Vannucci, Fontana Maggiore y Rocca Paolina",
+   "donde": "Perugia",
+   "base": "perugia",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Centro medieval en lo alto de la colina: Fontana Maggiore, escalinata del Duomo y la fortaleza subterránea de la Rocca Paolina.",
+   "consejo": "Desde la estación hay minimetro hasta el centro, que evita la cuesta.",
+   "enlace": "https://www.visititaly.eu/it/luoghi-e-itinerari/visita-perugia-sul-minimetro",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Fontana+Maggiore%2C+Perugia%2C+Italia",
+   "fuente": "https://www.visititaly.eu/it/luoghi-e-itinerari/visita-perugia-sul-minimetro"
+  },
+  {
+   "id": "perugia-noche",
+   "nombre": "Perugia de noche: escalinata del Duomo y Corso Vannucci",
+   "donde": "Perugia",
+   "base": "perugia",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "musica"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Perugia es ciudad de estudiantes, con la Università degli Studi y la Università per Stranieri; el ambiente se concentra en la escalinata del Duomo y las calles vecinas.",
+   "enlace": "https://www.universita.it/universita-di-perugia-tra-cultura-e-gastronomia/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Corso+Vannucci%2C+Perugia%2C+Italia",
+   "fuente": "https://www.universita.it/universita-di-perugia-tra-cultura-e-gastronomia/"
+  },
+  {
+   "id": "asis-basilica",
+   "nombre": "Asís: Basílica de San Francisco",
+   "donde": "Asís",
+   "base": "asis",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Los frescos de Giotto y la tumba de San Francisco, en un pueblo de piedra rosa que se hace en tren desde Perugia.",
+   "consejo": "Vestid con hombros y rodillas cubiertos; es lugar de culto.",
+   "enlace": "https://www.umbriatourism.it/-/basilica-of-saint-francis-of-assisi",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Basilica+di+San+Francesco%2C+As%C3%ADs%2C+Italia",
+   "fuente": "https://www.umbriatourism.it/-/basilica-of-saint-francis-of-assisi"
+  },
+  {
+   "id": "asis-rocca-maggiore",
+   "nombre": "Asís al atardecer: Rocca Maggiore",
+   "donde": "Asís",
+   "base": "asis",
+   "tipo": "postal",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "descripcion": "Subid a la fortaleza para ver el valle de Umbría al atardecer, con la basílica abajo; la vuelta se hace por callejuelas.",
+   "enlace": "https://www.italia.it/en/umbria/assisi.html",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Rocca+Maggiore%2C+As%C3%ADs%2C+Italia",
+   "fuente": "https://www.travelsignposts.com/Italy/destinations/assisi-live-from-the-rocca-maggiore"
+  },
+  {
+   "id": "spello",
+   "nombre": "Spello: callejas de flores",
+   "donde": "Spello",
+   "base": "asis",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Pueblo de piedra en cuesta con macetas en cada esquina, junto a Asís y con estación de tren.",
+   "consejo": "En primavera, la Infiorata de Corpus Domini llena las calles de alfombras de flores.",
+   "enlace": "https://www.umbriatourism.it/en/-/inflorate-corpus-domini-of-spello",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spello%2C+Italia",
+   "fuente": "https://www.umbriatourism.it/en/-/inflorate-corpus-domini-of-spello"
+  },
+  {
+   "id": "orvieto-subterraneo",
+   "nombre": "Orvieto Underground",
+   "donde": "Orvieto",
+   "base": "orvieto",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "2h",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Cuevas excavadas en la toba bajo la ciudad; la visita es guiada.",
+   "consejo": "Se llega en tren a Orvieto y un funicular sube a la ciudad.",
+   "enlace": "https://www.italia.it/en/umbria/orvieto/cultural-places/orvieto-underground",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Orvieto+Underground%2C+Italia",
+   "fuente": "https://www.umbriatourism.it/en/w/orvieto-underground"
+  },
+  {
+   "id": "orvieto-pozo",
+   "nombre": "Pozo de San Patricio",
+   "donde": "Orvieto",
+   "base": "orvieto",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Pozo renacentista de doble escalera helicoidal; se baja y se sube sin cruzarse.",
+   "enlace": "https://www.umbriatourism.it/en/w/st-patrick-s-well",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Pozzo+di+San+Patrizio%2C+Orvieto%2C+Italia",
+   "fuente": "https://www.umbriatourism.it/en/w/st-patrick-s-well"
+  },
+  {
+   "id": "gubbio",
+   "nombre": "Gubbio y su teleférico",
+   "donde": "Gubbio",
+   "base": "perugia",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Pueblo medieval de piedra gris y teleférico de cestas abiertas hasta el monte Ingino.",
+   "consejo": "Hay bus desde Perugia; comprobad horarios del día.",
+   "enlace": "https://www.italia.it/it/umbria/perugia/gubbio/funivia-colle-eletto",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Funivia+Colle+Eletto%2C+Gubbio%2C+Italia",
+   "fuente": "https://www.italia.it/it/umbria/perugia/gubbio/funivia-colle-eletto"
+  },
+  {
+   "id": "marmore",
+   "nombre": "Cascata delle Marmore",
+   "donde": "Terni",
+   "base": "perugia",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "agua",
+    "aventura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Cascada artificial de 165 m, de las más altas de Europa, con senderos hasta los miradores.",
+   "consejo": "El caudal se abre y cierra por horarios, mirad el calendario oficial; hay tren a Terni y bus local.",
+   "enlace": "https://www.umbriatourism.it/en/w/marmore-falls",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cascata+delle+Marmore%2C+Terni%2C+Italia",
+   "fuente": "https://www.umbriatourism.it/en/w/marmore-falls"
+  },
+  {
+   "id": "trasimeno",
+   "nombre": "Lago Trasimeno e Isola Maggiore",
+   "donde": "Lago Trasimeno",
+   "base": "perugia",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "agua",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Barco desde Passignano o Castiglione del Lago hasta la isla, pueblo de pescadores, y tarde de lago.",
+   "consejo": "Mejor de primavera a otoño; en invierno hay menos barcos.",
+   "enlace": "https://www.umbriatourism.it/en/w/a-day-among-the-islands-of-lake-trasimeno",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Isola+Maggiore%2C+Lago+Trasimeno%2C+Italia",
+   "fuente": "https://www.umbriatourism.it/en/w/a-day-among-the-islands-of-lake-trasimeno"
+  },
+  {
+   "id": "trasimeno-atardecer",
+   "nombre": "Castiglione del Lago al atardecer",
+   "donde": "Castiglione del Lago",
+   "base": "perugia",
+   "tipo": "postal",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Paseo por el pueblo sobre el lago y atardecer desde las murallas.",
+   "enlace": "https://www.italia.it/it/umbria/lago-trasimeno",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castiglione+del+Lago%2C+Italia",
+   "fuente": "https://www.italia.it/it/umbria/lago-trasimeno"
+  },
+  {
+   "id": "montefalco",
+   "nombre": "Montefalco y cata de Sagrantino",
+   "donde": "Montefalco",
+   "base": "perugia",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Cata de Sagrantino, el tinto más potente de Umbría, en bodegas del pueblo.",
+   "consejo": "Reservad la cata y que conduzca quien no beba.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Montefalco%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Montefalco%2C+Italia",
+   "fuente": "https://www.italia.it/en/umbria/things-to-do/products-typical-dishes-umbri"
+  },
+  {
+   "id": "norcia",
+   "nombre": "Norcia: embutidos y trufa",
+   "donde": "Norcia",
+   "base": "perugia",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Tiendas de norcineria con jamón, salchichas y trufa; cuna del cerdo curado italiano.",
+   "consejo": "Es zona de montaña con carreteras de curvas; sin coche, solo bus regional con pocas frecuencias.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Norcia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Norcia%2C+Italia",
+   "fuente": "https://www.italia.it/en/umbria/things-to-do/products-typical-dishes-umbri"
+  },
+  {
+   "id": "asis-perugia-dia",
+   "nombre": "Perugia y Asís en un día en tren",
+   "donde": "Asís",
+   "base": "asis",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Combinad Perugia por la mañana y Asís por la tarde con tren regional, sin coche.",
+   "enlace": "https://www.rome2rio.com/es/map/Perugia/Asis",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Estaci%C3%B3n+As%C3%ADs%2C+Italia",
+   "fuente": "https://www.italia.it/en/umbria/assisi.html"
+  },
+  {
+   "id": "orvieto-duomo",
+   "nombre": "Duomo de Orvieto",
+   "donde": "Orvieto",
+   "base": "orvieto",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Fachada gótica de mosaicos dorados y frescos de Signorelli dentro.",
+   "enlace": "https://www.italia.it/en/umbria/orvieto",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Duomo+di+Orvieto%2C+Italia",
+   "fuente": "https://www.italia.it/en/umbria/orvieto"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Strangozzi al tartufo",
+   "que_es": "pasta larga y gruesa con trufa negra, típica de Spoleto",
+   "estilo": "trattoria",
+   "coste": "alto",
+   "donde_probarlo": "trattorias de Spoleto, Norcia y Perugia",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spoleto%2C+Italia",
+   "fuente": "https://www.italia.it/en/umbria/things-to-do/products-typical-dishes-umbri"
+  },
+  {
+   "plato": "Pasta alla norcina",
+   "que_es": "pasta con salchicha, nata y trufa",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias de Norcia y Perugia",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Norcia%2C+Italia",
+   "fuente": "https://www.italia.it/en/umbria/things-to-do/products-typical-dishes-umbri"
+  },
+  {
+   "plato": "Lentejas de Castelluccio",
+   "que_es": "sopa de lentejas pequeñas, muy buena en invierno",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorias de Norcia y pueblos de montaña",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Norcia%2C+Italia",
+   "fuente": "https://www.italia.it/en/umbria/things-to-do/products-typical-dishes-umbri"
+  },
+  {
+   "plato": "Porchetta",
+   "que_es": "cerdo asado especiado en bocadillo",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "puestos de plaza en Spoleto y mercados",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spoleto%2C+Italia",
+   "fuente": "https://www.italia.it/en/umbria/things-to-do/products-typical-dishes-umbri"
+  },
+  {
+   "plato": "Torta al testo",
+   "que_es": "pan plano caliente relleno de embutido o verdura",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "bocadillerías de Perugia y Asís",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Perugia%2C+Italia",
+   "fuente": "https://www.italia.it/en/umbria/things-to-do/products-typical-dishes-umbri"
+  },
+  {
+   "plato": "Embutidos de norcineria",
+   "que_es": "jamón, salami de jabalí y queso de oveja",
+   "estilo": "mercado",
+   "coste": "medio",
+   "donde_probarlo": "tiendas de norcineria en Norcia",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Norcia%2C+Italia",
+   "fuente": "https://www.italia.it/en/umbria/things-to-do/products-typical-dishes-umbri"
+  },
+  {
+   "plato": "Chocolate de Perugia",
+   "que_es": "la ciudad del chocolate, con Baci y bombones",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías y chocolaterías del centro de Perugia",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Perugia%2C+Italia",
+   "fuente": "https://www.italia.it/en/umbria/things-to-do/products-typical-dishes-umbri"
+  },
+  {
+   "plato": "Sagrantino di Montefalco",
+   "que_es": "vino tinto intenso de uva sagrantino",
+   "estilo": "bebida",
+   "coste": "medio",
+   "donde_probarlo": "bodegas de Montefalco",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Montefalco%2C+Italia",
+   "fuente": "https://www.italia.it/en/umbria/things-to-do/products-typical-dishes-umbri"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Escalinata del Duomo y Corso Vannucci",
+   "base": "perugia",
+   "plan": "copas",
+   "descripcion": "Punto de reunión estudiantil: copas en la escalinata y bares de alrededor.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+IV+Novembre%2C+Perugia%2C+Italia",
+   "fuente": "https://www.universita.it/universita-di-perugia-tra-cultura-e-gastronomia/"
+  },
+  {
+   "zona": "Via Fani y calles universitarias",
+   "base": "perugia",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo y vino por la zona alta, con ambiente de erasmus y estudiantes.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Via+Fani%2C+Perugia%2C+Italia",
+   "fuente": "https://www.universita.it/universita-di-perugia-tra-cultura-e-gastronomia/"
+  },
+  {
+   "zona": "Centro de Orvieto",
+   "base": "orvieto",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo de pueblo, sin salir de fiesta: tranquilo.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Popolo%2C+Orvieto%2C+Italia",
+   "fuente": "https://www.italia.it/en/umbria/orvieto"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "perugia",
+   "coste": "bajo",
+   "para": "Grupos de estudiantes con poco dinero, cerca del centro.",
+   "enlaces": [
+    {
+     "sitio": "Hostelworld",
+     "url": "https://www.hostelworld.com/hostels/europe/italy/perugia/"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Perugia"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "perugia",
+   "coste": "medio",
+   "para": "Grupos de 4 a 8 con cocina.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Perugia--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Perugia"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "asis",
+   "coste": "medio",
+   "para": "Grupos tranquilos que quieren dormir en Asís.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=As%C3%ADs"
+    }
+   ]
+  },
+  {
+   "tipo": "agriturismo",
+   "base": "asis",
+   "coste": "medio",
+   "para": "Grupos con coche y ganas de campo.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=As%C3%ADs"
+    },
+    {
+     "sitio": "Agriturismo.it",
+     "url": "https://www.agriturismo.it/es/umbria"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "orvieto",
+   "coste": "medio",
+   "para": "Una noche de paso entre Roma y Florencia.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Orvieto"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Umbria Jazz",
+   "donde": "Perugia",
+   "cuando": "cada año, en julio",
+   "meses": [
+    7
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival de jazz con conciertos de pago y escenarios al aire libre.",
+   "enlace": "https://www.umbriatourism.it/en/w/umbria-jazz-event",
+   "fuente": "https://www.umbriatourism.it/en/w/umbria-jazz-event"
+  },
+  {
+   "nombre": "Eurochocolate",
+   "donde": "Perugia",
+   "cuando": "cada año, en octubre",
+   "meses": [
+    10
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival del chocolate con puestos en el centro.",
+   "enlace": "https://www.italia.it/en/umbria/perugia/things-to-do/event-eurochocolate-perugia",
+   "fuente": "https://www.italia.it/en/umbria/perugia/things-to-do/event-eurochocolate-perugia"
+  },
+  {
+   "nombre": "Infiorate de Spello",
+   "donde": "Spello",
+   "cuando": "cada año, en Corpus Domini (mayo-junio)",
+   "meses": [
+    5,
+    6
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Alfombras de flores por las calles durante la noche.",
+   "enlace": "https://www.umbriatourism.it/en/w/infiorate-di-spello-event",
+   "fuente": "https://www.umbriatourism.it/en/w/infiorate-di-spello-event"
+  },
+  {
+   "nombre": "Festa dei Ceri",
+   "donde": "Gubbio",
+   "cuando": "cada año, 15 de mayo",
+   "meses": [
+    5
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Carrera de tres gigantescos ceri de madera por las calles de Gubbio.",
+   "enlace": "https://www.italia.it/en/umbria/things-to-do/gubbio-and-the-festa-dei-ceri",
+   "fuente": "https://www.italia.it/en/umbria/things-to-do/gubbio-and-the-festa-dei-ceri"
+  }
+ ],
+ "notas_honestas": [
+  "Termas libres de Toscana no tienen equivalente verificado en Umbría.",
+  "Enlaces de Perugia, Montefalco y Norcia son mapa o fuente general porque no se verificó web oficial propia.",
+  "No se verificó el horario real de buses a Gubbio, Marmore ni el barco del lago.",
+  "Spoleto y Castelluccio quedan fuera por falta de fuente verificada.",
+  "Fechas 2027 de eventos sin confirmar."
+ ]
+}

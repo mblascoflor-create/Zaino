@@ -1,0 +1,121 @@
+{
+ "actividades": {
+  "sentiero-azzurro": [
+   44.146,
+   9.654
+  ],
+  "vernazza": [
+   44.135,
+   9.684
+  ],
+  "manarola-atardecer": [
+   44.107,
+   9.728
+  ],
+  "monterosso-playa": [
+   44.146,
+   9.654
+  ],
+  "bano-rocas": [
+   44.099,
+   9.738
+  ],
+  "barco-cinque-terre": [
+   44.146,
+   9.654
+  ],
+  "portovenere": [
+   44.052,
+   9.836
+  ],
+  "riomaggiore": [
+   44.099,
+   9.738
+  ],
+  "corniglia": [
+   44.12,
+   9.71
+  ],
+  "caruggi-genova": [
+   44.408,
+   8.931
+  ],
+  "acuario-genova": [
+   44.411,
+   8.926
+  ],
+  "boccadasse": [
+   44.381,
+   8.973
+  ],
+  "palazzi-rolli": [
+   44.412,
+   8.93
+  ],
+  "porto-antico": [
+   44.411,
+   8.925
+  ],
+  "san-fruttuoso": [
+   44.318,
+   9.175
+  ],
+  "camogli-pueblo": [
+   44.349,
+   9.154
+  ],
+  "portofino": [
+   44.304,
+   9.211
+  ],
+  "baia-silenzio": [
+   44.272,
+   9.397
+  ],
+  "ruta-focaccia": [
+   44.408,
+   8.931
+  ]
+ },
+ "noche": {
+  "Piazza delle Erbe y centro histórico de Génova": [
+   44.408,
+   8.933
+  ],
+  "Porto Antico": [
+   44.411,
+   8.926
+  ],
+  "Centro de La Spezia": [
+   44.103,
+   9.824
+  ],
+  "Aperitivo en Manarola, Riomaggiore o Monterosso": [
+   44.107,
+   9.728
+  ]
+ },
+ "eventos": {
+  "FIVE Festival Cinque Terre": [
+   44.135,
+   9.684
+  ],
+  "Cinque Terre Walking Park": [
+   44.146,
+   9.654
+  ],
+  "Rolli Days": [
+   44.408,
+   8.931
+  ],
+  "Le domeniche con Montale": [
+   44.146,
+   9.654
+  ]
+ },
+ "dudosos": [
+  "sentiero-azzurro",
+  "barco-cinque-terre",
+  "ruta-focaccia"
+ ]
+}

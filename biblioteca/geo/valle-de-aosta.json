@@ -1,0 +1,103 @@
+{
+ "actividades": {
+  "aosta-romana": [
+   45.737,
+   7.32
+  ],
+  "aosta-colegiata": [
+   45.737,
+   7.324
+  ],
+  "skyway-monte-bianco": [
+   45.828,
+   6.96
+  ],
+  "esqui-courmayeur": [
+   45.797,
+   6.969
+  ],
+  "esqui-cervinia": [
+   45.935,
+   7.631
+  ],
+  "esqui-pila": [
+   45.69,
+   7.315
+  ],
+  "raquetas-courmayeur": [
+   45.797,
+   6.969
+  ],
+  "gran-paradiso-ibex": [
+   45.608,
+   7.358
+  ],
+  "cascate-lillaz": [
+   45.598,
+   7.332
+  ],
+  "castello-fenis": [
+   45.737,
+   7.495
+  ],
+  "forte-bard": [
+   45.608,
+   7.745
+  ],
+  "terme-pre-saint-didier": [
+   45.768,
+   6.988
+  ],
+  "val-veny-val-ferret": [
+   45.79,
+   6.94
+  ],
+  "lago-blu": [
+   45.896,
+   7.627
+  ],
+  "gran-san-bernardo": [
+   45.87,
+   7.171
+  ],
+  "rafting-dora-baltea": [
+   45.737,
+   7.32
+  ],
+  "fondue-fontina-cena": [
+   45.737,
+   7.32
+  ],
+  "aperitivo-aosta": [
+   45.737,
+   7.32
+  ]
+ },
+ "noche": {
+  "Casco histórico de Aosta": [
+   45.737,
+   7.32
+  ],
+  "Centro de Courmayeur": [
+   45.797,
+   6.969
+  ]
+ },
+ "eventos": {
+  "Celtica Valle d'Aosta": [
+   45.79,
+   6.94
+  ],
+  "Bataille des Reines": [
+   45.707,
+   7.236
+  ],
+  "Temporada de esquí en Cervinia": [
+   45.935,
+   7.631
+  ]
+ },
+ "dudosos": [
+  "rafting-dora-baltea"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "actividades": {
+  "duomo-terrazas": [
+   45.464,
+   9.192
+  ],
+  "galleria": [
+   45.466,
+   9.19
+  ],
+  "castello-sempione": [
+   45.47,
+   9.179
+  ],
+  "brera": [
+   45.472,
+   9.188
+  ],
+  "cenacolo": [
+   45.466,
+   9.171
+  ],
+  "navigli-aperitivo": [
+   45.452,
+   9.176
+  ],
+  "mercadillo-navigli": [
+   45.452,
+   9.176
+  ],
+  "bosco-verticale": [
+   45.485,
+   9.191
+  ],
+  "san-siro": [
+   45.478,
+   9.124
+  ],
+  "citta-alta-bergamo": [
+   45.704,
+   9.668
+  ],
+  "como-lago": [
+   45.811,
+   9.085
+  ],
+  "pavia": [
+   45.185,
+   9.157
+  ],
+  "monza": [
+   45.585,
+   9.275
+  ],
+  "moda-montenapoleone": [
+   45.468,
+   9.195
+  ],
+  "isola-noche": [
+   45.484,
+   9.188
+  ],
+  "novecento": [
+   45.464,
+   9.19
+  ],
+  "san-lorenzo": [
+   45.458,
+   9.181
+  ],
+  "mercato-centrale": [
+   45.486,
+   9.205
+  ]
+ },
+ "noche": {
+  "Navigli": [
+   45.452,
+   9.176
+  ],
+  "Corso Como e Isola": [
+   45.484,
+   9.188
+  ],
+  "Colonne di San Lorenzo": [
+   45.458,
+   9.181
+  ]
+ },
+ "eventos": {
+  "Salone del Mobile.Milano": [
+   45.52,
+   9.15
+  ],
+  "Milano Fashion Week": [
+   45.468,
+   9.195
+  ],
+  "Fiera de Sant'Ambrogio (Oh Bej! Oh Bej!)": [
+   45.464,
+   9.19
+  ],
+  "Carnevale Ambrosiano": [
+   45.464,
+   9.19
+  ]
+ },
+ "dudosos": []
+}

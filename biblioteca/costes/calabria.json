@@ -1,0 +1,22 @@
+{
+  "zona": "calabria",
+  "base": "tropea",
+  "ciudad_referencia": "Tropea",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 16.0,
+      "max": 16.0,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/tropea/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": null,
+    "comida_barata": {
+      "valor": 15.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Reggio-Di-Calabria?displayCurrency=EUR",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": null
+  },
+  "notas": "hostel_noche: rango min-max de 1 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=16.0, maximo=16.0); son precios 'desde' sin fechas concretas. Solo 1 hostel con precio de dorm; min=max. doble_noche null: solo hay un dato suelto (Booking.com https://www.booking.com/city/it/tropea.html?selected_currency=EUR: precio 'From' del titulo = 73 EUR) y BudgetYourTrip no tiene media para esta ciudad, asi que no se puede dar rango. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Reggio Calabria (ciudad con datos mas cercana; Tropea no existe en Numbeo, ~100 km) (rango Numbeo 10-15). transporte_billete null: Tropea es un pueblo sin red de transporte urbano relevante; no se abrio fuente con tarifa."
+}

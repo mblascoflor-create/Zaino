@@ -1,0 +1,815 @@
+{
+ "id": "piamonte",
+ "nombre": "Piamonte (Turín y Langhe)",
+ "nombre_corto": "Piamonte",
+ "lema": "Turín señorial y colinas de vino",
+ "descripcion": "Turín: museo egipcio, cafés históricos, aperitivo con vermut y poca masificación. A una hora, las Langhe con Barolo, Alba y la trufa blanca, y la Sacra di San Michele sobre el valle.",
+ "perfil": {
+  "mar": 0,
+  "montana": 2,
+  "ciudad": 3,
+  "campo": 2,
+  "fiesta": 2,
+  "calma": 1,
+  "cultura": 3,
+  "gastronomia": 3,
+  "naturaleza": 1,
+  "playa": 0,
+  "aventura": 1,
+  "postal": 2
+ },
+ "nivel_precio": "medio",
+ "nivel_precio_nota": "Turín es más barata que Milán o Roma; el vino y la trufa de las Langhe sí suben la cuenta.",
+ "meses": {
+  "ideales": [
+   4,
+   5,
+   6,
+   9,
+   10
+  ],
+  "aceptables": [
+   3,
+   7,
+   11,
+   12
+  ],
+  "evitar": [
+   1,
+   2,
+   8
+  ],
+  "nota": "Primavera y otoño son lo mejor (en otoño, vendimia y trufa). En invierno hay niebla y frío en el valle del Po; en agosto muchos locales cierran."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "util",
+  "nota": "Turín funciona sin coche (metro, tranvía, bus) y tiene ZTL en el centro. Para catas en las Langhe el coche o un tour organizado es casi obligatorio, y el conductor no puede beber.",
+  "aeropuerto_recogida": "TRN",
+  "operadores": [
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Avis-Turin.TRN.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Avis-Turin.TRN.AVIS.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Europcar-Turin.TRN.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Europcar-Turin.TRN.EUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.kayak.es/Hertz-Coches-de-alquiler-Turin.TRN.AHERTZ.cla.ksp",
+    "fuente": "https://www.kayak.es/Hertz-Coches-de-alquiler-Turin.TRN.AHERTZ.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "torino",
+   "nombre": "Turín",
+   "por_que": "Todo el centro se hace a pie o en transporte público; tren a Alba, Venaria y la Sacra.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Torino%2C+Italia"
+  },
+  {
+   "id": "alba",
+   "nombre": "Alba",
+   "por_que": "Capital de las Langhe y de la trufa; base para catas y colinas.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Alba%2C+Cuneo%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "TRN",
+    "nombre": "Turín – Caselle",
+    "ciudad": "Turín",
+    "a_la_base": "Está a las afueras de Turín; hay bus y tren hasta la ciudad, comprobad el medio en la web del aeropuerto."
+   },
+   {
+    "iata": "MXP",
+    "nombre": "Milán – Malpensa",
+    "ciudad": "Milán",
+    "a_la_base": "Bus o tren a Milán y tren de alta velocidad Milán–Turín, de aproximadamente una hora."
+   }
+  ],
+  "desde_espana": "Barcelona–Turín es de las rutas low cost más usadas, con vuelo directo de poco más de una hora; la frecuencia varía por temporada. Desde otras ciudades suele salir mejor volar a Milán y seguir en tren.",
+  "rutas_directas": [
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "TRN",
+    "aerolinea": "Ryanair / Vueling",
+    "nota": "La oferta cambia por temporada; comparad fechas",
+    "fuente": "https://www.momondo.es/vuelos/barcelona/turin"
+   }
+  ],
+  "desde_italia": "Tren de alta velocidad Milán–Turín en torno a una hora; Génova–Turín también por tren regional. Desde Bolonia o Roma, normalmente con cambio en Milán."
+ },
+ "moverse": {
+  "resumen": "Turín se recorre a pie, en metro y en tranvía. Alba, Venaria y la Sacra se alcanzan en tren o bus; para viñedos de las Langhe, coche o tour.",
+  "tren": {
+   "nota": "Tren regional a Alba (desde Turín) y a Sant'Ambrogio, al pie de la Sacra; Italo y Trenitalia a Milán.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Cubre Turín y otras ciudades dentro de Italia; para pueblos de las Langhe hay bus local con pocas frecuencias.",
+   "enlace": "https://www.flixbus.it/autobus/torino",
+   "fuente": "https://www.flixbus.it/azienda/stampa/flixbus-offerta-estiva-2026"
+  },
+  "ferry": [],
+  "camper": {
+   "operador": "Roadsurfer",
+   "nota": "Alquiler de campers en Italia (página general); útil para moverse entre colinas.",
+   "enlace": "https://roadsurfer.com/es/alquilar-camper/italia/",
+   "fuente": "https://roadsurfer.com/es/alquilar-camper/italia/"
+  }
+ },
+ "actividades": [
+  {
+   "id": "museo-egizio",
+   "nombre": "Museo Egipcio de Turín",
+   "donde": "Turín",
+   "base": "torino",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Una de las mayores colecciones egipcias fuera de El Cairo, con momias, estatuas y papiros.",
+   "consejo": "Reservad entrada online para fines de semana y puentes.",
+   "enlace": "https://www.museoegizio.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Museo+Egizio%2C+Torino%2C+Italia",
+   "fuente": "https://www.museoegizio.it/"
+  },
+  {
+   "id": "mole-museo-cine",
+   "nombre": "Mole Antonelliana y Museo del Cine",
+   "donde": "Turín",
+   "base": "torino",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "El museo del cine dentro del símbolo de la ciudad, con ascensor panorámico hasta la cúpula.",
+   "consejo": "Se puede comprar museo, ascensor o combinado: elegid según presupuesto.",
+   "enlace": "https://www.museocinema.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mole+Antonelliana%2C+Torino%2C+Italia",
+   "fuente": "https://www.museocinema.it/"
+  },
+  {
+   "id": "centro-storico",
+   "nombre": "Piazza Castello, Piazza San Carlo y soportales",
+   "donde": "Turín",
+   "base": "torino",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Paseo por la Turín barroca: plazas, Palacio Real y kilómetros de soportales para resguardarse.",
+   "enlace": "https://www.turismotorino.org/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Castello%2C+Torino%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "id": "porta-palazzo",
+   "nombre": "Mercado de Porta Palazzo",
+   "donde": "Turín",
+   "base": "torino",
+   "tipo": "compras",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Uno de los mayores mercados al aire libre de Europa: fruta, queso, embutidos y ropa a buen precio.",
+   "consejo": "Se llena por la mañana y está cerrado los domingos; comprobad días en la web del Ayuntamiento.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Mercato+di+Porta+Palazzo%2C+Torino%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Porta+Palazzo%2C+Torino%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "id": "ruta-chocolate",
+   "nombre": "Ruta del chocolate: gianduiotto y bicerin",
+   "donde": "Turín",
+   "base": "torino",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Pausa en un café histórico del centro para el bicerin (café, chocolate y nata) y un gianduiotto.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=caff%C3%A8+storici+Torino%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Torino%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "id": "aperitivo-vermut",
+   "nombre": "Aperitivo con vermut",
+   "donde": "Turín",
+   "base": "torino",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "El aperitivo turinés con vermut y picoteo incluido en el precio de la copa, en Quadrilatero Romano y San Salvario.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Quadrilatero+Romano%2C+Torino%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Quadrilatero+Romano%2C+Torino%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "id": "murazzi",
+   "nombre": "Orillas del Po y Murazzi",
+   "donde": "Turín",
+   "base": "torino",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "musica"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Zona de ocio nocturno junto al río, con ambiente de estudiantes en las noches de verano.",
+   "consejo": "El ambiente y los locales cambian por temporada; en invierno hay poco.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Murazzi+del+Po%2C+Torino%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Murazzi+del+Po%2C+Torino%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "id": "venaria",
+   "nombre": "Reggia di Venaria y jardines",
+   "donde": "Venaria Reale",
+   "base": "torino",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Palacio real de los Saboya, Patrimonio UNESCO, con jardines grandes y exposiciones.",
+   "consejo": "Se llega desde Turín en bus o tren regional + bus; comprobad horario en la web.",
+   "enlace": "https://www.lavenaria.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Reggia+di+Venaria%2C+Italia",
+   "fuente": "https://www.lavenaria.it/"
+  },
+  {
+   "id": "stupinigi",
+   "nombre": "Palazzina di Caccia di Stupinigi",
+   "donde": "Nichelino",
+   "base": "torino",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Pabellón de caza barroco de Juvarra rodeado de parque, Patrimonio UNESCO.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Palazzina+di+Caccia+di+Stupinigi%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Palazzina+di+Caccia+di+Stupinigi%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "id": "sacra-san-michele",
+   "nombre": "Sacra di San Michele",
+   "donde": "Sant'Ambrogio di Torino",
+   "base": "torino",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "aventura",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "alto",
+   "ambiente": "mixto",
+   "descripcion": "Abadía medieval sobre el monte Pirchiriano, símbolo del Piamonte; con subida a pie desde el valle.",
+   "consejo": "En tren hasta Sant'Ambrogio y subida larga a pie, o coche hasta arriba; llevad calzado de monte.",
+   "enlace": "https://www.sacradisanmichele.com/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sacra+di+San+Michele%2C+Italia",
+   "fuente": "https://www.sacradisanmichele.com/"
+  },
+  {
+   "id": "langhe-cata",
+   "nombre": "Cata de vino en las Langhe",
+   "donde": "Barolo",
+   "base": "alba",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "tarde",
+   "coste": "alto",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Bodegas y colinas de viñedo Patrimonio UNESCO con Barolo y Barbaresco.",
+   "consejo": "Sin coche, buscad un tour desde Turín o Alba; si vais en coche, el conductor no bebe.",
+   "enlace": "https://www.getyourguide.es/s/?q=Langhe+Barolo+cata",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Barolo%2C+Langhe%2C+Italia",
+   "fuente": "https://www.getyourguide.es/s/?q=Langhe+Barolo+cata"
+  },
+  {
+   "id": "alba-centro",
+   "nombre": "Alba: centro histórico",
+   "donde": "Alba",
+   "base": "alba",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Torres medievales, calles de ladrillo y tiendas de vino y chocolate; a un tren regional de Turín.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Alba%2C+Cuneo%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Alba%2C+Cuneo%2C+Italia",
+   "fuente": "https://www.visitpiemonte-dmo.org/"
+  },
+  {
+   "id": "fiera-tartufo",
+   "nombre": "Feria de la trufa blanca de Alba",
+   "donde": "Alba",
+   "base": "alba",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    10,
+    11,
+    12
+   ],
+   "descripcion": "Mercado y catas de trufa blanca en otoño; entrar suele costar poco y probar, bastante más.",
+   "consejo": "En 2026 la feria fue de octubre a principios de diciembre; comprobad fechas anuales.",
+   "enlace": "https://www.fieradeltartufo.org/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Fiera+del+Tartufo%2C+Alba%2C+Italia",
+   "fuente": "https://www.fieradeltartufo.org/"
+  },
+  {
+   "id": "superga",
+   "nombre": "Basílica de Superga",
+   "donde": "Turín",
+   "base": "torino",
+   "tipo": "postal",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Mirador sobre Turín y los Alpes, con subida en tranvía de cremallera histórico.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Basilica+di+Superga%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Basilica+di+Superga%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "id": "valentino",
+   "nombre": "Parque del Valentino y Borgo Medievale",
+   "donde": "Turín",
+   "base": "torino",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Paseo junto al río con un castillo y una aldea medieval recreada.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Parco+del+Valentino%2C+Torino%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Parco+del+Valentino%2C+Torino%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "id": "cappuccini",
+   "nombre": "Monte dei Cappuccini al atardecer",
+   "donde": "Turín",
+   "base": "torino",
+   "tipo": "postal",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Mirador sobre Turín y los Alpes, ideal para la puesta de sol.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Monte+dei+Cappuccini%2C+Torino%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Monte+dei+Cappuccini%2C+Torino%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "id": "mauto",
+   "nombre": "Museo Nazionale dell'Automobile",
+   "donde": "Turín",
+   "base": "torino",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Historia del coche y del diseño italiano en la capital del motor.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Museo+Nazionale+dell%27Automobile%2C+Torino%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Museo+Nazionale+dell%27Automobile%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "id": "balon",
+   "nombre": "Mercadillo Balôn",
+   "donde": "Turín",
+   "base": "torino",
+   "tipo": "compras",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Mercadillo de segunda mano y antigüedades en el barrio de Porta Palazzo, en sábados.",
+   "consejo": "Sábado por la mañana; comprobad si hay edición especial el segundo domingo del mes.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Mercato+del+Balon%2C+Torino%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+del+Balon%2C+Torino%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "id": "lago-orta",
+   "nombre": "Lago d'Orta y Orta San Giulio",
+   "donde": "Orta San Giulio",
+   "base": "torino",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Pueblo sobre un lago tranquilo y barco a la isla de San Giulio; excursión larga desde Turín.",
+   "consejo": "Se llega en tren con trasbordo (Novara) o en coche; planificadlo bien en Trenitalia.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Orta+San+Giulio%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Orta+San+Giulio%2C+Italia",
+   "fuente": "https://www.visitpiemonte-dmo.org/"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Agnolotti del plin",
+   "que_es": "Pasta rellena pequeña, pellizcada a mano, con relleno de carne y salsa de asado.",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "Trattorie tradicionales de Turín y las Langhe",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Dtrattoria%2Bagnolotti%2Bdel%2Bplin%2BTorino%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.visitpiemonte-dmo.org/"
+  },
+  {
+   "plato": "Vitello tonnato",
+   "que_es": "Ternera fría en láminas con crema de atún.",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "Trattorie del centro y las Langhe",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Dvitello%2Btonnato%2BTorino%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.visitpiemonte-dmo.org/"
+  },
+  {
+   "plato": "Tajarin al tartufo",
+   "que_es": "Tallarines finos de yema con trufa blanca en otoño.",
+   "estilo": "trattoria",
+   "coste": "alto",
+   "donde_probarlo": "Trattorie de Alba, temporada de octubre a diciembre",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Dtajarin%2Btartufo%2BAlba%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.fieradeltartufo.org/"
+  },
+  {
+   "plato": "Bagna cauda",
+   "que_es": "Salsa caliente de ajo y anchoa para mojar verdura cruda; plato de invierno para compartir.",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "Trattorie piamontesas, de octubre a febrero",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Dbagna%2Bcauda%2BTorino%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.visitpiemonte-dmo.org/"
+  },
+  {
+   "plato": "Bicerin",
+   "que_es": "Café, chocolate y nata en capas, nacido en los cafés de Turín.",
+   "estilo": "bebida",
+   "coste": "bajo",
+   "donde_probarlo": "Cafés históricos del centro de Turín",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Dcaff%25C3%25A8%2Bstorico%2BBicerin%2BTorino%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "plato": "Gianduiotto",
+   "que_es": "Bombón de chocolate y avellana de las Langhe, creado en Turín.",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "Chocolaterías del centro de Turín",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Dcioccolateria%2BTorino%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "plato": "Vermut de Turín",
+   "que_es": "Vino aromatizado que se toma de aperitivo con hielo y rodaja de naranja.",
+   "estilo": "bebida",
+   "coste": "bajo",
+   "donde_probarlo": "Bares del Quadrilatero Romano y San Salvario",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Dvermuteria%2BTorino%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "plato": "Grissini torinesi",
+   "que_es": "Palitos de pan largos y crujientes, típicos de Turín.",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "Panaderías y mercados como Porta Palazzo",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DMercato%2Bdi%2BPorta%2BPalazzo%252C%2BTorino%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Quadrilatero Romano",
+   "base": "torino",
+   "plan": "aperitivo",
+   "descripcion": "Callejones del centro con bares de aperitivo y ambiente más tranquilo.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DQuadrilatero%2BRomano%252C%2BTorino%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "zona": "San Salvario",
+   "base": "torino",
+   "plan": "copas",
+   "descripcion": "Barrio universitario con bares, locales y música hasta tarde.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DSan%2BSalvario%252C%2BTorino%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "zona": "Murazzi del Po",
+   "base": "torino",
+   "plan": "fiesta",
+   "descripcion": "Terrazas y discotecas junto al río, más animadas en verano.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DMurazzi%2Bdel%2BPo%252C%2BTorino%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "zona": "Centro de Alba",
+   "base": "alba",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo de vino piamontés y picoteo tranquilo en el casco antiguo.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DAlba%252C%2BCuneo%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.visitpiemonte-dmo.org/"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "torino",
+   "coste": "bajo",
+   "para": "Grupos grandes con poco presupuesto, cerca de la estación Porta Nuova.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Torino"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "torino",
+   "coste": "medio",
+   "para": "Grupos de 4-8 que quieren cocinar y repartir coste.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Torino--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Torino"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "torino",
+   "coste": "medio",
+   "para": "Quien prefiera comodidad y desayuno incluido.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Torino"
+    }
+   ]
+  },
+  {
+   "tipo": "agriturismo",
+   "base": "alba",
+   "coste": "medio",
+   "para": "Grupos pequeños con coche que priorizan el día de vino.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Alba"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "alba",
+   "coste": "medio",
+   "para": "Parejas o grupos pequeños que prefieren casco antiguo y calma.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Alba"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Alba--Italia/homes"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Feria Internacional de la Trufa Blanca de Alba",
+   "donde": "Alba",
+   "cuando": "cada año, de octubre a principios de diciembre (en 2026, del 10 de octubre al 6 de diciembre)",
+   "meses": [
+    10,
+    11,
+    12
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Mercado, catas y puestos de productores de trufa blanca en el centro de Alba.",
+   "enlace": "https://www.fieradeltartufo.org/",
+   "fuente": "https://www.fieradeltartufo.org/"
+  },
+  {
+   "nombre": "CioccolaTò",
+   "donde": "Turín",
+   "cuando": "cada año, febrero, cerca de San Valentín (en 2026, del 13 al 17 de febrero)",
+   "meses": [
+    2
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival del chocolate con catas y puestos en la Piazza Vittorio Veneto.",
+   "enlace": "https://www.turismotorino.org/visit/events/big-events/cioccola-to-torino-the-chocolate-festival",
+   "fuente": "https://www.turismotorino.org/visit/events/big-events/cioccola-to-torino-the-chocolate-festival"
+  },
+  {
+   "nombre": "Luci d'Artista",
+   "donde": "Turín",
+   "cuando": "cada año, instalaciones de luz en las calles de noviembre a enero; fechas en la web",
+   "meses": [
+    11,
+    12,
+    1
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Obras de artistas con luz repartidas por calles y plazas de Turín en invierno.",
+   "enlace": "https://www.turismotorino.org/",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "nombre": "Torino Film Festival",
+   "donde": "Turín",
+   "cuando": "cada año, en noviembre; fechas en la web",
+   "meses": [
+    11
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival de cine con proyecciones por la ciudad.",
+   "enlace": "https://www.turismotorino.org/",
+   "fuente": "https://www.turismotorino.org/"
+  },
+  {
+   "nombre": "Terra Madre Salone del Gusto",
+   "donde": "Turín",
+   "cuando": "cada dos años, en septiembre (edición 2026 ya pasada)",
+   "meses": [
+    9
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Feria bienal de Slow Food con mercado y puntos de encuentro por el centro de Turín.",
+   "enlace": "https://turismotorino.org/en/visit/events/big-events/terra-madre-salone-del-gusto",
+   "fuente": "https://turismotorino.org/en/visit/events/big-events/terra-madre-salone-del-gusto"
+  }
+ ],
+ "notas_honestas": [
+  "No se verificaron webs oficiales de Superga, Valentino, Mauto, Balôn, Murazzi ni Lago d'Orta: se enlazan por mapa o portada de turismo.",
+  "La subida a la Sacra desde la estación de Sant'Ambrogio y el tren a Orta se describen de forma general; comprobad en Trenitalia.",
+  "Los eventos son recurrentes sin fecha de 2027 publicada; Terra Madre es bienal.",
+  "Bicerin y los cafés históricos se citan sin nombrar locales (sin web oficial verificada).",
+  "Se descartó nombrar bodegas o tours concretos de las Langhe."
+ ]
+}

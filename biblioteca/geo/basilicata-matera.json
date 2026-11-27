@@ -1,0 +1,93 @@
+{
+ "actividades": {
+  "sasso-caveoso": [
+   40.662,
+   16.612
+  ],
+  "sasso-barisano": [
+   40.668,
+   16.607
+  ],
+  "casa-grotta": [
+   40.664,
+   16.61
+  ],
+  "chiese-rupestri": [
+   40.659,
+   16.612
+  ],
+  "palombaro-lungo": [
+   40.666,
+   16.608
+  ],
+  "musma": [
+   40.664,
+   16.609
+  ],
+  "cattedrale-matera": [
+   40.667,
+   16.611
+  ],
+  "mirador-murgia": [
+   40.653,
+   16.627
+  ],
+  "parco-murgia-senderos": [
+   40.65,
+   16.64
+  ],
+  "noche-sassi": [
+   40.665,
+   16.609
+  ],
+  "pan-matera": [
+   40.666,
+   16.605
+  ],
+  "craco": [
+   40.378,
+   16.44
+  ],
+  "volo-angelo": [
+   40.527,
+   16.045
+  ],
+  "sette-pietre": [
+   40.527,
+   16.045
+  ],
+  "maratea-cristo": [
+   39.992,
+   15.714
+  ],
+  "maratea-calas": [
+   39.99,
+   15.72
+  ]
+ },
+ "noche": {
+  "Piazza Vittorio Veneto": [
+   40.667,
+   16.604
+  ],
+  "Sassi de noche": [
+   40.668,
+   16.607
+  ]
+ },
+ "eventos": {
+  "Festa della Bruna": [
+   40.667,
+   16.611
+  ],
+  "Carnevale de Tricarico": [
+   40.617,
+   16.139
+  ],
+  "Festa di San Biagio": [
+   39.992,
+   15.714
+  ]
+ },
+ "dudosos": []
+}

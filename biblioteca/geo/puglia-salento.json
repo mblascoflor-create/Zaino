@@ -1,0 +1,123 @@
+{
+ "actividades": {
+  "bari-orecchiette": [
+   41.129,
+   16.871
+  ],
+  "bari-street-food": [
+   41.126,
+   16.871
+  ],
+  "bari-san-nicola": [
+   41.128,
+   16.871
+  ],
+  "polignano-lama-monachile": [
+   40.996,
+   17.219
+  ],
+  "polignano-grutas-barco": [
+   40.996,
+   17.219
+  ],
+  "polignano-atardecer": [
+   40.995,
+   17.22
+  ],
+  "monopoli": [
+   40.952,
+   17.299
+  ],
+  "alberobello-trulli": [
+   40.783,
+   17.237
+  ],
+  "ostuni-citta-bianca": [
+   40.73,
+   17.577
+  ],
+  "lecce-barocco": [
+   40.352,
+   18.172
+  ],
+  "lecce-aperitivo": [
+   40.353,
+   18.174
+  ],
+  "otranto": [
+   40.146,
+   18.49
+  ],
+  "porto-selvaggio": [
+   40.167,
+   17.957
+  ],
+  "grotta-poesia": [
+   40.297,
+   18.428
+  ],
+  "punta-prosciutto": [
+   40.27,
+   17.762
+  ],
+  "pescoluse": [
+   39.833,
+   18.283
+  ],
+  "gallipoli-centro": [
+   40.056,
+   17.979
+  ],
+  "gallipoli-purita": [
+   40.057,
+   17.976
+  ],
+  "gallipoli-fiesta-verano": [
+   40.056,
+   17.979
+  ],
+  "pizzica-salento": [
+   40.168,
+   18.3
+  ]
+ },
+ "noche": {
+  "Bari Vecchia y zona Murat": [
+   41.127,
+   16.87
+  ],
+  "Casco antiguo de Lecce": [
+   40.352,
+   18.172
+  ],
+  "Gallipoli: casco antiguo y Baia Verde": [
+   40.056,
+   17.979
+  ],
+  "Fiestas de pizzica en pueblos del Salento": [
+   40.168,
+   18.3
+  ]
+ },
+ "eventos": {
+  "La Notte della Taranta": [
+   40.168,
+   18.3
+  ],
+  "Fiesta de San Nicolás": [
+   41.128,
+   16.871
+  ],
+  "Cavalcata de Sant'Oronzo": [
+   40.73,
+   17.577
+  ],
+  "Focara de Novoli": [
+   40.39,
+   18.05
+  ]
+ },
+ "dudosos": [
+  "pizzica-salento"
+ ]
+}

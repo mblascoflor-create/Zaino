@@ -1,0 +1,107 @@
+{
+ "actividades": {
+  "tropea-centro": [
+   38.677,
+   15.896
+  ],
+  "tropea-playa": [
+   38.675,
+   15.893
+  ],
+  "tropea-atardecer": [
+   38.676,
+   15.894
+  ],
+  "capo-vaticano-faro": [
+   38.622,
+   15.83
+  ],
+  "grotticelle": [
+   38.646,
+   15.822
+  ],
+  "snorkel-capo-vaticano": [
+   38.635,
+   15.826
+  ],
+  "eolie-tropea": [
+   38.677,
+   15.898
+  ],
+  "scilla-chianalea": [
+   38.249,
+   15.714
+  ],
+  "scilla-castillo": [
+   38.255,
+   15.715
+  ],
+  "pizzo": [
+   38.805,
+   16.164
+  ],
+  "tartufo-pizzo": [
+   38.805,
+   16.163
+  ],
+  "reggio-museo": [
+   38.111,
+   15.651
+  ],
+  "reggio-lungomare": [
+   38.103,
+   15.64
+  ],
+  "sila": [
+   39.3,
+   16.5
+  ],
+  "treno-sila": [
+   39.335,
+   16.455
+  ],
+  "le-castella": [
+   38.917,
+   17.083
+  ],
+  "diamante": [
+   39.68,
+   15.815
+  ]
+ },
+ "noche": {
+  "Centro de Tropea": [
+   38.677,
+   15.896
+  ],
+  "Lungomare de Reggio": [
+   38.103,
+   15.64
+  ],
+  "Plaza de Pizzo": [
+   38.805,
+   16.164
+  ]
+ },
+ "eventos": {
+  "Festival del Peperoncino": [
+   39.68,
+   15.815
+  ],
+  "Kaulonia Tarantella Festival": [
+   38.38,
+   16.4
+  ],
+  "Margini Festival": [
+   39.357,
+   16.04
+  ],
+  "Fiesta de la cebolla roja": [
+   38.677,
+   15.896
+  ]
+ },
+ "dudosos": [
+  "sila"
+ ]
+}

@@ -1,0 +1,852 @@
+{
+ "id": "valle-de-aosta",
+ "nombre": "Valle de Aosta (Courmayeur y Mont Blanc)",
+ "nombre_corto": "Valle de Aosta",
+ "lema": "Nieve, castillos y el Mont Blanc",
+ "descripcion": "Alpes italianos con Aosta romana, Skyway Monte Bianco, esquí en Courmayeur, Cervinia y Pila, castillos y fondue. Destino de nieve en invierno y de senderos en verano; es caro para un estudiante.",
+ "perfil": {
+  "mar": 0,
+  "montana": 3,
+  "ciudad": 1,
+  "campo": 1,
+  "fiesta": 1,
+  "calma": 2,
+  "cultura": 2,
+  "gastronomia": 2,
+  "naturaleza": 3,
+  "playa": 0,
+  "aventura": 3,
+  "postal": 3
+ },
+ "nivel_precio": "alto",
+ "nivel_precio_nota": "Zona alpina premium: forfaits, remontes y alojamiento en Courmayeur y Cervinia son caros; Aosta ciudad es la base más barata.",
+ "meses": {
+  "ideales": [
+   1,
+   2,
+   3,
+   7,
+   8,
+   9
+  ],
+  "aceptables": [
+   6,
+   10,
+   12
+  ],
+  "evitar": [
+   4,
+   5,
+   11
+  ],
+  "nota": "Esquí de diciembre a marzo y senderos de julio a septiembre. Abril-mayo y noviembre son entretiempo: remontes y refugios cerrados en parte."
+ },
+ "calor_verano": "suave",
+ "nieve_invierno": true,
+ "coche": {
+  "necesidad": "util",
+  "nota": "Aosta, Courmayeur y Pila se hacen en bus o remonte. Cogne, Cervinia y los castillos del valle son más cómodos con coche; en invierno, cadenas o neumáticos de invierno obligatorios.",
+  "aeropuerto_recogida": "TRN",
+  "operadores": [
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Europcar-Turin.TRN.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Europcar-Turin.TRN.EUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Avis-Turin.TRN.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Avis-Turin.TRN.AVIS.cla.ksp"
+   },
+   {
+    "nombre": "Enterprise",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Enterprise-Turin.TRN.ENTERPRISE.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Enterprise-Turin.TRN.ENTERPRISE.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "aosta",
+   "nombre": "Aosta",
+   "por_que": "Ciudad con estación, buses a los valles y la más barata para dormir.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Aosta%2C+Italia"
+  },
+  {
+   "id": "courmayeur",
+   "nombre": "Courmayeur",
+   "por_que": "Pie del Mont Blanc: Skyway, esquí y termas al lado; se llega en bus desde Aosta.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Courmayeur%2C+Italia"
+  },
+  {
+   "id": "cogne",
+   "nombre": "Cogne",
+   "por_que": "Puerta al Gran Paradiso: senderos, íbices y esquí de fondo.",
+   "sin_coche": false,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cogne%2C+Italia"
+  },
+  {
+   "id": "cervinia",
+   "nombre": "Breuil-Cervinia",
+   "por_que": "Estación de esquí al pie del Cervino con temporada larga.",
+   "sin_coche": false,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Breuil-Cervinia%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "TRN",
+    "nombre": "Turín – Caselle",
+    "ciudad": "Turín",
+    "a_la_base": "Bus o tren a Turín y de ahí tren a Aosta o FlixBus directo desde el aeropuerto; comprobad en la web."
+   },
+   {
+    "iata": "MXP",
+    "nombre": "Milán Malpensa",
+    "ciudad": "Milán",
+    "a_la_base": "FlixBus tiene conexión Malpensa-Aosta según su página de Aosta; comprobad fechas."
+   }
+  ],
+  "desde_espana": "Vueling vuela Barcelona-Turín, la entrada más cómoda a Aosta. Si los vuelos no cuadran, mirad Milán Malpensa y Ginebra con bus.",
+  "rutas_directas": [
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "TRN",
+    "aerolinea": "Vueling",
+    "nota": "Ruta confirmada en la web de Vueling; las tarifas varían.",
+    "fuente": "https://www.vueling.com/es/vuelos-baratos-desde-turin"
+   }
+  ],
+  "desde_italia": "Desde Turín hay tren a Aosta (algo lento, con cambio). FlixBus conecta Aosta con Turín, Milán, Génova y Bolonia, entre otras."
+ },
+ "moverse": {
+  "resumen": "Sin coche: tren o FlixBus hasta Aosta y bus a Courmayeur. Con coche, Cogne, Cervinia y los castillos; en invierno, equipamiento de nieve.",
+  "tren": {
+   "nota": "Línea Turín-Aosta con trenes regionales; los valles laterales no tienen tren.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Aosta tiene conexión directa con Turín, Milán, Malpensa, Génova y destinos europeos; los valles se hacen con bus local.",
+   "enlace": "https://www.flixbus.it/autobus/aosta",
+   "fuente": "https://www.flixbus.it/autobus/aosta"
+  },
+  "ferry": [],
+  "camper": {
+   "operador": "Roadsurfer",
+   "nota": "Alquiler de campers en Italia; en invierno mejor alojamiento fijo.",
+   "enlace": "https://roadsurfer.com/es/alquilar-camper/italia/",
+   "fuente": "https://roadsurfer.com/es/alquilar-camper/italia/"
+  }
+ },
+ "actividades": [
+  {
+   "id": "aosta-romana",
+   "nombre": "Aosta romana: teatro, Arco de Augusto y Porta Praetoria",
+   "donde": "Aosta",
+   "base": "aosta",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Paseo por la 'pequeña Roma de los Alpes': teatro romano, arco, puerta y criptopórtico.",
+   "enlace": "https://www.lovevda.it/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Teatro+Romano%2C+Aosta%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "id": "aosta-colegiata",
+   "nombre": "Colegiata de Sant'Orso y claustro",
+   "donde": "Aosta",
+   "base": "aosta",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Iglesia románica con claustro de capiteles esculpidos, a pocos minutos del centro.",
+   "enlace": "https://www.lovevda.it/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Collegiata+dei+Santi+Pietro+e+Orso%2C+Aosta%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "id": "skyway-monte-bianco",
+   "nombre": "Skyway Monte Bianco hasta Punta Helbronner",
+   "donde": "Courmayeur",
+   "base": "courmayeur",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "alto",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Teleférico con cabina giratoria hasta 3.466 m, el punto más alto de Italia accesible junto al Mont Blanc.",
+   "consejo": "Comprobad alertas, horarios y previsión antes de ir; los senderos desde la estación no están señalizados.",
+   "enlace": "https://www.montebianco.com/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Skyway+Monte+Bianco%2C+Courmayeur%2C+Italia",
+   "fuente": "https://www.montebianco.com/en"
+  },
+  {
+   "id": "esqui-courmayeur",
+   "nombre": "Esquí en Courmayeur",
+   "donde": "Courmayeur",
+   "base": "courmayeur",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "alto",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "alto",
+   "ambiente": "mixto",
+   "descripcion": "Pistas con vistas al Mont Blanc y base de buses desde Aosta; se puede alquilar equipo en el pueblo.",
+   "consejo": "Forfait y equipo son lo más caro del viaje; comparad pases de varios días.",
+   "meses": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "enlace": "https://www.courmayeurmontblanc.it/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Courmayeur+ski%2C+Italia",
+   "fuente": "https://www.courmayeurmontblanc.it/en"
+  },
+  {
+   "id": "esqui-cervinia",
+   "nombre": "Esquí en Breuil-Cervinia",
+   "donde": "Breuil-Cervinia",
+   "base": "cervinia",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "alto",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "alto",
+   "ambiente": "mixto",
+   "descripcion": "Gran dominio esquiable al pie del Cervino; la temporada 2026/27 va del 24 de octubre al 2 de mayo.",
+   "consejo": "Zona de altura con nieve segura; abre más tiempo que las demás.",
+   "meses": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "enlace": "https://www.cervinia.it/en/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Breuil-Cervinia+ski%2C+Italia",
+   "fuente": "https://www.cervinia.it/en/"
+  },
+  {
+   "id": "esqui-pila",
+   "nombre": "Esquí en Pila, junto a Aosta",
+   "donde": "Pila",
+   "base": "aosta",
+   "tipo": "aventura",
+   "tipos_extra": [],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "alto",
+   "ambiente": "mixto",
+   "descripcion": "Estación pequeña sobre Aosta, accesible desde la ciudad en remonte: la opción más barata para esquiar.",
+   "meses": [
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "enlace": "https://www.lovevda.it/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Pila+ski%2C+Gressan%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "id": "raquetas-courmayeur",
+   "nombre": "Raquetas de nieve en el valle",
+   "donde": "Courmayeur",
+   "base": "courmayeur",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Rutas con raquetas por bosques y valles cercanos al Mont Blanc, con guía o por libre.",
+   "meses": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "enlace": "https://www.getyourguide.es/s/?q=snowshoe+Courmayeur",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Raquetas+de+nieve%2C+Courmayeur%2C+Italia",
+   "fuente": "https://www.courmayeurmontblanc.it/en"
+  },
+  {
+   "id": "gran-paradiso-ibex",
+   "nombre": "Senderos del Gran Paradiso e íbices",
+   "donde": "Cogne",
+   "base": "cogne",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Rutas desde Valnontey y Cogne por el parque nacional; con suerte veréis íbices y rebecos.",
+   "consejo": "Mejor de junio a septiembre; en altura hay nieve hasta bien entrado el verano.",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "enlace": "https://www.lovevda.it/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Valnontey%2C+Cogne%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "id": "cascate-lillaz",
+   "nombre": "Cascadas de Lillaz",
+   "donde": "Lillaz",
+   "base": "cogne",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Paseo corto a una cascada en tres saltos en un pueblo de montaña junto a Cogne.",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "enlace": "https://www.lovevda.it/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cascate+di+Lillaz%2C+Cogne%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "id": "castello-fenis",
+   "nombre": "Castillo de Fénis",
+   "donde": "Fénis",
+   "base": "aosta",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Castillo medieval con murallas almenadas y frescos, de los más fotogénicos del valle.",
+   "enlace": "https://www.lovevda.it/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castello+di+F%C3%A9nis%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "id": "forte-bard",
+   "nombre": "Forte di Bard",
+   "donde": "Bard",
+   "base": "aosta",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Fortaleza sobre el valle con museos y exposiciones; a la entrada del Valle de Aosta.",
+   "enlace": "https://www.lovevda.it/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Forte+di+Bard%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "id": "terme-pre-saint-didier",
+   "nombre": "Termas de Pré-Saint-Didier",
+   "donde": "Pré-Saint-Didier",
+   "base": "courmayeur",
+   "tipo": "bienestar",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Spa alpino con piscinas termales y vistas al Mont Blanc, a pocos minutos de Courmayeur.",
+   "consejo": "Reservad turno si vais en fin de semana.",
+   "enlace": "https://www.courmayeurmontblanc.it/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Terme+di+Pr%C3%A9-Saint-Didier%2C+Italia",
+   "fuente": "https://www.courmayeurmontblanc.it/en"
+  },
+  {
+   "id": "val-veny-val-ferret",
+   "nombre": "Paseo por Val Veny y Val Ferret",
+   "donde": "Courmayeur",
+   "base": "courmayeur",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Senderos fáciles y medios con glaciares del Mont Blanc a la vista.",
+   "meses": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "enlace": "https://www.courmayeurmontblanc.it/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Val+Veny%2C+Courmayeur%2C+Italia",
+   "fuente": "https://www.courmayeurmontblanc.it/en"
+  },
+  {
+   "id": "lago-blu",
+   "nombre": "Lago Blu y reflejo del Cervino",
+   "donde": "Valtournenche",
+   "base": "cervinia",
+   "tipo": "postal",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Lago azul con el Cervino reflejado en el agua; mejor con aire quieto.",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "enlace": "https://www.lovevda.it/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lago+Blu%2C+Valtournenche%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "id": "gran-san-bernardo",
+   "nombre": "Paso del Gran San Bernardo",
+   "donde": "Saint-Rhémy-en-Bosses",
+   "base": "aosta",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Subida al puerto fronterizo, con lago y hospicio histórico.",
+   "consejo": "En invierno el puerto cierra; mirad estado antes de ir.",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "enlace": "https://www.lovevda.it/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Colle+del+Gran+San+Bernardo%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "id": "rafting-dora-baltea",
+   "nombre": "Rafting en la Dora Baltea",
+   "donde": "Valle de Aosta",
+   "base": "aosta",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "descripcion": "Descenso en balsa por el río con monitores; plan activo de verano.",
+   "consejo": "Reservad con operador homologado.",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "enlace": "https://www.getyourguide.es/s/?q=rafting+Dora+Baltea+Aosta",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=rafting+Dora+Baltea%2C+Aosta%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "id": "fondue-fontina-cena",
+   "nombre": "Cena de fonduta valdostana con fontina",
+   "donde": "Aosta",
+   "base": "aosta",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Cena de fonduta de fontina, polenta concia y carbonade en un restaurante de montaña del centro.",
+   "enlace": "https://www.lovevda.it/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Restaurante+fonduta+valdostana%2C+Aosta%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "id": "aperitivo-aosta",
+   "nombre": "Aperitivo en el centro de Aosta",
+   "donde": "Aosta",
+   "base": "aosta",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Bares del casco histórico con vino de altura y embutidos locales antes de cenar.",
+   "enlace": "https://www.lovevda.it/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=centro+storico%2C+Aosta%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Fonduta valdostana",
+   "que_es": "fondue de fontina fundida con yema y leche, con pan",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "restaurantes de montaña de Aosta y Courmayeur",
+   "maps": "https://www.google.com/maps/search/?api=1&query=fonduta+valdostana%2C+Aosta%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "plato": "Polenta concia",
+   "que_es": "polenta con fontina y mantequilla",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias de Aosta y Cogne",
+   "maps": "https://www.google.com/maps/search/?api=1&query=polenta+concia%2C+Aosta%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "plato": "Carbonade valdostana",
+   "que_es": "guiso de ternera con vino tinto",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias del Valle de Aosta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=carbonade+valdostana%2C+Aosta%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "plato": "Boudin",
+   "que_es": "embutido de patata y grasa de cerdo",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "tiendas de productos locales y trattorias",
+   "maps": "https://www.google.com/maps/search/?api=1&query=boudin+valdostano%2C+Aosta%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "plato": "Lard d'Arnad DOP",
+   "que_es": "panceta curada en salmuera con hierbas",
+   "estilo": "mercado",
+   "coste": "medio",
+   "donde_probarlo": "charcuterías de Aosta y Courmayeur",
+   "maps": "https://www.google.com/maps/search/?api=1&query=lard+d%27Arnad%2C+Aosta%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "plato": "Fontina DOP",
+   "que_es": "queso blando de leche de vaca de alpe",
+   "estilo": "mercado",
+   "coste": "medio",
+   "donde_probarlo": "queserías y tiendas de productos locales",
+   "maps": "https://www.google.com/maps/search/?api=1&query=fontina+DOP%2C+Aosta%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "plato": "Tegole valdostane",
+   "que_es": "galletas finas de almendra y avellana",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías de Aosta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=tegole+valdostane%2C+Aosta%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "plato": "Caffè alla valdostana",
+   "que_es": "café con grappa en copa de madera compartida",
+   "estilo": "bebida",
+   "coste": "bajo",
+   "donde_probarlo": "cafés de Courmayeur y Aosta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=caff%C3%A8+alla+valdostana%2C+Courmayeur%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Casco histórico de Aosta",
+   "base": "aosta",
+   "plan": "aperitivo",
+   "descripcion": "Bares y vinotecas del centro peatonal para aperitivo y cena.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=centro+storico%2C+Aosta%2C+Italia",
+   "fuente": "https://www.lovevda.it/en"
+  },
+  {
+   "zona": "Centro de Courmayeur",
+   "base": "courmayeur",
+   "plan": "copas",
+   "descripcion": "Bares después del esquí en la calle principal del pueblo.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Via+Roma%2C+Courmayeur%2C+Italia",
+   "fuente": "https://www.courmayeurmontblanc.it/en"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "aosta",
+   "coste": "bajo",
+   "para": "Grupos con presupuesto muy justo; Aosta es lo más barato de la región.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Aosta"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "aosta",
+   "coste": "medio",
+   "para": "Grupos de 4-8 que cocinan y quieren espacio común.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Aosta--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Aosta"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "courmayeur",
+   "coste": "alto",
+   "para": "Esquiadores o senderistas del Mont Blanc con presupuesto holgado.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Courmayeur--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Courmayeur"
+    }
+   ]
+  },
+  {
+   "tipo": "rifugio",
+   "base": "cogne",
+   "coste": "medio",
+   "para": "Verano en el Gran Paradiso: dormir en refugio de montaña y salir temprano.",
+   "enlaces": [
+    {
+     "sitio": "Google Maps",
+     "url": "https://www.google.com/maps/search/?api=1&query=rifugio+Gran+Paradiso%2C+Cogne%2C+Italia"
+    }
+   ]
+  },
+  {
+   "tipo": "camping",
+   "base": "cogne",
+   "coste": "bajo",
+   "para": "Verano con tienda o caravana cerca del parque nacional.",
+   "enlaces": [
+    {
+     "sitio": "Google Maps",
+     "url": "https://www.google.com/maps/search/?api=1&query=camping%2C+Cogne%2C+Italia"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Cogne"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "cervinia",
+   "coste": "alto",
+   "para": "Esquí en Cervinia; los precios suben en temporada.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Breuil-Cervinia"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Celtica Valle d'Aosta",
+   "donde": "Val Veny (Courmayeur) y Aosta",
+   "cuando": "cada año, primeros días de julio",
+   "meses": [
+    7
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival de música, arte y cultura celta con talleres y puestos.",
+   "enlace": "https://balteus.lovevda.it/en/database/2/entertainment-and-shows/valle-d-aosta/celtica-valle-d-aosta/30973",
+   "fuente": "https://balteus.lovevda.it/en/database/2/entertainment-and-shows/valle-d-aosta/celtica-valle-d-aosta/30973"
+  },
+  {
+   "nombre": "Bataille des Reines",
+   "donde": "Pontey y otros pueblos del valle",
+   "cuando": "cada año, finales del verano y otoño",
+   "meses": [
+    9,
+    10
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Combates tradicionales entre vacas de raza valdostana con eliminatorias locales.",
+   "enlace": "https://www.lovevda.it/en/events",
+   "fuente": "https://www.lovevda.it/en/events"
+  },
+  {
+   "nombre": "Temporada de esquí en Cervinia",
+   "donde": "Breuil-Cervinia",
+   "cuando": "cada año, de finales de octubre a principios de mayo (2026/27: 24 octubre a 2 mayo)",
+   "meses": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Apertura de la estación al pie del Cervino con temporada muy larga.",
+   "enlace": "https://www.cervinia.it/en/",
+   "fuente": "https://www.cervinia.it/en/"
+  }
+ ],
+ "notas_honestas": [
+  "Webs bloqueadas a bots (Parque Gran Paradiso, Forte di Bard, Pila, termas Pré-Saint-Didier): enlazamos a lovevda.it y courmayeurmontblanc.it y a mapas.",
+  "Pila y Cogne: acceso sin coche (remonte desde Aosta, bus) no verificado en fuente oficial.",
+  "Eventos flojos: ninguno con fecha 2027 publicada; el calendario de ferias (Saint-Ours, mercadillo navideño) no se pudo verificar.",
+  "Sin precios ni horarios de remontes; confirmad en las webs oficiales."
+ ]
+}

@@ -1,0 +1,31 @@
+{
+  "zona": "piamonte",
+  "base": "torino",
+  "ciudad_referencia": "Turín",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 23,
+      "max": 30,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/turin/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": {
+      "min": 59,
+      "max": 158,
+      "fuente": "https://www.booking.com/city/it/torino.html?selected_currency=EUR | https://www.budgetyourtrip.com/italy/turin",
+      "calidad": "orientativo"
+    },
+    "comida_barata": {
+      "valor": 18.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Turin",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 1.7,
+      "fuente": "https://gtt.to.it/cms/en/howtouse",
+      "calidad": "verificado"
+    }
+  },
+  "notas": "hostel_noche: rango P25-P75 de 5 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=20.0, maximo=33.66); son precios 'desde' sin fechas concretas. doble_noche: min=59 es el precio 'From' mas bajo del titulo de la pagina de Booking.com para la ciudad (alojamiento mas barato listado, 2 adultos, 1 noche, sin fecha fija); max=158 es el precio medio de hotel para una pareja segun BudgetYourTrip (gasto declarado por viajeros). La horquilla mezcla ambas fuentes: es solo una guia aproximada, no un rango de apartamentos/dobles economicos garantizado. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Turin (rango Numbeo 15-25). transporte_billete: GTT Turin, billete ordinario \"City 100\" 100 min 1.70 EUR segun la pagina oficial en ingles; la pagina no muestra fecha y podria estar desactualizada (otras fuentes mencionan aumentos)."
+}

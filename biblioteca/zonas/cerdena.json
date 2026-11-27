@@ -1,0 +1,962 @@
+{
+ "id": "cerdena",
+ "nombre": "Cerdeña",
+ "nombre_corto": "Cerdeña",
+ "lema": "Calas de agua turquesa y nuraghes",
+ "descripcion": "Isla con las calas más espectaculares de Italia, ciudades con carácter propio (Cagliari, Alghero) y un interior de pastores, murales y poblados de la Edad del Bronce. Se vive distinta al resto de Italia y es grande: sin coche solo se aprovechan Cagliari, Alghero y el barco desde Cala Gonone.",
+ "perfil": {
+  "mar": 3,
+  "montana": 1,
+  "ciudad": 1,
+  "campo": 2,
+  "fiesta": 1,
+  "calma": 2,
+  "cultura": 2,
+  "gastronomia": 2,
+  "naturaleza": 3,
+  "playa": 3,
+  "aventura": 2,
+  "postal": 3
+ },
+ "nivel_precio": "alto",
+ "nivel_precio_nota": "Alquiler de coche, barcos y alojamiento en verano suben mucho; en temporada baja y fuera de la costa norte se contiene.",
+ "meses": {
+  "ideales": [
+   5,
+   6,
+   9
+  ],
+  "aceptables": [
+   4,
+   7,
+   10
+  ],
+  "evitar": [
+   8,
+   12,
+   1,
+   2
+  ],
+  "nota": "Junio y septiembre dan mar cálido sin la masificación de agosto, que es caro y está lleno. Barcos y baño son de mayo a octubre; en invierno muchas cosas de costa cierran."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "imprescindible",
+  "nota": "Las calas, el interior y los nuraghes quedan lejos de cualquier tren o bus útil para un grupo. Sin coche, quedaos en Cagliari (Poetto, Castello, Molentargius) o Alghero (casco, barco a Nettuno) y pensad en repartir gasolina entre varios. Para Cagliari-Alghero-Cala Gonone contad con muchas horas de carretera.",
+  "aeropuerto_recogida": "CAG",
+  "operadores": [
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.kayak.it/Avis-Auto-a-noleggio-Cagliari.CAG.AAVIS.cla.ksp",
+    "fuente": "https://www.kayak.it/Avis-Auto-a-noleggio-Cagliari.CAG.AAVIS.cla.ksp"
+   },
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.kayak.it/Hertz-Auto-a-noleggio-Cagliari.CAG.AHERTZ.cla.ksp",
+    "fuente": "https://www.kayak.it/Hertz-Auto-a-noleggio-Cagliari.CAG.AHERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Europcar-Cagliari.CAG.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Europcar-Cagliari.CAG.EUROPCAR.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "cagliari",
+   "nombre": "Cagliari",
+   "por_que": "La única base de la isla con mucho que hacer sin coche: Castello, mercado, Poetto en bus urbano y flamencos.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cagliari%2C+Italia"
+  },
+  {
+   "id": "alghero",
+   "nombre": "Alghero",
+   "por_que": "Casco amurallado catalán con bastiones al atardecer y barco a la Grotta di Nettuno; el resto del noroeste pide coche.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Alghero%2C+Italia"
+  },
+  {
+   "id": "cala-gonone",
+   "nombre": "Cala Gonone",
+   "por_que": "Puerto desde donde salen los barcos a Cala Luna y al Golfo di Orosei; pueblo pequeño y tranquilo, mejor con coche.",
+   "sin_coche": false,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cala+Gonone%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "CAG",
+    "nombre": "Cagliari – Elmas",
+    "ciudad": "Cagliari",
+    "a_la_base": "Cagliari está a pocos kilómetros del aeropuerto: hay tren y bus urbano al centro, y taxi; comprobad horarios en la web de Trenitalia."
+   },
+   {
+    "iata": "AHO",
+    "nombre": "Alghero – Fertilia",
+    "ciudad": "Alghero",
+    "a_la_base": "Fertilia está al lado de Alghero; hay bus urbano y taxi al casco antiguo."
+   },
+   {
+    "iata": "OLB",
+    "nombre": "Olbia – Costa Smeralda",
+    "ciudad": "Olbia",
+    "a_la_base": "Entrada al nordeste (Costa Smeralda, La Maddalena); Cala Gonone queda a unas horas en coche."
+   }
+  ],
+  "desde_espana": "Suelen volar low cost (Ryanair, Vueling, Volotea) desde Barcelona, Madrid y otras ciudades a Cagliari, Alghero y Olbia, con mucha más oferta de mayo a octubre. Mirad los tres aeropuertos y combinadlos (ida a uno, vuelta a otro) si vais a recorrer la isla.",
+  "rutas_directas": [
+   {
+    "origen": "Sevilla",
+    "origen_iata": "SVQ",
+    "destino_iata": "OLB",
+    "aerolinea": "Volotea",
+    "nota": "Ruta nueva desde 29 mayo 2026, dos vuelos semanales (martes y viernes); comprobad si sigue en 2027.",
+    "fuente": "https://www.lanuovasardegna.it/sassari/cronaca/2026/05/29/news/alghero-e-olbia-da-oggi-i-nuovi-collegamenti-aerei-verso-due-citta-europee-ecco-quali-sono-1.100876062"
+   }
+  ],
+  "desde_italia": "Desde Roma, Livorno, Génova o Civitavecchia hay ferris nocturnos baratos a Olbia, Golfo Aranci, Porto Torres o Cagliari; con vuelos desde Bolonia, Milán o Roma a los tres aeropuertos. No hay tren que llegue a la isla.",
+  "novedades": [
+   {
+    "nota": "Volotea abrió en mayo de 2026 Olbia–Sevilla dentro del concurso de rutas subvencionadas de la Región de Cerdeña.",
+    "fuente": "https://www.lanuovasardegna.it/sassari/cronaca/2026/05/29/news/alghero-e-olbia-da-oggi-i-nuovi-collegamenti-aerei-verso-due-citta-europee-ecco-quali-sono-1.100876062"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "Con coche podéis enlazar calas y pueblos a vuestro ritmo; sin coche, usad Cagliari o Alghero como base única y excursiones en barco. Las distancias entre zonas son largas.",
+  "tren": {
+   "nota": "Trenitalia cubre Cagliari y algunos tramos del sur y del norte, pero no llega a calas ni al Golfo di Orosei. El Trenino Verde es una experiencia turística, no transporte.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": null,
+  "ferry": [
+   {
+    "operador": "Grimaldi Lines",
+    "ruta": "Barcelona – Porto Torres",
+    "nota": "Ruta activa en la web de puertos de Grimaldi. No verificamos frecuencia, duración ni admisión de vehículos: comprobadlo con la naviera.",
+    "enlace": "https://www.grimaldi-lines.com/en/harbor/barcelona/",
+    "fuente": "https://www.grimaldi-lines.com/en/harbor/barcelona/"
+   }
+  ],
+  "camper": {
+   "operador": "Roadsurfer",
+   "nota": "Alquiler de furgonetas camper en Italia; enlazamos la página general del país, sin verificar oficina concreta en Cerdeña.",
+   "enlace": "https://roadsurfer.com/es/alquilar-camper/italia/",
+   "fuente": "https://roadsurfer.com/es/alquilar-camper/italia/"
+  }
+ },
+ "actividades": [
+  {
+   "id": "castello-cagliari",
+   "nombre": "Barrio de Castello y murallas",
+   "donde": "Cagliari",
+   "base": "cagliari",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Callejones medievales sobre la colina, catedral, torres pisanas y vistas a toda la bahía.",
+   "consejo": "Subid caminando desde la Marina: hay cuestas y escaleras.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Quartiere+Castello%2C+Cagliari%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Quartiere+Castello%2C+Cagliari%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Quartiere+Castello%2C+Cagliari%2C+Italia"
+  },
+  {
+   "id": "bastione-saint-remy",
+   "nombre": "Atardecer en el Bastione di Saint Remy",
+   "donde": "Cagliari",
+   "base": "cagliari",
+   "tipo": "postal",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Terraza monumental sobre el casco con vista a la ciudad y al mar; plan de aperitivo y fotos al atardecer.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Bastione+di+Saint+Remy%2C+Cagliari%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Bastione+di+Saint+Remy%2C+Cagliari%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Bastione+di+Saint+Remy%2C+Cagliari%2C+Italia"
+  },
+  {
+   "id": "mercato-san-benedetto",
+   "nombre": "Mercato civico di San Benedetto",
+   "donde": "Cagliari",
+   "base": "cagliari",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Mercado municipal grande con pescado fresco, quesos y embutidos sardos; se pica comida barata de pie.",
+   "consejo": "Mejor por la mañana: los puestos cierran a mediodía.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Mercato+di+San+Benedetto%2C+Cagliari%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+di+San+Benedetto%2C+Cagliari%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Mercato+di+San+Benedetto%2C+Cagliari%2C+Italia"
+  },
+  {
+   "id": "poetto",
+   "nombre": "Playa del Poetto",
+   "donde": "Cagliari",
+   "base": "cagliari",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Larga playa urbana de arena clara a las afueras de Cagliari, con chiringuitos y bus urbano desde el centro.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Spiaggia+del+Poetto%2C+Cagliari%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+del+Poetto%2C+Cagliari%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Spiaggia+del+Poetto%2C+Cagliari%2C+Italia"
+  },
+  {
+   "id": "molentargius",
+   "nombre": "Parque de Molentargius: flamencos",
+   "donde": "Cagliari",
+   "base": "cagliari",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Humedal junto al Poetto con salinas históricas y colonias de flamencos rosas, visible a pie o en bici.",
+   "consejo": "Llevad prismáticos si tenéis; hay más fauna en invierno y primavera.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Parco+Naturale+Molentargius+Saline%2C+Cagliari%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Parco+Naturale+Molentargius+Saline%2C+Cagliari%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Parco+Naturale+Molentargius+Saline%2C+Cagliari%2C+Italia"
+  },
+  {
+   "id": "sella-del-diavolo",
+   "nombre": "Ruta a la Sella del Diavolo",
+   "donde": "Cagliari",
+   "base": "cagliari",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza",
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "meses": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ],
+   "descripcion": "Senderismo corto hasta el promontorio sobre el Poetto, con vistas a la bahía de Cagliari.",
+   "consejo": "Evitad el mediodía de verano: casi sin sombra.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Sella+del+Diavolo%2C+Cagliari%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sella+del+Diavolo%2C+Cagliari%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Sella+del+Diavolo%2C+Cagliari%2C+Italia"
+  },
+  {
+   "id": "anfiteatro-romano",
+   "nombre": "Anfiteatro romano de Cagliari",
+   "donde": "Cagliari",
+   "base": "cagliari",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Anfiteatro excavado en la roca de época romana, a un paso de Castello; visita corta y fácil de encajar.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Anfiteatro+Romano%2C+Cagliari%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Anfiteatro+Romano%2C+Cagliari%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Anfiteatro+Romano%2C+Cagliari%2C+Italia"
+  },
+  {
+   "id": "villasimius-capo-carbonara",
+   "nombre": "Villasimius y Capo Carbonara",
+   "donde": "Villasimius",
+   "base": "cagliari",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua",
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Costa al este de Cagliari con calas de arena blanca y agua clara; ideal para snorkel en verano.",
+   "consejo": "Madrugad en julio-agosto o no habrá sitio para aparcar.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Villasimius%2C+Italia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Villasimius%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Villasimius%2C+Italia%2C+Italia"
+  },
+  {
+   "id": "su-nuraxi",
+   "nombre": "Su Nuraxi di Barumini",
+   "donde": "Barumini",
+   "base": "cagliari",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Poblado nurágico de la Edad del Bronce declarado Patrimonio UNESCO, el mejor nuraghe de la isla.",
+   "consejo": "Visita con guía recomendada.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Su+Nuraxi%2C+Barumini%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Su+Nuraxi%2C+Barumini%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Su+Nuraxi%2C+Barumini%2C+Italia"
+  },
+  {
+   "id": "trenino-verde",
+   "nombre": "Trenino Verde Mandas–Arbatax",
+   "donde": "Mandas",
+   "base": "cagliari",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Tren histórico de vía estrecha que cruza el interior por pueblos y montañas; viaje lento más que transporte.",
+   "consejo": "Funciona sobre todo en temporada turística: comprobad fechas con la operadora.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Stazione+di+Mandas%2C+Italia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Stazione+di+Mandas%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Stazione+di+Mandas%2C+Italia%2C+Italia"
+  },
+  {
+   "id": "bastioni-alghero",
+   "nombre": "Bastioni y atardecer en Alghero",
+   "donde": "Alghero",
+   "base": "alghero",
+   "tipo": "postal",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Paseo por las murallas sobre el mar con aperitivo al atardecer; la imagen clásica de Alghero.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Bastioni+Marco+Polo%2C+Alghero%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Bastioni+Marco+Polo%2C+Alghero%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Bastioni+Marco+Polo%2C+Alghero%2C+Italia"
+  },
+  {
+   "id": "centro-alghero",
+   "nombre": "Casco antiguo catalán de Alghero",
+   "donde": "Alghero",
+   "base": "alghero",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Calles empedradas con herencia catalana (aún se habla alguerés), iglesias, torres y tiendas de coral.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Alghero%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Alghero%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Alghero%2C+Italia"
+  },
+  {
+   "id": "grotta-nettuno",
+   "nombre": "Grotta di Nettuno en barco",
+   "donde": "Capo Caccia",
+   "base": "alghero",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "agua",
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "meses": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Cueva marina con estalactitas junto a Capo Caccia; barcos desde el puerto de Alghero y escalera de unos 650 escalones.",
+   "consejo": "En temporada baja o con mar malo los barcos no salen: preguntad antes.",
+   "enlace": "https://www.getyourguide.es/s/?q=Grotta+di+Nettuno+Alghero",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Grotta+di+Nettuno%2C+Alghero%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Grotta+di+Nettuno%2C+Alghero%2C+Italia"
+  },
+  {
+   "id": "capo-caccia-porto-conte",
+   "nombre": "Capo Caccia y Parque de Porto Conte",
+   "donde": "Alghero",
+   "base": "alghero",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Acantilados altos, faro y vistas al mar desde el cabo; poco transporte público.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Capo+Caccia%2C+Alghero%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Capo+Caccia%2C+Alghero%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Capo+Caccia%2C+Alghero%2C+Italia"
+  },
+  {
+   "id": "nuraghe-palmavera",
+   "nombre": "Nuraghe Palmavera",
+   "donde": "Alghero",
+   "base": "alghero",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Poblado nurágico a pocos kilómetros de Alghero, rodeado de pinos y fácil de combinar con Capo Caccia.",
+   "consejo": "Comprobad horarios antes de ir.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Nuraghe+Palmavera%2C+Alghero%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Nuraghe+Palmavera%2C+Alghero%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Nuraghe+Palmavera%2C+Alghero%2C+Italia"
+  },
+  {
+   "id": "la-pelosa",
+   "nombre": "Spiaggia La Pelosa",
+   "donde": "Stintino",
+   "base": "alghero",
+   "tipo": "playa",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Playa de arena blanca y agua poco profunda frente a la Torre della Pelosa; la más fotogenizada de Cerdeña.",
+   "consejo": "En temporada alta el acceso tiene cupo y pago y exige reserva previa: comprobad las normas vigentes en la web del Comune de Stintino.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Spiaggia+La+Pelosa%2C+Stintino%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+La+Pelosa%2C+Stintino%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Spiaggia+La+Pelosa%2C+Stintino%2C+Italia"
+  },
+  {
+   "id": "cala-goloritze",
+   "nombre": "Cala Goloritzé",
+   "donde": "Baunei",
+   "base": "cala-gonone",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "playa",
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "alto",
+   "ambiente": "mixto",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Cala con aguja de roca, a la que se llega solo a pie por un sendero largo desde el altiplano de Su Golgo.",
+   "consejo": "Cupo diario y reserva obligatoria en temporada: confirmadlo en la web del parque nacional.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Cala+Goloritz%C3%A9%2C+Baunei%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cala+Goloritz%C3%A9%2C+Baunei%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Cala+Goloritz%C3%A9%2C+Baunei%2C+Italia"
+  },
+  {
+   "id": "cala-luna-barco",
+   "nombre": "Cala Luna y calas del Golfo di Orosei en barco",
+   "donde": "Cala Gonone",
+   "base": "cala-gonone",
+   "tipo": "agua",
+   "tipos_extra": [
+    "playa",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Excursión en barco desde el puerto de Cala Gonone a Cala Luna y otras calas del Golfo di Orosei, con parada para bañarse y hacer snorkel.",
+   "consejo": "Existe también sendero a pie hasta Cala Luna (largo y expuesto, llevad agua).",
+   "enlace": "https://www.getyourguide.es/s/?q=Cala+Gonone+barco+Cala+Luna",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cala+Gonone+porto%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Cala+Gonone+porto%2C+Italia"
+  },
+  {
+   "id": "grotta-bue-marino",
+   "nombre": "Grotta del Bue Marino",
+   "donde": "Cala Gonone",
+   "base": "cala-gonone",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "meses": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Gran cueva marina del Golfo di Orosei, visitable en barco desde Cala Gonone con visita guiada.",
+   "consejo": "Solo en temporada; las salidas dependen del mar.",
+   "enlace": "https://www.getyourguide.es/s/?q=Grotta+del+Bue+Marino+Cala+Gonone",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Grotta+del+Bue+Marino%2C+Dorgali%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Grotta+del+Bue+Marino%2C+Dorgali%2C+Italia"
+  },
+  {
+   "id": "costa-smeralda-maddalena",
+   "nombre": "Archipiélago de La Maddalena en barco",
+   "donde": "Palau",
+   "base": "cala-gonone",
+   "tipo": "agua",
+   "tipos_extra": [
+    "playa",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "alto",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Excursión desde Palau a las islas de La Maddalena y Spargi: aguas turquesa y calas con snorkel. Costa Smeralda es la zona cara del norte.",
+   "consejo": "En La Maddalena y Costa Smeralda los precios se disparan en agosto.",
+   "enlace": "https://www.getyourguide.es/s/?q=La+Maddalena+barco+Palau",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Palau%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Palau%2C+Italia%2C+Italia"
+  },
+  {
+   "id": "orgosolo-mamoiada",
+   "nombre": "Orgosolo (murales) y Mamoiada",
+   "donde": "Barbagia",
+   "base": "cala-gonone",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Pueblos de la Barbagia con murales políticos en las fachadas (Orgosolo) y las máscaras Mamuthones e Issohadores (Mamoiada).",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Orgosolo%2C+Italia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Orgosolo%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Orgosolo%2C+Italia%2C+Italia"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Porceddu",
+   "que_es": "cochinillo asado lentamente en leña, plato estrella de las fiestas sardas",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "agriturismos y trattorie del interior",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Agriturismo+porceddu%2C+Cerde%C3%B1a%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Agriturismo+porceddu%2C+Cerde%C3%B1a%2C+Italia"
+  },
+  {
+   "plato": "Culurgiones",
+   "que_es": "pasta rellena en forma de espiga, típica de Ogliastra",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorie del centro de la isla y Cagliari",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Culurgiones%2C+Cagliari%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Culurgiones%2C+Cagliari%2C+Italia"
+  },
+  {
+   "plato": "Malloreddus",
+   "que_es": "gnocchetti sardos con salchicha y tomate, el primer plato más básico",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "cualquier trattoria de Cagliari o Alghero",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trattoria+Cagliari%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Trattoria+Cagliari%2C+Italia%2C+Italia"
+  },
+  {
+   "plato": "Fregola con arselle",
+   "que_es": "fregola tostada con almejas, plato marinero del sur",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "restaurantes de pescado de Cagliari y Villasimius",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cagliari+porto%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Cagliari+porto%2C+Italia%2C+Italia"
+  },
+  {
+   "plato": "Pane carasau y guttiau",
+   "que_es": "pan fino y crujiente de pastores, con aceite y sal",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "panaderías y supermercados; tapa en cualquier bar",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Panificio%2C+Cagliari%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Panificio%2C+Cagliari%2C+Italia"
+  },
+  {
+   "plato": "Seadas",
+   "que_es": "buñuelo de queso fresco frito con miel, postre típico",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "trattorie y puestos de ferias",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Seadas%2C+Cagliari%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Seadas%2C+Cagliari%2C+Italia"
+  },
+  {
+   "plato": "Pecorino sardo",
+   "que_es": "queso de oveja curado, tierno o más fuerte",
+   "estilo": "mercado",
+   "coste": "bajo",
+   "donde_probarlo": "mercado de San Benedetto de Cagliari",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+di+San+Benedetto%2C+Cagliari%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Mercato+di+San+Benedetto%2C+Cagliari%2C+Italia"
+  },
+  {
+   "plato": "Mirto",
+   "que_es": "licor de bayas de mirto, digestivo típico",
+   "estilo": "bebida",
+   "coste": "bajo",
+   "donde_probarlo": "final de comida en trattorie y bares",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Bar+Cagliari%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Bar+Cagliari%2C+Italia%2C+Italia"
+  },
+  {
+   "plato": "Aragosta alla catalana",
+   "que_es": "langosta fría con tomate y cebolla, plato del casco de Alghero",
+   "estilo": "trattoria",
+   "coste": "alto",
+   "donde_probarlo": "restaurantes del casco antiguo de Alghero",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Alghero+centro+storico%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Alghero+centro+storico%2C+Italia%2C+Italia"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Marina y Castello",
+   "base": "cagliari",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo en las callejuelas de la Marina y sobre los bastiones de Castello; ambiente joven y universitario.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Marina%2C+Cagliari%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Marina%2C+Cagliari%2C+Italia"
+  },
+  {
+   "zona": "Bastioni de Alghero",
+   "base": "alghero",
+   "plan": "aperitivo",
+   "descripcion": "Terrazas sobre las murallas a la hora del atardecer, luego copas por el casco antiguo.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Bastioni%2C+Alghero%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Bastioni%2C+Alghero%2C+Italia"
+  },
+  {
+   "zona": "Poetto",
+   "base": "cagliari",
+   "plan": "copas",
+   "descripcion": "Chiringuitos de la playa con música en verano; el bus nocturno suele ser escaso, mirad vuelta antes.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+del+Poetto%2C+Cagliari%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Spiaggia+del+Poetto%2C+Cagliari%2C+Italia"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "cagliari",
+   "coste": "bajo",
+   "para": "Grupos con presupuesto ajustado, cerca de Castello o Marina.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Cagliari"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Cagliari--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "cagliari",
+   "coste": "medio",
+   "para": "Grupos de 4-8 que quieren cocinar y tener salón común.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Cagliari"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Cagliari--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "alghero",
+   "coste": "medio",
+   "para": "Grupos pequeños que buscan estar dentro del casco amurallado.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Alghero"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Alghero--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "alghero",
+   "coste": "medio",
+   "para": "Grupos que combinan playa y centro.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Alghero"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Alghero--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "agriturismo",
+   "base": "cala-gonone",
+   "coste": "medio",
+   "para": "Quienes van en coche y quieren comida sarda casera y calma.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Dorgali"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Dorgali--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "camping",
+   "base": "cala-gonone",
+   "coste": "bajo",
+   "para": "Grupos que viajan con presupuesto mínimo y tienda o autocaravana.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Cala+Gonone"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Cala%20Gonone--Italia/homes"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Festa di Sant'Efisio",
+   "donde": "Cagliari",
+   "cuando": "cada año, del 1 al 4 de mayo",
+   "meses": [
+    5
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Gran procesión con trajes tradicionales de toda la isla, con carros y caballos, desde Cagliari hasta Nora.",
+   "enlace": "https://www.insardegnacondani.it/eventi/sant-efisio-cagliari/",
+   "fuente": "https://www.insardegnacondani.it/eventi/sant-efisio-cagliari/"
+  },
+  {
+   "nombre": "Carnevale Storico de Mamoiada",
+   "donde": "Mamoiada",
+   "cuando": "cada año, entre finales de enero y febrero (hasta el martes de carnaval)",
+   "meses": [
+    1,
+    2
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Desfiles de Mamuthones e Issohadores, máscaras ancestrales sardas.",
+   "enlace": "https://www.sardegnaturismo.it/es/node/288041",
+   "fuente": "https://www.sardegnaturismo.it/es/node/288041"
+  },
+  {
+   "nombre": "Cavalcata Sarda",
+   "donde": "Sassari",
+   "cuando": "cada año, finales de mayo; fechas en la web oficial",
+   "meses": [
+    5
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Desfile de trajes tradicionales de toda Cerdeña con jinetes y música folclórica.",
+   "enlace": "https://www.sardegnaturismo.it/es",
+   "fuente": "https://www.sardegnaturismo.it/es"
+  }
+ ],
+ "notas_honestas": [
+  "Búsqueda web y fetch estuvieron agotados al escribir este archivo: casi todos los enlaces de actividades son el patrón seguro de mapa, no webs oficiales (Su Nuraxi, Trenino Verde, Molentargius, La Pelosa, Cala Goloritzé tienen web oficial pero no la pudimos abrir).",
+  "Normas de acceso a La Pelosa y a Cala Goloritzé (cupo, pago, reserva) descritas en general; no hemos verificado cifras ni fechas de este año.",
+  "Cavalcata Sarda enlaza a la portada de sardegnaturismo.it sin haber abierto esa página en esta sesión.",
+  "Sin ruta aérea directa verificada desde Barcelona/Madrid; solo Olbia–Sevilla (Volotea).",
+  "Faltan bus ARST y horarios de barcos con enlace oficial; no se incluyen locales concretos."
+ ]
+}

@@ -1,0 +1,868 @@
+{
+ "id": "toscana",
+ "nombre": "Toscana",
+ "nombre_corto": "Toscana",
+ "lema": "Renacimiento, colinas y termas libres",
+ "descripcion": "Florencia, Siena y Pisa conectadas en tren barato, con pueblos medievales, mercados y pozas termales gratuitas. Muy fácil para grupos sin coche, aunque los pueblos del campo piden volante.",
+ "perfil": {
+  "mar": 0,
+  "montana": 1,
+  "ciudad": 3,
+  "campo": 3,
+  "fiesta": 1,
+  "calma": 2,
+  "cultura": 3,
+  "gastronomia": 3,
+  "naturaleza": 2,
+  "playa": 0,
+  "aventura": 1,
+  "postal": 3
+ },
+ "nivel_precio": "alto",
+ "nivel_precio_nota": "Florencia y los pueblos más famosos son de los destinos más caros de Italia; Pisa y Siena salen algo mejor.",
+ "meses": {
+  "ideales": [
+   4,
+   5,
+   6,
+   9,
+   10
+  ],
+  "aceptables": [
+   3,
+   7,
+   11
+  ],
+  "evitar": [
+   8
+  ],
+  "nota": "Primavera y otoño sin calor ni colas; agosto es muy caluroso y cierran muchos locales. En invierno las termas libres son buena idea."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "util",
+  "nota": "Sin coche funcionan Florencia, Pisa, Siena, Lucca y San Gimignano (tren y bus). Para Val d'Orcia, Chianti y las termas libres compensa alquilar un día entre 4 o más. Los centros tienen ZTL: aparcad fuera.",
+  "aeropuerto_recogida": "PSA",
+  "operadores": [
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Hertz-Florencia.FLR.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Hertz-Florencia.FLR.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Avis-Florencia.FLR.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Avis-Florencia.FLR.AVIS.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Europcar-Florencia.FLR.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Europcar-Florencia.FLR.EUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Enterprise",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Enterprise-Florencia.FLR.ENTERPRISE.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Enterprise-Florencia.FLR.ENTERPRISE.cla.ksp"
+   },
+   {
+    "nombre": "Goldcar (Pisa)",
+    "enlace": "https://www.discovercars.com/es/partners/goldcar-1630",
+    "fuente": "https://www.discovercars.com/es/partners/goldcar-1630"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "florencia",
+   "nombre": "Florencia",
+   "por_que": "Estación central con trenes a Pisa, Siena, Lucca y Bolonia, vida nocturna y la mayor oferta de hostels.",
+   "sin_coche": true,
+   "ambiente": "fiesta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Florencia%2C+Italia"
+  },
+  {
+   "id": "siena",
+   "nombre": "Siena",
+   "por_que": "Casco medieval compacto y estudiantil, con buses a San Gimignano y Chianti; la mejor puerta a las termas y la Val d'Orcia.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Siena%2C+Italia"
+  },
+  {
+   "id": "pisa",
+   "nombre": "Pisa",
+   "por_que": "Aeropuerto a pocos minutos y tren corto a Lucca y Florencia; ciudad universitaria más barata que Florencia.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Pisa%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "PSA",
+    "nombre": "Pisa – Galileo Galilei",
+    "ciudad": "Pisa",
+    "a_la_base": "Tren o bus corto a Pisa centro; a Florencia, con tren regional desde Pisa Centrale."
+   },
+   {
+    "iata": "FLR",
+    "nombre": "Florencia – Peretola",
+    "ciudad": "Florencia",
+    "a_la_base": "Hay conexión con el centro de Florencia; comprobad el medio en la web del aeropuerto."
+   }
+  ],
+  "desde_espana": "Ryanair opera Pisa desde varias ciudades españolas; Florencia tiene menos vuelos directos. Comprobad siempre fechas y frecuencias al buscar.",
+  "rutas_directas": [
+   {
+    "origen": "Valencia",
+    "origen_iata": "VLC",
+    "destino_iata": "PSA",
+    "aerolinea": "Ryanair",
+    "nota": "comprobad si opera en vuestras fechas",
+    "fuente": "https://www.ryanair.com/gb/en/flights/flights-from-pisa-to-valencia-vlc"
+   },
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "PSA",
+    "aerolinea": "Ryanair",
+    "nota": "comprobad si opera en vuestras fechas",
+    "fuente": "https://www.opodo.es/vuelos/aerolinea/FR/ryanair/PSA/pisa/BCN/barcelona/"
+   },
+   {
+    "origen": "Madrid",
+    "origen_iata": "MAD",
+    "destino_iata": "PSA",
+    "aerolinea": "Ryanair",
+    "nota": "comprobad si opera en vuestras fechas",
+    "fuente": "https://www.edreams.net/es/aerolinea/FR/ryanair/MAD/madrid/PSA/pisa/"
+   }
+  ],
+  "desde_italia": "Florencia está en la línea de alta velocidad entre Milán, Bolonia y Roma; desde ahí, trenes regionales a Pisa, Lucca y Siena, y FlixBus entre ciudades.",
+  "novedades": [
+   {
+    "nota": "El billete combinado tren+avión de iryo y ITA Airways también cubre Florencia, comprado a la vez en ita-airways.com o iryo.eu.",
+    "fuente": "https://www.elperiodic.com/viajar-entre-comunitat-valenciana-italia-nunca-facil-funciona-billete-tren-avion_1002354"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "Sin coche, tren regional entre Florencia, Pisa, Lucca y Siena (esta última mejor en bus). Con coche, Val d'Orcia y Chianti, pero cuidado con las ZTL.",
+  "tren": {
+   "nota": "Trenitalia cubre Florencia–Pisa–Lucca; a Siena es más cómodo el bus.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Conecta ciudades de Toscana y de Italia; solo dentro de Italia.",
+   "enlace": "https://www.flixbus.it/autobus/firenze",
+   "fuente": "https://www.flixbus.it/azienda/stampa/flixbus-offerta-estiva-2026"
+  },
+  "ferry": [],
+  "camper": {
+   "operador": "Roadsurfer",
+   "nota": "Alquiler de campers en Italia; enlace a la página general del país.",
+   "enlace": "https://roadsurfer.com/es/alquilar-camper/italia/",
+   "fuente": "https://roadsurfer.com/es/alquilar-camper/italia/"
+  }
+ },
+ "actividades": [
+  {
+   "id": "uffizi",
+   "nombre": "Galería Uffizi",
+   "donde": "Florencia",
+   "base": "florencia",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Botticelli, Leonardo y Caravaggio en el museo más famoso de Florencia; entrad con hora para no comer cola.",
+   "consejo": "Reservad con antelación en la web oficial; evitad las webs de reventa.",
+   "enlace": "https://uffizi.it/en/tickets",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Galleria+degli+Uffizi%2C+Florencia%2C+Italia",
+   "fuente": "https://uffizi.it/en/tickets"
+  },
+  {
+   "id": "piazzale-michelangelo-san-miniato",
+   "nombre": "Piazzale Michelangelo y San Miniato al Monte",
+   "donde": "Florencia",
+   "base": "florencia",
+   "tipo": "postal",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "descripcion": "Subid a pie al mirador más famoso de la ciudad para ver el atardecer sobre el Arno y seguid hasta la iglesia de San Miniato, con vistas igual de buenas y menos gente.",
+   "consejo": "Llevad bebida y algo de picar de abajo, arriba todo es más caro.",
+   "enlace": "https://www.visititaly.eu/places-and-tours/top-best-views-of-florence",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazzale+Michelangelo%2C+Florencia%2C+Italia",
+   "fuente": "https://www.visititaly.eu/places-and-tours/top-best-views-of-florence"
+  },
+  {
+   "id": "mercato-centrale",
+   "nombre": "Mercato Centrale",
+   "donde": "Florencia",
+   "base": "florencia",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "2h",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Mercado cubierto en San Lorenzo: abajo puestos tradicionales y arriba un food court donde cada uno pide lo que quiere sin discutir sitio.",
+   "enlace": "https://italia.it/en/tuscany/florence/mercato-centrale-florence",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+Centrale%2C+Florencia%2C+Italia",
+   "fuente": "https://italia.it/en/tuscany/florence/mercato-centrale-florence"
+  },
+  {
+   "id": "sant-ambrogio",
+   "nombre": "Mercado de Sant'Ambrogio",
+   "donde": "Florencia",
+   "base": "florencia",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Mercado de barrio donde comen los florentinos: fruta, queso y puestos de comida casera, mucho menos turístico que San Lorenzo.",
+   "consejo": "Mejor por la mañana; por la tarde el mercado ya está recogido.",
+   "enlace": "https://feelflorence.it/en/node/12043",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+di+Sant%27Ambrogio%2C+Florencia%2C+Italia",
+   "fuente": "https://feelflorence.it/en/node/12043"
+  },
+  {
+   "id": "oltrarno-atardecer",
+   "nombre": "Ponte Vecchio y Oltrarno al atardecer",
+   "donde": "Florencia",
+   "base": "florencia",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal",
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Cruzad el Ponte Vecchio, perdeos por las calles de artesanos del Oltrarno y acabad con un aperitivo en la plaza de Santo Spirito.",
+   "enlace": "https://www.florencetourism.org/free-things-to-do-in-florence/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Santo+Spirito%2C+Florencia%2C+Italia",
+   "fuente": "https://www.florencetourism.org/free-things-to-do-in-florence/"
+  },
+  {
+   "id": "cafe-historico-florencia",
+   "nombre": "Merienda en un café histórico",
+   "donde": "Florencia",
+   "base": "florencia",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Tomad un café y un dulce en Caffè Gilli, en Piazza della Repubblica, abierto desde 1733 con decoración modernista; en barra sale más barato que sentados.",
+   "enlace": "https://www.visittuscany.com/it/idee/viaggio-nel-tempo-4-caffe-storici-in-toscana/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Caff%C3%A8+Gilli%2C+Piazza+della+Repubblica%2C+Florencia%2C+Italia",
+   "fuente": "https://www.visittuscany.com/it/idee/viaggio-nel-tempo-4-caffe-storici-in-toscana/"
+  },
+  {
+   "id": "siena-campo",
+   "nombre": "Piazza del Campo y Torre del Mangia",
+   "donde": "Siena",
+   "base": "siena",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "descripcion": "Sentaos en la plaza en forma de concha, donde se corre el Palio, y subid a la Torre del Mangia o a la catedral para ver los tejados rojos.",
+   "consejo": "La subida a la torre tiene aforo limitado; id pronto o mirad entrada en la web de la ciudad.",
+   "enlace": "https://www.visittuscany.com/en/attractions/piazza-del-campo-siena/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Campo%2C+Siena%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/attractions/piazza-del-campo-siena/"
+  },
+  {
+   "id": "siena-contrade-noche",
+   "nombre": "Siena de noche: contrade y plazas",
+   "donde": "Siena",
+   "base": "siena",
+   "tipo": "postal",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Con el centro casi vacío de excursionistas, paseo por callejones de las contrade (cada una con su fuente y su bandera) y cena o copa en el ambiente universitario.",
+   "enlace": "https://www.visittuscany.com/en/destinations/siena/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Contrada+della+Selva%2C+Siena%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/destinations/siena/"
+  },
+  {
+   "id": "san-gimignano",
+   "nombre": "San Gimignano, el pueblo de las torres",
+   "donde": "San Gimignano",
+   "base": "siena",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Pueblo medieval amurallado con torres de piedra, que se hace bien en autobús desde Siena y se ve en media jornada.",
+   "consejo": "Llegad temprano o al final de la tarde; entre las 11 y las 16 se llena de grupos.",
+   "enlace": "https://www.visittuscany.com/en/ideas/san-gimignano-food-and-wine-itinerary",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=San+Gimignano%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/ideas/san-gimignano-food-and-wine-itinerary"
+  },
+  {
+   "id": "pisa-miracoli",
+   "nombre": "Piazza dei Miracoli y Torre de Pisa",
+   "donde": "Pisa",
+   "base": "pisa",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "La torre inclinada, la catedral y el baptisterio en un césped enorme; la plaza se pisa gratis y se paga solo por entrar a los monumentos.",
+   "consejo": "Subir a la torre exige entrada con hora; comprad solo en la web oficial de la Opera della Primaziale.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+dei+Miracoli%2C+Pisa%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+dei+Miracoli%2C+Pisa%2C+Italia",
+   "fuente": "https://visititaly.eu/tickets/tower-of-pisa"
+  },
+  {
+   "id": "pisa-lungarno-noche",
+   "nombre": "Lungarno y plazas universitarias de Pisa",
+   "donde": "Pisa",
+   "base": "pisa",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Pisa es ciudad de estudiantes: aperitivo junto al río Arno y copas por Piazza delle Vettovaglie y alrededores de Piazza dei Cavalieri, sede de la Scuola Normale.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+delle+Vettovaglie%2C+Pisa%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+delle+Vettovaglie%2C+Pisa%2C+Italia",
+   "fuente": "https://www.visittuscany.com/it/idee/viaggio-nel-tempo-4-caffe-storici-in-toscana/"
+  },
+  {
+   "id": "lucca-murallas-bici",
+   "nombre": "Murallas de Lucca en bici",
+   "donde": "Lucca",
+   "base": "pisa",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Alquilad bicis y dad la vuelta a las murallas renacentistas, un anillo arbolado y llano de unos 4 km por encima del casco antiguo, con paradas en los bastiones.",
+   "consejo": "Lucca se llega en tren regional desde Pisa o Florencia; las bicis se alquilan junto a las puertas de la muralla.",
+   "enlace": "https://www.turismo.lucca.it/en/information/how-to-get-around/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mura+di+Lucca%2C+Italia",
+   "fuente": "https://www.turismo.lucca.it/en/information/how-to-get-around/"
+  },
+  {
+   "id": "saturnia",
+   "nombre": "Cascate del Mulino (Saturnia)",
+   "donde": "Saturnia",
+   "base": "siena",
+   "tipo": "bienestar",
+   "tipos_extra": [
+    "agua",
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Pozas termales de agua sulfurosa caliente y libres, entre cascadas de travertino, en plena Maremma.",
+   "consejo": "Es acceso libre y sin servicios, y se llena en fin de semana. Id entre semana, llevad chanclas y toalla, no dejéis basura y respetad cualquier aviso local. Está lejos: unas 1,5 h en coche desde Siena.",
+   "enlace": "https://www.visittuscany.com/en/attractions/cascate-del-mulino-hot-springs-in-saturnia/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cascate+del+Mulino%2C+Saturnia%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/attractions/cascate-del-mulino-hot-springs-in-saturnia/"
+  },
+  {
+   "id": "bagni-san-filippo",
+   "nombre": "Fosso Bianco (Bagni San Filippo)",
+   "donde": "Bagni San Filippo",
+   "base": "siena",
+   "tipo": "bienestar",
+   "tipos_extra": [
+    "agua",
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Camino corto por el bosque hasta un arroyo caliente con formaciones calcáreas blancas, la ballena blanca, y pozas libres.",
+   "consejo": "Mejor en otoño e invierno, con el agua caliente y menos gente. Llevad calzado que se pueda mojar y toalla; el acceso es libre y no hay vestuarios.",
+   "enlace": "https://www.bagnisanfilippoterme.it/fosso-bianco.html",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Fosso+Bianco%2C+Bagni+San+Filippo%2C+Italia",
+   "fuente": "https://www.bagnisanfilippoterme.it/fosso-bianco.html"
+  },
+  {
+   "id": "val-orcia",
+   "nombre": "Val d'Orcia: Pienza, Montepulciano y Bagno Vignoni",
+   "donde": "Val d'Orcia",
+   "base": "siena",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal",
+    "gastronomia"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Colinas de cipreses, pueblos de piedra y pecorino; las vistas son lo mejor, y sin coche solo se llega a algún pueblo en bus regional.",
+   "consejo": "Para 4 o más, el coche de alquiler compensa mucho en este día.",
+   "enlace": "https://www.italia.it/en/tuscany/siena/things-to-do/bagno-vignoni-hot-springs",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Val+d%27Orcia%2C+Toscana%2C+Italia",
+   "fuente": "https://visittuscany.com/en/ideas/val-dorcia-hot-baths-and-more"
+  },
+  {
+   "id": "chianti-vino",
+   "nombre": "Ruta del vino en el Chianti",
+   "donde": "Chianti",
+   "base": "florencia",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Visita y cata en una bodega del Chianti Classico, con el viñedo de fondo; reservad, porque casi todas piden cita.",
+   "consejo": "Que conduzca uno que no beba; hay catas con comida incluida.",
+   "enlace": "https://www.antinori.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Chianti+Classico%2C+Toscana%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/ideas/top-10-foods-you-must-eat-in-tuscany/"
+  },
+  {
+   "id": "duomo-florencia",
+   "nombre": "Duomo de Florencia y cúpula de Brunelleschi",
+   "donde": "Florencia",
+   "base": "florencia",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "alto",
+   "ambiente": "mixto",
+   "descripcion": "Subir los escalones de la cúpula da la mejor vista del centro de Florencia; hay entradas combinadas para varios monumentos.",
+   "consejo": "La subida pide entrada con hora: reservad antes de ir.",
+   "enlace": "https://www.getyourguide.es/s/?q=Duomo+Florencia",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Duomo+di+Firenze%2C+Italia",
+   "fuente": "https://visittuscany.com/en/ideas/climbing-towers-in-tuscany"
+  },
+  {
+   "id": "pisa-lucca-dia",
+   "nombre": "Pisa y Lucca en un día en tren",
+   "donde": "Lucca",
+   "base": "pisa",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Torre por la mañana en Pisa, tren regional a Lucca y vuelta en bici por las murallas; dos clásicos sin coche.",
+   "enlace": "https://www.rome2rio.com/es/map/Pisa/Lucca",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Estaci%C3%B3n+Lucca%2C+Italia",
+   "fuente": "https://www.turismo.lucca.it/en/information/how-to-get-around/"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Lampredotto",
+   "que_es": "bocadillo de callos cocidos en caldo, el street food de Florencia",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "puestos de callejón y mercados, sobre todo San Lorenzo y Sant'Ambrogio",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+Centrale%2C+Florencia%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/ideas/top-10-foods-you-must-eat-in-tuscany/"
+  },
+  {
+   "plato": "Bistecca alla fiorentina",
+   "que_es": "chuletón de ternera a la brasa, poco hecho, que se pide al peso",
+   "estilo": "trattoria",
+   "coste": "alto",
+   "donde_probarlo": "trattorias clásicas de Florencia; en grupo, compartid uno",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Florencia%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/ideas/top-10-foods-you-must-eat-in-tuscany/"
+  },
+  {
+   "plato": "Ribollita y pappa al pomodoro",
+   "que_es": "sopas espesas de pan duro, verdura o tomate, para entrar en calor",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorias de barrio de Florencia y Siena",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Siena%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/ideas/top-10-foods-you-must-eat-in-tuscany/"
+  },
+  {
+   "plato": "Pici",
+   "que_es": "pasta gruesa y larga hecha a mano, típica de Siena",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorias de Siena y Val d'Orcia, con ragú, ajo o cacio e pepe",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Siena%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/ideas/top-10-foods-you-must-eat-in-tuscany/"
+  },
+  {
+   "plato": "Schiacciata",
+   "que_es": "focaccia toscana al aceite, para bocadillos rellenos de embutido",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "panaderías y bocadillerías cerca de los mercados de Florencia",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+di+Sant%27Ambrogio%2C+Florencia%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/ideas/top-10-foods-you-must-eat-in-tuscany/"
+  },
+  {
+   "plato": "Cecina o torta di ceci",
+   "que_es": "tortita fina de harina de garbanzo al horno, típica de Pisa y Lucca",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "hornos y bocadillerías de Pisa, junto a Piazza delle Vettovaglie",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+delle+Vettovaglie%2C+Pisa%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/ideas/top-10-foods-you-must-eat-in-tuscany/"
+  },
+  {
+   "plato": "Panforte y ricciarelli",
+   "que_es": "dulces de Siena de frutos secos, fruta confitada y almendra",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías del centro de Siena, sobre todo en Navidad",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Siena%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/ideas/top-10-foods-you-must-eat-in-tuscany/"
+  },
+  {
+   "plato": "Cantucci con vin santo",
+   "que_es": "galletas de almendra para mojar en vino dulce, postre típico de cena",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "cualquier trattoria o enoteca del Chianti",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Greve+in+Chianti%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/ideas/top-10-foods-you-must-eat-in-tuscany/"
+  },
+  {
+   "plato": "Chianti Classico",
+   "que_es": "vino tinto de sangiovese, el más famoso de la región",
+   "estilo": "bebida",
+   "coste": "medio",
+   "donde_probarlo": "enotecas de Florencia y bodegas del Chianti",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Chianti+Classico%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/ideas/top-10-foods-you-must-eat-in-tuscany/"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Santo Spirito",
+   "base": "florencia",
+   "plan": "aperitivo",
+   "descripcion": "Plaza del Oltrarno con terrazas, ambiente joven y aperitivo al atardecer a pie de iglesia.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Santo+Spirito%2C+Florencia%2C+Italia",
+   "fuente": "https://www.florencetourism.org/free-things-to-do-in-florence/"
+  },
+  {
+   "zona": "Piazza del Campo y contrade",
+   "base": "siena",
+   "plan": "copas",
+   "descripcion": "Tomar algo en la plaza al anochecer y seguir por las calles de alrededor con ambiente universitario.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Campo%2C+Siena%2C+Italia",
+   "fuente": "https://www.visittuscany.com/en/attractions/piazza-del-campo-siena/"
+  },
+  {
+   "zona": "Lungarno y Piazza delle Vettovaglie",
+   "base": "pisa",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo junto al Arno y copas en la zona universitaria, con ambiente estudiantil casi toda la semana en curso.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+delle+Vettovaglie%2C+Pisa%2C+Italia",
+   "fuente": "https://www.visittuscany.com/it/idee/viaggio-nel-tempo-4-caffe-storici-in-toscana/"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "florencia",
+   "coste": "bajo",
+   "para": "Grupos con presupuesto mínimo; habitaciones compartidas cerca de la estación.",
+   "enlaces": [
+    {
+     "sitio": "Hostelworld",
+     "url": "https://www.hostelworld.com/hostels/europe/italy/florence/"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Florencia"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "florencia",
+   "coste": "medio",
+   "para": "Grupos de 4 a 8 que quieren cocinar y repartir el coste.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Florencia--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Florencia"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "siena",
+   "coste": "medio",
+   "para": "Grupos que quieren casco medieval tranquilo y cocina propia.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Siena--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Siena"
+    }
+   ]
+  },
+  {
+   "tipo": "agriturismo",
+   "base": "siena",
+   "coste": "medio",
+   "para": "Grupos con coche que buscan campo, piscina y cenas caseras.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Siena"
+    }
+   ]
+  },
+  {
+   "tipo": "hostel",
+   "base": "pisa",
+   "coste": "bajo",
+   "para": "Quien llega o sale en avión por Pisa y quiere dormir barato.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Pisa"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Pisa--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "pisa",
+   "coste": "medio",
+   "para": "Quien prefiere habitación propia y baño sin compartir.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Pisa"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Palio di Siena",
+   "donde": "Siena",
+   "cuando": "cada año, 2 de julio y 16 de agosto",
+   "meses": [
+    7,
+    8
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Carrera de caballos a pelo entre las contrade en la Piazza del Campo; ver la carrera en plaza es gratis pero hay que llegar horas antes.",
+   "enlace": "https://www.visittuscany.com/en/events/palio-di-siena/",
+   "fuente": "https://www.visittuscany.com/en/events/palio-di-siena/"
+  },
+  {
+   "nombre": "Calcio Storico Fiorentino",
+   "donde": "Florencia",
+   "cuando": "cada año, en junio, alrededor del 24 (San Giovanni)",
+   "meses": [
+    6
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Partido histórico y muy violento entre barrios en Piazza Santa Croce; fechas en la web oficial.",
+   "enlace": "https://visittuscany.com/en/events/calcio-storico-fiorentino",
+   "fuente": "https://visittuscany.com/en/events/calcio-storico-fiorentino"
+  },
+  {
+   "nombre": "Luminara di San Ranieri",
+   "donde": "Pisa",
+   "cuando": "cada año, la noche del 16 de junio",
+   "meses": [
+    6
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Miles de velas en los palacios del Arno, con fuegos artificiales.",
+   "enlace": "https://www.italia.it/en/tuscany/pisa/things-to-do/event-luminara-san-ranieri-pisa",
+   "fuente": "https://www.italia.it/en/tuscany/pisa/things-to-do/event-luminara-san-ranieri-pisa"
+  },
+  {
+   "nombre": "Lucca Comics & Games",
+   "donde": "Lucca",
+   "cuando": "cada año, finales de octubre o principios de noviembre",
+   "meses": [
+    10,
+    11
+   ],
+   "proxima_fecha": null,
+   "descripcion": "El mayor festival de cómic, juegos y cultura pop de Europa, con la ciudad vallada y llena de disfraces.",
+   "enlace": "https://www.italia.it/en/tuscany/lucca/things-to-do/event-lucca-comics",
+   "fuente": "https://www.italia.it/en/tuscany/lucca/things-to-do/event-lucca-comics"
+  }
+ ],
+ "redes": [
+  {
+   "nombre": "Mercato Centrale Firenze",
+   "red": "instagram",
+   "url": "https://www.instagram.com/ilmercatocentralefirenze/",
+   "verificado_en": "pie de mercatocentrale.com/florence"
+  },
+  {
+   "nombre": "Marchesi Antinori",
+   "red": "instagram",
+   "url": "https://www.instagram.com/marchesiantinori",
+   "verificado_en": "pie de antinori.it"
+  },
+  {
+   "nombre": "Visit Tuscany",
+   "red": "instagram",
+   "url": "https://www.instagram.com/visittuscany/",
+   "verificado_en": "visittuscany.com"
+  },
+  {
+   "nombre": "Visit Tuscany",
+   "red": "tiktok",
+   "url": "https://www.tiktok.com/@visittuscany",
+   "verificado_en": "visittuscany.com"
+  }
+ ],
+ "notas_honestas": [
+  "Entrada oficial de la Torre de Pisa y ticket de Duomo no verificados: enlazo mapa o reserva genérica.",
+  "Fechas de 2027 de los eventos no publicadas en fuente oficial verificada.",
+  "Cinque Terre queda fuera: está en Liguria.",
+  "Sin precios exactos por política del contrato."
+ ]
+}

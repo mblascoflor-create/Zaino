@@ -1,0 +1,879 @@
+{
+ "id": "liguria-cinque-terre",
+ "nombre": "Liguria y Cinque Terre",
+ "nombre_corto": "Liguria",
+ "lema": "Pueblos colgados del mar y Génova",
+ "descripcion": "Cinco pueblos de colores sobre acantilados unidos por senderos, y a un tren de distancia Génova, con caruggi, acuario y focaccia. Mar, caminatas y comida barata en una zona compacta que se mueve en tren.",
+ "perfil": {
+  "mar": 3,
+  "montana": 1,
+  "ciudad": 2,
+  "campo": 1,
+  "fiesta": 1,
+  "calma": 2,
+  "cultura": 2,
+  "gastronomia": 3,
+  "naturaleza": 3,
+  "playa": 2,
+  "aventura": 2,
+  "postal": 3
+ },
+ "nivel_precio": "medio",
+ "nivel_precio_nota": "Los cinco pueblos y Portofino son caros en temporada; La Spezia y Génova bajan mucho el coste de dormir y comer.",
+ "meses": {
+  "ideales": [
+   4,
+   5,
+   6,
+   9,
+   10
+  ],
+  "aceptables": [
+   3,
+   7,
+   11
+  ],
+  "evitar": [
+   1,
+   2,
+   8
+  ],
+  "nota": "Mayo-junio y septiembre-octubre: buen tiempo para caminar y menos masificación. En agosto hay colas, calor y precios altos; en invierno hay barcos limitados y algunos senderos cerrados."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "innecesario",
+  "nota": "Los pueblos de Cinque Terre son prácticamente peatonales y el tren los une; en Génova hay ZTL y aparcamiento caro. Solo compensa para calas o pueblos fuera de la línea de tren, y aun así el aparcamiento es el problema.",
+  "aeropuerto_recogida": "GOA",
+  "operadores": [
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.it/noleggio-auto/Hertz-Genova.GOA.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Hertz-Genova.GOA.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.it/noleggio-auto/Europcar-Genova.GOA.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Europcar-Genova.GOA.EUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Sixt",
+    "enlace": "https://www.skyscanner.com.mx/mx/it-it/mxn/noleggio-auto/fornitore-aeroporto/673/goa",
+    "fuente": "https://www.skyscanner.com.mx/mx/it-it/mxn/noleggio-auto/fornitore-aeroporto/673/goa"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "la-spezia",
+   "nombre": "La Spezia",
+   "por_que": "Alojamiento más barato, tren directo a los cinco pueblos y barco/bus a Portovenere.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=La+Spezia%2C+Italia"
+  },
+  {
+   "id": "genova",
+   "nombre": "Génova",
+   "por_que": "Ciudad grande con acuario, caruggi y vida nocturna; tren a Camogli, Sestri Levante y las Cinque Terre.",
+   "sin_coche": true,
+   "ambiente": "fiesta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Genova%2C+Italia"
+  },
+  {
+   "id": "monterosso",
+   "nombre": "Monterosso al Mare",
+   "por_que": "Dentro de las Cinque Terre, con playa; caro y tranquilo por la noche.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Monterosso+al+Mare%2C+Italia"
+  },
+  {
+   "id": "camogli",
+   "nombre": "Camogli",
+   "por_que": "Pueblo de pescadores en el Golfo Paradiso, punto de salida a San Fruttuoso y Portofino.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Camogli%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "GOA",
+    "nombre": "Génova – Cristoforo Colombo",
+    "ciudad": "Génova",
+    "a_la_base": "Está en Sestri Ponente, dentro de la ciudad; se llega a Génova en bus urbano o taxi y de ahí tren a La Spezia o Cinque Terre."
+   },
+   {
+    "iata": "PSA",
+    "nombre": "Pisa – Galileo Galilei",
+    "ciudad": "Pisa",
+    "a_la_base": "PisaMover o bus a Pisa Centrale y tren regional a La Spezia; comprobad el trasbordo en Trenitalia."
+   },
+   {
+    "iata": "MXP",
+    "nombre": "Milán – Malpensa",
+    "ciudad": "Milán",
+    "a_la_base": "Tren o bus a Milán y de ahí tren a Génova o La Spezia; más largo pero con más vuelos low cost."
+   }
+  ],
+  "desde_espana": "El aeropuerto de referencia es Génova, con oferta limitada desde España. Pisa y Milán suelen tener más vuelos low cost, a cambio de un trayecto en tren más largo.",
+  "rutas_directas": [
+   {
+    "origen": "Madrid",
+    "origen_iata": "MAD",
+    "destino_iata": "GOA",
+    "aerolinea": "Volotea",
+    "nota": "Dos frecuencias semanales (lunes y viernes) desde la inauguración en diciembre de 2025; comprobad que siga operativa",
+    "fuente": "https://genovaquotidiana.com/2025/12/05/volotea-inaugura-il-volo-genova-madrid-e-punta-a-44-di-posti-nel-2026/"
+   }
+  ],
+  "desde_italia": "Desde Milán hay trenes a Génova y a La Spezia, normalmente con trasbordo según la hora. Desde Florencia o Bolonia, tren a Pisa y de ahí a La Spezia."
+ },
+ "moverse": {
+  "resumen": "Sin coche: tren regional entre La Spezia y los cinco pueblos y senderos a pie; en Génova, metro y bus urbano. El coche estorba más que ayuda.",
+  "tren": {
+   "nota": "Trenitalia regional entre La Spezia y Levanto (cada pueblo tiene estación) y Génova–La Spezia por la costa. La Cinque Terre Card del Parque incluye servicios como los trenes entre pueblos; mirad qué incluye hoy en la web del Parque.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Conecta Génova con otras ciudades italianas; no sirve para moverse entre los pueblos de Cinque Terre.",
+   "enlace": "https://www.flixbus.it/autobus/genova",
+   "fuente": "https://www.flixbus.it/azienda/stampa/flixbus-offerta-estiva-2026"
+  },
+  "ferry": [],
+  "camper": {
+   "operador": "Roadsurfer",
+   "nota": "Alquiler de campers en Italia (enlace a la página general). Dentro de los pueblos de Cinque Terre no se puede circular.",
+   "enlace": "https://roadsurfer.com/es/alquilar-camper/italia/",
+   "fuente": "https://roadsurfer.com/es/alquilar-camper/italia/"
+  }
+ },
+ "actividades": [
+  {
+   "id": "sentiero-azzurro",
+   "nombre": "Sentiero Azzurro entre pueblos",
+   "donde": "Cinque Terre",
+   "base": "monterosso",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "alto",
+   "ambiente": "mixto",
+   "meses": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ],
+   "descripcion": "Caminata costera entre pueblos con viñedos en terrazas y mar abajo; se puede hacer por tramos y volver en tren.",
+   "consejo": "El estado de los senderos cambia (cierres por obras o clima): mirad la web del Parque antes de ir. Hace falta ticket de sendero o Cinque Terre Card.",
+   "enlace": "https://www.parconazionale5terre.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sentiero+Azzurro%2C+Monterosso+al+Mare%2C+Italia",
+   "fuente": "https://www.parconazionale5terre.it/"
+  },
+  {
+   "id": "vernazza",
+   "nombre": "Vernazza: puerto y castillo",
+   "donde": "Vernazza",
+   "base": "monterosso",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Plaza minúscula sobre el mar y torre del castillo para ver el pueblo desde arriba.",
+   "enlace": "https://www.parconazionale5terre.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Vernazza%2C+Italia",
+   "fuente": "https://www.parconazionale5terre.it/"
+  },
+  {
+   "id": "manarola-atardecer",
+   "nombre": "Manarola al atardecer",
+   "donde": "Manarola",
+   "base": "la-spezia",
+   "tipo": "postal",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Las casas de colores desde el sendero del lado norte y copa en las rocas viendo cómo se pone el sol.",
+   "consejo": "Es la foto más famosa de la zona: llegad pronto para pillar sitio.",
+   "enlace": "https://www.parconazionale5terre.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Manarola%2C+Italia",
+   "fuente": "https://www.parconazionale5terre.it/"
+  },
+  {
+   "id": "monterosso-playa",
+   "nombre": "Playa de Monterosso",
+   "donde": "Monterosso al Mare",
+   "base": "monterosso",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "La playa más larga de las Cinque Terre, con parte libre y parte de pago con tumbonas.",
+   "enlace": "https://www.cinqueterre.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Fegina%2C+Monterosso+al+Mare%2C+Italia",
+   "fuente": "https://www.cinqueterre.it/"
+  },
+  {
+   "id": "bano-rocas",
+   "nombre": "Baño en las rocas de Riomaggiore y Manarola",
+   "donde": "Riomaggiore",
+   "base": "la-spezia",
+   "tipo": "agua",
+   "tipos_extra": [
+    "playa"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Entrada al mar por plataformas de roca desde el pueblo; agua limpia y cristalina, sin arena.",
+   "consejo": "Llevad escarpines o chanclas con suela: la roca resbala.",
+   "enlace": "https://www.parconazionale5terre.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Riomaggiore%2C+Italia",
+   "fuente": "https://www.parconazionale5terre.it/"
+  },
+  {
+   "id": "barco-cinque-terre",
+   "nombre": "Barco entre los pueblos",
+   "donde": "Cinque Terre",
+   "base": "la-spezia",
+   "tipo": "agua",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Mini-crucero que enseña los pueblos desde el mar, con paradas para baño en verano.",
+   "consejo": "Los barcos paran con mal tiempo o mar agitado; tened plan B en tren.",
+   "enlace": "https://www.getyourguide.es/s/?q=barco+Cinque+Terre",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cinque+Terre+barco%2C+Italia",
+   "fuente": "https://www.getyourguide.es/s/?q=barco+Cinque+Terre"
+  },
+  {
+   "id": "portovenere",
+   "nombre": "Portovenere: iglesia de San Pedro y casco antiguo",
+   "donde": "Portovenere",
+   "base": "la-spezia",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal",
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Iglesia gótica en un promontorio sobre el mar, castillo y callejón con casas de colores; se llega desde La Spezia.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Portovenere%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Chiesa+di+San+Pietro%2C+Portovenere%2C+Italia",
+   "fuente": "https://www.parconazionale5terre.it/"
+  },
+  {
+   "id": "riomaggiore",
+   "nombre": "Riomaggiore: calle principal y puerto",
+   "donde": "Riomaggiore",
+   "base": "la-spezia",
+   "tipo": "postal",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Pueblo en vertical con barcas varadas en la rampa y aperitivo con vistas.",
+   "enlace": "https://www.parconazionale5terre.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Riomaggiore%2C+Italia",
+   "fuente": "https://www.parconazionale5terre.it/"
+  },
+  {
+   "id": "corniglia",
+   "nombre": "Corniglia: el pueblo sobre la roca",
+   "donde": "Corniglia",
+   "base": "monterosso",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "El único pueblo sin mar directo, en lo alto; se sube por una escalera larga o en bus.",
+   "enlace": "https://www.parconazionale5terre.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Corniglia%2C+Italia",
+   "fuente": "https://www.parconazionale5terre.it/"
+  },
+  {
+   "id": "caruggi-genova",
+   "nombre": "Caruggi del centro histórico de Génova",
+   "donde": "Génova",
+   "base": "genova",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Laberinto de callejones medievales, uno de los mayores centros históricos de Europa; perderse es el plan.",
+   "consejo": "De noche algunas calles son duras: mejor ir en grupo y por las principales.",
+   "enlace": "https://www.visitgenoa.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Genova%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "id": "acuario-genova",
+   "nombre": "Acuario de Génova",
+   "donde": "Génova",
+   "base": "genova",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Uno de los mayores acuarios de Europa, en el puerto antiguo.",
+   "consejo": "Comprad la entrada online para evitar colas en fines de semana.",
+   "enlace": "https://www.acquariodigenova.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Acquario+di+Genova%2C+Italia",
+   "fuente": "https://www.acquariodigenova.it/"
+  },
+  {
+   "id": "boccadasse",
+   "nombre": "Boccadasse al atardecer",
+   "donde": "Génova",
+   "base": "genova",
+   "tipo": "postal",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Barrio de pescadores con casas de colores y una cala de guijarros; helado y puesta de sol.",
+   "enlace": "https://www.visitgenoa.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Boccadasse%2C+Genova%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "id": "palazzi-rolli",
+   "nombre": "Via Garibaldi y Palazzi dei Rolli",
+   "donde": "Génova",
+   "base": "genova",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Palacios renacentistas y barrocos, Patrimonio UNESCO; algunos tienen museo.",
+   "enlace": "https://www.visitgenoa.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Via+Garibaldi%2C+Genova%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "id": "porto-antico",
+   "nombre": "Porto Antico y Galata Museo del Mare",
+   "donde": "Génova",
+   "base": "genova",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Paseo marítimo del puerto renovado por Renzo Piano, con el museo naval y el mirador del Bigo.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Porto+Antico%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Porto+Antico%2C+Genova%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "id": "san-fruttuoso",
+   "nombre": "Barco a San Fruttuoso",
+   "donde": "Camogli",
+   "base": "camogli",
+   "tipo": "agua",
+   "tipos_extra": [
+    "naturaleza",
+    "cultura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "meses": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Abadía del siglo X en una cala a la que solo se llega a pie o en barco, con baño en verano.",
+   "consejo": "Hay sendero a pie desde Camogli por el parque natural, largo y con desnivel; el barco se coge en Camogli o Portofino.",
+   "enlace": "https://www.fondoambiente.it/luoghi/abbazia-di-san-fruttuoso",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Abbazia+di+San+Fruttuoso%2C+Italia",
+   "fuente": "https://www.fondoambiente.it/luoghi/abbazia-di-san-fruttuoso"
+  },
+  {
+   "id": "camogli-pueblo",
+   "nombre": "Camogli: puerto y casas pintadas",
+   "donde": "Camogli",
+   "base": "camogli",
+   "tipo": "postal",
+   "tipos_extra": [
+    "playa"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Pueblo de pescadores con fachadas de trampantojo, playa de guijarros y focaccia al llegar.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Camogli%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Camogli%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "id": "portofino",
+   "nombre": "Portofino y Santa Margherita Ligure",
+   "donde": "Portofino",
+   "base": "camogli",
+   "tipo": "postal",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Puerto de lujo y paseo marítimo entre Santa Margherita y Portofino; mirar es gratis, consumir no.",
+   "consejo": "Llevad bocadillo: comer en el puerto es caro.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Portofino%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Portofino%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "id": "baia-silenzio",
+   "nombre": "Baia del Silenzio, Sestri Levante",
+   "donde": "Sestri Levante",
+   "base": "genova",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua",
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Bahía cerrada de arena, aguas calmadas y atardecer, a un tren de Génova.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Baia+del+Silenzio%2C+Sestri+Levante%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Baia+del+Silenzio%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "id": "ruta-focaccia",
+   "nombre": "Ruta de focaccia y farinata",
+   "donde": "Génova",
+   "base": "genova",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Almuerzo callejero en panaderías y hornos del centro de Génova: focaccia, farinata y cuadrados de pizza.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=focacceria+centro+storico+Genova%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Genova%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Trofie al pesto",
+   "que_es": "Pasta corta rizada con pesto genovés de albahaca, a veces con patata y judía verde.",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "Trattorie de Génova y de los pueblos de Cinque Terre",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Dtrattoria%2Btrofie%2Bpesto%2BGenova%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "plato": "Focaccia genovese",
+   "que_es": "Pan plano con aceite y sal, se desayuna mojada en cappuccino.",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "Panificios y focaccerie del centro de Génova y de Camogli",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Dfocacceria%2BGenova%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "plato": "Focaccia di Recco al queso",
+   "que_es": "Dos láminas finas de masa rellenas de queso fresco, caliente del horno.",
+   "estilo": "street",
+   "coste": "medio",
+   "donde_probarlo": "Camogli, Recco y Santa Margherita",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Dfocaccia%2Bdi%2BRecco%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "plato": "Farinata",
+   "que_es": "Torta fina de harina de garbanzo al horno de leña, para comer en cuña.",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "Hornos y focacerías del centro de Génova y La Spezia",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Dfarinata%2BGenova%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "plato": "Acciughe fritas o rellenas",
+   "que_es": "Anchoas del Cantábrico ligur, fritas, rebozadas o rellenas; en cucurucho para llevar.",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "Puestos de pescado frito en los pueblos de Cinque Terre",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Dacciughe%2Bfritte%2BCinque%2BTerre%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.parconazionale5terre.it/"
+  },
+  {
+   "plato": "Pansoti con salsa de nueces",
+   "que_es": "Raviolis triangulares de hierbas con salsa cremosa de nueces.",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "Trattorie del centro histórico de Génova",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Dtrattoria%2Bpansoti%2Bsalsa%2Bdi%2Bnoci%2BGenova%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "plato": "Sciacchetrà",
+   "que_es": "Vino dulce de pasa de las terrazas de Cinque Terre, para el postre.",
+   "estilo": "bebida",
+   "coste": "medio",
+   "donde_probarlo": "Enotecas de los pueblos de Cinque Terre",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Denoteca%2BSciacchetr%25C3%25A0%2BCinque%2BTerre%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.parconazionale5terre.it/"
+  },
+  {
+   "plato": "Torta pasqualina",
+   "que_es": "Tarta de masa fina con acelgas, requesón y huevo, de las fiestas pero que se vende todo el año.",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "Panaderías y focacerías de Génova",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3Dtorta%2Bpasqualina%2BGenova%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Piazza delle Erbe y centro histórico de Génova",
+   "base": "genova",
+   "plan": "copas",
+   "descripcion": "Plaza con bares y terrazas que se llena de universitarios por la noche.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DPiazza%2Bdelle%2BErbe%252C%2BGenova%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "zona": "Porto Antico",
+   "base": "genova",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo al borde del agua con vistas al puerto iluminado.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DPorto%2BAntico%252C%2BGenova%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "zona": "Centro de La Spezia",
+   "base": "la-spezia",
+   "plan": "aperitivo",
+   "descripcion": "Calles peatonales con bares y aperitivo; ambiente más de ciudad que de turistas.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DVia%2Bdel%2BPrione%252C%2BLa%2BSpezia%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.parconazionale5terre.it/"
+  },
+  {
+   "zona": "Aperitivo en Manarola, Riomaggiore o Monterosso",
+   "base": "monterosso",
+   "plan": "aperitivo",
+   "descripcion": "Copa con vistas al atardecer; después los pueblos se quedan tranquilos y casi sin fiesta.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DMonterosso%2Bal%2BMare%252C%2BItalia%2C+Italia",
+   "fuente": "https://www.parconazionale5terre.it/"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "la-spezia",
+   "coste": "bajo",
+   "para": "Grupos con presupuesto muy ajustado que usan el tren cada día.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=La+Spezia"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "la-spezia",
+   "coste": "medio",
+   "para": "Grupos de 4-8 que quieren cocinar y repartir coste.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/La-Spezia--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=La+Spezia"
+    }
+   ]
+  },
+  {
+   "tipo": "hostel",
+   "base": "genova",
+   "coste": "bajo",
+   "para": "Quien combina ciudad, noche y excursiones en tren.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Genova"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "genova",
+   "coste": "medio",
+   "para": "Grupos medianos, centro histórico y puerto.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Genova--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "monterosso",
+   "coste": "alto",
+   "para": "Quien quiera dormir en los pueblos sin preocuparse por el último tren.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Monterosso+al+Mare"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "camogli",
+   "coste": "medio",
+   "para": "Pareja o grupo pequeño que busca calma y mar.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Camogli"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "FIVE Festival Cinque Terre",
+   "donde": "Cinque Terre",
+   "cuando": "cada año, conciertos en verano (en 2026, de julio a septiembre); fechas en la web",
+   "meses": [
+    7,
+    8,
+    9
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Conciertos gratuitos repartidos por los cinco pueblos.",
+   "enlace": "https://www.cinqueterre.it/",
+   "fuente": "https://www.cinqueterre.it/2026/07/04/five-festival-cinque-terre/"
+  },
+  {
+   "nombre": "Cinque Terre Walking Park",
+   "donde": "Cinque Terre",
+   "cuando": "citas de senderismo organizadas, con ediciones en octubre; fechas en la web",
+   "meses": [
+    10
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Caminatas guiadas por los senderos del parque, según la agenda del Consorcio turístico.",
+   "enlace": "https://www.cinqueterre.it/",
+   "fuente": "https://www.cinqueterre.it/"
+  },
+  {
+   "nombre": "Rolli Days",
+   "donde": "Génova",
+   "cuando": "cada año, varios fines de semana de apertura de los palacios; fechas en la web",
+   "meses": [
+    3,
+    5,
+    10
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Apertura gratuita o con visita de los palacios nobles de Génova, Patrimonio UNESCO.",
+   "enlace": "https://www.visitgenoa.it/",
+   "fuente": "https://www.visitgenoa.it/"
+  },
+  {
+   "nombre": "Le domeniche con Montale",
+   "donde": "Monterosso al Mare",
+   "cuando": "ciclo de paseos literarios en domingos; fechas en la web del Consorcio",
+   "meses": [
+    10
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Paseos con lectura de poemas de Montale por Monterosso.",
+   "enlace": "https://www.cinqueterre.it/",
+   "fuente": "https://www.cinqueterre.it/"
+  }
+ ],
+ "notas_honestas": [
+  "No se verificó el estado actual de cada tramo del Sentiero Azzurro ni qué incluye hoy la Cinque Terre Card (precios y condiciones en la web del Parque): comprobadlo antes de ir.",
+  "No se verificó web oficial de los barcos ni del tren 5 Terre Express: se usa Trenitalia y GetYourGuide como patrón seguro.",
+  "No se encontró fuente fiable para la Sagra del Pesce de Camogli ni el Salone Nautico de Génova; se dejan fuera.",
+  "Los eventos de Rolli Days, Walking Park y Montale se describen como recurrentes con fechas variables; faltan fechas de 2027.",
+  "No hay rutas aéreas directas verificadas salvo Madrid–Génova (Volotea); nada desde Barcelona."
+ ]
+}

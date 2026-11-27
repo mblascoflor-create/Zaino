@@ -1,0 +1,866 @@
+{
+ "id": "veneto-venecia",
+ "nombre": "Venecia y Véneto",
+ "nombre_corto": "Venecia",
+ "lema": "Canales, cicchetti y Prosecco",
+ "descripcion": "Venecia sin coche, con bacari, spritz y las islas de la laguna, más Padua (ciudad universitaria) y Verona a media hora en tren. Es cara, pero se hace barata con cicchetti, vaporetto y base en Mestre o Padua.",
+ "perfil": {
+  "mar": 1,
+  "montana": 1,
+  "ciudad": 3,
+  "campo": 2,
+  "fiesta": 2,
+  "calma": 1,
+  "cultura": 3,
+  "gastronomia": 3,
+  "naturaleza": 1,
+  "playa": 1,
+  "aventura": 0,
+  "postal": 3
+ },
+ "nivel_precio": "alto",
+ "nivel_precio_nota": "Dormir en Venecia centro es de lo más caro de Italia; Mestre, Padua y Verona bajan mucho el coste.",
+ "meses": {
+  "ideales": [
+   4,
+   5,
+   6,
+   9,
+   10
+  ],
+  "aceptables": [
+   3,
+   7,
+   11,
+   12
+  ],
+  "evitar": [
+   8
+  ],
+  "nota": "Agosto es húmedo y bochornoso; en febrero (Carnaval) hay mucha gente y precios altos; en otoño-invierno puede haber acqua alta."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "util",
+  "nota": "Dentro de Venecia no hay coches: se llega al aparcamiento de Piazzale Roma o a Tronchetto y se sigue a pie o en vaporetto. Padua, Verona y Vicenza se hacen en tren; el coche solo compensa para las colinas del Prosecco.",
+  "aeropuerto_recogida": "VCE",
+  "operadores": [
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Hertz-Venecia.VCE.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Hertz-Venecia.VCE.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.it/noleggio-auto/Europcar-Venezia.VCE.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Europcar-Venezia.VCE.EUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Avis-Venecia.VCE.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Avis-Venecia.VCE.AVIS.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "venecia",
+   "nombre": "Venecia (centro histórico)",
+   "por_que": "Dormir en la ciudad permite ver San Marco de madrugada y salir de noche sin prisas, pero es lo más caro.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Venecia%2C+Italia"
+  },
+  {
+   "id": "mestre",
+   "nombre": "Mestre",
+   "por_que": "Tierra firme a pocos minutos en tren de Venecia, con alojamiento mucho más barato y buenas conexiones a Padua y Verona.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mestre%2C+Venecia%2C+Italia"
+  },
+  {
+   "id": "padua",
+   "nombre": "Padua",
+   "por_que": "Ciudad universitaria con ambiente estudiantil, aperitivos baratos y tren frecuente a Venecia.",
+   "sin_coche": true,
+   "ambiente": "fiesta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Padua%2C+Italia"
+  },
+  {
+   "id": "verona",
+   "nombre": "Verona",
+   "por_que": "Centro compacto y bonito, con la Arena y mucha vida en las plazas; buena para un fin de semana aparte.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Verona%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "VCE",
+    "nombre": "Venecia – Marco Polo",
+    "ciudad": "Venecia",
+    "a_la_base": "Hay bus y barco desde el aeropuerto hasta Venecia (Piazzale Roma o paradas de Alilaguna); mirad las opciones y precios en la web del aeropuerto antes de volar."
+   },
+   {
+    "iata": "TSF",
+    "nombre": "Treviso – Antonio Canova",
+    "ciudad": "Treviso",
+    "a_la_base": "Aeropuerto low cost a unos 30 km de Venecia; se conecta con Venecia y Mestre en bus o combinando bus y tren. Comprobad el bus en la web del aeropuerto."
+   },
+   {
+    "iata": "VRN",
+    "nombre": "Verona – Valerio Catullo",
+    "ciudad": "Verona",
+    "a_la_base": "Útil si queréis empezar por Verona; desde ahí hay tren directo a Padua y Venecia."
+   }
+  ],
+  "desde_espana": "Ryanair vuela a Treviso (TSF) desde Barcelona y Madrid, y hay más rutas a Venecia (VCE) y Verona (VRN) según temporada. Comparad VCE y TSF: Treviso suele salir más barato, pero el transporte a Venecia cuesta algo más.",
+  "rutas_directas": [
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "TSF",
+    "aerolinea": "Ryanair",
+    "nota": "ruta publicada en la web de Ryanair; comprobad días y temporada al reservar",
+    "fuente": "https://www.ryanair.com/ie/en/flights/flights-from-barcelona-to-venice-treviso"
+   },
+   {
+    "origen": "Madrid",
+    "origen_iata": "MAD",
+    "destino_iata": "TSF",
+    "aerolinea": "Ryanair",
+    "nota": "ruta publicada en la web de Ryanair; comprobad días y temporada al reservar",
+    "fuente": "https://www.ryanair.com/gb/en/flights/flights-from-madrid-to-venice-treviso"
+   }
+  ],
+  "desde_italia": "Hay trenes directos de Trenitalia e Italo a Venezia Santa Lucia desde Milán, Bolonia, Florencia y Roma. Si vais a dormir en Mestre, bajad en Venezia Mestre, que es la parada anterior.",
+  "novedades": [
+   {
+    "nota": "El billete combinado tren+avión de iryo e ITA Airways (2026) también cubre Venecia: iryo hasta Madrid/Barcelona y vuelo ITA Airways de conexión.",
+    "fuente": "https://www.elperiodic.com/viajar-entre-comunitat-valenciana-italia-nunca-facil-funciona-billete-tren-avion_1002354"
+   },
+   {
+    "nota": "Venecia cobra una tasa de acceso a los visitantes de un día en fechas concretas: en la web oficial italia.it se indica 5 € por persona si se paga con antelación y 10 € si se paga tarde, en horario de 8:30 a 16:00. El calendario cambia cada año; consultad cda.ve.it y las exenciones antes de ir.",
+    "fuente": "https://italia.it/en/veneto/venice/things-to-do/information-contribution-access-venice"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "Venecia se recorre a pie y en vaporetto; para Padua, Verona y Vicenza el tren regional es lo más práctico y barato. El coche solo tiene sentido para las colinas del Prosecco.",
+  "tren": {
+   "nota": "Trenes regionales y de alta velocidad entre Venecia, Padua, Verona y Vicenza; comprad en la web o app de Trenitalia e Italo.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Cubre rutas dentro de Italia (por ejemplo Venecia con Trieste o Milán); la web permite buscar la ruta exacta.",
+   "enlace": "https://www.flixbus.it/tratte-autobus",
+   "fuente": "https://www.flixbus.it/azienda/stampa/flixbus-offerta-estiva-2026"
+  },
+  "ferry": [
+   {
+    "operador": "ACTV (vaporetto)",
+    "ruta": "Gran Canal (línea 1), Lido, Murano y Burano",
+    "nota": "Hay billetes sencillos y abonos de 1, 2, 3 y 7 días; para un grupo que va a moverse mucho compensa el abono.",
+    "enlace": "https://www.veneziaunica.it/it/acquista-i-biglietti/trasporto-pubblico-a-venezia/actv-biglietto-1-giorno-venezia-daily-pass",
+    "fuente": "https://www.veneziaunica.it/it/acquista-i-biglietti/trasporto-pubblico-a-venezia/actv-biglietto-1-giorno-venezia-daily-pass"
+   }
+  ],
+  "camper": null
+ },
+ "actividades": [
+  {
+   "id": "san-marco-ducal",
+   "nombre": "Plaza San Marco y Palacio Ducal",
+   "donde": "Venecia",
+   "base": "venecia",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Basílica, campanario y Palacio Ducal: lo imprescindible de Venecia, mejor a primera hora antes de los grupos.",
+   "consejo": "Reservad entradas con antelación en temporada alta.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Palazzo+Ducale%2C+Venecia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Palazzo+Ducale%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Palazzo+Ducale%2C+Venecia%2C+Italia"
+  },
+  {
+   "id": "gran-canal-vaporetto",
+   "nombre": "Gran Canal en vaporetto (línea 1)",
+   "donde": "Venecia",
+   "base": "venecia",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Recorrido lento por todo el Gran Canal con palacios a ambos lados, por el precio de un billete de transporte.",
+   "consejo": "Subid al atardecer y buscad sitio de pie en la proa.",
+   "enlace": "https://www.veneziaunica.it/it/acquista-i-biglietti/trasporto-pubblico-a-venezia/actv-biglietto-1-giorno-venezia-daily-pass",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ferrovia%2C+Venecia%2C+Italia",
+   "fuente": "https://www.veneziaunica.it/it/acquista-i-biglietti/trasporto-pubblico-a-venezia/actv-biglietto-1-giorno-venezia-daily-pass"
+  },
+  {
+   "id": "rialto-mercado",
+   "nombre": "Puente y mercado de Rialto",
+   "donde": "Venecia",
+   "base": "venecia",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Mercado de verdura y pescado junto al puente más famoso; ideal para ver Venecia cotidiana.",
+   "consejo": "La pescadería suele cerrar domingos y lunes; comprobadlo antes de ir.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Mercato+di+Rialto%2C+Venecia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+di+Rialto%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Mercato+di+Rialto%2C+Venecia%2C+Italia"
+  },
+  {
+   "id": "bacari-cicchetti",
+   "nombre": "Ruta de bacari y cicchetti",
+   "donde": "Venecia",
+   "base": "venecia",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Ir de bar en bar con una copa de vino y bocaditos (cicchetti) de pie: la forma más barata y auténtica de cenar.",
+   "consejo": "Buscad los bacari en Cannaregio y Rialto, lejos de San Marco.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Cannaregio%2C+Venecia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cannaregio%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Cannaregio%2C+Venecia%2C+Italia"
+  },
+  {
+   "id": "spritz-zattere",
+   "nombre": "Spritz al atardecer en las Zattere",
+   "donde": "Venecia",
+   "base": "venecia",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Paseo marítimo de Dorsoduro frente a la Giudecca; llevad el spritz y sentaos en el muelle viendo ponerse el sol.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Zattere%2C+Dorsoduro%2C+Venecia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Zattere%2C+Dorsoduro%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Zattere%2C+Dorsoduro%2C+Venecia%2C+Italia"
+  },
+  {
+   "id": "dorsoduro-paseo",
+   "nombre": "Dorsoduro, Salute y Punta della Dogana",
+   "donde": "Venecia",
+   "base": "venecia",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Barrio más tranquilo y estudiantil, con la basílica de la Salute y vistas del Gran Canal desde la punta.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Basilica+di+Santa+Maria+della+Salute%2C+Venecia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Basilica+di+Santa+Maria+della+Salute%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Basilica+di+Santa+Maria+della+Salute%2C+Venecia%2C+Italia"
+  },
+  {
+   "id": "cannaregio-ghetto",
+   "nombre": "Cannaregio y el Gueto judío",
+   "donde": "Venecia",
+   "base": "venecia",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Canales sin turistas, el Gueto más antiguo de Europa y calles con bares de barrio.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Ghetto+Ebraico%2C+Cannaregio%2C+Venecia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ghetto+Ebraico%2C+Cannaregio%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Ghetto+Ebraico%2C+Cannaregio%2C+Venecia%2C+Italia"
+  },
+  {
+   "id": "traghetto-gran-canal",
+   "nombre": "Cruzar el Gran Canal en traghetto",
+   "donde": "Venecia",
+   "base": "venecia",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Cruce de pie en una góndola sencilla entre dos orillas: la versión barata de subirse a una góndola.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Traghetto+Santa+Sofia%2C+Venecia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Traghetto+Santa+Sofia%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Traghetto+Santa+Sofia%2C+Venecia%2C+Italia"
+  },
+  {
+   "id": "burano-murano",
+   "nombre": "Islas de Burano y Murano",
+   "donde": "Burano y Murano",
+   "base": "venecia",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Casas de colores en Burano y vidrieras y talleres de cristal en Murano, ambas en vaporetto desde Venecia.",
+   "consejo": "Id temprano a Burano; a mediodía se llena.",
+   "enlace": "https://www.veneziaunica.it/it/acquista-i-biglietti/trasporto-pubblico-a-venezia/actv-biglietto-1-giorno-venezia-daily-pass",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Burano%2C+Venecia%2C+Italia",
+   "fuente": "https://www.veneziaunica.it/it/acquista-i-biglietti/trasporto-pubblico-a-venezia/actv-biglietto-1-giorno-venezia-daily-pass"
+  },
+  {
+   "id": "lido-playa",
+   "nombre": "Lido de Venecia: playa y bici",
+   "donde": "Lido",
+   "base": "venecia",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Isla-playa a 15-20 minutos en vaporetto desde San Marco; arena, mar y calma lejos de las multitudes.",
+   "consejo": "Fuera de verano sirve también para pasear en bici.",
+   "enlace": "https://visitlido.it/en/?p=5313",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lido+di+Venezia%2C+Venecia%2C+Italia",
+   "fuente": "https://visitlido.it/en/?p=5313"
+  },
+  {
+   "id": "scrovegni-padua",
+   "nombre": "Capilla de los Scrovegni (Giotto)",
+   "donde": "Padua",
+   "base": "padua",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Ciclo de frescos de Giotto, obra maestra del siglo XIV; la visita tiene tiempo limitado.",
+   "consejo": "Reservad con antelación: se entra por turnos y con aforo limitado.",
+   "enlace": "https://cappellascrovegni.comune.padova.it/en/cappella-giotto/history",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cappella+degli+Scrovegni%2C+Padua%2C+Italia",
+   "fuente": "https://cappellascrovegni.comune.padova.it/en/cappella-giotto/history"
+  },
+  {
+   "id": "bo-universidad-padua",
+   "nombre": "Palacio Bo y universidad de Padua",
+   "donde": "Padua",
+   "base": "padua",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Una de las universidades más antiguas del mundo, con visita guiada y su teatro anatómico.",
+   "consejo": "Las visitas se reservan en la web de la universidad.",
+   "enlace": "https://www.unipd.it/visitare",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Palazzo+Bo%2C+Padua%2C+Italia",
+   "fuente": "https://www.unipd.it/visitare"
+  },
+  {
+   "id": "aperitivo-padua",
+   "nombre": "Aperitivo en Piazza delle Erbe y plazas de Padua",
+   "donde": "Padua",
+   "base": "padua",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Plazas llenas de estudiantes con spritz y tapas baratas: de los mejores ambientes de aperitivo del Véneto.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+delle+Erbe%2C+Padua%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+delle+Erbe%2C+Padua%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+delle+Erbe%2C+Padua%2C+Italia"
+  },
+  {
+   "id": "verona-arena-julieta",
+   "nombre": "Verona: Arena y Casa de Julieta",
+   "donde": "Verona",
+   "base": "verona",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Anfiteatro romano, Piazza Bra, Piazza delle Erbe y el balcón de Julieta, todo a pie.",
+   "enlace": "https://www.arena.it/en/arena-verona-opera-festival",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Arena+di+Verona%2C+Verona%2C+Italia",
+   "fuente": "https://www.arena.it/en/arena-verona-opera-festival"
+  },
+  {
+   "id": "verona-opera-arena",
+   "nombre": "Ópera en la Arena de Verona",
+   "donde": "Verona",
+   "base": "verona",
+   "tipo": "musica",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "noche",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Temporada de ópera en un anfiteatro romano con público de pie en la gradinata; una noche única.",
+   "consejo": "Mirad el programa y las entradas en la web oficial.",
+   "enlace": "https://www.arena.it/en/arena-verona-opera-festival",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Arena+di+Verona%2C+Verona%2C+Italia",
+   "fuente": "https://www.arena.it/en/arena-verona-opera-festival"
+  },
+  {
+   "id": "verona-ponte-pietra",
+   "nombre": "Ponte Pietra y Castelvecchio",
+   "donde": "Verona",
+   "base": "verona",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Paseo junto al Adigio con el puente romano y el castillo medieval, y vistas desde la colina de San Pietro.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Ponte+Pietra%2C+Verona%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ponte+Pietra%2C+Verona%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Ponte+Pietra%2C+Verona%2C+Italia"
+  },
+  {
+   "id": "vicenza-palladio",
+   "nombre": "Vicenza palladiana y Teatro Olimpico",
+   "donde": "Vicenza",
+   "base": "mestre",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Ciudad de Palladio, Patrimonio UNESCO, a media hora en tren de Venecia; villas y teatro renacentista.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Teatro+Olimpico%2C+Vicenza%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Teatro+Olimpico%2C+Vicenza%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Teatro+Olimpico%2C+Vicenza%2C+Italia"
+  },
+  {
+   "id": "prosecco-colinas",
+   "nombre": "Colinas del Prosecco (Conegliano–Valdobbiadene)",
+   "donde": "Valdobbiadene",
+   "base": "mestre",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Viñedos en pendiente declarados Patrimonio UNESCO, con bodegas donde se prueba el Prosecco en su origen.",
+   "consejo": "Reservad la cata y que conduzca alguien que no beba.",
+   "enlace": "https://collineconeglianovaldobbiadene.it/en/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Valdobbiadene%2C+Italia",
+   "fuente": "https://collineconeglianovaldobbiadene.it/en/"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Cicchetti",
+   "que_es": "tapas venecianas de pie, con una copa de vino o spritz",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "bacari de Cannaregio, Rialto y Dorsoduro, lejos de San Marco",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cannaregio%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Cannaregio%2C+Venecia%2C+Italia"
+  },
+  {
+   "plato": "Baccalà mantecato",
+   "que_es": "crema de bacalao sobre pan o polenta",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "bacari y trattorie de barrio",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Rialto%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Rialto%2C+Venecia%2C+Italia"
+  },
+  {
+   "plato": "Sarde in saor",
+   "que_es": "sardinas fritas en cebolla, pasas y vinagre",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorie tradicionales de Venecia",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cannaregio%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Cannaregio%2C+Venecia%2C+Italia"
+  },
+  {
+   "plato": "Risotto al nero di seppia",
+   "que_es": "arroz con tinta de sepia",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorie de pescado en Venecia y en las islas",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Burano%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Burano%2C+Venecia%2C+Italia"
+  },
+  {
+   "plato": "Fegato alla veneziana",
+   "que_es": "hígado con cebolla, plato clásico veneciano",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorie tradicionales, mejor fuera de San Marco",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Dorsoduro%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Dorsoduro%2C+Venecia%2C+Italia"
+  },
+  {
+   "plato": "Bigoli in salsa",
+   "que_es": "pasta gruesa con cebolla y anchoa",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorie del centro de Venecia y de Padua",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Padua%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Padua%2C+Italia"
+  },
+  {
+   "plato": "Tiramisù",
+   "que_es": "postre de mascarpone y café nacido en el Véneto",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías y trattorie de Venecia, Padua y Treviso",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Treviso%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Treviso%2C+Italia"
+  },
+  {
+   "plato": "Spritz",
+   "que_es": "aperitivo con Prosecco, aperol y soda",
+   "estilo": "bebida",
+   "coste": "bajo",
+   "donde_probarlo": "bares de Zattere, Campo Santa Margherita y las plazas de Padua",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Zattere%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Zattere%2C+Venecia%2C+Italia"
+  },
+  {
+   "plato": "Prosecco Conegliano–Valdobbiadene",
+   "que_es": "espumoso de origen, en cata directa en bodega",
+   "estilo": "bebida",
+   "coste": "medio",
+   "donde_probarlo": "bodegas y osterie de las colinas",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Valdobbiadene%2C+Italia",
+   "fuente": "https://www.italia.it/it/veneto/cosa-fare/viaggio-tra-le-colline-del-prosecco"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Campo Santa Margherita",
+   "base": "venecia",
+   "plan": "copas",
+   "descripcion": "Plaza de Dorsoduro con ambiente universitario, bares con terraza y gente joven hasta tarde.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Campo+Santa+Margherita%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Campo+Santa+Margherita%2C+Venecia%2C+Italia"
+  },
+  {
+   "zona": "Zattere y Dorsoduro",
+   "base": "venecia",
+   "plan": "aperitivo",
+   "descripcion": "Spritz frente a la Giudecca al atardecer.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Zattere%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Zattere%2C+Venecia%2C+Italia"
+  },
+  {
+   "zona": "Fondamenta degli Ormesini (Cannaregio)",
+   "base": "venecia",
+   "plan": "aperitivo",
+   "descripcion": "Calle de canal con bares de barrio y bacari, menos turística que Rialto.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Fondamenta+degli+Ormesini%2C+Venecia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Fondamenta+degli+Ormesini%2C+Venecia%2C+Italia"
+  },
+  {
+   "zona": "Piazza delle Erbe y Piazza dei Signori (Padua)",
+   "base": "padua",
+   "plan": "copas",
+   "descripcion": "Plazas con ambiente estudiantil: aperitivo y copas baratas casi cada noche.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+delle+Erbe%2C+Padua%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+delle+Erbe%2C+Padua%2C+Italia"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "venecia",
+   "coste": "medio",
+   "para": "Grupos que quieren dormir en la propia Venecia sin pagar un hotel.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Venecia"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "venecia",
+   "coste": "alto",
+   "para": "Grupos de 4-8 con cocina y salón, si el presupuesto lo permite.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Venecia--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Venecia"
+    }
+   ]
+  },
+  {
+   "tipo": "hostel",
+   "base": "mestre",
+   "coste": "bajo",
+   "para": "Grupos con presupuesto muy ajustado: tren a Venecia en pocos minutos.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Mestre"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "mestre",
+   "coste": "medio",
+   "para": "Quien quiera cama propia y baño sin pagar precios de Venecia.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Mestre"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "padua",
+   "coste": "bajo",
+   "para": "Grupos que prefieren ambiente universitario y tren a Venecia.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Padua"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Padua--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "verona",
+   "coste": "medio",
+   "para": "Fin de semana en Verona con grupo, cerca de las plazas.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Verona--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Verona"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Carnevale di Venezia",
+   "donde": "Venecia",
+   "cuando": "cada año, aproximadamente de finales de enero a febrero (fechas en la web oficial)",
+   "meses": [
+    1,
+    2
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Máscaras, desfiles y fiestas en toda la ciudad; mucha gente y alojamiento caro.",
+   "enlace": "https://carnevale.venezia.it/en/",
+   "fuente": "https://www.veneziaunica.it/en/things-to-do-in-venice/events/carnevale-di-venezia-2026"
+  },
+  {
+   "nombre": "Festa del Redentore",
+   "donde": "Venecia",
+   "cuando": "cada año, tercer fin de semana de julio",
+   "meses": [
+    7
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Puente de barcas sobre el canal de la Giudecca y fuegos artificiales en la laguna.",
+   "enlace": "https://www.visitlido.it/en/journal/redentore-2026/",
+   "fuente": "https://www.visitlido.it/en/journal/redentore-2026/"
+  },
+  {
+   "nombre": "Regata Storica",
+   "donde": "Venecia (Gran Canal)",
+   "cuando": "cada año, primer domingo de septiembre",
+   "meses": [
+    9
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Desfile de barcas históricas y regatas de remo por el Gran Canal.",
+   "enlace": "https://events.veneziaunica.it/en/things-to-do-in-venice/events/regata-storica-di-venezia-2025",
+   "fuente": "https://events.veneziaunica.it/en/things-to-do-in-venice/events/regata-storica-di-venezia-2025"
+  },
+  {
+   "nombre": "Mostra del Cinema de Venecia",
+   "donde": "Lido de Venecia",
+   "cuando": "cada año, finales de agosto y principios de septiembre",
+   "meses": [
+    8,
+    9
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival de cine internacional en el Lido; alojamiento caro esas fechas.",
+   "enlace": "https://www.labiennale.org/it/cinema/2025/82-mostra",
+   "fuente": "https://www.labiennale.org/it/cinema/2025/82-mostra"
+  },
+  {
+   "nombre": "Arena di Verona Opera Festival",
+   "donde": "Verona",
+   "cuando": "cada año, de junio a septiembre (programa en la web oficial)",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Temporada de ópera en el anfiteatro romano.",
+   "enlace": "https://www.arena.it/en/arena-verona-opera-festival",
+   "fuente": "https://www.arena.it/en/arena-verona-opera-festival"
+  }
+ ],
+ "notas_honestas": [
+  "No hemos verificado las fechas de la tasa de acceso de 2027: la página oficial que pudimos abrir solo cubría 2025. Consultad cda.ve.it antes de ir, sobre todo en fines de semana y puentes.",
+  "Carnevale: enlace de fuente de la edición 2026; las fechas de 2027 no están verificadas.",
+  "Sin web oficial verificada para Murano/Burano, Rialto, Zattere o los bacari: los enlaces son mapas.",
+  "Las rutas de vuelo se basan en las páginas de ruta de Ryanair, sin horarios ni frecuencias verificados.",
+  "Los transportes desde los aeropuertos (VCE, TSF) se describen en general, sin tiempos ni precios verificados."
+ ]
+}

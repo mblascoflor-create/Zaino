@@ -1,0 +1,31 @@
+{
+  "zona": "liguria-cinque-terre",
+  "base": "la-spezia",
+  "ciudad_referencia": "La Spezia",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 26.0,
+      "max": 36.1,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/la-spezia/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": {
+      "min": 55,
+      "max": 226,
+      "fuente": "https://www.booking.com/city/it/la-spezia.html?selected_currency=EUR | https://www.budgetyourtrip.com/italy/la-spezia",
+      "calidad": "orientativo"
+    },
+    "comida_barata": {
+      "valor": 15.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/La-Spezia?displayCurrency=EUR",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 1.5,
+      "fuente": "https://www.atcesercizio.it/en/biglietti/",
+      "calidad": "verificado"
+    }
+  },
+  "notas": "hostel_noche: rango min-max de 3 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=26.0, maximo=36.1); son precios 'desde' sin fechas concretas. doble_noche: min=55 es el precio 'From' mas bajo del titulo de la pagina de Booking.com para la ciudad (alojamiento mas barato listado, 2 adultos, 1 noche, sin fecha fija); max=226 es el precio medio de hotel para una pareja segun BudgetYourTrip (gasto declarado por viajeros). La horquilla mezcla ambas fuentes: es solo una guia aproximada, no un rango de apartamentos/dobles economicos garantizado. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en La Spezia (rango Numbeo 10-20). transporte_billete: ATC Esercizio La Spezia, billete urbano ordinario 60 min 1.50 EUR comprado por SMS (solo SIM italiana); en el bus (codigo 00-01, solo antes de 7:30 y desde 19:00) cuesta 2.50 EUR."
+}

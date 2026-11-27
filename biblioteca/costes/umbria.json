@@ -1,0 +1,26 @@
+{
+  "zona": "umbria",
+  "base": "perugia",
+  "ciudad_referencia": "Perugia",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 22.77,
+      "max": 38.5,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/perugia/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": null,
+    "comida_barata": {
+      "valor": 14.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Perugia",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 1.5,
+      "fuente": "https://www.fsbusitalia.it/it/umbria/titoli-di-viaggio-tariffe-umbria/biglietti-tariffe-servizi-urbani-umbria/tariffe-perugia.html",
+      "calidad": "verificado"
+    }
+  },
+  "notas": "hostel_noche: rango min-max de 2 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=22.77, maximo=38.5); son precios 'desde' sin fechas concretas. doble_noche null: solo hay un dato suelto (Booking.com https://www.booking.com/city/it/perugia.html?selected_currency=EUR: precio 'From' del titulo = 62 EUR) y BudgetYourTrip no tiene media para esta ciudad, asi que no se puede dar rango. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Perugia (rango Numbeo 12-20). transporte_billete: Busitalia Umbria, corsa semplice ordinaria urbana Perugia 70 min 1.50 EUR; a bordo 2.00."
+}

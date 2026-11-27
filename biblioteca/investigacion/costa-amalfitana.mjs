@@ -1,0 +1,10 @@
+import * as original from './napoles-amalfi.mjs';
+export const F = original.F;
+const ids = new Set(['sentiero-degli-dei', 'duomo-amalfi', 'fiordo-di-furore', 'marina-di-praia', 'positano-spiaggia-grande', 'ferry-amalfi-positano', 'villa-rufolo', 'ravello-belvedere', 'ravello-festival', 'atrani', 'bus-sita-panoramico', 'barco-excursion', 'sorrento-vallone-mulini', 'sorrento-limoncello', 'sorrento-atardecer', 'salerno-minerva', 'salerno-luci', 'salerno-lungomare', 'positano-callejones', 'fornillo', 'valle-ferriere', 'sentiero-limoni', 'cetara', 'vietri', 'praiano-san-gennaro', 'gavitella', 'regina-giovanna', 'grotta-smeraldo', 'arechi', 'paestum', 'capri-ferry']);
+const filtrar = datos => Object.fromEntries(Object.entries(datos).filter(([id]) => ids.has(id)));
+export const enlaces = filtrar(original.enlaces);
+export const consejos = filtrar(original.consejos);
+export const sitios = [];
+export const rutas = [];
+export const nuevas = [];
+export const fuentesAct = {'bus-sita-panoramico':[3,4], 'sentiero-degli-dei':[3,4], 'grotta-smeraldo':[3], 'vietri':[3,4]};

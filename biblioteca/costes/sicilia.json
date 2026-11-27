@@ -1,0 +1,31 @@
+{
+  "zona": "sicilia",
+  "base": "palermo",
+  "ciudad_referencia": "Palermo",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 20,
+      "max": 28,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/palermo/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": {
+      "min": 50,
+      "max": 90,
+      "fuente": "https://www.booking.com/city/it/palermo.html?selected_currency=EUR | https://www.budgetyourtrip.com/italy/palermo",
+      "calidad": "orientativo"
+    },
+    "comida_barata": {
+      "valor": 13.5,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Palermo",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 1.4,
+      "fuente": "https://www.amat.pa.it/biglietti/",
+      "calidad": "verificado"
+    }
+  },
+  "notas": "hostel_noche: rango P25-P75 de 10 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=15.0, maximo=34.0); son precios 'desde' sin fechas concretas. doble_noche: min=50 es el precio 'From' mas bajo del titulo de la pagina de Booking.com para la ciudad (alojamiento mas barato listado, 2 adultos, 1 noche, sin fecha fija); max=90 es el precio medio de hotel para una pareja segun BudgetYourTrip (gasto declarado por viajeros). La horquilla mezcla ambas fuentes: es solo una guia aproximada, no un rango de apartamentos/dobles economicos garantizado. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Palermo (rango Numbeo 7-18). transporte_billete: AMAT Palermo, biglietto ordinario 90 min 1.40 EUR; a bordo 1.80."
+}

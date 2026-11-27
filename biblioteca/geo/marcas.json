@@ -1,0 +1,113 @@
+{
+ "actividades": {
+  "passetto-ancona": [
+   43.62,
+   13.527
+  ],
+  "mole-vanvitelliana": [
+   43.625,
+   13.51
+  ],
+  "anfiteatro-romano-ancona": [
+   43.617,
+   13.512
+  ],
+  "cardeto-san-ciriaco": [
+   43.62,
+   13.52
+  ],
+  "aperitivo-ancona": [
+   43.617,
+   13.512
+  ],
+  "portonovo": [
+   43.55,
+   13.62
+  ],
+  "mezzavalle": [
+   43.553,
+   13.612
+  ],
+  "sendero-monte-conero": [
+   43.526,
+   13.617
+  ],
+  "due-sorelle-barco": [
+   43.508,
+   13.625
+  ],
+  "sirolo-atardecer": [
+   43.526,
+   13.617
+  ],
+  "palazzo-ducale-urbino": [
+   43.726,
+   12.636
+  ],
+  "urbino-raffaello-universidad": [
+   43.726,
+   12.637
+  ],
+  "urbino-fortezza-albornoz": [
+   43.725,
+   12.634
+  ],
+  "ascoli-piazza-popolo": [
+   42.853,
+   13.575
+  ],
+  "ascoli-olive-ascolane": [
+   42.853,
+   13.575
+  ],
+  "grotte-frasassi": [
+   43.401,
+   12.968
+  ],
+  "sibillini-castelluccio": [
+   42.823,
+   13.205
+  ],
+  "loreto-santa-casa": [
+   43.441,
+   13.607
+  ],
+  "castelfidardo-fisarmonica": [
+   43.463,
+   13.554
+  ]
+ },
+ "noche": {
+  "Centro de Ancona (Plebiscito y Corso Garibaldi)": [
+   43.617,
+   13.509
+  ],
+  "Piazzetta de Sirolo": [
+   43.526,
+   13.617
+  ],
+  "Casco histórico de Urbino": [
+   43.726,
+   12.636
+  ]
+ },
+ "eventos": {
+  "Festa del Mare": [
+   43.617,
+   13.509
+  ],
+  "Fioritura de Castelluccio": [
+   42.823,
+   13.205
+  ],
+  "Quintana di Ascoli": [
+   42.853,
+   13.575
+  ],
+  "Festa dell'Aquilone": [
+   43.726,
+   12.636
+  ]
+ },
+ "dudosos": []
+}

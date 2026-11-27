@@ -1,0 +1,96 @@
+{
+ "actividades": {
+  "perugia-centro": [
+   43.112,
+   12.389
+  ],
+  "perugia-noche": [
+   43.113,
+   12.389
+  ],
+  "asis-basilica": [
+   43.074,
+   12.606
+  ],
+  "asis-rocca-maggiore": [
+   43.073,
+   12.62
+  ],
+  "spello": [
+   42.989,
+   12.671
+  ],
+  "orvieto-subterraneo": [
+   42.718,
+   12.111
+  ],
+  "orvieto-pozo": [
+   42.727,
+   12.119
+  ],
+  "gubbio": [
+   43.351,
+   12.577
+  ],
+  "marmore": [
+   42.551,
+   12.714
+  ],
+  "trasimeno": [
+   43.131,
+   12.095
+  ],
+  "trasimeno-atardecer": [
+   43.125,
+   12.047
+  ],
+  "montefalco": [
+   42.894,
+   12.649
+  ],
+  "norcia": [
+   42.792,
+   13.093
+  ],
+  "asis-perugia-dia": [
+   43.074,
+   12.606
+  ],
+  "orvieto-duomo": [
+   42.717,
+   12.11
+  ]
+ },
+ "noche": {
+  "Escalinata del Duomo y Corso Vannucci": [
+   43.112,
+   12.389
+  ],
+  "Via Fani y calles universitarias": [
+   43.113,
+   12.384
+  ],
+  "Centro de Orvieto": [
+   42.718,
+   12.111
+  ]
+ },
+ "eventos": {
+  "Umbria Jazz": [
+   43.112,
+   12.389
+  ],
+  "Eurochocolate": [
+   43.112,
+   12.389
+  ],
+  "Infiorate de Spello": [
+   42.989,
+   12.671
+  ],
+  "Festa dei Ceri": [
+   43.351,
+   12.577
+  ]
+ }
+}

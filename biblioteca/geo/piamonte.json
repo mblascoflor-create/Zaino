@@ -1,0 +1,120 @@
+{
+ "actividades": {
+  "museo-egizio": [
+   45.068,
+   7.684
+  ],
+  "mole-museo-cine": [
+   45.069,
+   7.693
+  ],
+  "centro-storico": [
+   45.071,
+   7.686
+  ],
+  "porta-palazzo": [
+   45.078,
+   7.682
+  ],
+  "ruta-chocolate": [
+   45.067,
+   7.686
+  ],
+  "aperitivo-vermut": [
+   45.067,
+   7.686
+  ],
+  "murazzi": [
+   45.062,
+   7.696
+  ],
+  "venaria": [
+   45.136,
+   7.628
+  ],
+  "stupinigi": [
+   45.003,
+   7.604
+  ],
+  "sacra-san-michele": [
+   45.098,
+   7.343
+  ],
+  "langhe-cata": [
+   44.611,
+   7.941
+  ],
+  "alba-centro": [
+   44.7,
+   8.035
+  ],
+  "fiera-tartufo": [
+   44.7,
+   8.035
+  ],
+  "superga": [
+   45.08,
+   7.766
+  ],
+  "valentino": [
+   45.054,
+   7.688
+  ],
+  "cappuccini": [
+   45.062,
+   7.699
+  ],
+  "mauto": [
+   45.032,
+   7.675
+  ],
+  "balon": [
+   45.077,
+   7.68
+  ],
+  "lago-orta": [
+   45.798,
+   8.411
+  ]
+ },
+ "noche": {
+  "Quadrilatero Romano": [
+   45.073,
+   7.682
+  ],
+  "San Salvario": [
+   45.056,
+   7.678
+  ],
+  "Murazzi del Po": [
+   45.062,
+   7.696
+  ],
+  "Centro de Alba": [
+   44.7,
+   8.035
+  ]
+ },
+ "eventos": {
+  "Feria Internacional de la Trufa Blanca de Alba": [
+   44.7,
+   8.035
+  ],
+  "CioccolaTò": [
+   45.071,
+   7.686
+  ],
+  "Luci d'Artista": [
+   45.07,
+   7.686
+  ],
+  "Torino Film Festival": [
+   45.069,
+   7.693
+  ],
+  "Terra Madre Salone del Gusto": [
+   45.033,
+   7.652
+  ]
+ }
+}

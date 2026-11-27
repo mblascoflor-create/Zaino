@@ -1,0 +1,938 @@
+{
+ "id": "puglia-salento",
+ "nombre": "Puglia y Salento",
+ "nombre_corto": "Puglia-Salento",
+ "lema": "Pueblos blancos, barroco y mar turquesa",
+ "descripcion": "Del street food de Bari y los trulli de Alberobello al barroco de Lecce y las calas del Salento. Mucho más barato que Amalfi y con fiesta de verano en Gallipoli.",
+ "perfil": {
+  "mar": 3,
+  "montana": 0,
+  "ciudad": 2,
+  "campo": 2,
+  "fiesta": 2,
+  "calma": 2,
+  "cultura": 2,
+  "gastronomia": 3,
+  "naturaleza": 2,
+  "playa": 3,
+  "aventura": 1,
+  "postal": 3
+ },
+ "nivel_precio": "medio",
+ "nivel_precio_nota": "Más barato que la costa tirrénica, pero Gallipoli y Polignano suben mucho en julio y agosto.",
+ "meses": {
+  "ideales": [
+   5,
+   6,
+   9
+  ],
+  "aceptables": [
+   4,
+   7,
+   10
+  ],
+  "evitar": [
+   8,
+   1,
+   2
+  ],
+  "nota": "Mayo-junio y septiembre dan mar cálido sin masas; agosto es caro y abarrotado, y de noviembre a marzo no hay baño y muchos locales de playa cierran."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "util",
+  "nota": "Sin coche se hacen Bari, Polignano, Monopoli, Ostuni, Alberobello, Lecce, Gallipoli y Otranto con trenes regionales y buses. Para las calas del Salento (Porto Selvaggio, Grotta della Poesia, Punta Prosciutto, Pescoluse) el coche es casi imprescindible porque el bus es escaso. Cuidado con las ZTL en los cascos antiguos.",
+  "aeropuerto_recogida": "BRI",
+  "operadores": [
+   {
+    "nombre": "Hertz (Bari, BRI)",
+    "enlace": "https://www.momondo.it/noleggio-auto/Hertz-Bari.BRI.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Hertz-Bari.BRI.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Europcar (Bari, BRI)",
+    "enlace": "https://www.momondo.it/noleggio-auto/Europcar-Bari.BRI.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Europcar-Bari.BRI.EUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Hertz (Brindisi, BDS)",
+    "enlace": "https://www.discovercars.com/es/partners/hertz-1861",
+    "fuente": "https://www.discovercars.com/es/partners/hertz-1861"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "bari",
+   "nombre": "Bari",
+   "por_que": "Aeropuerto y tren a Polignano, Monopoli y Alberobello, con la mejor comida callejera y alojamiento barato.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Bari%2C+Italia"
+  },
+  {
+   "id": "lecce",
+   "nombre": "Lecce",
+   "por_que": "Barroco, ambiente universitario y salidas a Otranto y a la costa; mejor con coche para las calas.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lecce%2C+Italia"
+  },
+  {
+   "id": "gallipoli",
+   "nombre": "Gallipoli",
+   "por_que": "Playa y fiesta en verano a pie; cerca de Porto Selvaggio y Punta Prosciutto, pero caro en agosto.",
+   "sin_coche": true,
+   "ambiente": "fiesta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Gallipoli%2C+Italia"
+  },
+  {
+   "id": "ostuni",
+   "nombre": "Ostuni",
+   "por_que": "Pueblo blanco con masserie alrededor; calma y buena comida, y la estación está lejos del casco antiguo.",
+   "sin_coche": false,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ostuni%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "BRI",
+    "nombre": "Bari – Karol Wojtyła",
+    "ciudad": "Bari",
+    "a_la_base": "Tren desde la estación del aeropuerto a Bari Centrale (Trenitalia/Ferrotramviaria); el trayecto es corto, comprobad horarios."
+   },
+   {
+    "iata": "BDS",
+    "nombre": "Brindisi – Salento",
+    "ciudad": "Brindisi",
+    "a_la_base": "Para el Salento profundo; sin coche es más lento: tren o bus a Brindisi/Lecce según horarios."
+   }
+  ],
+  "desde_espana": "Vueling y Ryanair son las opciones directas hacia Bari; Brindisi suele exigir escala. En verano hay más oferta que en invierno, así que conviene comparar fechas.",
+  "rutas_directas": [
+   {
+    "origen": "Girona",
+    "origen_iata": "GRO",
+    "destino_iata": "BRI",
+    "aerolinea": "Ryanair",
+    "nota": "Ruta anunciada para verano 2026; flightconnections lista 1 vuelo por semana. Comprobad temporada 2027.",
+    "fuente": "https://dosunos.aviacionline.com/ryanair-lanza-cinco-nuevas-rutas-desde-cinco-aeropuertos-de-espana"
+   },
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "BRI",
+    "aerolinea": "Vueling",
+    "nota": "Según flightconnections, unos 6 vuelos por semana; no se sabe si es estacional.",
+    "fuente": "https://www.flightconnections.com/flights-from-bri-to-bcn"
+   }
+  ],
+  "desde_italia": "Trenitalia/Italo hasta Bari y Lecce por la costa adriática (Bolonia–Bari–Lecce en tren de alta velocidad o regional). FlixBus tiene buses a Bari.",
+  "novedades": [
+   {
+    "nota": "Ryanair confirmó para el verano 2026 una ruta directa Girona – Bari (BRI).",
+    "fuente": "https://dosunos.aviacionline.com/ryanair-lanza-cinco-nuevas-rutas-desde-cinco-aeropuertos-de-espana"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "Tren regional Trenitalia Bari–Polignano–Monopoli–Ostuni–Lecce, FSE hacia Alberobello y Otranto, y bus o coche para las calas. En el Salento profundo el coche manda.",
+  "tren": {
+   "nota": "Línea Bari–Lecce con paradas en Polignano, Monopoli y Ostuni. Ferrovie del Sud Est (FSE) cubre Alberobello, Martina Franca y el sur del Salento (Lecce–Otranto).",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus (larga distancia)",
+   "nota": "Para conectar Bari con otras ciudades italianas; no cubre la llegada desde España ni las calas.",
+   "enlace": "https://www.flixbus.it/autobus/bari",
+   "fuente": "https://www.flixbus.it/azienda/stampa/flixbus-offerta-estiva-2026"
+  },
+  "ferry": [],
+  "camper": null
+ },
+ "actividades": [
+  {
+   "id": "bari-orecchiette",
+   "nombre": "Orecchiette a mano en Arco Basso (Bari Vecchia)",
+   "donde": "Bari",
+   "base": "bari",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Callejón de Bari Vecchia donde las abuelas amasan orecchiette a mano a la puerta de casa, justo frente al castillo normando-suabo.",
+   "consejo": "Mejor por la mañana, cuando trabajan; se pueden comprar bolsas sueltas para cocinar en el apartamento.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Arco+Basso%2C+Bari+Vecchia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Arco+Basso%2C+Bari+Vecchia%2C+Italia",
+   "fuente": "https://gazzettadelgusto.it/cibo/strada-delle-orecchiette-a-bari-ecco-dove-si-trova/?print=pdf"
+  },
+  {
+   "id": "bari-street-food",
+   "nombre": "Ruta de street food barés",
+   "donde": "Bari",
+   "base": "bari",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Focaccia barese en panadería, panzerotti fritos de tomate y mozzarella, y sgagliozze (polenta frita en cucurucho) sentados en un escalón de Bari Vecchia.",
+   "consejo": "Las sgagliozze suelen venderse desde media tarde y a veces solo se paga en efectivo; los panaderos de focaccia cierran algún día a la semana.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Bari+Vecchia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Bari+Vecchia%2C+Italia",
+   "fuente": "https://doeatbetterexperience.com/it/blog/cosa-mangiare-a-bari/"
+  },
+  {
+   "id": "bari-san-nicola",
+   "nombre": "Basílica de San Nicolás y callejones de Bari Vecchia",
+   "donde": "Bari",
+   "base": "bari",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Basílica románica donde descansan las reliquias de San Nicolás, rodeada de un laberinto de calles con ropa tendida y plazas diminutas.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Basilica+di+San+Nicola%2C+Bari%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Basilica+di+San+Nicola%2C+Bari%2C+Italia",
+   "fuente": "https://www.visititaly.eu/it/storie-e-tradizioni/nicola-il-santo-dei-baresi-venerato-in-tutto-il-mondo"
+  },
+  {
+   "id": "polignano-lama-monachile",
+   "nombre": "Lama Monachile y casco antiguo de Polignano a Mare",
+   "donde": "Polignano a Mare",
+   "base": "bari",
+   "tipo": "playa",
+   "tipos_extra": [
+    "postal",
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Cala de guijarros encajada entre acantilados bajo un puente romano, con el casco antiguo blanco encima y la estatua de Domenico Modugno en el paseo.",
+   "consejo": "En verano se llena a partir de media mañana: llegad temprano. Polignano tiene estación de tren en la línea Bari–Lecce.",
+   "enlace": "https://www.italia.it/it/puglia/bari/polignano",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lama+Monachile%2C+Polignano+a+Mare%2C+Italia",
+   "fuente": "https://www.italia.it/it/puglia/bari/polignano"
+  },
+  {
+   "id": "polignano-grutas-barco",
+   "nombre": "Barco por las cuevas marinas de Polignano",
+   "donde": "Polignano a Mare",
+   "base": "bari",
+   "tipo": "agua",
+   "tipos_extra": [
+    "aventura",
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Salida corta en barca para ver desde el mar las cuevas del acantilado, como la Grotta Palazzese, la mayor de unas veinte.",
+   "consejo": "Se reserva por internet o en el puerto; comparad duración y baño incluido.",
+   "enlace": "https://www.getyourguide.es/s/?q=Polignano+a+Mare+barco+cuevas",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Polignano+a+Mare+porto%2C+Italia",
+   "fuente": "https://www.italia.it/it/puglia/bari/polignano"
+  },
+  {
+   "id": "polignano-atardecer",
+   "nombre": "Atardecer en los miradores de Polignano",
+   "donde": "Polignano a Mare",
+   "base": "bari",
+   "tipo": "postal",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Miradores sobre el acantilado y paseo por las murallas con el sol cayendo sobre el Adriático; la luz es el mejor plan gratis del pueblo.",
+   "enlace": "https://www.italia.it/it/puglia/bari/polignano",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Terrazza+Santo+Stefano%2C+Polignano+a+Mare%2C+Italia",
+   "fuente": "https://www.italia.it/it/puglia/bari/polignano"
+  },
+  {
+   "id": "monopoli",
+   "nombre": "Monopoli: puerto viejo y murallas",
+   "donde": "Monopoli",
+   "base": "bari",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal",
+    "playa"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Pueblo costero con puerto de barcas de colores, casco antiguo blanco y pequeñas calas urbanas; más tranquilo que Polignano.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Porto+Vecchio%2C+Monopoli%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Porto+Vecchio%2C+Monopoli%2C+Italia",
+   "fuente": "https://www.itinerarinelgusto.it/en/apulia/monopoli-ba"
+  },
+  {
+   "id": "alberobello-trulli",
+   "nombre": "Alberobello: Rione Monti y trulli",
+   "donde": "Alberobello",
+   "base": "bari",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Barrio Patrimonio UNESCO con más de mil casas de piedra seca de techo cónico, hoy tiendas y bares. Se ve en medio día.",
+   "consejo": "Sin coche: tren de Ferrovie del Sud Est desde Bari (confirmad horarios en su web) o combinación con Trenitalia. Id temprano para evitar autocares.",
+   "enlace": "https://whc.unesco.org/en/list/787",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Rione+Monti%2C+Alberobello%2C+Italia",
+   "fuente": "https://whc.unesco.org/en/list/787"
+  },
+  {
+   "id": "ostuni-citta-bianca",
+   "nombre": "Ostuni, la Ciudad Blanca",
+   "donde": "Ostuni",
+   "base": "ostuni",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Casco antiguo encalado en lo alto de una colina, de calles empinadas y arcos; mejor a la hora del atardecer.",
+   "consejo": "La estación de Ostuni está en la línea Bari–Lecce pero lejos del casco antiguo; se sube en bus o taxi.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Ostuni%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Ostuni%2C+Italia",
+   "fuente": "https://www.ilturista.info/guide/ostuni-puglia-spiagge-cosa-vedere-centro-storico-citta-bianca-salento/"
+  },
+  {
+   "id": "lecce-barocco",
+   "nombre": "Lecce barroca: Piazza Duomo y Santa Croce",
+   "donde": "Lecce",
+   "base": "lecce",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Fachadas de piedra dorada labradas con ángeles y frutas, plazas y palacios; la ciudad más bonita del sur y se recorre a pie.",
+   "enlace": "https://www.italia.it/en/puglia/lecce",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Duomo%2C+Lecce%2C+Italia",
+   "fuente": "https://www.italia.it/it/puglia/lecce/guida-storia-curiosita"
+  },
+  {
+   "id": "lecce-aperitivo",
+   "nombre": "Aperitivo en el centro de Lecce",
+   "donde": "Lecce",
+   "base": "lecce",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Noche de plaza y callejones del casco antiguo: aperitivo, tapas pugliesi y copas con mucho ambiente universitario.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Lecce%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Lecce%2C+Italia",
+   "fuente": "https://www.italia.it/en/puglia/lecce"
+  },
+  {
+   "id": "otranto",
+   "nombre": "Otranto: catedral, murallas y calas",
+   "donde": "Otranto",
+   "base": "lecce",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "playa",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Pueblo amurallado sobre el mar más oriental de Italia, con catedral de suelo de mosaico y calas de agua turquesa al lado.",
+   "consejo": "Hay trenes regionales de Ferrovie del Sud Est entre Lecce y Otranto; comprobad horarios, son pocos.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Cattedrale+di+Otranto%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cattedrale+di+Otranto%2C+Italia",
+   "fuente": "https://www.museionline.info/tipologie-museo/cattedrale-di-otranto"
+  },
+  {
+   "id": "porto-selvaggio",
+   "nombre": "Porto Selvaggio y Torre Uluzzo",
+   "donde": "Nardò",
+   "base": "gallipoli",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "playa",
+    "aventura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Parque natural: sendero entre pinos hasta una cala de guijarros con agua limpia y acantilados, con torre del siglo XVI sobre la roca.",
+   "consejo": "Llevad agua, calzado cerrado y bolsa para la basura; no hay servicios en la cala y la bajada se hace a pie.",
+   "enlace": "https://www.italia.it/it/puglia/lecce/parco-naturale-di-porto-selvaggio-e-palude-del-capitano",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Parco+Naturale+Porto+Selvaggio%2C+Nard%C3%B2%2C+Italia",
+   "fuente": "https://www.italia.it/it/puglia/lecce/parco-naturale-di-porto-selvaggio-e-palude-del-capitano"
+  },
+  {
+   "id": "grotta-poesia",
+   "nombre": "Grotta della Poesia (Roca Vecchia)",
+   "donde": "Melendugno",
+   "base": "lecce",
+   "tipo": "agua",
+   "tipos_extra": [
+    "naturaleza",
+    "aventura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Piscina natural en la roca junto al yacimiento de Roca Vecchia, con agua turquesa y saltos desde unos 5 metros.",
+   "consejo": "El acceso está regulado y la zona ha tenido restricciones y accidentes por saltos con poca profundidad: mirad las normas locales antes de ir y no saltéis sin comprobar.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Grotta+della+Poesia%2C+Roca+Vecchia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Grotta+della+Poesia%2C+Roca+Vecchia%2C+Italia",
+   "fuente": "https://www.greenme.it/viaggi/italia/grotta-della-poesia-salento/"
+  },
+  {
+   "id": "punta-prosciutto",
+   "nombre": "Punta Prosciutto: dunas y mar caribeño",
+   "donde": "Porto Cesareo",
+   "base": "gallipoli",
+   "tipo": "playa",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Kilómetros de arena clara y dunas con agua poco profunda en el Jónico; la playa más parecida al Caribe del Salento.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Punta+Prosciutto%2C+Porto+Cesareo%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Punta+Prosciutto%2C+Porto+Cesareo%2C+Italia",
+   "fuente": "https://www.greenme.it/viaggi/punta-prosciutto-spiaggia-salento/"
+  },
+  {
+   "id": "pescoluse",
+   "nombre": "Pescoluse, las Maldivas del Salento",
+   "donde": "Salve",
+   "base": "gallipoli",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Playa larga de arena fina blanca y agua baja y cristalina; hay zonas libres y chiringuitos.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Pescoluse%2C+Salve%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Pescoluse%2C+Salve%2C+Italia",
+   "fuente": "https://www.spiagge.it/magazine/le-maldive-del-salento-i-tropici-tutti-italiani/"
+  },
+  {
+   "id": "gallipoli-centro",
+   "nombre": "Centro histórico de Gallipoli",
+   "donde": "Gallipoli",
+   "base": "gallipoli",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Casco antiguo en una isla unida por un puente: murallas, puerto de pesca, iglesias barrocas y callejones blancos.",
+   "enlace": "https://www.italia.it/pt/apulia/lecce/galipoli",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Gallipoli%2C+Italia",
+   "fuente": "https://www.italia.it/pt/apulia/lecce/galipoli"
+  },
+  {
+   "id": "gallipoli-purita",
+   "nombre": "Spiaggia della Purità",
+   "donde": "Gallipoli",
+   "base": "gallipoli",
+   "tipo": "playa",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Playa de arena a los pies de las murallas, con baño y vistas al casco antiguo; sin coche y a cinco minutos de todo.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Spiaggia+della+Purit%C3%A0%2C+Gallipoli%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+della+Purit%C3%A0%2C+Gallipoli%2C+Italia",
+   "fuente": "https://travel.thewom.it/italia/puglia/spiagge-gallipoli.html"
+  },
+  {
+   "id": "gallipoli-fiesta-verano",
+   "nombre": "Fiesta de verano en Gallipoli",
+   "donde": "Gallipoli",
+   "base": "gallipoli",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "musica"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "En julio y agosto el casco antiguo y los locales de playa se llenan de gente; es el sitio de más ambiente del Salento.",
+   "consejo": "Mejor evitar agosto si queréis dormir barato: los precios se disparan.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Gallipoli+centro+storico%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Gallipoli+centro+storico%2C+Italia",
+   "fuente": "https://travel.thewom.it/italia/puglia/spiagge-gallipoli.html"
+  },
+  {
+   "id": "pizzica-salento",
+   "nombre": "Noches de pizzica en pueblos del Salento",
+   "donde": "Melpignano y Grecía Salentina",
+   "base": "lecce",
+   "tipo": "musica",
+   "tipos_extra": [
+    "fiesta",
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    7,
+    8
+   ],
+   "descripcion": "Música popular salentina con tambores y baile en plazas y fiestas de pueblo durante el verano; la Notte della Taranta es la cita grande.",
+   "consejo": "Los pueblos de la Grecìa Salentina están a unos 25-35 km de Lecce; sin coche, mirad las salidas de bus nocturnas o id en grupo con taxi compartido.",
+   "enlace": "https://www.lanottedellataranta.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Melpignano%2C+Italia",
+   "fuente": "https://www.lanottedellataranta.it/"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Orecchiette con cime di rapa",
+   "que_es": "pasta fresca en forma de orejita con brócoli napolitano, ajo y anchoa; el plato símbolo de Bari",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "Bari Vecchia, en trattorias de barrio y comprando orecchiette hechas a mano en Arco Basso",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Arco+Basso%2C+Bari+Vecchia%2C+Italia",
+   "fuente": "https://gazzettadelgusto.it/cibo/strada-delle-orecchiette-a-bari-ecco-dove-si-trova/?print=pdf"
+  },
+  {
+   "plato": "Focaccia barese",
+   "que_es": "focaccia alta con tomate y aceitunas, se come doblada paseando",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "panaderías de Bari Vecchia (id por la mañana)",
+   "maps": "https://www.google.com/maps/search/?api=1&query=panificio+focaccia+Bari+Vecchia%2C+Italia",
+   "fuente": "https://doeatbetterexperience.com/it/blog/cosa-mangiare-a-bari/"
+  },
+  {
+   "plato": "Panzerotti",
+   "que_es": "media luna de masa frita rellena de tomate y mozzarella",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "freidurías del centro de Bari (zona Murat), abren hasta tarde",
+   "maps": "https://www.google.com/maps/search/?api=1&query=panzerotti+Corso+Cavour%2C+Bari%2C+Italia",
+   "fuente": "https://doeatbetterexperience.com/it/blog/cosa-mangiare-a-bari/"
+  },
+  {
+   "plato": "Sgagliozze y popizze",
+   "que_es": "rodajas de polenta frita servidas calientes en cucurucho de papel",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "puestos de Largo Albicocca, en Bari Vecchia, desde media tarde",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Largo+Albicocca%2C+Bari%2C+Italia",
+   "fuente": "https://doeatbetterexperience.com/it/blog/cosa-mangiare-a-bari/"
+  },
+  {
+   "plato": "Crudo di mare",
+   "que_es": "erizos, mejillones y tiras de sepia crudos aliñados con limón; se comen al momento",
+   "estilo": "mercado",
+   "coste": "medio",
+   "donde_probarlo": "puestos del mercado de pescado del Molo San Nicola, en el puerto de Bari, por la mañana",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Molo+San+Nicola%2C+Bari%2C+Italia",
+   "fuente": "https://doeatbetterexperience.com/it/blog/cosa-mangiare-a-bari/"
+  },
+  {
+   "plato": "Riso, patate e cozze",
+   "que_es": "tiella de arroz, patata y mejillones al horno; el plato de la cocina barese",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias tradicionales de Bari y de la costa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=trattoria+tiella+barese+Bari%2C+Italia",
+   "fuente": "https://doeatbetterexperience.com/it/blog/cosa-mangiare-a-bari/"
+  },
+  {
+   "plato": "Burrata y stracciatella",
+   "que_es": "queso fresco de mozzarella y nata de las granjas pugliesi",
+   "estilo": "mercado",
+   "coste": "bajo",
+   "donde_probarlo": "queserías y mercados de Puglia (Valle d'Itria, Ostuni) y en la mesa con pan y tomate",
+   "maps": "https://www.google.com/maps/search/?api=1&query=caseificio+burrata+Alberobello%2C+Italia",
+   "fuente": "https://doeatbetterexperience.com/it/italia/tour-gastronomici-puglia/"
+  },
+  {
+   "plato": "Pasticciotto leccese",
+   "que_es": "pasta frola rellena de crema pastelera que se toma recién hecho para desayunar",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías de Lecce, por la mañana, con café",
+   "maps": "https://www.google.com/maps/search/?api=1&query=pasticceria+pasticciotto+Lecce%2C+Italia",
+   "fuente": "https://www.italia.it/en/puglia/lecce"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Bari Vecchia y zona Murat",
+   "base": "bari",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo y panzerotti en el casco antiguo y copas en las calles del Murat; ambiente universitario.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Bari+Vecchia%2C+Italia",
+   "fuente": "https://doeatbetterexperience.com/it/blog/cosa-mangiare-a-bari/"
+  },
+  {
+   "zona": "Casco antiguo de Lecce",
+   "base": "lecce",
+   "plan": "copas",
+   "descripcion": "Plazas y callejones con aperitivo y bares hasta tarde.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Lecce%2C+Italia",
+   "fuente": "https://www.italia.it/en/puglia/lecce"
+  },
+  {
+   "zona": "Gallipoli: casco antiguo y Baia Verde",
+   "base": "gallipoli",
+   "plan": "fiesta",
+   "descripcion": "Fiesta de verano en el casco antiguo y locales de playa; solo funciona de pleno en julio y agosto.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Gallipoli+centro+storico%2C+Italia",
+   "fuente": "https://travel.thewom.it/italia/puglia/spiagge-gallipoli.html"
+  },
+  {
+   "zona": "Fiestas de pizzica en pueblos del Salento",
+   "base": "lecce",
+   "plan": "fiesta",
+   "descripcion": "Música y baile popular en verano; mejor con coche o transporte compartido.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Melpignano%2C+Italia",
+   "fuente": "https://www.lanottedellataranta.it/"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "bari",
+   "coste": "bajo",
+   "para": "la forma más barata de dormir cerca de estación y casco antiguo.",
+   "enlaces": [
+    {
+     "sitio": "Hostelworld",
+     "url": "https://www.hostelworld.com/hostels/europe/italy/bari/"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Bari"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "bari",
+   "coste": "medio",
+   "para": "grupos de 4-6 que quieren cocinar y salir a Polignano/Alberobello en tren.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Bari--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Bari"
+    }
+   ]
+  },
+  {
+   "tipo": "hostel",
+   "base": "lecce",
+   "coste": "bajo",
+   "para": "grupos jóvenes en el barrio histórico, con salidas a Otranto y Gallipoli.",
+   "enlaces": [
+    {
+     "sitio": "Hostelworld",
+     "url": "https://www.hostelworld.com/hostels/europe/italy/lecce/"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Lecce"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "lecce",
+   "coste": "medio",
+   "para": "grupos de 4-8 con coche, para moverse a las calas.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Lecce--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Lecce"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "gallipoli",
+   "coste": "alto",
+   "para": "grupos de verano que quieren fiesta y playa a pie; los precios suben mucho en julio-agosto.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Gallipoli--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Gallipoli"
+    }
+   ]
+  },
+  {
+   "tipo": "agriturismo",
+   "base": "ostuni",
+   "coste": "medio",
+   "para": "grupos con coche que busquen masseria o trullo con piscina y tranquilidad.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Ostuni"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Ostuni--Italia/homes"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "La Notte della Taranta",
+   "donde": "Melpignano y pueblos de la Grecìa Salentina",
+   "cuando": "cada año, conciertos de pizzica en pueblos desde finales de julio y concertone final en Melpignano a finales de agosto (en 2026 fue el 22 de agosto)",
+   "meses": [
+    7,
+    8
+   ],
+   "proxima_fecha": null,
+   "descripcion": "El mayor festival de música popular de Italia: pizzica y tarantella por pueblos del Salento y un gran concierto gratuito final.",
+   "enlace": "https://www.lanottedellataranta.it/",
+   "fuente": "https://www.lanottedellataranta.it/"
+  },
+  {
+   "nombre": "Fiesta de San Nicolás",
+   "donde": "Bari",
+   "cuando": "cada año, 7 al 9 de mayo",
+   "meses": [
+    5
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Desfile histórico, procesión en barco por el puerto y fuegos artificiales en honor al patrón de Bari.",
+   "enlace": "https://www.parkingmycar.it/blog/festa-san-nicola-bari/",
+   "fuente": "https://www.parkingmycar.it/blog/festa-san-nicola-bari/"
+  },
+  {
+   "nombre": "Cavalcata de Sant'Oronzo",
+   "donde": "Ostuni",
+   "cuando": "cada año, finales de agosto",
+   "meses": [
+    8
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Desfile de jinetes con trajes históricos y caballos engalanados por las calles blancas de Ostuni.",
+   "enlace": "https://www.ilturista.info/blog/15016-La_Cavalcata_di_Sant_Oronzo_ad_Ostuni/",
+   "fuente": "https://www.ilturista.info/blog/15016-La_Cavalcata_di_Sant_Oronzo_ad_Ostuni/"
+  },
+  {
+   "nombre": "Focara de Novoli",
+   "donde": "Novoli (Lecce)",
+   "cuando": "cada año, 16-17 de enero",
+   "meses": [
+    1
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Una hoguera gigante de sarmientos en honor a San Antonio Abad, con música y fiesta en el pueblo.",
+   "enlace": "https://www.eventiesagre.it/Eventi_Feste/4528_La+Focara+di+Novoli.html",
+   "fuente": "https://www.eventiesagre.it/Eventi_Feste/4528_La+Focara+di+Novoli.html"
+  }
+ ],
+ "notas_honestas": [
+  "No verifiqué horarios ni líneas exactas de Ferrovie del Sud Est (su web solo cargó una pantalla de espera); no hay enlace oficial de FSE en moverse.",
+  "Rutas desde España: solo BRI verificadas (Girona/Ryanair 1 vuelo semanal; Barcelona/Vueling). Brindisi sin directo a Barcelona según flightconnections.",
+  "Grotta della Poesia: acceso regulado y saltos peligrosos; la fuente verificada es una nota antigua de 2019, comprobad restricciones actuales.",
+  "Enlaces de Polignano, Lecce, Gallipoli y Porto Selvaggio son de italia.it; Monopoli, Ostuni, Otranto, Punta Prosciutto y Pescoluse usan guías privadas, no webs municipales.",
+  "Cavalcata de Sant'Oronzo y Focara: fechas exactas solo de fuentes secundarias.",
+  "Pasticciotto, burrata y tiella no tienen una fuente específica verificada; se citan por ser típicos.",
+  "Notte della Taranta 2027 no tiene fechas publicadas."
+ ]
+}

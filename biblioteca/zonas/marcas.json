@@ -1,0 +1,826 @@
+{
+ "id": "marcas",
+ "nombre": "Las Marcas (Ancona, Conero, Urbino)",
+ "nombre_corto": "Las Marcas",
+ "lema": "Calas blancas y ciudades sin masas",
+ "descripcion": "Costa del Conero con calas de guijarros, Ancona como base barata y ciudades de interior como Urbino y Ascoli sin las multitudes de Toscana. Buena para un grupo con poco presupuesto.",
+ "perfil": {
+  "mar": 3,
+  "montana": 1,
+  "ciudad": 2,
+  "campo": 2,
+  "fiesta": 1,
+  "calma": 2,
+  "cultura": 2,
+  "gastronomia": 2,
+  "naturaleza": 2,
+  "playa": 2,
+  "aventura": 1,
+  "postal": 2
+ },
+ "nivel_precio": "bajo",
+ "nivel_precio_nota": "Zona poco turística: alojamiento y comida más baratos que en Toscana o Venecia, salvo la costa del Conero en agosto.",
+ "meses": {
+  "ideales": [
+   5,
+   6,
+   9
+  ],
+  "aceptables": [
+   4,
+   7,
+   10
+  ],
+  "evitar": [
+   8
+  ],
+  "nota": "Mayo-junio y septiembre dan playa sin agobio; en agosto la costa se llena y sube el precio."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "util",
+  "nota": "Ancona, Loreto y las playas del Conero en verano se hacen sin coche. Urbino, Ascoli, Frasassi y los Sibilinos van mucho mejor con coche; cuidado con las ZTL de los cascos históricos.",
+  "aeropuerto_recogida": "AOI",
+  "operadores": [
+   {
+    "nombre": "Budget",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Budget-Ancona.AOI.BUDGET.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Budget-Ancona.AOI.BUDGET.cla.ksp"
+   },
+   {
+    "nombre": "Dollar",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Dollar-Ancona.AOI.DOLLAR.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Dollar-Ancona.AOI.DOLLAR.cla.ksp"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.rentcars.com/es/rentadora/avis/italy/aeropuertos/aoi-ancona-provincia-di-ancona",
+    "fuente": "https://www.rentcars.com/es/rentadora/avis/italy/aeropuertos/aoi-ancona-provincia-di-ancona"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "ancona",
+   "nombre": "Ancona",
+   "por_que": "Puerto con tren, ambiente estudiantil y buses a las playas del Conero.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ancona%2C+Italia"
+  },
+  {
+   "id": "urbino",
+   "nombre": "Urbino",
+   "por_que": "Ciudad renacentista universitaria, sin tren, para una o dos noches.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Urbino%2C+Italia"
+  },
+  {
+   "id": "sirolo",
+   "nombre": "Sirolo y Numana",
+   "por_que": "Pueblos de la costa del Conero, ideales para playa y barco en verano.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sirolo%2C+Italia"
+  },
+  {
+   "id": "ascoli",
+   "nombre": "Ascoli Piceno",
+   "por_que": "Ciudad de travertino barata, puerta a los Montes Sibilinos.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ascoli+Piceno%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "AOI",
+    "nombre": "Ancona – Falconara (Raffaello Sanzio)",
+    "ciudad": "Ancona",
+    "a_la_base": "Falconara está a unos 15 km de Ancona; hay tren, bus o taxi. Comprobad horarios en la web del aeropuerto."
+   }
+  ],
+  "desde_espana": "Volotea conecta Ancona con Barcelona y ha operado una ruta estacional con Madrid. Como alternativa, Bolonia o Roma con Ryanair y tren o FlixBus.",
+  "rutas_directas": [
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "AOI",
+    "aerolinea": "Volotea",
+    "nota": "Dos frecuencias semanales según el aeropuerto; comprobad vigencia en la web de Volotea.",
+    "fuente": "https://www.ancona-airport.com/en/informazioni/7101/"
+   }
+  ],
+  "desde_italia": "Ancona está en la línea ferroviaria adriática: se llega en tren regional o Frecciarossa desde Bolonia y con cambios desde Roma. FlixBus también para en Ancona.",
+  "novedades": [
+   {
+    "nota": "Ruta estacional Ancona-Madrid con Volotea según el comunicado del aeropuerto; comprobad si sigue en la web de Volotea.",
+    "fuente": "https://www.ancona-airport.com/en/informazioni/7101/"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "Sin coche, la costa adriática y Loreto se hacen en tren y el Conero con buses locales en verano. Urbino, Frasassi y los Sibilinos piden coche o buses lentos.",
+  "tren": {
+   "nota": "Línea adriática con trenes frecuentes entre Ancona, Pesaro, Loreto y San Benedetto del Tronto.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Conexiones de larga distancia con Ancona.",
+   "enlace": "https://www.flixbus.it/autobus/ancona",
+   "fuente": "https://www.flixbus.it/azienda/stampa/flixbus-offerta-estiva-2026"
+  },
+  "ferry": [],
+  "camper": null
+ },
+ "actividades": [
+  {
+   "id": "passetto-ancona",
+   "nombre": "Playa y paseo del Passetto",
+   "donde": "Ancona",
+   "base": "ancona",
+   "tipo": "playa",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Playa de guijarros bajo acantilados blancos, con las grutas de roca donde guardan las barcas, a pie desde el centro.",
+   "consejo": "Fuera de verano sirve igual como paseo de acantilado con vistas.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Passetto%2C+Ancona%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Passetto%2C+Ancona%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Passetto%2C+Ancona%2C+Italia"
+  },
+  {
+   "id": "mole-vanvitelliana",
+   "nombre": "Mole Vanvitelliana y Porto Antico",
+   "donde": "Ancona",
+   "base": "ancona",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Fortaleza pentagonal sobre el agua del puerto y paseo por el Porto Antico con el Arco de Trajano.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Mole+Vanvitelliana%2C+Ancona%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mole+Vanvitelliana%2C+Ancona%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Mole+Vanvitelliana%2C+Ancona%2C+Italia"
+  },
+  {
+   "id": "anfiteatro-romano-ancona",
+   "nombre": "Anfiteatro romano y museo arqueológico",
+   "donde": "Ancona",
+   "base": "ancona",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Restos del anfiteatro romano del siglo I y el museo arqueológico de las Marcas (M.A.N. Marche) en el mismo barrio.",
+   "enlace": "https://cultura.gov.it/evento/festa-del-mare-2026-4-5-6-settembre-2026-orari-m-a-n-marche-visite-guidate-allanfiteatro-romano-di-ancona-e-apertura-serale-del-museo-per-lo-spettacolo-pirotecnico-sul-porto-antico",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Anfiteatro+romano%2C+Ancona%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Anfiteatro+romano%2C+Ancona%2C+Italia"
+  },
+  {
+   "id": "cardeto-san-ciriaco",
+   "nombre": "Catedral de San Ciriaco y parque del Cardeto",
+   "donde": "Ancona",
+   "base": "ancona",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Subida a la catedral en lo alto del monte Guasco y a los jardines del Cardeto, con el puerto y el Adriático a tus pies al caer la tarde.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Cattedrale+di+San+Ciriaco%2C+Ancona%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cattedrale+di+San+Ciriaco%2C+Ancona%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Cattedrale+di+San+Ciriaco%2C+Ancona%2C+Italia"
+  },
+  {
+   "id": "aperitivo-ancona",
+   "nombre": "Aperitivo por el centro de Ancona",
+   "donde": "Ancona",
+   "base": "ancona",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Aperitivo de copa con snack en las plazas y calles peatonales del centro (Piazza del Plebiscito, Corso Garibaldi), el plan social habitual de los universitarios.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Plebiscito%2C+Ancona%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Plebiscito%2C+Ancona%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Plebiscito%2C+Ancona%2C+Italia"
+  },
+  {
+   "id": "portonovo",
+   "nombre": "Bahía de Portonovo",
+   "donde": "Portonovo",
+   "base": "ancona",
+   "tipo": "playa",
+   "tipos_extra": [
+    "naturaleza",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Bahía de guijarros blancos con agua clara bajo el monte Conero, la iglesia románica de Santa Maria y el Fortino Napoleonico.",
+   "consejo": "En temporada hay bus desde Ancona y el aparcamiento se llena pronto; comprobad horarios del bus local antes de ir.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Portonovo%2C+Ancona%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Portonovo%2C+Ancona%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Portonovo%2C+Ancona%2C+Italia"
+  },
+  {
+   "id": "mezzavalle",
+   "nombre": "Playa de Mezzavalle",
+   "donde": "Portonovo",
+   "base": "ancona",
+   "tipo": "playa",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Playa larga y poco construida a la que se llega a pie por sendero desde Portonovo, sin chiringuitos en medio.",
+   "consejo": "Llevad agua y comida: hay poca oferta cerca y el sendero tiene desnivel.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Mezzavalle%2C+Ancona%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Mezzavalle%2C+Ancona%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Mezzavalle%2C+Ancona%2C+Italia"
+  },
+  {
+   "id": "sendero-monte-conero",
+   "nombre": "Senderos del Monte Conero",
+   "donde": "Parque del Conero",
+   "base": "sirolo",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Rutas entre bosque y acantilados del Parco del Conero, con miradores sobre el mar desde Sirolo, Numana o Portonovo.",
+   "consejo": "Mejor primavera y otoño; en pleno verano salid temprano por el calor.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Parco+del+Conero%2C+Sirolo%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Parco+del+Conero%2C+Sirolo%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Parco+del+Conero%2C+Sirolo%2C+Italia"
+  },
+  {
+   "id": "due-sorelle-barco",
+   "nombre": "Due Sorelle en barco desde Numana",
+   "donde": "Numana",
+   "base": "sirolo",
+   "tipo": "agua",
+   "tipos_extra": [
+    "playa",
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Excursión en barco hasta los dos farallones blancos de las Due Sorelle y sus calas, solo accesibles por mar; se puede bañar.",
+   "consejo": "Reservad por la mañana y mirad el estado del mar: se suspende con oleaje.",
+   "enlace": "https://www.getyourguide.es/s/?q=Due+Sorelle+Numana+barco",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Due+Sorelle%2C+Numana%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Due+Sorelle%2C+Numana%2C+Italia"
+  },
+  {
+   "id": "sirolo-atardecer",
+   "nombre": "Casco antiguo de Sirolo y atardecer",
+   "donde": "Sirolo",
+   "base": "sirolo",
+   "tipo": "postal",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Pueblo blanco sobre el promontorio, con su balcón al mar y calles para tomar algo viendo caer la luz sobre el Adriático.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Sirolo%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Sirolo%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Sirolo%2C+Italia"
+  },
+  {
+   "id": "palazzo-ducale-urbino",
+   "nombre": "Palazzo Ducale y Galleria Nazionale delle Marche",
+   "donde": "Urbino",
+   "base": "urbino",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Palacio renacentista de los Montefeltro, Patrimonio UNESCO, con el estudio de Federico y la galería nacional de las Marcas.",
+   "consejo": "Comprobad el día de cierre semanal en la web del museo antes de ir.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Palazzo+Ducale%2C+Urbino%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Palazzo+Ducale%2C+Urbino%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Palazzo+Ducale%2C+Urbino%2C+Italia"
+  },
+  {
+   "id": "urbino-raffaello-universidad",
+   "nombre": "Casa de Rafael y ciudad universitaria",
+   "donde": "Urbino",
+   "base": "urbino",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Casa natal de Rafael y paseo por las calles de una ciudad con universidad histórica, llenas de estudiantes.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Casa+natale+di+Raffaello%2C+Urbino%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Casa+natale+di+Raffaello%2C+Urbino%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Casa+natale+di+Raffaello%2C+Urbino%2C+Italia"
+  },
+  {
+   "id": "urbino-fortezza-albornoz",
+   "nombre": "Atardecer en la Fortezza Albornoz",
+   "donde": "Urbino",
+   "base": "urbino",
+   "tipo": "postal",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Subida a la fortaleza sobre el casco histórico para ver los tejados y las colinas de las Marcas al atardecer.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Fortezza+Albornoz%2C+Urbino%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Fortezza+Albornoz%2C+Urbino%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Fortezza+Albornoz%2C+Urbino%2C+Italia"
+  },
+  {
+   "id": "ascoli-piazza-popolo",
+   "nombre": "Piazza del Popolo y casco de travertino",
+   "donde": "Ascoli Piceno",
+   "base": "ascoli",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Plaza renacentista, torres medievales y calles de travertino de una ciudad poco turística.",
+   "consejo": "Es la base lógica para los Sibilinos; tren hasta San Benedetto del Tronto y regional o bus hasta Ascoli (comprobadlo).",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Popolo%2C+Ascoli+Piceno%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Popolo%2C+Ascoli+Piceno%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Popolo%2C+Ascoli+Piceno%2C+Italia"
+  },
+  {
+   "id": "ascoli-olive-ascolane",
+   "nombre": "Olive all'ascolana en Ascoli",
+   "donde": "Ascoli Piceno",
+   "base": "ascoli",
+   "tipo": "gastronomia",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Aceitunas verdes rellenas de carne, rebozadas y fritas, para comer en cartuchos de papel por el centro.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Ascoli+Piceno%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Ascoli+Piceno%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Ascoli+Piceno%2C+Italia"
+  },
+  {
+   "id": "grotte-frasassi",
+   "nombre": "Grotte di Frasassi",
+   "donde": "Genga",
+   "base": "ancona",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Visita a las cuevas kársticas del cañón de Frasassi, con salas enormes y estalactitas; temperatura fresca todo el año.",
+   "consejo": "Llevad una capa: dentro hace fresco aunque fuera haga calor.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Grotte+di+Frasassi%2C+Genga%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Grotte+di+Frasassi%2C+Genga%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Grotte+di+Frasassi%2C+Genga%2C+Italia"
+  },
+  {
+   "id": "sibillini-castelluccio",
+   "nombre": "Piano Grande de Castelluccio en floración",
+   "donde": "Castelluccio di Norcia",
+   "base": "ascoli",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal",
+    "aventura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "meses": [
+    5,
+    6,
+    7
+   ],
+   "descripcion": "Llanura de altura en el Parque de los Montes Sibilinos cubierta de flores de colores, con montañas alrededor.",
+   "consejo": "La floración varía cada año (entre fines de mayo y julio); comprobad el estado de carreteras y accesos antes de ir.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piano+Grande%2C+Castelluccio+di+Norcia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piano+Grande%2C+Castelluccio+di+Norcia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piano+Grande%2C+Castelluccio+di+Norcia%2C+Italia"
+  },
+  {
+   "id": "loreto-santa-casa",
+   "nombre": "Santuario de la Santa Casa",
+   "donde": "Loreto",
+   "base": "ancona",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Basílica de peregrinación con la Santa Casa y su plaza porticada, a un corto trayecto de Ancona.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Basilica+della+Santa+Casa%2C+Loreto%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Basilica+della+Santa+Casa%2C+Loreto%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Basilica+della+Santa+Casa%2C+Loreto%2C+Italia"
+  },
+  {
+   "id": "castelfidardo-fisarmonica",
+   "nombre": "Museo Internazionale della Fisarmonica",
+   "donde": "Castelfidardo",
+   "base": "ancona",
+   "tipo": "musica",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Museo dedicado al acordeón en la ciudad que lo fabrica desde el siglo XIX.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Museo+Internazionale+della+Fisarmonica%2C+Castelfidardo%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Museo+Internazionale+della+Fisarmonica%2C+Castelfidardo%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Museo+Internazionale+della+Fisarmonica%2C+Castelfidardo%2C+Italia"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Brodetto all'anconetana",
+   "que_es": "sopa de pescado de roca y marisco con tomate y vinagre, el plato marinero de Ancona",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias de pescado del puerto y del centro de Ancona",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Porto+Antico%2C+Ancona%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Porto+Antico%2C+Ancona%2C+Italia"
+  },
+  {
+   "plato": "Stoccafisso all'anconetana",
+   "que_es": "bacalao seco guisado con patatas, tomate y aceitunas",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias tradicionales de Ancona",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Ancona%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Ancona%2C+Italia"
+  },
+  {
+   "plato": "Mosciolo selvatico di Portonovo",
+   "que_es": "mejillón salvaje de la bahía, producto de Slow Food, a la marinera",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "restaurantes de la bahía de Portonovo",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Portonovo%2C+Ancona%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Portonovo%2C+Ancona%2C+Italia"
+  },
+  {
+   "plato": "Olive all'ascolana",
+   "que_es": "aceitunas rellenas de carne, empanadas y fritas",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "freidurías y cafés del centro de Ascoli Piceno",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Popolo%2C+Ascoli+Piceno%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Popolo%2C+Ascoli+Piceno%2C+Italia"
+  },
+  {
+   "plato": "Crescia sfogliata",
+   "que_es": "pan plano hojaldrado relleno de embutido y queso, el bocata de Urbino",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "hornos y bocaterías del centro de Urbino",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Urbino%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Urbino%2C+Italia"
+  },
+  {
+   "plato": "Vincisgrassi",
+   "que_es": "lasaña local al horno con ragú, besamel y setas o menudillos",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias de las Marcas, en Macerata y alrededores y en Ancona",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Ancona%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Ancona%2C+Italia"
+  },
+  {
+   "plato": "Verdicchio y Rosso Conero",
+   "que_es": "vino blanco fresco y tinto de la zona, para aperitivo o cena",
+   "estilo": "bebida",
+   "coste": "bajo",
+   "donde_probarlo": "enotecas y bares del centro de Ancona y Sirolo",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sirolo%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Sirolo%2C+Italia"
+  },
+  {
+   "plato": "Frustingo",
+   "que_es": "dulce de higos secos, frutos secos y especias típico de Navidad",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías y panaderías de Ascoli y Ancona en invierno",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Ascoli+Piceno%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Ascoli+Piceno%2C+Italia"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Centro de Ancona (Plebiscito y Corso Garibaldi)",
+   "base": "ancona",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo en plazas y calles peatonales, con ambiente de estudiantes.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Plebiscito%2C+Ancona%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Plebiscito%2C+Ancona%2C+Italia"
+  },
+  {
+   "zona": "Piazzetta de Sirolo",
+   "base": "sirolo",
+   "plan": "aperitivo",
+   "descripcion": "Copas tranquilas con vistas al mar, sobre todo en verano.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sirolo%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Sirolo%2C+Italia"
+  },
+  {
+   "zona": "Casco histórico de Urbino",
+   "base": "urbino",
+   "plan": "copas",
+   "descripcion": "Calles y bares estudiantiles bajo el Palazzo Ducale, más animado en curso.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Urbino%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Urbino%2C+Italia"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "ancona",
+   "coste": "bajo",
+   "para": "Grupos con presupuesto justo que van a moverse en tren y a pie.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Ancona"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "ancona",
+   "coste": "medio",
+   "para": "Grupos de 4-8 que quieren cocinar y repartir gasto.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Ancona--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Ancona"
+    }
+   ]
+  },
+  {
+   "tipo": "camping",
+   "base": "sirolo",
+   "coste": "bajo",
+   "para": "Quien vaya en verano a las playas del Conero con tienda o bungalow.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Sirolo"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "urbino",
+   "coste": "medio",
+   "para": "Una noche tranquila en Urbino, ciudad pequeña y cómoda a pie.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Urbino"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "ascoli",
+   "coste": "bajo",
+   "para": "Grupos que quieren Ascoli y los Sibilinos con precios más bajos.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Ascoli+Piceno"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Ascoli-Piceno--Italia/homes"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Festa del Mare",
+   "donde": "Ancona",
+   "cuando": "cada año, a comienzos de septiembre (en 2026 fue del 4 al 6)",
+   "meses": [
+    9
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Fiesta del puerto con fuegos artificiales y visitas guiadas al anfiteatro romano.",
+   "enlace": "https://cultura.gov.it/evento/festa-del-mare-2026-4-5-6-settembre-2026-orari-m-a-n-marche-visite-guidate-allanfiteatro-romano-di-ancona-e-apertura-serale-del-museo-per-lo-spettacolo-pirotecnico-sul-porto-antico",
+   "fuente": "https://cultura.gov.it/evento/festa-del-mare-2026-4-5-6-settembre-2026-orari-m-a-n-marche-visite-guidate-allanfiteatro-romano-di-ancona-e-apertura-serale-del-museo-per-lo-spettacolo-pirotecnico-sul-porto-antico"
+  },
+  {
+   "nombre": "Fioritura de Castelluccio",
+   "donde": "Castelluccio di Norcia",
+   "cuando": "cada año, entre fines de mayo y julio según la floración",
+   "meses": [
+    5,
+    6,
+    7
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Llanura del Piano Grande cubierta de flores de colores en los Sibilinos.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piano+Grande%2C+Castelluccio+di+Norcia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piano+Grande%2C+Castelluccio+di+Norcia%2C+Italia"
+  },
+  {
+   "nombre": "Quintana di Ascoli",
+   "donde": "Ascoli Piceno",
+   "cuando": "cada año, julio y agosto, fechas en la web oficial",
+   "meses": [
+    7,
+    8
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Desfile histórico y torneo medieval de justa con los seis barrios de la ciudad.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+Arringo%2C+Ascoli+Piceno%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+Arringo%2C+Ascoli+Piceno%2C+Italia"
+  },
+  {
+   "nombre": "Festa dell'Aquilone",
+   "donde": "Urbino",
+   "cuando": "cada año, a fines del verano, fechas en la web oficial",
+   "meses": [
+    8,
+    9
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Fiesta de las cometas en las colinas de Urbino.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Urbino%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Urbino%2C+Italia"
+  }
+ ],
+ "notas_honestas": [
+  "No se pudieron abrir webs oficiales (frasassi.com, parques, museos) en esta sesión: casi todos los enlaces son de mapa o búsqueda segura.",
+  "Horarios de buses locales del Conero y Ascoli sin verificar.",
+  "Fechas de Quintana, Festa dell'Aquilone y Castelluccio sin fuente oficial; son orientativas.",
+  "Tras el terremoto de 2016, los accesos a Castelluccio pueden cambiar.",
+  "Sin locales concretos por falta de fuentes."
+ ]
+}

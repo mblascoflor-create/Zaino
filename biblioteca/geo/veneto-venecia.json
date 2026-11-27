@@ -1,0 +1,119 @@
+{
+ "actividades": {
+  "san-marco-ducal": [
+   45.434,
+   12.34
+  ],
+  "gran-canal-vaporetto": [
+   45.441,
+   12.321
+  ],
+  "rialto-mercado": [
+   45.438,
+   12.336
+  ],
+  "bacari-cicchetti": [
+   45.44,
+   12.331
+  ],
+  "spritz-zattere": [
+   45.429,
+   12.324
+  ],
+  "dorsoduro-paseo": [
+   45.431,
+   12.335
+  ],
+  "cannaregio-ghetto": [
+   45.446,
+   12.327
+  ],
+  "traghetto-gran-canal": [
+   45.437,
+   12.33
+  ],
+  "burano-murano": [
+   45.485,
+   12.417
+  ],
+  "lido-playa": [
+   45.405,
+   12.367
+  ],
+  "scrovegni-padua": [
+   45.411,
+   11.879
+  ],
+  "bo-universidad-padua": [
+   45.407,
+   11.877
+  ],
+  "aperitivo-padua": [
+   45.407,
+   11.877
+  ],
+  "verona-arena-julieta": [
+   45.439,
+   10.994
+  ],
+  "verona-opera-arena": [
+   45.439,
+   10.994
+  ],
+  "verona-ponte-pietra": [
+   45.446,
+   10.999
+  ],
+  "vicenza-palladio": [
+   45.548,
+   11.547
+  ],
+  "prosecco-colinas": [
+   45.904,
+   12.043
+  ]
+ },
+ "noche": {
+  "Campo Santa Margherita": [
+   45.434,
+   12.322
+  ],
+  "Zattere y Dorsoduro": [
+   45.429,
+   12.324
+  ],
+  "Fondamenta degli Ormesini (Cannaregio)": [
+   45.446,
+   12.325
+  ],
+  "Piazza delle Erbe y Piazza dei Signori (Padua)": [
+   45.407,
+   11.877
+  ]
+ },
+ "eventos": {
+  "Carnevale di Venezia": [
+   45.434,
+   12.34
+  ],
+  "Festa del Redentore": [
+   45.43,
+   12.33
+  ],
+  "Regata Storica": [
+   45.441,
+   12.321
+  ],
+  "Mostra del Cinema de Venecia": [
+   45.409,
+   12.366
+  ],
+  "Arena di Verona Opera Festival": [
+   45.439,
+   10.994
+  ]
+ },
+ "dudosos": [
+  "burano-murano"
+ ]
+}

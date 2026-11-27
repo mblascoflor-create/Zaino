@@ -1,0 +1,312 @@
+--- a/src/app/app.js
++++ b/src/app/app.js
+@@ -142,7 +142,9 @@
+   var escritos = {}, foco = document.activeElement && $app.contains(document.activeElement) ? document.activeElement.id : null, sel = null;
+   $$('input[type=text][id],input[type=number][id],textarea[id]', $app).forEach(function(i){ if(i.value) escritos[i.id] = i.value; });
+   if(foco){ try{ sel = [document.activeElement.selectionStart, document.activeElement.selectionEnd]; }catch(e){} }
++  var abiertos=$$('.agenda-slot[open]', $app).map(function(d){ return d.id; });
+   $app.innerHTML = html;
++  abiertos.forEach(function(id){ var d=document.getElementById(id); if(d) d.open=true; });
+   conectar();
+   Object.keys(escritos).forEach(function(k){ var i=document.getElementById(k); if(i && !i.value) i.value = escritos[k]; });
+   if(foco){ var fi=document.getElementById(foco); if(fi){ try{ fi.focus({preventScroll:true}); if(sel) fi.setSelectionRange(sel[0], sel[1]); }catch(e){} } }
+@@ -169,12 +171,21 @@
+   'puglia-salento': ['Lama Monachile en Polignano a Mare','Il_Monachile.jpg','Gianluca972','zero/1.0'],
+   'veneto-venecia': ['El Gran Canal desde el puente de Rialto','Canal_Grande_from_Rialto.jpg','© Marie-Lan Nguyen','by/2.5'],
+ };
++var FOTOS_PLAN = {
++  roma:'coliseo-foro', toscana:'piazzale-michelangelo-san-miniato',
++  'puglia-salento':'polignano-lama-monachile', 'veneto-venecia':'rialto-mercado',
++};
++function fotoSrc(id){ return typeof zainoDemoFotos!=='undefined' && zainoDemoFotos[id] || 'fotos/'+id+'.jpg'; }
++function fotoCredito(f, titulo){
++  return '<a href="https://commons.wikimedia.org/wiki/File:'+f[1]+'" target="_blank" rel="noopener">'+
++    (titulo?esc(f[0])+' · ':'')+esc(f[2])+' / Wikimedia Commons</a> · <a href="https://creativecommons.org/'+
++    (f[3].startsWith('zero/')?'publicdomain/':'licenses/')+f[3]+'/" target="_blank" rel="noopener">Licencia CC</a>';
++}
+ function fotoZona(Z, eager){
+   var f=FOTOS_ZONA[Z.id];
+   if(!f) return '';
+-  var url='https://commons.wikimedia.org/wiki/File:'+f[1];
+-  return '<figure class="foto-zona"><img src="fotos/'+Z.id+'.jpg" alt="'+esc(f[0])+'" loading="'+(eager?'eager':'lazy')+'" decoding="async">'+
+-    '<figcaption><a href="'+url+'" target="_blank" rel="noopener">'+(eager?esc(f[0])+' · ':'')+esc(f[2])+' / Wikimedia Commons</a> · <a href="https://creativecommons.org/'+(f[3].startsWith('zero/')?'publicdomain/':'licenses/')+f[3]+'/" target="_blank" rel="noopener">Licencia CC</a></figcaption></figure>';
++  return '<figure class="foto-zona"><img src="'+fotoSrc(Z.id)+'" alt="'+esc(f[0])+'" loading="'+(eager?'eager':'lazy')+
++    '" decoding="async"><figcaption>'+fotoCredito(f,eager)+'</figcaption></figure>';
+ }
+ // Muestra editorial de Venecia. No crea viajes ni guarda respuestas.
+ function ejemploVenecia(){
+@@ -404,7 +415,7 @@
+ }
+ function tituloViaje(t, Z){ if(t.titulo) return t.titulo; if(Z) return Z.nombre.split('(')[0].trim(); if(t.destinos && t.destinos.length===1 && zona(t.destinos[0])) return zona(t.destinos[0]).nombre.split('(')[0].trim(); var jefe=(t.integrantes||[]).filter(function(m){ return m.id===t.jefe; })[0]; return 'Viaje de '+(jefe?jefe.nombre:'grupo'); }
+ 
+-function mensajeInvitacion(t){ var jefe=(t.integrantes||[]).filter(function(m){ return m.id===t.jefe; })[0]; return (jefe?jefe.nombre+' te ha metido':'Te han metido')+' en «'+tituloViaje(t)+'». Entra, elige tu nombre y responde (son 3 minutos y no hace falta registrarse): '+shareLink(t); }
++function mensajeInvitacion(t){ var jefe=(t.integrantes||[]).filter(function(m){ return m.id===t.jefe; })[0]; return (jefe?jefe.nombre+' te invita':'Te invitan')+' en «'+tituloViaje(t)+'». Entra, elige tu nombre y responde sin registrarte: '+shareLink(t); }
+ function botonesCompartir(t){
+   var msg = mensajeInvitacion(t);
+   return '<div class="stack" style="gap:8px">'+
+@@ -623,16 +634,46 @@
+   if(i<0) i=deck.length;
+   var pending = false;
+   var host=$('#deck-host',el);
+-  function card(x, next){ var zz = Z || x._z; return '<div class="sw'+(next?' next':'')+'"><div class="top-il" style="background:'+zz.bg+'">'+(Z?'':'<span class="zpill">'+esc(zz.corto)+'</span>')+'<div class="sw-landscape" aria-hidden="true">'+ART.vista(zz,false)+'</div>'+ART.q(ART_TIPO[x.tipo]||'mapa')+'</div><span class="stamp st-l">SÍ</span><span class="stamp st-r">PASO</span><span class="stamp st-s">IMPRESCINDIBLE</span><div class="in"><h3>'+esc(x.nombre)+'</h3>'+(x.descripcion?'<p style="font-size:14px">'+esc(x.descripcion)+'</p>':'')+'<div class="row wrap" style="gap:6px"><span class="pill">'+(ETQ_COSTE[x.coste]||'')+'</span><span class="pill">'+(ETQ_DUR[x.duracion]||'')+'</span>'+(x.coche?'<span class="pill">Con coche</span>':'')+(x.donde?'<span class="pill">'+esc(x.donde)+'</span>':'')+'</div></div></div>'; }
++  function card(x){
++    var zz=Z || x._z, f=FOTOS_PLAN[zz.id]===x.id && FOTOS_ZONA[zz.id];
++    return '<article class="sw"><div class="top-il" style="background:'+zz.bg+'">'+
++      '<div class="sw-landscape" aria-hidden="true">'+ART.vista(zz,false)+'</div>'+ART.q(ART_TIPO[x.tipo]||'mapa')+
++      (f?'<img class="sw-photo" src="'+fotoSrc(zz.id)+'" alt="'+esc(f[0])+'" decoding="async" draggable="false">':'')+'</div>'+
++      '<span class="stamp st-l">ME GUSTA</span><span class="stamp st-r">PASO</span><span class="stamp st-s">IMPRESCINDIBLE</span>'+
++      '<div class="in"><div class="sw-meta">'+esc(zz.corto)+(x.donde&&x.donde!==zz.corto?' · '+esc(x.donde):'')+'</div>'+
++      '<h3>'+esc(x.nombre)+'</h3>'+(x.descripcion?'<p>'+esc(x.descripcion)+'</p>':'')+
++      '<div class="row wrap" style="gap:6px"><span class="pill">'+(ETQ_COSTE[x.coste]||'')+'</span>'+
++      '<span class="pill">'+(ETQ_DUR[x.duracion]||'')+'</span>'+(x.coche?'<span class="pill">Con coche</span>':'')+'</div>'+
++      (f?'<details class="sw-credit"><summary>Créditos de la foto</summary>'+fotoCredito(f,true)+'</details>':'')+'</div></article>';
++  }
+   function show(){
+     if(i>=deck.length){ F.next(); return; }
+-    host.innerHTML = '<div class="deck">'+(deck[i+1]?card(deck[i+1],true):'')+card(deck[i],false)+'</div><div class="swb"><div class="swc"><button type="button" id="sw-no" aria-label="No me interesa">✕</button><span>Paso</span></div><div class="swc"><button type="button" class="s" id="sw-si2" aria-label="Imprescindible">★</button><span>Imprescindible</span></div><div class="swc"><button type="button" id="sw-si" aria-label="Me gusta">♥</button><span>Me gusta</span></div></div><p class="qs" style="text-align:center;margin-top:8px"><span class="cap">'+(i+1)+' de '+deck.length+'</span> <button type="button" class="lnk" id="sw-fin" style="color:#30231F">Saltar el resto</button></p>';
+-    var c = host.querySelectorAll('.sw')[host.querySelectorAll('.sw').length-1];
++    host.innerHTML = '<div class="deck">'+card(deck[i])+'</div><div class="swb">'+
++      '<button type="button" id="sw-no"><span aria-hidden="true">✕</span> Paso</button>'+
++      '<button type="button" id="sw-si"><span aria-hidden="true">♥</span> Me gusta</button>'+
++      '<button type="button" id="sw-si2"><span aria-hidden="true">★</span> Imprescindible</button></div>'+
++      '<p class="sw-tools"><span class="cap">'+(i+1)+' de '+deck.length+'</span>'+
++      (i>0&&votes[ids[i-1]]?'<button type="button" class="lnk" id="sw-deshacer">Deshacer</button>':'')+
++      '<button type="button" class="lnk" id="sw-fin">Saltar el resto</button></p>';
++    var c = $('.sw', host), foto=$('.sw-photo', c);
++    if(foto){
++      function sinFoto(){ foto.remove(); $('.sw-credit',c).remove(); }
++      foto.addEventListener('error', sinFoto);
++      if(foto.complete && !foto.naturalWidth) sinFoto();
++    }
++    var deshacer=$('#sw-deshacer', host);
++    if(deshacer) deshacer.onclick=function(){
++      if(pending) return;
++      delete votes[ids[--i]];
++      guardarVotos();
++      show();
++      var boton=$('#sw-deshacer',host) || $('#sw-no',host);
++      boton.focus({preventScroll:true});
++    };
+     drag(c, function(dir){ decidir(dir); });
+-    $('#sw-no',el).onclick=function(){ volar(c,'l'); }; $('#sw-si',el).onclick=function(){ volar(c,'r'); }; $('#sw-si2',el).onclick=function(){ volar(c,'u'); }; $('#sw-fin',el).onclick=function(){ F.next(); };
+-  }
+-  function decidir(dir){
+-    votes[ids[i]]=dir;
++    $('#sw-no',el).onclick=function(){ volar(c,'l'); }; $('#sw-si',el).onclick=function(){ volar(c,'r'); }; $('#sw-si2',el).onclick=function(){ volar(c,'u'); }; $('#sw-fin',el).onclick=function(){ if(!pending) F.next(); };
++  }
++  function guardarVotos(){
+     a._mazo=votes;
+     a.likes=[]; a.supers=[]; a.likesZ={}; a.pasos=[];
+     ids.forEach(function(id, j){
+@@ -644,16 +685,26 @@
+         if(x._z) a.likesZ[x._z.id]=(a.likesZ[x._z.id]||0)+(v==='u'?2:1);
+       }
+     });
++    F.save();
++  }
++  function decidir(dir){
++    var botonActivo=document.activeElement && document.activeElement.id;
++    votes[ids[i]]=dir;
++    guardarVotos();
+     do { i++; } while(i<ids.length && votes[ids[i]]);
+     pending=false;
+-    F.save(); show();
++    show();
++    if(host.isConnected && botonActivo && botonActivo.startsWith('sw-')){
++      var boton=document.getElementById(botonActivo);
++      if(boton) boton.focus({preventScroll:true});
++    }
+   }
+   function volar(c,dir){ if(pending) return; pending=true; c.style.transition='transform .28s ease-out, opacity .28s'; c.style.transform = dir==='l'?'translate(-130%,30px) rotate(-18deg)':(dir==='r'?'translate(130%,30px) rotate(18deg)':'translateY(-130%)'); c.style.opacity='0'; setTimeout(function(){ if(host.isConnected) decidir(dir); },220); }
+   function drag(c, done){ var sx=0, sy=0, dx=0, dy=0, act=false, id=null; var sl=c.querySelector('.st-l'), sr=c.querySelector('.st-r'), ss=c.querySelector('.st-s');
+-    c.addEventListener('pointerdown', function(e){ act=true; id=e.pointerId; sx=e.clientX; sy=e.clientY; try{ c.setPointerCapture(id); }catch(er){} });
++    c.addEventListener('pointerdown', function(e){ if(e.button!==0 || e.target.closest('summary,a') || pending) return; act=true; id=e.pointerId; sx=e.clientX; sy=e.clientY; try{ c.setPointerCapture(id); }catch(er){} });
+     c.addEventListener('pointermove', function(e){ if(!act) return; dx=e.clientX-sx; dy=e.clientY-sy; c.style.transform='translate('+dx+'px,'+dy+'px) rotate('+(dx/16)+'deg)'; sl.style.opacity=dx>0?Math.min(1,dx/90):0; sr.style.opacity=dx<0?Math.min(1,-dx/90):0; ss.style.opacity=(dy<0&&-dy>Math.abs(dx))?Math.min(1,-dy/80):0; });
+     function up(){ if(!act) return; act=false; if(dy<-80 && -dy>Math.abs(dx)) volar(c,'u'); else if(dx>90) volar(c,'r'); else if(dx<-90) volar(c,'l'); else { c.style.transition='transform .2s'; c.style.transform=''; sl.style.opacity=sr.style.opacity=ss.style.opacity=0; setTimeout(function(){ c.style.transition=''; },200); } dx=dy=0; }
+-    c.addEventListener('pointerup', up); c.addEventListener('pointercancel', up); }
++    c.addEventListener('pointerup', up); c.addEventListener('pointercancel', function(){ act=false; dx=dy=0; c.style.transform=''; sl.style.opacity=sr.style.opacity=ss.style.opacity=0; }); }
+   show();
+ }
+ function empezarPreguntas(code, miembro, tPre){
+@@ -889,6 +940,7 @@
+   '</div></div>';
+   if(!t.plan.coche && Z.coche.necesidad==='imprescindible') h += '<div class="note">Sin nadie que conduzca, '+esc(Z.corto)+' se queda corta: hemos dejado fuera los planes que solo se hacen en coche.</div>';
+   if(A.presupuesto && A.presupuesto<220) h += '<div class="note"><b>Con unos '+A.presupuesto+' € por persona va muy justo.</b> Hemos tirado de planes gratis y comida de calle, pero el viaje y el alojamiento se pueden comer casi todo: mirad los vuelos antes de reservar nada.</div>';
++  h += '<button type="button" class="btn full" data-goto="dias">Ver el día a día</button>';
+   var RP = ENG.reparto(Z, A, t.plan);
+   if(RP.length>1) h += '<div class="card stack"><div class="lab">Lo de cada uno</div>'+RP.map(function(p){ var m=(t.integrantes||[]).filter(function(x){ return x.nombre===p.nombre; })[0]||{}; var r=live.resps[m.id]||{};
+       return '<div class="person"><span class="av" style="'+(r.avatar?'background-image:url('+r.avatar+')':'')+'">'+(r.avatar?'':inicial(p.nombre))+'</span><div class="grow"><b>'+esc(p.nombre)+'</b>'+
+@@ -896,7 +948,7 @@
+         (p.mios.length?'<p class="muted" style="font-size:13px;margin-top:4px">También pensado para '+esc(p.nombre)+': '+p.mios.map(function(x){ return esc(x.nombre.split(/[:(]/)[0].trim())+' (día '+x.dia+')'; }).join(' · ')+'</p>':'')+
+         p.falta.map(function(f){ return '<p class="muted" style="font-size:13px;margin-top:4px">'+esc(f)+'</p>'; }).join('')+'</div></div>'; }).join('')+'</div>';
+   var porId={}; Z.actividades.forEach(function(x){ porId[x.id]=x; });
+-  h += '<div class="card"><div class="lab" style="margin-bottom:4px">El viaje en '+t.plan.dias.length+' días</div>'+t.plan.dias.map(function(d){ var items=d.slots.filter(function(s){ return (s.k==='act'||s.k==='noche'||s.k==='comida') && s.nombre!==d.titulo; }).map(function(s){ return s.nombre; }).slice(0,4); return '<div class="sumday"><span class="n">'+d.n+'</span><div><b>'+esc(d.titulo)+'</b>'+(d.fecha?' <span class="muted m" style="font-size:12px">'+esc(d.fecha)+'</span>':'')+(items.length?'<p class="muted" style="font-size:14px">'+esc(items.join(' · '))+'</p>':'')+'</div></div>'; }).join('')+'<button class="btn ghost full sm" data-goto="dias" style="margin-top:10px">Ver el día a día</button></div>';
++  h += '<div class="card"><div class="lab" style="margin-bottom:4px">El viaje en '+t.plan.dias.length+' días</div>'+t.plan.dias.map(function(d){ var items=d.slots.filter(function(s){ return (s.k==='act'||s.k==='noche'||s.k==='comida') && s.nombre!==d.titulo; }).map(function(s){ return s.nombre; }).slice(0,4); return '<div class="sumday"><span class="n">'+d.n+'</span><div><b>'+esc(d.titulo)+'</b>'+(d.fecha?' <span class="muted m" style="font-size:12px">'+esc(d.fecha)+'</span>':'')+(items.length?'<p class="muted" style="font-size:14px">'+esc(items.join(' · '))+'</p>':'')+'</div></div>'; }).join('')+'</div>';
+   var rs = ENG.reservas(Z, A, t, t.plan), est=t.reservas||{};
+   var transp = rs.filter(function(r){ return r.cat==='vuelo'||r.cat==='tren'; });
+   if(transp.length) h += '<div class="card stack"><div class="lab">Cómo llega cada uno</div>'+transp.map(function(r){ return '<div><b>'+esc(r.titulo)+'</b><p class="muted" style="font-size:14px">'+esc(r.detalle)+'</p><div class="row wrap" style="gap:6px;margin-top:6px">'+r.enlaces.map(function(l){ var e=enlaceAf(l.u); return '<a class="ext" target="_blank" rel="noopener'+(e.af?' sponsored':'')+'" href="'+esc(e.u)+'">'+esc(l.t)+'</a>'; }).join('')+'</div></div>'; }).join('<div class="hr" style="height:1.5px;background:var(--line)"></div>')+'</div>';
+@@ -927,31 +979,62 @@
+   var basePorId={}; Z.bases.forEach(function(b){ basePorId[b.id]=b; });
+   var plan=t.plan, EDITABLE = {act:1, libre:1, noche:1, comida:1};
+   var claveDia=t.code+'|'+plan.zona;
+-  var hoy=plan.dias.find(function(d){ return d.fecha===isoHoy(); });
++  var horaItalia=Object.fromEntries(new Intl.DateTimeFormat('es-ES', {
++    timeZone:'Europe/Rome', year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', hourCycle:'h23'
++  }).formatToParts(new Date()).map(function(x){ return [x.type,x.value]; }));
++  var fechaItalia=[horaItalia.year,horaItalia.month,horaItalia.day].join('-');
++  var hoy=plan.dias.find(function(d){ return d.fecha===fechaItalia; });
+   var elegido=S.diaClave===claveDia ? S.dia : (hoy ? hoy.n : 1);
+   if(!plan.dias.some(function(d){ return d.n===elegido; })) elegido=plan.dias[0].n;
+-  var h = '<p class="muted agenda-intro">Horas orientativas. Consultad horarios y entradas antes de salir.</p>';
+-  if((plan.ruta||[]).length>1) h += '<div class="agenda-bases"><div class="lab">Dónde dormís</div>'+plan.ruta.filter(function(r){ return r.desde<plan.dias.length; }).map(function(r){
++  var h = '<nav class="agenda-nav" aria-label="Días del viaje">'+plan.dias.map(function(d){ return '<button type="button" class="chip'+(d.n===elegido?' on':'')+'" aria-pressed="'+(d.n===elegido)+'" data-ir-dia="'+d.n+'">Día '+d.n+(hoy && hoy.n===d.n?' · hoy':'')+'</button>'; }).join('')+'</nav>';
++  if((plan.ruta||[]).length>1) h += '<details class="agenda-bases"><summary>Dónde dormís</summary><div>'+plan.ruta.filter(function(r){ return r.desde<plan.dias.length; }).map(function(r){
+     var hasta=Math.min(r.hasta,plan.dias.length-1);
+     return '<span><b>'+esc(r.nombre)+'</b> · '+(hasta>r.desde?'noches ':'noche ')+r.desde+(hasta>r.desde?'–'+hasta:'')+'</span>';
+-  }).join('')+'</div>';
+-  h += '<nav class="agenda-nav" aria-label="Días del viaje">'+plan.dias.map(function(d){ return '<button type="button" class="chip'+(d.n===elegido?' on':'')+'" aria-pressed="'+(d.n===elegido)+'" data-ir-dia="'+d.n+'">Día '+d.n+(hoy && hoy.n===d.n?' · hoy':'')+'</button>'; }).join('')+'</nav><div class="agenda">';
++  }).join('')+'</div></details>';
++  h += '<div class="agenda">';
+   plan.dias.forEach(function(d, di){
+     if(d.n!==elegido) return;
+     var cr = ENG.cronograma ? ENG.cronograma(Z, plan, d) : {slots:[], regreso:null};
+     var nAct = d.slots.filter(function(s){ return s.k==='act'; }).length, nRes = d.slots.filter(function(s){ var a=s.ref&&porId[s.ref]; return a&&a.reserva; }).length;
+     var bd = basePorId[d.base||plan.base];
+     h += '<article class="day" id="dia-'+d.n+'" style="--z3:'+Z.inks[2]+'"><span class="dot"></span><div class="dh"><span class="d">Día '+d.n+'</span>'+(d.fecha?'<span class="lab">'+esc(d.fecha)+'</span>':'')+'<span style="font-weight:800">'+esc(d.titulo)+'</span>'+(function(){ var q=ENG.paraDia(Z, A, d).slice(0,3); return q.length && (t.integrantes||[]).length>1 ? '<span class="pdia">Día de '+esc(joinY(q))+'</span>' : ''; })()+'</div>';
+-    h += '<div class="row wrap" style="gap:6px;margin:-2px 0 10px">'+(bd?'<span class="pill">'+(di===plan.dias.length-1?'Salida desde ':'Dormís en ')+esc(bd.nombre)+'</span>':'')+(d.km?'<a class="pill" target="_blank" rel="noopener" href="'+esc(d.ruta)+'">Excursión ≈ '+d.km+' km · ver ruta</a>':'')+(nAct?'<span class="pill">'+nAct+' plan'+(nAct>1?'es':'')+'</span>':'')+(nRes?'<span class="pill warn">'+nRes+' con reserva</span>':'')+'</div>';
+-    var destacado=d.slots.find(function(s){ return s.k==='act' && s.de; }) || d.slots.find(function(s){ return s.k==='act'; });
++    h += '<div class="row wrap" style="gap:6px;margin:-2px 0 10px">'+(bd?'<span class="pill">'+(di===plan.dias.length-1?'Salida desde ':'Dormís en ')+esc(bd.nombre)+'</span>':'')+(d.km?'<a class="pill" target="_blank" rel="noopener" href="'+esc(d.ruta)+'">Excursión ≈ '+d.km+' km · ver ruta</a>':'')+(nAct?'<span class="pill">'+nAct+' plan'+(nAct>1?'es':'')+'</span>':'')+(nRes?'<span class="pill warn">'+nRes+' requieren reserva</span>':'')+'</div>';
++    var puntos=d.slots.map(function(s){ var a=porId[s.ref]; return a&&a.geo; }).filter(Boolean);
++    h += '<div class="agenda-actions"><p class="muted agenda-intro">Horas orientativas</p>'+
++      (puntos.length>1?'<a class="ext map" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/'+puntos.map(function(g){ return g[0]+','+g[1]; }).join('/')+'">Ver paradas en Maps</a>':'')+'</div>';
++    var minsAhora=horaItalia.hour*60+Number(horaItalia.minute);
++    var siguiente=hoy===d ? cr.slots.findIndex(function(o){
++      var hm=/^(\d{1,2}):(\d{2})( \(\+1 día\))?$/.exec(o.hora||'');
++      return hm && Number(hm[1])*60+Number(hm[2])+(hm[3]?1440:0)>=minsAhora;
++    }) : -1;
++    var destacado=siguiente>=0 ? d.slots[siguiente] : d.slots.find(function(s){ return s.k==='act' && s.de; }) || d.slots.find(function(s){ return s.k==='act'; });
++    if(siguiente>=0){
++      var proximo=d.slots[siguiente], cron=cr.slots[siguiente], act=porId[proximo.ref];
++      var comoLlegar=act&&act.maps || proximo.maps || cron.tramo&&cron.tramo.maps;
++      h += '<div class="agenda-proximo"><div class="lab">Siguiente en la agenda · '+esc(cron.hora)+'</div><strong>'+esc(proximo.nombre)+'</strong>'+
++        (comoLlegar?'<a class="ext map" target="_blank" rel="noopener" href="'+esc(comoLlegar)+'">Cómo llegar</a>':'')+'</div>';
++    }
++    var bloqueAnterior;
+     d.slots.forEach(function(s, si){
++      var bloque=s.k==='llegada'||s.k==='traslado'||s.k==='vuelta'?'Desplazamientos':
++        ((s.momento==='noche'&&!s.antes)||s.momento==='cena'?'Noche':
++          (s.antes||['comida','tarde','merienda'].includes(s.momento)?'Tarde':'Mañana'));
++      if(bloque!==bloqueAnterior) h += '<h3 class="agenda-periodo">'+bloque+'</h3>';
++      bloqueAnterior=bloque;
+       var a = s.ref && porId[s.ref], o = cr.slots[si] || {};
+       if(o.tramo) h += '<div class="tramo">'+tramoTxt(o.tramo)+'</div>';
+       var cls = s.k==='comida'?' food':(s.k==='libre'?' free':'');
+       var hora = o.salida ? 'Salida '+o.salida+(o.hora?' · '+o.hora:'') : (o.hora || o.etiqueta || '');
+       var mom = s.k==='llegada'?'Llegada':(s.k==='vuelta'?'Vuelta':(s.k==='traslado'?'Cambio de alojamiento':(s.antes&&!s.sol?'Aperitivo':(MOM[s.momento]||''))));
+-      h += '<div class="slot'+cls+(s===destacado?' agenda-destacado':'')+(s.editado?' edited':'')+'"><div class="sh"><span class="mom">'+(hora?'<b class="m" style="font-size:14px;margin-right:6px">'+esc(hora)+'</b>':'')+mom+'</span>'+(EDITABLE[s.k]?'<details class="slot-edit"><summary>Editar</summary><span class="ed">'+(si>0&&EDITABLE[d.slots[si-1].k]?'<button class="btn xs ghost" data-mover="'+di+'.'+si+'.-1" aria-label="Subir">↑</button>':'')+(si<d.slots.length-1&&EDITABLE[d.slots[si+1].k]?'<button class="btn xs ghost" data-mover="'+di+'.'+si+'.1" aria-label="Bajar">↓</button>':'')+((s.k==='act'||s.k==='libre'||s.k==='noche')?'<button class="btn xs ghost" data-cambiar="'+di+'.'+si+'">Cambiar</button>':'')+'<button class="btn xs ghost" data-quitar-s="'+di+'.'+si+'" aria-label="Quitar">✕</button></span></details>':'')+'</div>'+
+-        '<b>'+esc(s.nombre)+'</b>';
++      var detalleId='agenda-'+esc(t.code)+'-'+d.n+'-'+si;
++      h += '<div class="slot'+cls+(s===destacado?' agenda-destacado':'')+(s.editado?' edited':'')+'"><details class="agenda-slot" id="'+detalleId+'">'+
++        '<summary><span class="agenda-slot-hora">'+esc(hora||mom)+'</span><strong>'+esc(s.nombre)+'</strong>'+
++        (a&&a.reserva?'<span class="pill warn">Requiere reserva</span>':'')+'</summary><div class="agenda-slot-body">'+
++        (EDITABLE[s.k]?'<details class="slot-edit"><summary>Editar parada</summary><span class="ed">'+
++          (si>0&&EDITABLE[d.slots[si-1].k]?'<button class="btn xs ghost" data-mover="'+di+'.'+si+'.-1" aria-label="Subir">↑</button>':'')+
++          (si<d.slots.length-1&&EDITABLE[d.slots[si+1].k]?'<button class="btn xs ghost" data-mover="'+di+'.'+si+'.1" aria-label="Bajar">↓</button>':'')+
++          '<button class="btn xs ghost" data-quitar-s="'+di+'.'+si+'">Quitar</button></span></details>':'');
++      if(s.k==='act'||s.k==='libre'||s.k==='noche') h += '<button type="button" class="btn xs ghost" data-cambiar="'+di+'.'+si+'">Ver alternativas</button>';
+       if(a){
+         if(a.descripcion) h += '<p style="font-size:14px">'+esc(a.descripcion)+'</p>';
+         if((a.paradas||[]).length) h += '<details class="agenda-detail"><summary>Paradas del recorrido ('+a.paradas.length+')</summary><ol class="paradas" style="margin:2px 0 0 18px;padding:0;font-size:14px">'+a.paradas.map(function(p){ return '<li style="margin:3px 0"><a target="_blank" rel="noopener" href="'+esc(p.maps)+'">'+esc(p.nombre)+'</a>'+(p.nota?' <span class="muted">— '+esc(p.nota)+'</span>':'')+'</li>'; }).join('')+'</ol></details>';
+@@ -980,11 +1063,10 @@
+         if(s.maps) h += '<div class="lk"><a class="ext map" target="_blank" rel="noopener" href="'+esc(s.maps)+'">'+(s.k==='comida'?'Dónde comer cerca':(s.k==='llegada'||s.k==='vuelta'||s.k==='traslado'?'Ruta':'Mapa'))+'</a></div>';
+       }
+       if(s.por_que) h += '<span class="why'+(s.de?' de':'')+'">'+(s.de?'<span class="av xs">'+esc(inicial(s.de))+'</span>':'')+esc(s.por_que)+'</span>';
+-      h += '</div>';
++      h += '</div></details></div>';
+     });
+     if(cr.regreso) h += '<div class="tramo">Vuelta al alojamiento: ≈ '+kmTxt(cr.regreso.km)+' km · <a target="_blank" rel="noopener" href="'+esc(cr.regreso.maps)+'">ver ruta</a></div>';
+-    var puntos = d.slots.map(function(s){ var a=s.ref&&porId[s.ref]; return a&&a.geo ? a.geo : null; }).filter(Boolean);
+-    h += '<div class="row wrap" style="gap:8px;margin:6px 0 4px"><button class="btn xs ghost" data-anadir="'+di+'">+ Añadir un plan</button>'+(puntos.length>1?'<a class="btn xs ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/'+puntos.map(function(g){ return g[0]+','+g[1]; }).join('/')+'">Todo el día en el mapa</a>':'')+'</div>';
++    h += '<div class="agenda-actions"><button class="btn xs ghost" data-anadir="'+di+'">+ Añadir un plan</button></div>';
+     var hechos=d.slots.map(function(s){ return s.ref; });
+     var recorridos=(Z.recorridos||[]).filter(function(r){ return r.refs.some(function(ref){ return hechos.indexOf(ref)>-1; }); });
+     if(recorridos.length) h += '<details class="agenda-detail"><summary>Recorridos por la zona</summary>'+recorridos.map(function(r){
+--- a/src/app/head.html
++++ b/src/app/head.html
+@@ -445,4 +445,40 @@
+ #alt-lista summary{font:600 20px Georgia,serif;padding:4px 0}
+ #alt-lista details p{margin:8px 0;color:var(--ink2)}
+ @media(max-width:719px){.portada .foto-zona{margin:16px 3px 2px}.portada .foto-zona img{aspect-ratio:2.4}}
++/* Postales de planes y agenda compacta */
++.deck{height:auto;margin:4px 4px 0 0}
++.sw{position:relative;inset:auto;padding:8px 8px 0;background:#FBF4E6;touch-action:pan-y;border-width:2px;box-shadow:4px 4px 0 #30231F}
++.sw .top-il{height:auto;aspect-ratio:4/3;max-height:clamp(135px,25vh,265px);border:1px solid #30231F;touch-action:none}
++.sw .sw-photo{position:absolute;inset:0;z-index:2;width:100%;height:100%;object-fit:cover}
++.sw .stamp{z-index:3;font-size:clamp(14px,4vw,22px)}
++.sw .in{padding:10px 4px 12px;overflow:visible}
++.sw .in h3{font:900 clamp(23px,6vw,32px)/1 var(--f-d);font-stretch:75%;text-transform:uppercase}
++.sw .in p{font-size:14px;line-height:1.35}
++.sw-meta,.sw-credit{font:500 11px/1.4 var(--f-m)}
++.sw-credit summary{cursor:pointer;text-decoration:underline}
++.swb{display:grid;grid-template-columns:.75fr 1fr 1.25fr;gap:6px}
++.swb button{width:100%;min-height:48px;height:auto;border-radius:4px;display:flex;justify-content:center;align-items:center;gap:4px;padding:5px;font-size:clamp(11px,3.2vw,14px)}
++.swb button span{font-size:15px}
++#sw-si{background:#4EAAA0}
++#sw-si2{background:#EFC65B}
++.sw-tools{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:4px 12px;font-size:13px}
++.sw-tools button{min-height:40px;color:#30231F}
++.agenda-actions{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:6px 0 12px}
++.agenda-actions .agenda-intro{margin:0}
++.agenda-periodo{margin:16px 0 6px;font:700 12px/1.4 var(--f-m);text-transform:uppercase;color:var(--ink2)}
++.agenda .slot{padding-block:0}
++.agenda-slot>summary{display:grid;grid-template-columns:minmax(3.5rem,auto) 1fr 1em;column-gap:8px;align-items:center;min-height:46px;padding:7px 0;cursor:pointer;list-style:none}
++.agenda-slot>summary::-webkit-details-marker{display:none}
++.agenda-slot>summary::after{content:'+';grid-column:3;grid-row:1;text-align:right}
++.agenda-slot[open]>summary::after{content:'−'}
++.agenda-slot>summary strong{grid-column:2;font-size:15px;line-height:1.24}
++.agenda-slot>summary .pill{grid-column:2;justify-self:start;margin-top:3px}
++.agenda-slot-hora{grid-column:1;font:600 11px/1.3 var(--f-m);color:var(--ink2);max-width:7.5rem}
++.agenda-slot-body{display:grid;justify-items:start;gap:8px;padding:8px 0 14px;border-top:1px dashed var(--line)}
++.agenda-slot-body>.agenda-detail{width:100%}
++.agenda-slot-body .slot-edit{text-align:left}
++.agenda-proximo{display:grid;justify-items:start;gap:5px;padding:10px 12px;background:var(--chip);border-left:3px solid var(--teal)}
++.agenda-proximo strong{font-size:17px}
++.agenda-bases summary{cursor:pointer;font-weight:700}
++.agenda-bases>div{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:6px}
+ </style>
+--- a/tests/e2e/escenarios.py
++++ b/tests/e2e/escenarios.py
+@@ -98,13 +98,28 @@
+         if hay: A.click('[data-add-i] >> nth=0'); A.wait_for_timeout(1200)
+         ok(hay and A.locator('.slot').count() == antes + 1, 'Se puede añadir un plan a un día')
+         Pp.wait_for_timeout(1200); ok(Pp.locator('.slot').count() == antes + 1, 'El plan añadido le aparece a Pol')
+-        A.click('[data-quitar-s] >> nth=0'); A.wait_for_timeout(1200)
++        def editar_parada(selector):
++            parada = A.locator('.agenda-slot').filter(has=A.locator(selector)).first
++            if not parada.evaluate('el => el.open'):
++                parada.locator(':scope > summary').click()
++            edicion = parada.locator('.slot-edit')
++            if not edicion.evaluate('el => el.open'):
++                edicion.locator('summary').click()
++            edicion.locator(selector).click()
++            A.wait_for_timeout(1200)
++
++        editar_parada('[data-quitar-s]')
+         ok(A.locator('.slot').count() == antes, 'Se puede quitar un plan')
+         if A.locator('[data-mover$=".1"]').count():
+-            n0 = A.locator('.slot b').all_inner_texts()
+-            A.click('[data-mover$=".1"] >> nth=0'); A.wait_for_timeout(1200)
+-            ok(A.locator('.slot b').all_inner_texts() != n0, 'Se puede cambiar el orden de los planes')
+-        ok(A.locator('.tramo').count() > 0, 'Entre planes se enseña la distancia aproximada')
++            nombres = A.locator('.agenda-slot > summary strong')
++            n0 = nombres.all_inner_texts()
++            editar_parada('[data-mover$=".1"]')
++            ok(nombres.all_inner_texts() != n0, 'Se puede cambiar el orden de los planes')
++        for dia in A.locator('[data-ir-dia]').all():
++            if A.locator('.tramo a').count():
++                break
++            dia.click()
++        ok(A.locator('.tramo a').count() > 0, 'Los días con trayecto calculado muestran la distancia aproximada y la ruta')
+         Hn.shot(A, 'esc-02-dias', full=True)
+         # concurrencia: lista y gastos a la vez desde dos móviles
+         for pg in (A, Pp): pg.click('[data-sub="lista"]'); pg.wait_for_timeout(400)

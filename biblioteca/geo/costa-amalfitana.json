@@ -1,0 +1,111 @@
+{
+ "actividades": {
+  "sentiero-degli-dei": [
+   40.626,
+   14.54
+  ],
+  "duomo-amalfi": [
+   40.634,
+   14.603
+  ],
+  "fiordo-di-furore": [
+   40.612,
+   14.545
+  ],
+  "marina-di-praia": [
+   40.614,
+   14.531
+  ],
+  "positano-spiaggia-grande": [
+   40.628,
+   14.485
+  ],
+  "ferry-amalfi-positano": [
+   40.634,
+   14.603
+  ],
+  "villa-rufolo": [
+   40.649,
+   14.611
+  ],
+  "ravello-belvedere": [
+   40.649,
+   14.612
+  ],
+  "ravello-festival": [
+   40.649,
+   14.611
+  ],
+  "atrani": [
+   40.634,
+   14.61
+  ],
+  "bus-sita-panoramico": [
+   40.626,
+   14.376
+  ],
+  "barco-excursion": [
+   40.633,
+   14.602
+  ],
+  "sorrento-vallone-mulini": [
+   40.627,
+   14.373
+  ],
+  "sorrento-limoncello": [
+   40.626,
+   14.376
+  ],
+  "sorrento-atardecer": [
+   40.629,
+   14.371
+  ],
+  "salerno-minerva": [
+   40.68,
+   14.76
+  ],
+  "salerno-luci": [
+   40.681,
+   14.763
+  ],
+  "salerno-lungomare": [
+   40.675,
+   14.766
+  ]
+ },
+ "noche": {
+  "Casco antiguo de Salerno (Via dei Mercanti y alrededores)": [
+   40.68,
+   14.76
+  ],
+  "Plaza Tasso y centro de Sorrento": [
+   40.626,
+   14.376
+  ],
+  "Marina di Praia y Praiano": [
+   40.614,
+   14.531
+  ]
+ },
+ "eventos": {
+  "Fiesta de Sant'Andrea (Corsa del Santo)": [
+   40.634,
+   14.603
+  ],
+  "Fuegos de la Asunción en Positano y Maiori": [
+   40.628,
+   14.485
+  ],
+  "Ravello Festival": [
+   40.649,
+   14.611
+  ],
+  "Luci d'Artista": [
+   40.681,
+   14.763
+  ]
+ },
+ "dudosos": [
+  "bus-sita-panoramico"
+ ]
+}

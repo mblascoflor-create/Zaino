@@ -1,0 +1,982 @@
+{
+ "id": "abruzos",
+ "nombre": "Abruzos",
+ "nombre_corto": "Abruzos",
+ "lema": "Montaña, trabocchi y mar sin multitudes",
+ "descripcion": "Una región poco masificada donde en una hora pasas de la playa de Pescara a los Apeninos: pueblos de piedra, la Costa dei Trabocchi y esquí en invierno. Barata y sin postureo, pero se mueve mejor con coche.",
+ "perfil": {
+  "mar": 2,
+  "montana": 3,
+  "ciudad": 1,
+  "campo": 2,
+  "fiesta": 1,
+  "calma": 3,
+  "cultura": 2,
+  "gastronomia": 3,
+  "naturaleza": 3,
+  "playa": 2,
+  "aventura": 2,
+  "postal": 2
+ },
+ "nivel_precio": "bajo",
+ "nivel_precio_nota": "Es de las regiones italianas más baratas para comer y dormir; el esquí en Roccaraso es el gasto que más sube la cuenta.",
+ "meses": {
+  "ideales": [
+   5,
+   6,
+   9
+  ],
+  "aceptables": [
+   1,
+   2,
+   3,
+   4,
+   7,
+   10
+  ],
+  "evitar": [
+   8
+  ],
+  "nota": "Mayo, junio y septiembre combinan playa y montaña; en agosto la costa se llena. De enero a marzo hay esquí en Roccaraso y Campo Imperatore."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": true,
+ "coche": {
+  "necesidad": "imprescindible",
+  "nota": "Pescara, la costa y Sulmona van en tren, pero Gran Sasso, Rocca Calascio, Scanno y las estaciones de esquí funcionan mucho mejor con coche. En L'Aquila y Sulmona hay centros con tráfico limitado: aparcad fuera.",
+  "aeropuerto_recogida": "PSR",
+  "operadores": [
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Hertz-Pescara.PSR.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Hertz-Pescara.PSR.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Europcar-Pescara.PSR.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Europcar-Pescara.PSR.EUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Avis-Pescara.PSR.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Avis-Pescara.PSR.AVIS.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "pescara",
+   "nombre": "Pescara",
+   "por_que": "Ciudad grande con playa, ambiente de estudiantes, aeropuerto y trenes a la costa, Sulmona y Roma.",
+   "sin_coche": true,
+   "ambiente": "fiesta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Pescara%2C+Italia"
+  },
+  {
+   "id": "san-vito-chietino",
+   "nombre": "San Vito Chietino",
+   "por_que": "En plena Costa dei Trabocchi, con estación de tren, la ciclovía del mar y calas tranquilas.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=San+Vito+Chietino%2C+Italia"
+  },
+  {
+   "id": "sulmona",
+   "nombre": "Sulmona",
+   "por_que": "Pueblo de piedra a los pies de la Majella: confetti, ermitas y salida hacia Scanno y Roccaraso.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sulmona%2C+Italia"
+  },
+  {
+   "id": "laquila",
+   "nombre": "L'Aquila",
+   "por_que": "Base para el Gran Sasso, Campo Imperatore y Rocca Calascio, con ambiente universitario.",
+   "sin_coche": false,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=L%27Aquila%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "PSR",
+    "nombre": "Pescara – Abruzzo",
+    "ciudad": "Pescara",
+    "a_la_base": "Pescara Air Link de Trenitalia: tren y bus entre la estación y el aeropuerto, unos 25 min según Trenitalia."
+   },
+   {
+    "iata": "FCO",
+    "nombre": "Roma – Fiumicino",
+    "ciudad": "Roma",
+    "a_la_base": "Se sigue en FlixBus o tren hasta Pescara; hay trasbordo y el trayecto es largo. Comprobad opciones el día de la reserva."
+   }
+  ],
+  "desde_espana": "Ryanair ha volado Valencia–Pescara desde el invierno de 2025. Desde otras ciudades, lo normal es volar a Roma y seguir en bus o tren, o alquilar coche en Pescara.",
+  "rutas_directas": [
+   {
+    "origen": "Valencia",
+    "origen_iata": "VLC",
+    "destino_iata": "PSR",
+    "aerolinea": "Ryanair",
+    "nota": "ruta anunciada como nueva en invierno 2025; comprobad días y vigencia al reservar",
+    "fuente": "https://corporate.ryanair.com/novita/ryanair-annuncia-una-crescita-record-per-labruzzo/"
+   }
+  ],
+  "desde_italia": "Pescara está en la línea adriática de Trenitalia y FlixBus la une con Roma, Bolonia, Milán, Florencia, Nápoles y Bari. Sulmona y L'Aquila se llegan en tren regional desde Pescara.",
+  "novedades": [
+   {
+    "nota": "Un registro de vuelos independiente mostraba el Pescara–Valencia de Ryanair operando en noviembre de 2026, unas 3 veces por semana. Es una referencia, no un horario fijo.",
+    "fuente": "https://aviability.com/en/flight/fr6415-ryanair/psr-vlc"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "Sin coche: tren por la costa (Pescara, Ortona, San Vito) y Pescara–Sulmona, más bus a Roccaraso. Con coche: Gran Sasso, Scanno y Calascio en un día cada uno.",
+  "tren": {
+   "nota": "Trenitalia cubre la costa adriática y la línea Pescara–Sulmona. RFI ha publicado avisos de obras en Pescara–Sulmona en 2026: comprobadlo antes de ir.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Une Pescara con Roma, Bolonia, Milán, Nápoles y más ciudades italianas. Para pueblos de montaña hay bus regional con pocas salidas.",
+   "enlace": "https://www.flixbus.it/autobus/pescara",
+   "fuente": "https://www.flixbus.it/autobus/pescara"
+  },
+  "ferry": [],
+  "camper": {
+   "operador": "Roadsurfer",
+   "nota": "Alquiler de campers en Italia; enlace a la página general.",
+   "enlace": "https://roadsurfer.com/es/alquilar-camper/italia/",
+   "fuente": "https://roadsurfer.com/es/alquilar-camper/italia/"
+  }
+ },
+ "actividades": [
+  {
+   "id": "pescara-lungomare",
+   "nombre": "Lungomare de Pescara y Ponte Flaiano",
+   "donde": "Pescara",
+   "base": "pescara",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Paseo por el frente marítimo con la fuente La Nave de Cascella y el puente Flaiano sobre el río, en una ciudad llana que se hace a pie o en bici.",
+   "enlace": "https://www.italia.it/it/abruzzo/pescara",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungomare+Matteotti%2C+Pescara%2C+Italia",
+   "fuente": "https://www.italia.it/it/abruzzo/pescara",
+   "geo": [
+    42.468,
+    14.226
+   ]
+  },
+  {
+   "id": "pescara-playa",
+   "nombre": "Playa de Pescara",
+   "donde": "Pescara",
+   "base": "pescara",
+   "tipo": "playa",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Arenal largo y dorado a un paseo del centro, con establecimientos de pago y tramos libres; mucho ambiente en verano.",
+   "consejo": "Fuera de verano sirve como paseo largo junto al mar.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Pescara%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Pescara%2C+Italia",
+   "fuente": "https://www.spiagge.it/magazine/spiagge-a-pescara/",
+   "geo": [
+    42.463,
+    14.233
+   ]
+  },
+  {
+   "id": "pescara-dannunzio",
+   "nombre": "Casa natal de Gabriele d'Annunzio",
+   "donde": "Pescara",
+   "base": "pescara",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Museo en la casa donde nació el poeta, en el corso Manthonè, en el casco antiguo de Pescara.",
+   "consejo": "Comprobad horarios en la web antes de ir.",
+   "enlace": "https://www.italia.it/it/abruzzo/pescara/musei/museo-casa-natale-di-gabriele-dannunzio",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Museo+Casa+Natale+Gabriele+d%27Annunzio%2C+Pescara%2C+Italia",
+   "fuente": "https://www.italia.it/it/abruzzo/pescara/musei/museo-casa-natale-di-gabriele-dannunzio",
+   "geo": [
+    42.465,
+    14.215
+   ]
+  },
+  {
+   "id": "pescara-noche",
+   "nombre": "Corso Umberto I y centro de Pescara",
+   "donde": "Pescara",
+   "base": "pescara",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Calle peatonal con cafés y restaurantes y ambiente joven por las noches; Pescara es la ciudad más animada de la región.",
+   "enlace": "https://www.italia.it/it/abruzzo/pescara",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Corso+Umberto+I%2C+Pescara%2C+Italia",
+   "fuente": "https://www.italia.it/it/abruzzo/pescara",
+   "geo": [
+    42.462,
+    14.211
+   ]
+  },
+  {
+   "id": "arrosticini-noche",
+   "nombre": "Cena de arrosticini",
+   "donde": "Pescara",
+   "base": "pescara",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Pinchos de oveja a la brasa que se comen con la mano y por docenas; el plan de grupo clásico de Abruzos.",
+   "consejo": "Pedid por tandas y con pan y vino de la casa: lo normal es ir sumando.",
+   "enlace": "https://www.uniquevisitor.it/abruzzo/prodotti-tipici/arrosticini-abruzzesi.php",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=arrosticini%2C+Pescara%2C+Italia",
+   "fuente": "https://www.uniquevisitor.it/abruzzo/prodotti-tipici/arrosticini-abruzzesi.php",
+   "geo": [
+    42.464,
+    14.213
+   ]
+  },
+  {
+   "id": "trabocchi-costa",
+   "nombre": "Costa dei Trabocchi en tren y a pie",
+   "donde": "Costa dei Trabocchi",
+   "base": "san-vito-chietino",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal",
+    "gastronomia"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Plataformas de pesca de madera sobre el mar entre Ortona, San Vito y Fossacesia; algunas funcionan hoy como restaurantes.",
+   "consejo": "Si queréis comer en un trabocco, reservad con antelación en temporada.",
+   "enlace": "https://www.italia.it/it/abruzzo/cosa-fare/costa-dei-trabocchi",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Costa+dei+Trabocchi%2C+San+Vito+Chietino%2C+Italia",
+   "fuente": "https://www.italia.it/it/abruzzo/cosa-fare/costa-dei-trabocchi",
+   "geo": [
+    42.29,
+    14.46
+   ]
+  },
+  {
+   "id": "via-verde-bici",
+   "nombre": "Ciclovía de la costa (Bike to Coast)",
+   "donde": "Costa dei Trabocchi",
+   "base": "san-vito-chietino",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza",
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "meses": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Tramos de la ciclovía de 131 km que recorre la costa abruzesa, en parte sobre la vieja vía del tren, con calas y trabocchi al lado.",
+   "consejo": "Algunos tramos tienen problemas de seguridad o cortes: mirad el estado antes de alquilar bici.",
+   "enlace": "https://www.italia.it/it/abruzzo/cosa-fare/ciclovia-bike-to-coast-in-abruzzo",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Via+Verde+Costa+dei+Trabocchi%2C+Fossacesia%2C+Italia",
+   "fuente": "https://www.italia.it/it/abruzzo/cosa-fare/ciclovia-bike-to-coast-in-abruzzo",
+   "geo": [
+    42.244,
+    14.481
+   ]
+  },
+  {
+   "id": "trabocco-turchino",
+   "nombre": "Atardecer en el Trabocco del Turchino",
+   "donde": "San Vito Chietino",
+   "base": "san-vito-chietino",
+   "tipo": "postal",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "El trabocco más fotografiado de la costa, junto a San Vito Chietino, con el Eremo Dannunziano cerca; se ve a pie y mejor al caer el sol.",
+   "enlace": "https://www.italia.it/it/abruzzo/cosa-fare/costa-dei-trabocchi",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trabocco+Turchino%2C+San+Vito+Chietino%2C+Italia",
+   "fuente": "https://www.italia.it/it/abruzzo/cosa-fare/costa-dei-trabocchi",
+   "geo": [
+    42.307,
+    14.453
+   ]
+  },
+  {
+   "id": "punta-aderci",
+   "nombre": "Punta Aderci y Punta Penna",
+   "donde": "Vasto",
+   "base": "san-vito-chietino",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "playa",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Reserva natural con acantilados bajos, playas casi salvajes y trabocchi; está al sur de la costa, más cerca de Vasto que de San Vito.",
+   "enlace": "https://www.italia.it/it/abruzzo/chieti/punta-aderci",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Riserva+Naturale+Punta+Aderci%2C+Vasto%2C+Italia",
+   "fuente": "https://www.italia.it/it/abruzzo/chieti/punta-aderci",
+   "geo": [
+    42.172,
+    14.708
+   ]
+  },
+  {
+   "id": "ortona-castillo",
+   "nombre": "Castillo aragonés de Ortona",
+   "donde": "Ortona",
+   "base": "san-vito-chietino",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Fortaleza del siglo XV sobre el mar, en una ciudad portuaria con estación de tren.",
+   "enlace": "https://www.italia.it/it/abruzzo/chieti/castello-aragonese-ortona",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castello+Aragonese%2C+Ortona%2C+Italia",
+   "fuente": "https://www.italia.it/it/abruzzo/chieti/castello-aragonese-ortona",
+   "geo": [
+    42.355,
+    14.405
+   ]
+  },
+  {
+   "id": "laquila-centro",
+   "nombre": "L'Aquila: Collemaggio y las 99 Cannelle",
+   "donde": "L'Aquila",
+   "base": "laquila",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Basílica de Santa Maria di Collemaggio, con la Puerta Santa de la Perdonanza, y la fuente medieval de las 99 Cannelle.",
+   "consejo": "Parte del centro sigue en reconstrucción tras el terremoto de 2009.",
+   "enlace": "https://www.italia.it/it/abruzzo/l-aquila/musei/basilica-di-santa-maria-di-collemaggio",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Basilica+di+Santa+Maria+di+Collemaggio%2C+L%27Aquila%2C+Italia",
+   "fuente": "https://www.italia.it/it/abruzzo/l-aquila/musei/basilica-di-santa-maria-di-collemaggio",
+   "geo": [
+    42.343,
+    13.411
+   ]
+  },
+  {
+   "id": "laquila-noche",
+   "nombre": "Aperitivo en el centro de L'Aquila",
+   "donde": "L'Aquila",
+   "base": "laquila",
+   "tipo": "fiesta",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Ambiente universitario de plazas y calles del centro histórico, con aperitivo y copas.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+Duomo%2C+L%27Aquila%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Duomo%2C+L%27Aquila%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+Duomo%2C+L%27Aquila%2C+Italia",
+   "geo": [
+    42.351,
+    13.398
+   ]
+  },
+  {
+   "id": "campo-imperatore",
+   "nombre": "Campo Imperatore: el pequeño Tíbet",
+   "donde": "Campo Imperatore",
+   "base": "laquila",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal",
+    "aventura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "meses": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Meseta de altura del Gran Sasso con praderas, rebaños y rutas a pie o en bici; se llega por carretera desde Fonte Cerreto o Castel del Monte.",
+   "consejo": "La funivia de Fonte Cerreto estuvo cerrada por obras en 2025: comprobad si funciona.",
+   "enlace": "https://www.italia.it/it/abruzzo/cosa-fare/castel-del-monte-campo-imperatore-in-bici",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Campo+Imperatore%2C+L%27Aquila%2C+Italia",
+   "fuente": "https://www.italia.it/it/abruzzo/cosa-fare/castel-del-monte-campo-imperatore-in-bici",
+   "geo": [
+    42.44,
+    13.56
+   ]
+  },
+  {
+   "id": "campo-imperatore-esqui",
+   "nombre": "Esquí en Campo Imperatore",
+   "donde": "Campo Imperatore",
+   "base": "laquila",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "alto",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "alto",
+   "ambiente": "social",
+   "meses": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "descripcion": "Unos 15 km de pistas en el Gran Sasso, con nieve fiable de noviembre a abril según el turismo regional; ambiente más tranquilo que Roccaraso.",
+   "consejo": "Comprobad antes qué accesos y remontes están abiertos esa temporada.",
+   "enlace": "https://turismo.abruzzo.it/en/skiing-in-abruzzo-best-resorts/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Campo+Imperatore%2C+L%27Aquila%2C+Italia",
+   "fuente": "https://turismo.abruzzo.it/en/skiing-in-abruzzo-best-resorts/",
+   "geo": [
+    42.44,
+    13.56
+   ]
+  },
+  {
+   "id": "roccaraso-esqui",
+   "nombre": "Esquí en Roccaraso y Aremogna",
+   "donde": "Roccaraso",
+   "base": "sulmona",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza",
+    "fiesta"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "alto",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "alto",
+   "ambiente": "social",
+   "meses": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "descripcion": "La mayor estación del centro de Italia, con 147 km de pistas y 38 remontes según el turismo regional. Un día en bus o tren desde Sulmona.",
+   "consejo": "En fines de semana de nieve hay mucha gente: madrugad y reservad el forfait y el material.",
+   "enlace": "https://turismo.abruzzo.it/en/skiing-in-abruzzo-best-resorts/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Aremogna%2C+Roccaraso%2C+Italia",
+   "fuente": "https://turismo.abruzzo.it/en/skiing-in-abruzzo-best-resorts/",
+   "geo": [
+    41.857,
+    14.08
+   ]
+  },
+  {
+   "id": "rocca-calascio",
+   "nombre": "Rocca Calascio y Santo Stefano di Sessanio",
+   "donde": "Calascio",
+   "base": "laquila",
+   "tipo": "postal",
+   "tipos_extra": [
+    "naturaleza",
+    "cultura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "El castillo más alto de los Apeninos, a unos 1500 m, de piedra blanca y escenario de cine, más el pueblo medieval de Santo Stefano di Sessanio.",
+   "consejo": "Se puede ir a pie entre Santo Stefano di Sessanio y Rocca Calascio.",
+   "enlace": "https://www.italia.it/es/abruzos/l-aquila/rocca-calascio",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Rocca+Calascio%2C+Calascio%2C+Italia",
+   "fuente": "https://www.italia.it/es/abruzos/l-aquila/rocca-calascio",
+   "geo": [
+    42.326,
+    13.69
+   ]
+  },
+  {
+   "id": "sulmona-confetti",
+   "nombre": "Sulmona: centro y museo de los confetti",
+   "donde": "Sulmona",
+   "base": "sulmona",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Paseo por el centro medieval y visita al museo del arte confitero; Sulmona es la ciudad de los confetti, almendras bañadas en azúcar.",
+   "enlace": "https://cultura.gov.it/luogo/museo-dell-arte-e-della-tecnologia-confettiera",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Museo+dell%27Arte+Confettiera%2C+Sulmona%2C+Italia",
+   "fuente": "https://cultura.gov.it/luogo/museo-dell-arte-e-della-tecnologia-confettiera",
+   "geo": [
+    42.047,
+    13.926
+   ]
+  },
+  {
+   "id": "eremo-sant-onofrio",
+   "nombre": "Ermita de Sant'Onofrio al Morrone",
+   "donde": "Sulmona",
+   "base": "sulmona",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Ermita de Celestino V en la ladera del Morrone, con oratorio frescado y mirador sobre el valle Peligno.",
+   "consejo": "La web oficial no da horarios: preguntad antes en la oficina de turismo de Sulmona.",
+   "enlace": "https://www.italia.it/it/abruzzo/eremo-sant-onofrio-morrone-sulmona",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Eremo+di+Sant%27Onofrio+al+Morrone%2C+Sulmona%2C+Italia",
+   "fuente": "https://www.italia.it/it/abruzzo/eremo-sant-onofrio-morrone-sulmona",
+   "geo": [
+    42.054,
+    13.96
+   ]
+  },
+  {
+   "id": "scanno-lago",
+   "nombre": "Lago de Scanno y el Sentiero del Cuore",
+   "donde": "Scanno",
+   "base": "sulmona",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal",
+    "agua"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Lago de montaña a 900 m con forma de corazón vista desde arriba, sendero fácil hasta el mirador y, en verano, canoas y barcas; el pueblo de Scanno queda a unos minutos.",
+   "enlace": "https://www.italia.it/it/abruzzo/cosa-fare/lago-di-scanno",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lago+di+Scanno%2C+Italia",
+   "fuente": "https://www.italia.it/it/abruzzo/cosa-fare/lago-di-scanno",
+   "geo": [
+    41.911,
+    13.873
+   ]
+  },
+  {
+   "id": "transiberiana",
+   "nombre": "Transiberiana d'Italia (tren histórico)",
+   "donde": "Sulmona",
+   "base": "sulmona",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "cultura",
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Tren histórico por la vía de montaña Sulmona–Isernia que circula solo en fechas concretas; es una excursión que se disfruta más en grupo.",
+   "consejo": "Solo salen en fechas de calendario: mirad el de Fondazione FS antes de planear el viaje.",
+   "enlace": "https://www.fondazionefs.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Stazione+di+Sulmona%2C+Italia",
+   "fuente": "https://www.fondazionefs.it/en/itineraries/2026/4/25/treno-storico-da-sulmona-a-isernia.html",
+   "geo": [
+    42.049,
+    13.925
+   ]
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Arrosticini",
+   "que_es": "pinchos de oveja a la brasa, receta de pastores",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "rosticcerie y asadores de Pescara y de la costa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=arrosticini%2C+Pescara%2C+Italia",
+   "fuente": "https://www.italia.it/de/abruzzen/erlebnisse-und-sehenswertes/ein-gut-durchdachter-leitfaden-fuer-die-typischen-gerichte-der-abruzzen"
+  },
+  {
+   "plato": "Spaghetti alla chitarra",
+   "que_es": "pasta fresca al huevo cortada con un bastidor de cuerdas, con tomate y albóndigas",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias de Pescara, L'Aquila y Sulmona",
+   "maps": "https://www.google.com/maps/search/?api=1&query=trattoria%2C+Sulmona%2C+Italia",
+   "fuente": "https://www.italia.it/de/abruzzen/erlebnisse-und-sehenswertes/ein-gut-durchdachter-leitfaden-fuer-die-typischen-gerichte-der-abruzzen"
+  },
+  {
+   "plato": "Pallotte cacio e ova",
+   "que_es": "albóndigas sin carne, de pan, pecorino y huevo, en salsa de tomate",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorias del interior, en Sulmona y L'Aquila",
+   "maps": "https://www.google.com/maps/search/?api=1&query=trattoria%2C+L%27Aquila%2C+Italia",
+   "fuente": "https://www.italia.it/de/abruzzen/erlebnisse-und-sehenswertes/ein-gut-durchdachter-leitfaden-fuer-die-typischen-gerichte-der-abruzzen"
+  },
+  {
+   "plato": "Brodetto",
+   "que_es": "sopa de pescado: sin tomate en Pescara, con mucho tomate en Vasto",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "restaurantes de pescado del puerto de Pescara y de la costa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=porto%2C+Pescara%2C+Italia",
+   "fuente": "https://www.italia.it/de/abruzzen/erlebnisse-und-sehenswertes/ein-gut-durchdachter-leitfaden-fuer-die-typischen-gerichte-der-abruzzen"
+  },
+  {
+   "plato": "Pesce in scapece",
+   "que_es": "pescado frito y marinado en vinagre, típico de entrante",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "restaurantes de pescado de la costa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=ristorante+pesce%2C+Vasto%2C+Italia",
+   "fuente": "https://www.italia.it/de/abruzzen/erlebnisse-und-sehenswertes/ein-gut-durchdachter-leitfaden-fuer-die-typischen-gerichte-der-abruzzen"
+  },
+  {
+   "plato": "Confetti di Sulmona",
+   "que_es": "almendras bañadas en azúcar, con la tradición más antigua de Italia",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "tiendas del centro de Sulmona",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sulmona+confetti%2C+Italia",
+   "fuente": "https://www.italia.it/de/abruzzen/erlebnisse-und-sehenswertes/ein-gut-durchdachter-leitfaden-fuer-die-typischen-gerichte-der-abruzzen"
+  },
+  {
+   "plato": "Bocconotto",
+   "que_es": "pasta frola con canela rellena de mermelada de uva, almendra y chocolate",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías de Pescara y del interior",
+   "maps": "https://www.google.com/maps/search/?api=1&query=pasticceria%2C+Pescara%2C+Italia",
+   "fuente": "https://www.italia.it/de/abruzzen/erlebnisse-und-sehenswertes/ein-gut-durchdachter-leitfaden-fuer-die-typischen-gerichte-der-abruzzen"
+  },
+  {
+   "plato": "Azafrán de L'Aquila",
+   "que_es": "especia DOP de la meseta de Navelli, de color y sabor intensos",
+   "estilo": "mercado",
+   "coste": "medio",
+   "donde_probarlo": "tiendas de productos típicos de L'Aquila y Navelli",
+   "maps": "https://www.google.com/maps/search/?api=1&query=zafferano%2C+L%27Aquila%2C+Italia",
+   "fuente": "https://www.italia.it/de/abruzzen/erlebnisse-und-sehenswertes/ein-gut-durchdachter-leitfaden-fuer-die-typischen-gerichte-der-abruzzen"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Corso Umberto I y centro de Pescara",
+   "base": "pescara",
+   "plan": "copas",
+   "descripcion": "Cafés y restaurantes en calle peatonal; es el sitio con más ambiente de la región.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Corso+Umberto+I%2C+Pescara%2C+Italia",
+   "fuente": "https://www.italia.it/it/abruzzo/pescara",
+   "geo": [
+    42.462,
+    14.211
+   ]
+  },
+  {
+   "zona": "Lungomare de Pescara",
+   "base": "pescara",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo junto al mar y paseo al atardecer; en verano hay establecimientos de playa abiertos hasta tarde.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungomare+Matteotti%2C+Pescara%2C+Italia",
+   "fuente": "https://www.italia.it/it/abruzzo/pescara",
+   "geo": [
+    42.468,
+    14.226
+   ]
+  },
+  {
+   "zona": "Centro histórico de L'Aquila",
+   "base": "laquila",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo y copas en plazas del centro, con público universitario.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Duomo%2C+L%27Aquila%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+Duomo%2C+L%27Aquila%2C+Italia",
+   "geo": [
+    42.351,
+    13.398
+   ]
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "pescara",
+   "coste": "bajo",
+   "para": "Grupos con poco presupuesto que quieren estar cerca de la estación y la playa.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Pescara"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "pescara",
+   "coste": "medio",
+   "para": "Grupos de 4 a 8 con cocina y salón común.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Pescara--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Pescara"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "san-vito-chietino",
+   "coste": "medio",
+   "para": "Grupos tranquilos que quieren dormir en la Costa dei Trabocchi.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=San%20Vito%20Chietino"
+    }
+   ]
+  },
+  {
+   "tipo": "camping",
+   "base": "san-vito-chietino",
+   "coste": "bajo",
+   "para": "Grupos con tienda o caravana cerca del mar.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=San%20Vito%20Chietino"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "sulmona",
+   "coste": "bajo",
+   "para": "Grupos que quieren esquí en Roccaraso o excursiones a Scanno.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Sulmona"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "laquila",
+   "coste": "medio",
+   "para": "Base para Gran Sasso y Campo Imperatore.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=L%27Aquila"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Perdonanza Celestiniana",
+   "donde": "L'Aquila",
+   "cuando": "cada año, del 23 al 30 de agosto",
+   "meses": [
+    8
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Fiesta del perdón de Celestino V con cortejo histórico y apertura de la Puerta Santa de Collemaggio; Patrimonio Inmaterial de la UNESCO.",
+   "enlace": "https://perdonanza-celestiniana.it/",
+   "fuente": "https://perdonanza-celestiniana.it/"
+  },
+  {
+   "nombre": "Giostra Cavalleresca",
+   "donde": "Sulmona",
+   "cuando": "cada año, en verano, normalmente a finales de julio",
+   "meses": [
+    7
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Torneo con desfile de caballeros y damas por el centro histórico, entre los sestieri de la ciudad.",
+   "enlace": "https://www.italia.it/it/abruzzo/cosa-fare/rievocazioni-e-costumi-storici",
+   "fuente": "https://www.italia.it/it/abruzzo/cosa-fare/rievocazioni-e-costumi-storici"
+  },
+  {
+   "nombre": "Pescara Jazz",
+   "donde": "Pescara",
+   "cuando": "cada año, en verano; la edición de 2026 fue del 12 al 19 de julio",
+   "meses": [
+    7
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival de jazz con conciertos en el Auditorium Flaiano y el puerto turístico.",
+   "enlace": "https://www.pescarajazz.com/",
+   "fuente": "https://tg24.sky.it/spettacolo/musica/2026/06/13/festival-pescara-jazz"
+  },
+  {
+   "nombre": "La Madonna che scappa",
+   "donde": "Sulmona",
+   "cuando": "cada año, el domingo de Pascua",
+   "meses": [
+    3,
+    4
+   ],
+   "proxima_fecha": null,
+   "descripcion": "La Virgen sale corriendo al encontrar a Cristo resucitado, con palomas y fuegos artificiales en la plaza.",
+   "enlace": "https://www.italia.it/it/abruzzo/cosa-fare/la-madonna-che-scappa-di-sulmona",
+   "fuente": "https://www.italia.it/it/abruzzo/cosa-fare/la-madonna-che-scappa-di-sulmona"
+  }
+ ],
+ "notas_honestas": [
+  "Sin coche se pierden Gran Sasso, Rocca Calascio, Scanno y Punta Aderci: son lo mejor de la región.",
+  "No pude verificar si la funivia de Campo Imperatore funciona esta temporada; estuvo cerrada por obras en 2025.",
+  "No pude verificar horarios de buses regionales a Scanno, Roccaraso ni el servicio a Campo Imperatore.",
+  "No pude confirmar días de circulación de la Transiberiana para 2027: solo vi fechas de 2026.",
+  "Las fechas de eventos de 2027 no estaban publicadas en las fuentes oficiales; proxima_fecha queda en null.",
+  "Solo una ruta directa desde España (Valencia–Pescara) y con pocas frecuencias: comprobadla antes de reservar.",
+  "Enlaces de L'Aquila nocturno, playa de Pescara y mercados son mapa o fuente general: no hay web oficial verificada.",
+  "Coordenadas de geo aproximadas a 3 decimales; sin web oficial de horarios para la Ermita de Sant'Onofrio."
+ ]
+}

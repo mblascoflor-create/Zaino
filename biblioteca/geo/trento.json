@@ -1,0 +1,123 @@
+{
+ "actividades": {
+  "buonconsiglio": [
+   46.071,
+   11.126
+  ],
+  "muse": [
+   46.062,
+   11.113
+  ],
+  "duomo-trento": [
+   46.067,
+   11.121
+  ],
+  "doss-trento": [
+   46.075,
+   11.116
+  ],
+  "mercatino-trento": [
+   46.067,
+   11.121
+  ],
+  "mercatino-levico": [
+   46.012,
+   11.304
+  ],
+  "termas-levico": [
+   46.012,
+   11.299
+  ],
+  "lago-levico": [
+   46.007,
+   11.288
+  ],
+  "bondone-verano": [
+   46.014,
+   11.058
+  ],
+  "bondone-invierno": [
+   46.014,
+   11.058
+  ],
+  "riva-garda": [
+   45.886,
+   10.842
+  ],
+  "torbole": [
+   45.87,
+   10.873
+  ],
+  "ponale": [
+   45.88,
+   10.836
+  ],
+  "tovel": [
+   46.259,
+   10.953
+  ],
+  "campiglio-verano": [
+   46.231,
+   10.827
+  ],
+  "campiglio-esqui": [
+   46.231,
+   10.827
+  ],
+  "ferrata-bocchette": [
+   46.231,
+   10.827
+  ],
+  "castel-thun": [
+   46.263,
+   11.04
+  ],
+  "san-romedio": [
+   46.36,
+   11.1
+  ],
+  "aperitivo-trento": [
+   46.067,
+   11.121
+  ]
+ },
+ "noche": {
+  "Centro de Trento": [
+   46.067,
+   11.121
+  ],
+  "Lungolago de Riva del Garda": [
+   45.886,
+   10.842
+  ],
+  "Centro de Madonna di Campiglio": [
+   46.231,
+   10.827
+  ]
+ },
+ "eventos": {
+  "Trento Film Festival": [
+   46.067,
+   11.121
+  ],
+  "Mercatino di Natale de Trento": [
+   46.067,
+   11.121
+  ],
+  "Mercatino Asburgico de Levico Terme": [
+   46.012,
+   11.304
+  ],
+  "Mercatino di Natale de Arco": [
+   45.918,
+   10.887
+  ],
+  "I Suoni delle Dolomiti": [
+   46.231,
+   10.827
+  ]
+ },
+ "dudosos": [
+  "I Suoni delle Dolomiti"
+ ]
+}

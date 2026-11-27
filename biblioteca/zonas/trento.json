@@ -1,0 +1,946 @@
+{
+ "id": "trento",
+ "nombre": "Trento y valles del Trentino",
+ "nombre_corto": "Trento",
+ "lema": "Ciudad alpina, lago y Brenta",
+ "descripcion": "Trento es una ciudad universitaria bien conectada en tren, con castillo, MUSE y mercadillo de Navidad, y a su alrededor tienes el Garda norte, termas, huertos de manzana y las Dolomitas de Brenta. Más barata y fácil sin coche que Val Gardena.",
+ "perfil": {
+  "mar": 0,
+  "montana": 2,
+  "ciudad": 2,
+  "campo": 2,
+  "fiesta": 1,
+  "calma": 2,
+  "cultura": 2,
+  "gastronomia": 2,
+  "naturaleza": 2,
+  "playa": 1,
+  "aventura": 2,
+  "postal": 2
+ },
+ "nivel_precio": "medio",
+ "nivel_precio_nota": "Ciudad y lagos a precio razonable; Madonna di Campiglio en temporada de esquí sube mucho.",
+ "meses": {
+  "ideales": [
+   5,
+   6,
+   9,
+   12
+  ],
+  "aceptables": [
+   4,
+   7,
+   8,
+   10,
+   1,
+   2,
+   3
+  ],
+  "evitar": [
+   11
+  ],
+  "nota": "Mayo-junio y septiembre para ciudad, Garda y rutas; diciembre para mercadillos y esquí. A finales de noviembre los mercados abren, pero las montañas están en entretiempo."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": true,
+ "coche": {
+  "necesidad": "util",
+  "nota": "Trento, Levico y Riva se hacen en tren y bus. Para Val di Non, Lago di Tovel, Monte Bondone y Brenta el coche ahorra muchos transbordos; en la ciudad hay ZTL y aparcamientos de pago.",
+  "aeropuerto_recogida": "VRN",
+  "operadores": [
+   {
+    "nombre": "Sixt",
+    "enlace": "https://www.rentalcars.com/en/airport/it/vrn/sixt",
+    "fuente": "https://www.rentalcars.com/en/airport/it/vrn/sixt"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Avis-Verona.VRN.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Avis-Verona.VRN.AVIS.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Europcar-Verona.VRN.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Europcar-Verona.VRN.EUROPCAR.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "trento",
+   "nombre": "Trento",
+   "por_que": "Tren directo desde Verona y Bolzano, ambiente universitario y excursiones en bus o tren.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trento%2C+Italia"
+  },
+  {
+   "id": "riva",
+   "nombre": "Riva del Garda",
+   "por_que": "Lago, paseo y deportes de agua en la punta norte del Garda.",
+   "sin_coche": true,
+   "ambiente": "fiesta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Riva+del+Garda%2C+Italia"
+  },
+  {
+   "id": "campiglio",
+   "nombre": "Madonna di Campiglio",
+   "por_que": "Puerta a las Dolomitas de Brenta en verano e invierno.",
+   "sin_coche": false,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Madonna+di+Campiglio%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "VRN",
+    "nombre": "Verona – Valerio Catullo",
+    "ciudad": "Verona",
+    "a_la_base": "Unos 90 km de Trento, aprox. 1 h por la A22 según Visit Trentino; en tren desde Verona Porta Nuova (hay servicio Verona Airlink aeropuerto–estación)."
+   },
+   {
+    "iata": "BZO",
+    "nombre": "Bolzano – Dolomiti",
+    "ciudad": "Bolzano",
+    "a_la_base": "A 57 km de Trento; vuelos muy limitados (Air A!ps)."
+   },
+   {
+    "iata": "BGY",
+    "nombre": "Bergamo – Orio al Serio",
+    "ciudad": "Bergamo",
+    "a_la_base": "A unos 180 km, 1 h 50 min por carretera según Visit Trentino; bus a la ciudad y a Milán."
+   }
+  ],
+  "desde_espana": "Lo más práctico es Verona con Volotea desde Barcelona y Madrid, y luego tren a Trento. Bergamo y Venecia dan más oferta low cost pero con trayecto más largo.",
+  "rutas_directas": [
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "VRN",
+    "aerolinea": "Volotea",
+    "nota": "ruta existente según la prensa del sector; frecuencias y temporada sin verificar",
+    "fuente": "https://www.quotidianomotori.com/volo/volotea-verona-nuove-rotte-2026/"
+   },
+   {
+    "origen": "Madrid",
+    "origen_iata": "MAD",
+    "destino_iata": "VRN",
+    "aerolinea": "Volotea",
+    "nota": "ruta existente según la prensa del sector; frecuencias y temporada sin verificar",
+    "fuente": "https://www.quotidianomotori.com/volo/volotea-verona-nuove-rotte-2026/"
+   }
+  ],
+  "desde_italia": "El tren regional Verona–Trento–Bolzano es la columna vertebral; FlixBus también para en Trento con conexiones por Italia.",
+  "novedades": [
+   {
+    "nota": "Volotea estrenó en 2026 Verona–Málaga (desde el 1 de agosto, martes y sábado) y Verona–Menorca (desde el 2 de agosto, jueves y domingo). Comprobad si siguen en 2027.",
+    "fuente": "https://www.quotidianomotori.com/volo/volotea-verona-nuove-rotte-2026/"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "Trento y Levico se hacen en tren; Riva del Garda y Campiglio, en bus regional. Para Val di Non, Tovel y Bondone, el coche manda.",
+  "tren": {
+   "nota": "Trenitalia y Italo llegan hasta Verona; de ahí el tren regional sigue por el valle del Adigio a Trento, Bolzano y el Brennero.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Trento tiene parada con conexiones a Turín, Florencia, Roma, Trieste y Treviso; no llega directo desde España.",
+   "enlace": "https://www.flixbus.it/autobus/trento",
+   "fuente": "https://www.flixbus.it/azienda/stampa/flixbus-offerta-estiva-2026"
+  },
+  "ferry": [],
+  "camper": {
+   "operador": "Roadsurfer",
+   "nota": "Alquiler de camper en Italia; solo hay página general del país, no de la zona. Encaja si queréis dormir sobre ruedas, pero en montaña el aparcamiento y los accesos tienen restricciones.",
+   "enlace": "https://roadsurfer.com/es/alquilar-camper/italia/",
+   "fuente": "https://roadsurfer.com/es/alquilar-camper/italia/"
+  }
+ },
+ "actividades": [
+  {
+   "id": "buonconsiglio",
+   "nombre": "Castello del Buonconsiglio",
+   "donde": "Trento",
+   "base": "trento",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Castillo de los príncipes-obispos desde el siglo XIII, con frescos del ciclo de los meses en la Torre dell'Aquila.",
+   "enlace": "https://www.buonconsiglio.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castello+del+Buonconsiglio%2C+Trento%2C+Italia",
+   "fuente": "https://www.buonconsiglio.it/"
+  },
+  {
+   "id": "muse",
+   "nombre": "MUSE, Museo de las Ciencias",
+   "donde": "Trento",
+   "base": "trento",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Edificio de Renzo Piano con salas de naturaleza alpina, dinosaurios y ciencia; plan para día de lluvia.",
+   "enlace": "https://www.muse.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=MUSE%2C+Museo+de+las+Ciencias%2C+Trento%2C+Italia",
+   "fuente": "https://www.muse.it/"
+  },
+  {
+   "id": "duomo-trento",
+   "nombre": "Piazza del Duomo y centro histórico",
+   "donde": "Trento",
+   "base": "trento",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Catedral de San Vigilio, Palazzo Pretorio y Fuente de Neptuno en una plaza peatonal.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Duomo%2C+Trento%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+del+Duomo+y+centro+hist%C3%B3rico%2C+Trento%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "id": "doss-trento",
+   "nombre": "Doss Trento: mirador sobre la ciudad",
+   "donde": "Trento",
+   "base": "trento",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Colina con el mausoleo de Cesare Battisti y vistas al valle del Adigio; subida a pie.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Doss+Trento%2C+Trento%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Doss+Trento%2C+Trento%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "id": "mercatino-trento",
+   "nombre": "Mercadillo de Navidad de Trento",
+   "donde": "Trento",
+   "base": "trento",
+   "tipo": "compras",
+   "tipos_extra": [
+    "gastronomia",
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    11,
+    12,
+    1
+   ],
+   "descripcion": "Casetas en Piazza Fiera y centro con vin brulé, dulces y artesanía; este año del 20 de noviembre al 6 de enero.",
+   "enlace": "https://www.visittrentino.info/it/guida/mercatini-di-natale",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercadillo+de+Navidad+de+Trento%2C+Trento%2C+Italia",
+   "fuente": "https://www.visittrentino.info/it/guida/mercatini-di-natale"
+  },
+  {
+   "id": "mercatino-levico",
+   "nombre": "Mercadillo Asburgico de Levico Terme",
+   "donde": "Levico Terme",
+   "base": "trento",
+   "tipo": "compras",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    11,
+    12,
+    1
+   ],
+   "descripcion": "Mercado dentro del Parco Asburgico de Levico; este año del 21 de noviembre al 6 de enero.",
+   "enlace": "https://www.visittrentino.info/it/guida/mercatini-di-natale",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercadillo+Asburgico+de+Levico+Terme%2C+Levico+Terme%2C+Italia",
+   "fuente": "https://www.visittrentino.info/it/guida/mercatini-di-natale"
+  },
+  {
+   "id": "termas-levico",
+   "nombre": "Termas de Levico y Vetriolo",
+   "donde": "Levico Terme",
+   "base": "trento",
+   "tipo": "bienestar",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Balneario con baños termales y tratamientos en la Valsugana, buen contraste tras días de ruta.",
+   "enlace": "https://www.termedilevico.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Termas+de+Levico+y+Vetriolo%2C+Levico+Terme%2C+Italia",
+   "fuente": "https://www.termedilevico.it/",
+   "consejo": "Tren Trento–Bassano para Levico; comprobad ofertas y reservas en la web."
+  },
+  {
+   "id": "lago-levico",
+   "nombre": "Baño en el Lago di Levico",
+   "donde": "Levico Terme",
+   "base": "trento",
+   "tipo": "agua",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Lago de aguas tranquilas con playas y césped para un día de baño cerca de Trento.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Lago+di+Levico%2C+Levico+Terme%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ba%C3%B1o+en+el+Lago+di+Levico%2C+Levico+Terme%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "id": "bondone-verano",
+   "nombre": "Monte Bondone en verano",
+   "donde": "Monte Bondone",
+   "base": "trento",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Montaña sobre Trento con rutas por prados y miradores de Dolomitas y Brenta; también bici.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Monte+Bondone%2C+Trento%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Monte+Bondone+en+verano%2C+Monte+Bondone%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "id": "bondone-invierno",
+   "nombre": "Esquí y raquetas en Monte Bondone",
+   "donde": "Monte Bondone",
+   "base": "trento",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "meses": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "descripcion": "Estación de esquí familiar a poco más de media hora de Trento, también para raquetas.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Monte+Bondone%2C+Trento%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Esqu%C3%AD+y+raquetas+en+Monte+Bondone%2C+Monte+Bondone%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "id": "riva-garda",
+   "nombre": "Riva del Garda y su lungolago",
+   "donde": "Riva del Garda",
+   "base": "riva",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "agua",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Paseo junto al lago, baño y atardecer en el extremo norte del Garda, en bus desde Trento.",
+   "enlace": "https://www.gardatrentino.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Riva+del+Garda+y+su+lungolago%2C+Riva+del+Garda%2C+Italia",
+   "fuente": "https://www.gardatrentino.it/"
+  },
+  {
+   "id": "torbole",
+   "nombre": "Windsurf y vela en Torbole",
+   "donde": "Torbole (Nago-Torbole)",
+   "base": "riva",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "meses": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Punta norte del Garda con viento constante; escuelas de windsurf, vela y kayak.",
+   "enlace": "https://www.getyourguide.es/s/?q=windsurf+Torbole+Lago+di+Garda",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Windsurf+y+vela+en+Torbole%2C+Torbole+%28Nago-Torbole%29%2C+Italia",
+   "fuente": "https://www.gardatrentino.it/",
+   "consejo": "Reservad clase con antelación en julio y agosto."
+  },
+  {
+   "id": "ponale",
+   "nombre": "Sentiero del Ponale",
+   "donde": "Riva del Garda",
+   "base": "riva",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "meses": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Camino excavado en la roca sobre el lago, a pie o en bici, con vistas panorámicas desde Riva.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Sentiero+del+Ponale%2C+Riva+del+Garda%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sentiero+del+Ponale%2C+Riva+del+Garda%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "id": "tovel",
+   "nombre": "Lago di Tovel",
+   "donde": "Lago di Tovel",
+   "base": "trento",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Lago alpino en el Parque Adamello-Brenta, rodeado de bosque y con paseo corto.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Lago+di+Tovel%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lago+di+Tovel%2C+Lago+di+Tovel%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "id": "campiglio-verano",
+   "nombre": "Dolomitas de Brenta desde Madonna di Campiglio",
+   "donde": "Madonna di Campiglio",
+   "base": "campiglio",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "alto",
+   "ambiente": "mixto",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Rutas por el macizo de Brenta con remontes y refugios; la web de Campiglio lista rutas y estado de lifts.",
+   "enlace": "https://www.campigliodolomiti.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Dolomitas+de+Brenta+desde+Madonna+di+Campiglio%2C+Madonna+di+Campiglio%2C+Italia",
+   "fuente": "https://www.campigliodolomiti.it/"
+  },
+  {
+   "id": "campiglio-esqui",
+   "nombre": "Esquí en Madonna di Campiglio",
+   "donde": "Madonna di Campiglio",
+   "base": "campiglio",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "alto",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "alto",
+   "ambiente": "social",
+   "meses": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "descripcion": "Estación de esquí de las Dolomitas de Brenta, la más completa del Trentino occidental.",
+   "enlace": "https://www.campigliodolomiti.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Esqu%C3%AD+en+Madonna+di+Campiglio%2C+Madonna+di+Campiglio%2C+Italia",
+   "fuente": "https://www.campigliodolomiti.it/"
+  },
+  {
+   "id": "ferrata-bocchette",
+   "nombre": "Sentiero delle Bocchette (Brenta)",
+   "donde": "Madonna di Campiglio",
+   "base": "campiglio",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "alto",
+   "ambiente": "mixto",
+   "meses": [
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Itinerario de altura con cornisas y tramos equipados bajo las torres de Brenta; para gente con experiencia.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Sentiero+delle+Bocchette%2C+Madonna+di+Campiglio%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sentiero+delle+Bocchette+%28Brenta%29%2C+Madonna+di+Campiglio%2C+Italia",
+   "fuente": "https://www.visittrentino.info/",
+   "consejo": "Solo con equipo de ferrata, buen tiempo y, sin experiencia, con guía."
+  },
+  {
+   "id": "castel-thun",
+   "nombre": "Castel Thun",
+   "donde": "Val di Non",
+   "base": "trento",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Castillo señorial de la Val di Non, parte de la red del Buonconsiglio.",
+   "enlace": "https://www.buonconsiglio.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castel+Thun%2C+Val+di+Non%2C+Italia",
+   "fuente": "https://www.buonconsiglio.it/"
+  },
+  {
+   "id": "san-romedio",
+   "nombre": "Santuario de San Romedio",
+   "donde": "Val di Non",
+   "base": "trento",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal",
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Ermita colgada de un peñasco a la que se llega por una escalera de piedra.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Santuario+di+San+Romedio%2C+Val+di+Non%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Santuario+de+San+Romedio%2C+Val+di+Non%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "id": "aperitivo-trento",
+   "nombre": "Aperitivo en el centro de Trento",
+   "donde": "Trento",
+   "base": "trento",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Plazas y calles peatonales con mucho ambiente estudiantil por la Universidad de Trento.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+Duomo%2C+Trento%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Aperitivo+en+el+centro+de+Trento%2C+Trento%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Canederli",
+   "que_es": "albóndigas de pan con speck, en caldo o con mantequilla",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorie del centro de Trento y rifugi de ruta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=canederli%2C+Trento%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "plato": "Carne salada",
+   "que_es": "ternera curada en salmuera con aceite y frijoles",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorie de Trento",
+   "maps": "https://www.google.com/maps/search/?api=1&query=carne+salada%2C+Trento%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "plato": "Tortel di patate",
+   "que_es": "tortita de patata frita, con queso o speck",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "mercadillos de Navidad y fiestas locales",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Fiera%2C+Trento%2C+Italia",
+   "fuente": "https://www.visittrentino.info/it/guida/mercatini-di-natale"
+  },
+  {
+   "plato": "Strangolapreti",
+   "que_es": "albóndigas de espinaca y pan con mantequilla",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorie del centro y de los valles",
+   "maps": "https://www.google.com/maps/search/?api=1&query=strangolapreti%2C+Trento%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "plato": "Strudel de manzana",
+   "que_es": "hojaldre fino de manzana y canela, con manzanas del Trentino",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "cafés del centro de Trento",
+   "maps": "https://www.google.com/maps/search/?api=1&query=strudel%2C+Trento%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "plato": "Puzzone di Moena",
+   "que_es": "queso de pasta semidura de olor fuerte",
+   "estilo": "mercado",
+   "coste": "medio",
+   "donde_probarlo": "mercados y queserías de montaña",
+   "maps": "https://www.google.com/maps/search/?api=1&query=formaggi%2C+Trento%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "plato": "Trentodoc",
+   "que_es": "espumoso de método clásico de las colinas del Trentino",
+   "estilo": "bebida",
+   "coste": "medio",
+   "donde_probarlo": "vinotecas del centro de Trento",
+   "maps": "https://www.google.com/maps/search/?api=1&query=enoteca+Trentodoc%2C+Trento%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "plato": "Manzanas de la Val di Non",
+   "que_es": "manzanas del Trentino, tema de la ruta de los huertos",
+   "estilo": "mercado",
+   "coste": "bajo",
+   "donde_probarlo": "mercados y puestos de la Val di Non",
+   "maps": "https://www.google.com/maps/search/?api=1&query=mele+Val+di+Non%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Centro de Trento",
+   "base": "trento",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo en Piazza Duomo y calles peatonales con público universitario.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Duomo%2C+Trento%2C+Italia",
+   "fuente": "https://www.visittrentino.info/"
+  },
+  {
+   "zona": "Lungolago de Riva del Garda",
+   "base": "riva",
+   "plan": "aperitivo",
+   "descripcion": "Terrazas junto al lago para atardecer y copas.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungolago%2C+Riva+del+Garda%2C+Italia",
+   "fuente": "https://www.gardatrentino.it/"
+  },
+  {
+   "zona": "Centro de Madonna di Campiglio",
+   "base": "campiglio",
+   "plan": "copas",
+   "descripcion": "Bares y après-ski en temporada de esquí.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Madonna+di+Campiglio%2C+Italia",
+   "fuente": "https://www.campigliodolomiti.it/"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "trento",
+   "coste": "bajo",
+   "para": "Grupos con poco presupuesto que se mueven en tren.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Trento"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "trento",
+   "coste": "medio",
+   "para": "Grupos de 4-8 que quieren cocina y centro cerca.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Trento--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Trento"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "riva",
+   "coste": "medio",
+   "para": "Quien prioriza lago y deportes de agua.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Riva+del+Garda"
+    }
+   ]
+  },
+  {
+   "tipo": "camping",
+   "base": "riva",
+   "coste": "bajo",
+   "para": "Grupos con tienda o camper en verano.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Torbole+camping"
+    }
+   ]
+  },
+  {
+   "tipo": "rifugio",
+   "base": "campiglio",
+   "coste": "medio",
+   "para": "Dormir en altura en Brenta, solo verano.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Madonna+di+Campiglio"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "campiglio",
+   "coste": "alto",
+   "para": "Esquiadores que quieren dormir cerca de las pistas.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Madonna+di+Campiglio"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Trento Film Festival",
+   "donde": "Trento",
+   "cuando": "cada año, finales de abril y principios de mayo",
+   "meses": [
+    4,
+    5
+   ],
+   "proxima_fecha": "2027-04-24",
+   "descripcion": "Festival de cine de montaña y exploración; la 75ª edición va del 24 de abril al 2 de mayo de 2027.",
+   "enlace": "https://trentofestival.it/",
+   "fuente": "https://trentofestival.it/"
+  },
+  {
+   "nombre": "Mercatino di Natale de Trento",
+   "donde": "Trento",
+   "cuando": "cada año, de finales de noviembre al 6 de enero",
+   "meses": [
+    11,
+    12,
+    1
+   ],
+   "proxima_fecha": "2026-11-20",
+   "descripcion": "Mercadillo en el centro, este año del 20 de noviembre de 2026 al 6 de enero de 2027.",
+   "enlace": "https://www.visittrentino.info/it/guida/mercatini-di-natale",
+   "fuente": "https://www.visittrentino.info/it/guida/mercatini-di-natale"
+  },
+  {
+   "nombre": "Mercatino Asburgico de Levico Terme",
+   "donde": "Levico Terme",
+   "cuando": "cada año, de finales de noviembre al 6 de enero",
+   "meses": [
+    11,
+    12,
+    1
+   ],
+   "proxima_fecha": "2026-11-21",
+   "descripcion": "Mercadillo en el Parco Asburgico, este año del 21 de noviembre al 6 de enero.",
+   "enlace": "https://www.visittrentino.info/it/guida/mercatini-di-natale",
+   "fuente": "https://www.visittrentino.info/it/guida/mercatini-di-natale"
+  },
+  {
+   "nombre": "Mercatino di Natale de Arco",
+   "donde": "Arco",
+   "cuando": "cada año, de mediados de noviembre al 6 de enero",
+   "meses": [
+    11,
+    12,
+    1
+   ],
+   "proxima_fecha": "2026-11-13",
+   "descripcion": "Mercadillo cerca de Riva del Garda, desde el 13 de noviembre de 2026.",
+   "enlace": "https://www.visittrentino.info/it/guida/mercatini-di-natale",
+   "fuente": "https://www.visittrentino.info/it/guida/mercatini-di-natale"
+  },
+  {
+   "nombre": "I Suoni delle Dolomiti",
+   "donde": "Dolomitas de Brenta y Trentino",
+   "cuando": "cada año, finales de agosto a principios de octubre",
+   "meses": [
+    8,
+    9,
+    10
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Conciertos en refugios y prados de altura, con acceso a pie o en telecabina; la edición de 2026 fue del 24 de agosto al 3 de octubre.",
+   "enlace": "https://www.dolomiti.it/it/trentino/eventi/i-suoni-delle-dolomiti",
+   "fuente": "https://www.dolomiti.it/it/trentino/eventi/i-suoni-delle-dolomiti"
+  }
+ ],
+ "redes": [],
+ "notas_honestas": [
+  "Horarios y precios de buses regionales (Trento–Riva, Trento–Campiglio, Val di Non) sin verificar.",
+  "Lago di Tovel, Monte Bondone, San Romedio, Ponale y lago de Levico llevan mapa, no web oficial verificada.",
+  "Sentiero delle Bocchette y las ferratas: no he verificado accesos ni estado, solo nombre y dificultad general.",
+  "No hay rutas aéreas verificadas salvo Volotea a VRN; BZO y BGY sin ruta con fuente.",
+  "No he verificado enlaces de Civitatis ni Hostelworld para Trento."
+ ]
+}

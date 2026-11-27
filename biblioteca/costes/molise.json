@@ -1,0 +1,17 @@
+{
+  "zona": "molise",
+  "base": "termoli",
+  "ciudad_referencia": "Termoli",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": null,
+    "doble_noche": null,
+    "comida_barata": {
+      "valor": 15.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Termoli-Molise-Italy",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": null
+  },
+  "notas": "hostel_noche null: Hostelworld muestra 0 hostels en Termoli. doble_noche null: solo hay un dato suelto (Booking.com https://www.booking.com/city/it/termoli.html?selected_currency=EUR: precio 'From' del titulo = 53 EUR) y BudgetYourTrip no tiene media para esta ciudad, asi que no se puede dar rango. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Termoli (sin rango en Numbeo). transporte_billete null: Termoli no tiene red urbana relevante documentada en una fuente abierta; no se encontro tarifa."
+}

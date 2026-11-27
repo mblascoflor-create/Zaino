@@ -1,0 +1,22 @@
+{
+  "zona": "basilicata-matera",
+  "base": "matera",
+  "ciudad_referencia": "Matera",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 20.0,
+      "max": 25.0,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/matera/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": null,
+    "comida_barata": {
+      "valor": 13.5,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Matera-Italy",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": null
+  },
+  "notas": "hostel_noche: rango min-max de 3 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=20.0, maximo=25.0); son precios 'desde' sin fechas concretas. doble_noche null: solo hay un dato suelto (Booking.com https://www.booking.com/city/it/matera.html?selected_currency=EUR: precio 'From' del titulo = 76 EUR) y BudgetYourTrip no tiene media para esta ciudad, asi que no se puede dar rango. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Matera (rango Numbeo 10-30). transporte_billete null: No se encontro tarifa urbana oficial de Matera. La Carta della Mobilita 2023 de Miccolis menciona una corsa semplice de 0.80 EUR, pero no se puede confirmar que sea el servicio urbano de Matera ni que siga vigente, asi que no se usa."
+}

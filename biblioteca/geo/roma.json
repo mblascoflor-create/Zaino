@@ -1,0 +1,119 @@
+{
+ "actividades": {
+  "coliseo-foro": [
+   41.89,
+   12.492
+  ],
+  "vaticano": [
+   41.906,
+   12.454
+  ],
+  "san-pedro": [
+   41.902,
+   12.457
+  ],
+  "galleria-borghese": [
+   41.914,
+   12.492
+  ],
+  "trevi-panteon": [
+   41.901,
+   12.483
+  ],
+  "gianicolo": [
+   41.889,
+   12.461
+  ],
+  "pincio": [
+   41.911,
+   12.486
+  ],
+  "aventino": [
+   41.883,
+   12.479
+  ],
+  "trastevere-paseo": [
+   41.889,
+   12.47
+  ],
+  "campo-fiori": [
+   41.896,
+   12.472
+  ],
+  "testaccio": [
+   41.877,
+   12.476
+  ],
+  "porta-portese": [
+   41.874,
+   12.469
+  ],
+  "barrio-judio": [
+   41.892,
+   12.477
+  ],
+  "ostia-antica": [
+   41.756,
+   12.292
+  ],
+  "castelli": [
+   41.808,
+   12.679
+  ],
+  "pigneto-san-lorenzo": [
+   41.89,
+   12.53
+  ],
+  "appia-antica": [
+   41.857,
+   12.516
+  ],
+  "tivoli": [
+   41.963,
+   12.797
+  ],
+  "san-pedro-cupula": [
+   41.902,
+   12.457
+  ]
+ },
+ "noche": {
+  "Trastevere": [
+   41.889,
+   12.47
+  ],
+  "Campo de' Fiori": [
+   41.896,
+   12.472
+  ],
+  "Pigneto": [
+   41.887,
+   12.531
+  ],
+  "San Lorenzo": [
+   41.897,
+   12.516
+  ]
+ },
+ "eventos": {
+  "Natale di Roma": [
+   41.89,
+   12.492
+  ],
+  "Concerto del Primo Maggio": [
+   41.886,
+   12.507
+  ],
+  "Festa de' Noantri": [
+   41.889,
+   12.47
+  ],
+  "Estate Romana": [
+   41.893,
+   12.483
+  ]
+ },
+ "dudosos": [
+  "Estate Romana"
+ ]
+}

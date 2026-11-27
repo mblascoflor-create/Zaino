@@ -1,0 +1,117 @@
+{
+ "actividades": {
+  "san-luca": [
+   44.485,
+   11.298
+  ],
+  "torre-asinelli": [
+   44.494,
+   11.347
+  ],
+  "quadrilatero": [
+   44.497,
+   11.349
+  ],
+  "plaza-maggiore": [
+   44.494,
+   11.343
+  ],
+  "santo-stefano": [
+   44.49,
+   11.352
+  ],
+  "zamboni-universidad": [
+   44.497,
+   11.352
+  ],
+  "osterie-bolonia": [
+   44.495,
+   11.343
+  ],
+  "clase-pasta": [
+   44.494,
+   11.343
+  ],
+  "ravena-mosaicos": [
+   44.418,
+   12.197
+  ],
+  "ferrara-bici": [
+   44.838,
+   11.619
+  ],
+  "modena-centro": [
+   44.647,
+   10.926
+  ],
+  "acetaia": [
+   44.64,
+   10.92
+  ],
+  "ferrari-maranello": [
+   44.53,
+   10.864
+  ],
+  "lamborghini": [
+   44.659,
+   11.113
+  ],
+  "parma-dia": [
+   44.808,
+   10.329
+  ],
+  "caseificio": [
+   44.7,
+   10.2
+  ],
+  "rimini-playa": [
+   44.06,
+   12.575
+  ],
+  "rimini-noche": [
+   44.065,
+   12.57
+  ],
+  "rimini-centro": [
+   44.06,
+   12.568
+  ]
+ },
+ "noche": {
+  "Via Zamboni y Piazza Verdi": [
+   44.497,
+   11.352
+  ],
+  "Via del Pratello": [
+   44.5,
+   11.332
+  ],
+  "Centro de Módena": [
+   44.647,
+   10.926
+  ],
+  "Lungomare de Rímini": [
+   44.065,
+   12.57
+  ]
+ },
+ "eventos": {
+  "Bologna Portici Festival": [
+   44.494,
+   11.343
+  ],
+  "Motor Valley Fest": [
+   44.647,
+   10.926
+  ],
+  "Notte Rosa": [
+   44.06,
+   12.57
+  ],
+  "Ravenna Festival": [
+   44.418,
+   12.197
+  ]
+ },
+ "dudosos": []
+}

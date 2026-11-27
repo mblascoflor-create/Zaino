@@ -1,0 +1,31 @@
+{
+  "zona": "friuli-venezia-giulia",
+  "base": "trieste",
+  "ciudad_referencia": "Trieste",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 17.0,
+      "max": 21.85,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/trieste/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": {
+      "min": 66,
+      "max": 88,
+      "fuente": "https://www.booking.com/city/it/trieste.html?selected_currency=EUR | https://www.budgetyourtrip.com/italy/trieste",
+      "calidad": "orientativo"
+    },
+    "comida_barata": {
+      "valor": 20.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Trieste?displayCurrency=EUR",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 1.5,
+      "fuente": "https://www.triestetrasporti.it/sites/default/files/attachments/tpl_tariffe_urbane_Trieste_2026.pdf",
+      "calidad": "verificado"
+    }
+  },
+  "notas": "hostel_noche: rango min-max de 3 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=17.0, maximo=21.85); son precios 'desde' sin fechas concretas. doble_noche: min=66 es el precio 'From' mas bajo del titulo de la pagina de Booking.com para la ciudad (alojamiento mas barato listado, 2 adultos, 1 noche, sin fecha fija); max=88 es el precio medio de hotel para una pareja segun BudgetYourTrip (gasto declarado por viajeros). La horquilla mezcla ambas fuentes: es solo una guia aproximada, no un rango de apartamentos/dobles economicos garantizado. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Trieste (rango Numbeo 15-30). transporte_billete: Trieste Trasporti, biglietto orario 60 min (cod. U01) 1.50 EUR. El PDF no muestra el ano de forma explicita (el fichero se llama 2026; otro PDF 2025 tambien indica 1.50)."
+}

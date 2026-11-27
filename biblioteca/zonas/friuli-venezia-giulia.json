@@ -1,0 +1,791 @@
+{
+ "id": "friuli-venezia-giulia",
+ "nombre": "Friuli-Venecia Julia (Trieste)",
+ "nombre_corto": "Trieste",
+ "lema": "Cafés, Carso y mar sin turistas",
+ "descripcion": "Trieste mezcla herencia austrohúngara, mar y cafés históricos, con cuevas del Carso, osmize y viñedos del Collio a pocos kilómetros. Una zona poco turística, más barata que Venecia, ideal para grupos que quieren algo distinto.",
+ "perfil": {
+  "mar": 2,
+  "montana": 1,
+  "ciudad": 2,
+  "campo": 2,
+  "fiesta": 1,
+  "calma": 2,
+  "cultura": 2,
+  "gastronomia": 2,
+  "naturaleza": 2,
+  "playa": 1,
+  "aventura": 1,
+  "postal": 2
+ },
+ "nivel_precio": "medio",
+ "nivel_precio_nota": "Más barata que Venecia y la Toscana, aunque dormir en Trieste en verano sube; fuera de temporada es asequible.",
+ "meses": {
+  "ideales": [
+   5,
+   6,
+   9,
+   10
+  ],
+  "aceptables": [
+   4,
+   7,
+   8,
+   11
+  ],
+  "evitar": [
+   1,
+   2
+  ],
+  "nota": "La bora, viento frío del noreste, puede ser fortísima en invierno; en octubre, Barcolana llena la ciudad."
+ },
+ "calor_verano": "suave",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "util",
+  "nota": "Trieste, Udine y Cividale se visitan en tren y a pie. Para Aquileia, el Collio, la Grotta Gigante y las osmize del Carso el coche es mucho más cómodo.",
+  "aeropuerto_recogida": "TRS",
+  "operadores": [
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Hertz-Trieste.TRS.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Hertz-Trieste.TRS.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Europcar-Trieste.TRS.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Europcar-Trieste.TRS.EUROPCAR.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "trieste",
+   "nombre": "Trieste",
+   "por_que": "Cafés, mar, castillos y Barcola a pie o en bus; la mejor base sin coche, con Miramare a pocos minutos.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trieste%2C+Italia"
+  },
+  {
+   "id": "udine",
+   "nombre": "Udine",
+   "por_que": "Ciudad tranquila con tajut en la plaza y tren a Cividale y Trieste; buena para el interior y el vino.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Udine%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "TRS",
+    "nombre": "Trieste – Friuli Venezia Giulia (Ronchi dei Legionari)",
+    "ciudad": "Trieste",
+    "a_la_base": "Hay conexión en bus y tren con Trieste; comprobad horarios y precios en la web del aeropuerto antes de volar."
+   },
+   {
+    "iata": "VCE",
+    "nombre": "Venecia – Marco Polo",
+    "ciudad": "Venecia",
+    "a_la_base": "Alternativa con más vuelos: tren de Venecia a Trieste (comprobad en Trenitalia)."
+   }
+  ],
+  "desde_espana": "Ryanair conecta Barcelona y Valencia con Trieste (TRS) según temporada. Si no hay vuelo directo, Venecia (VCE) o Treviso (TSF) son alternativas con más rutas, y desde allí se llega en tren o bus.",
+  "rutas_directas": [
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "TRS",
+    "aerolinea": "Ryanair",
+    "nota": "confirmada para verano 2026 por el aeropuerto; comprobad otras temporadas",
+    "fuente": "https://triesteairport.it/media/documents/CS__RYANAIR_LANCIA_LOPERATIVO_PER_LESTATE_2026_A_TRIESTE_20260318.pdf"
+   },
+   {
+    "origen": "Valencia",
+    "origen_iata": "VLC",
+    "destino_iata": "TRS",
+    "aerolinea": "Ryanair",
+    "nota": "confirmada para verano 2026 por el aeropuerto; comprobad otras temporadas",
+    "fuente": "https://triesteairport.it/media/documents/CS__RYANAIR_LANCIA_LOPERATIVO_PER_LESTATE_2026_A_TRIESTE_20260318.pdf"
+   }
+  ],
+  "desde_italia": "Hay trenes de Trenitalia entre Venecia, Udine y Trieste (alrededor de dos horas desde Venecia); FlixBus cubre rutas por carretera. Para quien está en Bolonia o Milán, el tren con transbordo en Venecia o Mestre es lo habitual.",
+  "novedades": [
+   {
+    "nota": "Ryanair confirmó en su comunicado oficial (18 de marzo de 2026) que mantiene y refuerza Trieste–Barcelona y Trieste–Valencia en verano 2026, entre 21 rutas desde TRS; el comunicado no precisa si es BCN o Girona.",
+    "fuente": "https://triesteairport.it/media/documents/CS__RYANAIR_LANCIA_LOPERATIVO_PER_LESTATE_2026_A_TRIESTE_20260318.pdf"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "Trieste se recorre a pie y con bus urbano; Udine, Cividale y Gorizia se alcanzan en tren regional. Aquileia, el Collio y el Carso piden coche o bus lento.",
+  "tren": {
+   "nota": "Trenitalia cubre Trieste–Udine y Trieste–Gorizia; Cividale se hace desde Udine en tren regional.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Solo rutas dentro de Italia (por ejemplo Trieste–Venecia–Milán); no hay ruta directa verificada desde España.",
+   "enlace": "https://www.flixbus.it/tratte-autobus",
+   "fuente": "https://www.flixbus.it/azienda/stampa/flixbus-offerta-estiva-2026"
+  },
+  "ferry": [],
+  "camper": null
+ },
+ "actividades": [
+  {
+   "id": "piazza-unita-molo-audace",
+   "nombre": "Piazza Unità y molo Audace",
+   "donde": "Trieste",
+   "base": "trieste",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Una de las plazas abiertas al mar más grandes de Europa y el molo Audace para ver caer la tarde sobre el golfo.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Molo+Audace%2C+Trieste%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Molo+Audace%2C+Trieste%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Molo+Audace%2C+Trieste%2C+Italia"
+  },
+  {
+   "id": "cafes-historicos",
+   "nombre": "Cafés históricos de Trieste",
+   "donde": "Trieste",
+   "base": "trieste",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Café en los salones de Tommaseo, San Marco o Specchi, con su propio vocabulario (capo, nero, capo in b).",
+   "enlace": "https://www.turismofvg.it/en/art-and-culture/art-cultur-tours/the-cafes-in-trieste",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Caff%C3%A8+San+Marco%2C+Trieste%2C+Italia",
+   "fuente": "https://www.turismofvg.it/en/art-and-culture/art-cultur-tours/the-cafes-in-trieste"
+  },
+  {
+   "id": "san-giusto",
+   "nombre": "Castillo y catedral de San Giusto",
+   "donde": "Trieste",
+   "base": "trieste",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Colina con castillo, catedral y ruinas romanas, con vistas al golfo.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Castello+di+San+Giusto%2C+Trieste%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castello+di+San+Giusto%2C+Trieste%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Castello+di+San+Giusto%2C+Trieste%2C+Italia"
+  },
+  {
+   "id": "barcola-bano",
+   "nombre": "Baño y sol en el Barcola",
+   "donde": "Trieste (Barcola)",
+   "base": "trieste",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Paseo marítimo largo con losas de cemento y escaleras al agua donde todo Trieste se baña y toma el sol.",
+   "enlace": "https://www.italia.it/it/friuli-venezia-giulia/trieste/barcola",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungomare+di+Barcola%2C+Trieste%2C+Italia",
+   "fuente": "https://www.italia.it/it/friuli-venezia-giulia/trieste/barcola"
+  },
+  {
+   "id": "miramare",
+   "nombre": "Castillo de Miramare y su parque",
+   "donde": "Miramare",
+   "base": "trieste",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Castillo blanco sobre el mar con parque y museo; se llega en transporte público desde Trieste.",
+   "enlace": "https://miramare.cultura.gov.it/en/visit/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castello+di+Miramare%2C+Trieste%2C+Italia",
+   "fuente": "https://miramare.cultura.gov.it/en/visit/"
+  },
+  {
+   "id": "grotta-gigante",
+   "nombre": "Grotta Gigante",
+   "donde": "Carso triestino",
+   "base": "trieste",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Cueva de karst con una sala enorme y pasarela de casi un kilómetro bajo tierra.",
+   "consejo": "Llevad chaqueta: dentro hace fresco todo el año.",
+   "enlace": "https://www.grottagigante.it/en/home/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Grotta+Gigante%2C+Sgonico%2C+Italia",
+   "fuente": "https://www.grottagigante.it/en/home/"
+  },
+  {
+   "id": "osmize-carso",
+   "nombre": "Osmize del Carso",
+   "donde": "Carso triestino",
+   "base": "trieste",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Fincas abiertas unos días al año donde se come embutido, queso y vino propio sobre mesas de madera.",
+   "consejo": "Las osmize cambian cada semana: preguntad por cuáles están abiertas.",
+   "enlace": "https://www.turismofvg.it/fvglivexperience/le-osmize-i-sapori-forti-e-tradizionali-del-carso",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Carso+triestino%2C+Italia",
+   "fuente": "https://www.turismofvg.it/fvglivexperience/le-osmize-i-sapori-forti-e-tradizionali-del-carso"
+  },
+  {
+   "id": "strada-napoleonica",
+   "nombre": "Strada Napoleonica desde Opicina",
+   "donde": "Opicina",
+   "base": "trieste",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Camino llano por el borde del Carso con vistas al golfo y a Eslovenia.",
+   "enlace": "https://www.turismofvg.it/en/carso/itinerari/from-the-opicina-obelisk-to-aurisina-along-the-karst-ridge",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Obelisco+di+Opicina%2C+Trieste%2C+Italia",
+   "fuente": "https://www.turismofvg.it/en/carso/itinerari/from-the-opicina-obelisk-to-aurisina-along-the-karst-ridge"
+  },
+  {
+   "id": "canal-grande-borgo",
+   "nombre": "Borgo Teresiano y Canal Grande",
+   "donde": "Trieste",
+   "base": "trieste",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Barrio austrohúngaro con canal central, iglesia serbo-ortodoxa y cafés.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Canal+Grande%2C+Trieste%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Canal+Grande%2C+Trieste%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Canal+Grande%2C+Trieste%2C+Italia"
+  },
+  {
+   "id": "aperitivo-cittavecchia",
+   "nombre": "Aperitivo en Cittavecchia",
+   "donde": "Trieste",
+   "base": "trieste",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Calles del casco antiguo con bares, vino y gente joven al caer la tarde.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Cittavecchia%2C+Trieste%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cittavecchia%2C+Trieste%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Cittavecchia%2C+Trieste%2C+Italia"
+  },
+  {
+   "id": "teatro-romano",
+   "nombre": "Teatro romano y Arco de Riccardo",
+   "donde": "Trieste",
+   "base": "trieste",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Restos romanos en mitad de la ciudad, de paso entre el puerto y San Giusto.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Teatro+Romano%2C+Trieste%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Teatro+Romano%2C+Trieste%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Teatro+Romano%2C+Trieste%2C+Italia"
+  },
+  {
+   "id": "risiera-san-sabba",
+   "nombre": "Risiera di San Sabba",
+   "donde": "Trieste",
+   "base": "trieste",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Memorial nacional de un campo nazi; visita seria y breve.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Risiera+di+San+Sabba%2C+Trieste%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Risiera+di+San+Sabba%2C+Trieste%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Risiera+di+San+Sabba%2C+Trieste%2C+Italia"
+  },
+  {
+   "id": "aquileia",
+   "nombre": "Aquileia: ruinas y basílica",
+   "donde": "Aquileia",
+   "base": "trieste",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Ciudad romana y basílica con mosaicos del siglo IV, Patrimonio UNESCO.",
+   "enlace": "https://www.italia.it/it/friuli-venezia-giulia/cosa-fare/aquileia-rovine-basilica",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Basilica+di+Aquileia%2C+Aquileia%2C+Italia",
+   "fuente": "https://www.italia.it/it/friuli-venezia-giulia/cosa-fare/aquileia-rovine-basilica"
+  },
+  {
+   "id": "collio-vino",
+   "nombre": "Ruta del vino del Collio",
+   "donde": "Cormòns y Collio",
+   "base": "udine",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Viñedos en colinas junto a la frontera con Eslovenia, con Ribolla Gialla y Friulano en bodegas pequeñas.",
+   "consejo": "Reservad la visita a bodega y que conduzca alguien sin beber.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Corm%C3%B2ns%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Corm%C3%B2ns%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Corm%C3%B2ns%2C+Italia"
+  },
+  {
+   "id": "udine-centro",
+   "nombre": "Udine: Piazza della Libertà y castillo",
+   "donde": "Udine",
+   "base": "udine",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Plaza renacentista, castillo en la colina y centro peatonal, a una hora en tren de Trieste.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+della+Libert%C3%A0%2C+Udine%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+della+Libert%C3%A0%2C+Udine%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+della+Libert%C3%A0%2C+Udine%2C+Italia"
+  },
+  {
+   "id": "tajut-udine",
+   "nombre": "Tajut en Piazza Matteotti",
+   "donde": "Udine",
+   "base": "udine",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Copa de vino friulano (tajut) en las terrazas de una plaza muy viva al atardecer.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+Matteotti%2C+Udine%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Matteotti%2C+Udine%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+Matteotti%2C+Udine%2C+Italia"
+  },
+  {
+   "id": "cividale",
+   "nombre": "Cividale del Friuli y el Puente del Diablo",
+   "donde": "Cividale del Friuli",
+   "base": "udine",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Ciudad longobarda Patrimonio UNESCO con tempietto, puente sobre el Natisone y pastelerías.",
+   "enlace": "https://www.italia.it/en/friuli-venezia-giulia/udine/cividale-del-friuli",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ponte+del+Diavolo%2C+Cividale+del+Friuli%2C+Italia",
+   "fuente": "https://www.italia.it/en/friuli-venezia-giulia/udine/cividale-del-friuli"
+  },
+  {
+   "id": "gorizia-nova-gorica",
+   "nombre": "Cruzar a Nova Gorica (Eslovenia)",
+   "donde": "Gorizia",
+   "base": "trieste",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Ciudad dividida por la frontera: se cruza andando de Italia a Eslovenia en la plaza Transalpina.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+Transalpina%2C+Gorizia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Transalpina%2C+Gorizia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+Transalpina%2C+Gorizia%2C+Italia"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Frico",
+   "que_es": "tortilla crujiente de queso Montasio con patata y cebolla",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorie friulanas de Udine y Cividale",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Udine%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Udine%2C+Italia"
+  },
+  {
+   "plato": "Jota",
+   "que_es": "sopa triestina de col fermentada, alubias y patata",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "buffet y trattorie de Trieste",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trieste%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Trieste%2C+Italia"
+  },
+  {
+   "plato": "Buffet triestino",
+   "que_es": "cerdo cocido (porcina) con rábano picante y mostaza, servido en buffet",
+   "estilo": "street",
+   "coste": "medio",
+   "donde_probarlo": "buffet históricos del centro de Trieste",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Buffet%2C+Trieste%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Buffet%2C+Trieste%2C+Italia"
+  },
+  {
+   "plato": "Prosciutto di San Daniele",
+   "que_es": "jamón curado friulano",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "salumerías y osterie de Udine y San Daniele",
+   "maps": "https://www.google.com/maps/search/?api=1&query=San+Daniele+del+Friuli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=San+Daniele+del+Friuli%2C+Italia"
+  },
+  {
+   "plato": "Cjarsons",
+   "que_es": "pasta rellena de Carnia con hierbas, pasas y canela",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorie de Carnia y Udine",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Carnia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Carnia%2C+Italia"
+  },
+  {
+   "plato": "Goulash con polenta",
+   "que_es": "guiso de herencia austrohúngara",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "buffet y trattorie de Trieste y Gorizia",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Gorizia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Gorizia%2C+Italia"
+  },
+  {
+   "plato": "Presnitz y putizza",
+   "que_es": "bollería de frutos secos de Trieste",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías de Trieste",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trieste%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Trieste%2C+Italia"
+  },
+  {
+   "plato": "Capo in B",
+   "que_es": "café con leche triestino servido en vasito",
+   "estilo": "bebida",
+   "coste": "bajo",
+   "donde_probarlo": "cafés históricos de Trieste",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Caff%C3%A8+Tommaseo%2C+Trieste%2C+Italia",
+   "fuente": "https://www.turismofvg.it/en/art-and-culture/art-cultur-tours/the-cafes-in-trieste"
+  },
+  {
+   "plato": "Vino del Collio",
+   "que_es": "Ribolla Gialla y Friulano, blancos de la zona",
+   "estilo": "bebida",
+   "coste": "medio",
+   "donde_probarlo": "enotecas de Cormòns y de Udine",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Corm%C3%B2ns%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Corm%C3%B2ns%2C+Italia"
+  },
+  {
+   "plato": "Embutido y queso de osmiza",
+   "que_es": "picoteo de fincas del Carso",
+   "estilo": "mercado",
+   "coste": "bajo",
+   "donde_probarlo": "osmize del Carso triestino",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Carso+triestino%2C+Italia",
+   "fuente": "https://www.turismofvg.it/fvglivexperience/le-osmize-i-sapori-forti-e-tradizionali-del-carso"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Cittavecchia",
+   "base": "trieste",
+   "plan": "aperitivo",
+   "descripcion": "Casco antiguo con bares de vino y buen ambiente joven.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cittavecchia%2C+Trieste%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Cittavecchia%2C+Trieste%2C+Italia"
+  },
+  {
+   "zona": "Canal Grande y Borgo Teresiano",
+   "base": "trieste",
+   "plan": "aperitivo",
+   "descripcion": "Terrazas junto al canal con spritz y cafés hasta tarde.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Canal+Grande%2C+Trieste%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Canal+Grande%2C+Trieste%2C+Italia"
+  },
+  {
+   "zona": "Piazza Matteotti y Via Mercatovecchio",
+   "base": "udine",
+   "plan": "copas",
+   "descripcion": "Ambiente de plaza y tajut hasta la medianoche.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Matteotti%2C+Udine%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+Matteotti%2C+Udine%2C+Italia"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "trieste",
+   "coste": "bajo",
+   "para": "Grupos con presupuesto muy ajustado.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Trieste"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "trieste",
+   "coste": "medio",
+   "para": "Grupos de 4-8 con cocina y espacio común.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Trieste--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Trieste"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "trieste",
+   "coste": "medio",
+   "para": "Quien quiera cama propia y desayuno cerca del puerto.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Trieste"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "udine",
+   "coste": "bajo",
+   "para": "Grupos que van a visitar Cividale y el Collio.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Udine"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Udine--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "udine",
+   "coste": "medio",
+   "para": "Grupos que combinan tren y excursiones en coche.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Udine--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Udine"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Barcolana",
+   "donde": "Trieste",
+   "cuando": "cada año, segundo domingo de octubre (regata principal)",
+   "meses": [
+    10
+   ],
+   "proxima_fecha": null,
+   "descripcion": "La regata de vela más grande del mundo, con semana de fiestas en el puerto.",
+   "enlace": "https://www.barcolana.it/en/regatta",
+   "fuente": "https://www.barcolana.it/en/regatta"
+  },
+  {
+   "nombre": "Mittelfest",
+   "donde": "Cividale del Friuli",
+   "cuando": "cada año, julio (programa en la web oficial)",
+   "meses": [
+    7
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival de teatro, música y danza de Europa central en la ciudad longobarda.",
+   "enlace": "https://www.italia.it/it/friuli-venezia-giulia/udine/cosa-fare/evento-miittlefest-2026-cividale-del-friuli",
+   "fuente": "https://www.italia.it/it/friuli-venezia-giulia/udine/cosa-fare/evento-miittlefest-2026-cividale-del-friuli"
+  },
+  {
+   "nombre": "Friuli DOC",
+   "donde": "Udine",
+   "cuando": "cada año, septiembre",
+   "meses": [
+    9
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival de vino y gastronomía friulana en el centro de Udine.",
+   "enlace": "https://www.go2025.eu/en/imports/events/turismo-fvg-new/2026/settembre/friuli-doc",
+   "fuente": "https://www.go2025.eu/en/imports/events/turismo-fvg-new/2026/settembre/friuli-doc"
+  },
+  {
+   "nombre": "Mercadillos de Navidad en Friuli-Venecia Julia",
+   "donde": "Trieste y otras localidades",
+   "cuando": "cada año, desde finales de noviembre hasta principios de enero",
+   "meses": [
+    11,
+    12,
+    1
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Mercados navideños en Trieste y otras localidades de la región.",
+   "enlace": "https://siviaggia.it/idee-di-viaggio/natale-in-friuli-venezia-giulia/497432/",
+   "fuente": "https://siviaggia.it/idee-di-viaggio/natale-in-friuli-venezia-giulia/497432/"
+  }
+ ],
+ "notas_honestas": [
+  "Barcolana: la web oficial dice segundo domingo de octubre pero no publica aún fecha de 2027 verificada.",
+  "Friuli DOC: la fuente es un listado derivado del calendario de turismo regional, no la web propia del festival.",
+  "Los mercadillos de Navidad se basan en una fuente periodística, sin fechas oficiales verificadas.",
+  "Aperitivos y bares en Trieste/Udine van con enlace de mapa; sin locales concretos verificados.",
+  "Grotta Gigante, osmize, Aquileia y Collio se han marcado como actividades con coche por prudencia; algunas pueden hacerse con bus lento, sin horarios verificados.",
+  "No hay ferry verificado en la zona; no se incluye."
+ ]
+}

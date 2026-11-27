@@ -1,0 +1,916 @@
+{
+ "id": "lagos-del-norte",
+ "nombre": "Lagos del Norte (Como, Garda y Maggiore)",
+ "nombre_corto": "Lagos",
+ "lema": "Ferris entre pueblos, villas y baños",
+ "descripcion": "Tres lagos prealpinos a una hora de Milán: Como (pueblos colgados, villas y senderos), Garda (termas, castillos y teleférico) y Maggiore (las Islas Borromeas). Se mueve en ferry y tren, con baños en verano y plan tranquilo el resto del año.",
+ "perfil": {
+  "mar": 0,
+  "montana": 2,
+  "ciudad": 1,
+  "campo": 2,
+  "fiesta": 1,
+  "calma": 3,
+  "cultura": 2,
+  "gastronomia": 2,
+  "naturaleza": 3,
+  "playa": 1,
+  "aventura": 2,
+  "postal": 3
+ },
+ "nivel_precio": "alto",
+ "nivel_precio_nota": "Pueblos del lago muy turísticos: ferris, entradas a villas y alojamiento en verano suben rápido; Como ciudad y Desenzano son lo más barato.",
+ "meses": {
+  "ideales": [
+   5,
+   6,
+   9
+  ],
+  "aceptables": [
+   4,
+   7,
+   8,
+   10
+  ],
+  "evitar": [
+   11,
+   12,
+   1,
+   2
+  ],
+  "nota": "Mayo-junio y septiembre: buen tiempo y menos gente. En verano hace calor y hay masas; de noviembre a febrero muchas villas, jardines y barcos a las islas reducen o cierran la temporada."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "innecesario",
+  "nota": "Con tren y ferry se hace casi todo: Como, Varenna, Desenzano, Stresa y los pueblos con embarcadero. El coche estorba en Bellagio, Sirmione y Limone por tráfico y aparcamiento de pago. Solo compensa para Garda oeste de punta a punta.",
+  "aeropuerto_recogida": "BGY",
+  "operadores": [
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Europcar-Bergamo.BGY.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Europcar-Bergamo.BGY.EUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Hertz-Bergamo.BGY.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Hertz-Bergamo.BGY.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Avis-Bergamo.BGY.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Avis-Bergamo.BGY.AVIS.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "como",
+   "nombre": "Como",
+   "por_que": "Ciudad con tren directo desde Milán, embarcadero de ferris y hostales más baratos del lago.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Como%2C+Italia"
+  },
+  {
+   "id": "varenna",
+   "nombre": "Varenna",
+   "por_que": "Pueblo con estación de tren y ferri a Bellagio y Menaggio, y salida del Sentiero del Viandante.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Varenna%2C+Italia"
+  },
+  {
+   "id": "desenzano",
+   "nombre": "Desenzano del Garda",
+   "por_que": "Estación en la línea Milán-Venecia, puerto de ferris y pueblo con vida; barata para el Garda.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Desenzano+del+Garda%2C+Italia"
+  },
+  {
+   "id": "stresa",
+   "nombre": "Stresa",
+   "por_que": "Estación en la línea de Milán y embarcadero para las Islas Borromeas.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Stresa%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "BGY",
+    "nombre": "Milán Bérgamo – Orio al Serio",
+    "ciudad": "Bérgamo",
+    "a_la_base": "Bus o tren a Bérgamo/Milán y tren regional hasta Como, Desenzano o Stresa; unas 2 horas contando el cambio."
+   },
+   {
+    "iata": "MXP",
+    "nombre": "Milán Malpensa",
+    "ciudad": "Milán",
+    "a_la_base": "Mejor para Maggiore y Como; tren o bus hacia Milán o directo a Stresa/Como con trasbordo."
+   },
+   {
+    "iata": "VRN",
+    "nombre": "Verona – Valerio Catullo",
+    "ciudad": "Verona",
+    "a_la_base": "Cerca del Garda: bus o tren a Verona y tren a Desenzano."
+   }
+  ],
+  "desde_espana": "Barcelona-Bérgamo con Ryanair es la ruta barata clásica. Si priorizáis Maggiore, comparad Malpensa; para el Garda mirad también Verona y Bérgamo. Comparad fechas antes de elegir aeropuerto.",
+  "rutas_directas": [
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "BGY",
+    "aerolinea": "Ryanair",
+    "nota": "Ruta de bajo coste consolidada; confirmad frecuencia en fechas concretas.",
+    "fuente": "https://www.momondo.es/vuelos/barcelona/aeropuerto-de-bergamo-orio-al-serio-bgy"
+   }
+  ],
+  "desde_italia": "Desde Milán: tren regional a Como, Varenna (línea de Lecco), Desenzano (línea Milán-Venecia) o Stresa. Desde Bolonia o Roma: tren a Milán o Verona y enlace regional."
+ },
+ "moverse": {
+  "resumen": "Sin coche: tren regional a un pueblo base y ferris entre embarcaderos. Los ferris son lentos pero son el plan en sí; revisad horarios por temporada.",
+  "tren": {
+   "nota": "Trenord cubre Como, Varenna-Esino (línea Lecco-Colico) y Milán; Desenzano y Stresa están en líneas de largo recorrido y regional.",
+   "enlace": "https://www.trenord.it/"
+  },
+  "bus": {
+   "operador": "Autobuses locales entre pueblos",
+   "nota": "Bellagio y Menaggio no tienen tren: se llega en ferri o bus local. Comparad ruta puerta a puerta.",
+   "enlace": "https://www.rome2rio.com/es/map/Como/Bellagio",
+   "fuente": "https://www.rome2rio.com/es/map/Como/Bellagio"
+  },
+  "ferry": [
+   {
+    "operador": "Navigazione Laghi",
+    "ruta": "Lago di Como: Como, Bellagio, Varenna, Menaggio",
+    "nota": "Servicio público de barcos y ferris de coche; hay billetes de día.",
+    "enlace": "https://www.navigazionelaghi.it/",
+    "fuente": "https://www.navigazionelaghi.it/en/?p=2209"
+   },
+   {
+    "operador": "Navigazione Laghi",
+    "ruta": "Lago di Garda: Desenzano, Sirmione, Malcesine, Limone",
+    "nota": "Barcos entre pueblos y ferri Limone-Malcesine; el horario de invierno 2026-27 ya está publicado.",
+    "enlace": "https://www.navigazionelaghi.it/",
+    "fuente": "https://www.navigazionelaghi.it/wp-content/uploads/2026/09/Orario-Battelli-Web-invernale-2026-2027.pdf"
+   },
+   {
+    "operador": "Navigazione Laghi",
+    "ruta": "Lago Maggiore: Stresa, Baveno, Pallanza, Islas Borromeas",
+    "nota": "Tours a las Islas Borromeas desde varios puertos; temporada de primavera a principios de octubre.",
+    "enlace": "https://www.navigazionelaghi.it/",
+    "fuente": "https://www.navigazionelaghi.it/blog/isole-del-lago-maggiore-alla-scoperta-delle-perle-del-golfo-borromeo/"
+   }
+  ],
+  "camper": {
+   "operador": "Roadsurfer",
+   "nota": "Alquiler de campers en Italia; enlace a la página general del país. En los lagos, aparcar camper es difícil: mejor camping.",
+   "enlace": "https://roadsurfer.com/es/alquilar-camper/italia/",
+   "fuente": "https://roadsurfer.com/es/alquilar-camper/italia/"
+  }
+ },
+ "actividades": [
+  {
+   "id": "ferri-como-bellagio-varenna",
+   "nombre": "Ferri por el Lago di Como: Bellagio y Varenna",
+   "donde": "Lago di Como",
+   "base": "como",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Cruzad el lago en ferri público y parad en Bellagio, Varenna o Menaggio; es la forma barata de ver los pueblos desde el agua.",
+   "consejo": "Un billete de día sale mejor que sueltos si hacéis 3 o más tramos.",
+   "enlace": "https://www.navigazionelaghi.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Navigazione+Laghi+Como%2C+Italia",
+   "fuente": "https://www.navigazionelaghi.it/en/?p=2209"
+  },
+  {
+   "id": "como-lungolago-duomo",
+   "nombre": "Lungolago y Duomo de Como",
+   "donde": "Como",
+   "base": "como",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Paseo por el paseo del lago, la plaza del Duomo y el casco histórico, sobre todo al atardecer.",
+   "enlace": "https://www.lakecomo.is/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Duomo+di+Como%2C+Italia",
+   "fuente": "https://www.lakecomo.is/"
+  },
+  {
+   "id": "brunate-funicular",
+   "nombre": "Funicular Como-Brunate",
+   "donde": "Brunate",
+   "base": "como",
+   "tipo": "postal",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Funicular centenario desde Como a Brunate: mirador sobre el lago y paseo hasta San Maurizio.",
+   "enlace": "https://www.funicolarecomo.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Funicolare+Como+Brunate%2C+Como%2C+Italia",
+   "fuente": "https://www.funicolarecomo.it/"
+  },
+  {
+   "id": "greenway-lago-di-como",
+   "nombre": "Greenway del Lago di Como",
+   "donde": "Tremezzina y Menaggio",
+   "base": "como",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Sendero fácil y llano entre pueblos de la orilla oeste (zona Colonno-Cadenabbia-Menaggio) con vistas y villas.",
+   "consejo": "Id en ferri hasta Menaggio o Cadenabbia y volved andando o en bus local.",
+   "meses": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ],
+   "enlace": "https://menaggio.com/en/trails/the-greenway/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Greenway+del+Lago+di+Como%2C+Tremezzina%2C+Italia",
+   "fuente": "https://menaggio.com/en/trails/the-greenway/"
+  },
+  {
+   "id": "villa-balbianello",
+   "nombre": "Villa del Balbianello",
+   "donde": "Lenno",
+   "base": "como",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Villa en un promontorio con loggia, museo de expediciones y jardín; sale en muchas películas.",
+   "consejo": "Gestionada por el FAI; mirad apertura y entradas en su web antes de ir.",
+   "meses": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "enlace": "https://fondoambiente.it/luoghi/villa-del-balbianello",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Villa+del+Balbianello%2C+Lenno%2C+Italia",
+   "fuente": "https://fondoambiente.it/luoghi/villa-del-balbianello"
+  },
+  {
+   "id": "villa-carlotta",
+   "nombre": "Villa Carlotta y sus jardines",
+   "donde": "Tremezzo",
+   "base": "como",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Museo y jardín botánico a orillas del lago, con rododendros y azaleas en primavera.",
+   "consejo": "Abre por temporada; comprobad las fechas en su web.",
+   "meses": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "enlace": "https://www.villacarlotta.it/en/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Villa+Carlotta%2C+Tremezzo%2C+Italia",
+   "fuente": "https://www.villacarlotta.it/en/"
+  },
+  {
+   "id": "sentiero-del-viandante",
+   "nombre": "Sentiero del Viandante",
+   "donde": "Varenna",
+   "base": "varenna",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Antiguo camino sobre la orilla este del lago; se puede hacer por tramos cortos desde Varenna con tren de vuelta.",
+   "consejo": "Primer camino certificado por el Touring Club; llevad calzado de trekking.",
+   "meses": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ],
+   "enlace": "https://www.italia.it/es/lombardia/que-hacer/sentiero-del-viandante",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sentiero+del+Viandante%2C+Varenna%2C+Italia",
+   "fuente": "https://www.touringclub.it/cammini/il-sentiero-del-viandante-in-lombardia"
+  },
+  {
+   "id": "aperitivo-varenna",
+   "nombre": "Aperitivo junto al lago en Varenna",
+   "donde": "Varenna",
+   "base": "varenna",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Spritz o vino en los bares del paseo del embarcadero viendo el atardecer sobre el lago.",
+   "enlace": "https://www.lakecomo.is/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Varenna+lungolago%2C+Italia",
+   "fuente": "https://www.lakecomo.is/"
+  },
+  {
+   "id": "bano-lido-como",
+   "nombre": "Baño en el lago: Lido di Villa Olmo y Lido di Lenno",
+   "donde": "Como y Lenno",
+   "base": "como",
+   "tipo": "agua",
+   "tipos_extra": [
+    "playa"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Zonas de baño con entrada de pago razonable y también orillas libres; agua fresca incluso en agosto.",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "enlace": "https://www.lakecomo.is/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lido+di+Villa+Olmo%2C+Como%2C+Italia",
+   "fuente": "https://www.lakecomo.is/"
+  },
+  {
+   "id": "sirmione-castello",
+   "nombre": "Castello Scaligero y casco de Sirmione",
+   "donde": "Sirmione",
+   "base": "desenzano",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Fortaleza medieval con foso en la entrada de la península y calles peatonales junto al agua.",
+   "consejo": "Llegad temprano en verano: la entrada se llena.",
+   "enlace": "https://www.visitsirmione.com/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castello+Scaligero%2C+Sirmione%2C+Italia",
+   "fuente": "https://www.visitsirmione.com/en"
+  },
+  {
+   "id": "grotte-di-catullo",
+   "nombre": "Grotte di Catullo",
+   "donde": "Sirmione",
+   "base": "desenzano",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Ruinas romanas en la punta de la península de Sirmione, con vistas al lago.",
+   "enlace": "https://www.visitsirmione.com/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Grotte+di+Catullo%2C+Sirmione%2C+Italia",
+   "fuente": "https://www.visitsirmione.com/en"
+  },
+  {
+   "id": "terme-sirmione",
+   "nombre": "Termas de Sirmione (Aquaria)",
+   "donde": "Sirmione",
+   "base": "desenzano",
+   "tipo": "bienestar",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Spa termal en un parque junto al Garda con piscinas, saunas y camas de burbujas; plan de recuperación.",
+   "consejo": "Mirad horarios y reservas en su web; fuera de verano es el mejor plan si llueve.",
+   "enlace": "https://www.termedisirmione.com/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Terme+di+Sirmione+Aquaria%2C+Sirmione%2C+Italia",
+   "fuente": "https://www.visitgarda.com/en/terme-sirmione"
+  },
+  {
+   "id": "bano-garda-sirmione",
+   "nombre": "Baño en el Garda: Jamaica Beach y Lido delle Bionde",
+   "donde": "Sirmione",
+   "base": "desenzano",
+   "tipo": "agua",
+   "tipos_extra": [
+    "playa"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Rocas y playas de guijarros en la punta de Sirmione, con agua limpia y transparente.",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "enlace": "https://www.visitsirmione.com/en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Jamaica+Beach%2C+Sirmione%2C+Italia",
+   "fuente": "https://www.visitsirmione.com/en"
+  },
+  {
+   "id": "monte-baldo-funivia",
+   "nombre": "Teleférico de Malcesine a Monte Baldo",
+   "donde": "Malcesine",
+   "base": "desenzano",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura",
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Cabina giratoria 360º hasta 1.760 m con vistas al Garda; arriba hay senderos y en invierno se esquía.",
+   "consejo": "Mirad el estado de la cabina y la meteo antes de subir.",
+   "enlace": "https://funiviedelbaldo.it/en/cable-car/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Funivia+Malcesine+Monte+Baldo%2C+Malcesine%2C+Italia",
+   "fuente": "https://www.visitgarda.com/en/malcesine-monte-baldo-cable-car/"
+  },
+  {
+   "id": "malcesine-limone-ferri",
+   "nombre": "Ferri Garda: Malcesine, Limone y Desenzano",
+   "donde": "Malcesine y Limone",
+   "base": "desenzano",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Ruta en barco por la orilla oeste y norte: castillo de Malcesine, calles de Limone y ferri entre ambos.",
+   "consejo": "Horarios de invierno 2026-27 publicados en el PDF oficial.",
+   "enlace": "https://www.navigazionelaghi.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Limone+sul+Garda%2C+Italia",
+   "fuente": "https://www.navigazionelaghi.it/wp-content/uploads/2026/09/Orario-Battelli-Web-invernale-2026-2027.pdf"
+  },
+  {
+   "id": "isola-del-garda",
+   "nombre": "Isola del Garda: villa y jardines",
+   "donde": "Isola del Garda",
+   "base": "desenzano",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Visita guiada a la isla privada con villa neogótica y jardines; se llega en barco desde varios puertos.",
+   "consejo": "Visitas guiadas de finales de marzo a octubre; reservad.",
+   "meses": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "enlace": "https://www.isoladelgarda.com/en/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Isola+del+Garda%2C+Italia",
+   "fuente": "https://www.isoladelgarda.com/en/"
+  },
+  {
+   "id": "islas-borromeas",
+   "nombre": "Islas Borromeas: Isola Bella e Isola dei Pescatori",
+   "donde": "Stresa",
+   "base": "stresa",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "cultura",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Barco desde Stresa a las islas: palacio barroco y jardines en Isola Bella y pueblo de pescadores.",
+   "consejo": "Los tours salen de varios puertos; comparad.",
+   "meses": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "enlace": "https://www.navigazionelaghi.it/blog/isole-del-lago-maggiore-alla-scoperta-delle-perle-del-golfo-borromeo/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Isola+Bella%2C+Stresa%2C+Italia",
+   "fuente": "https://www.navigazionelaghi.it/blog/isole-del-lago-maggiore-alla-scoperta-delle-perle-del-golfo-borromeo/"
+  },
+  {
+   "id": "deportes-agua-garda",
+   "nombre": "Vela, kayak o paddle surf en el Garda",
+   "donde": "Desenzano y Malcesine",
+   "base": "desenzano",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "descripcion": "Clases o alquiler de windsurf, vela o SUP en las zonas ventosas del lago.",
+   "consejo": "Reservad con antelación en temporada alta.",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "enlace": "https://www.getyourguide.es/s/?q=Lago+di+Garda+sailing",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Escuela+de+vela%2C+Desenzano+del+Garda%2C+Italia",
+   "fuente": "https://www.visitgarda.com/en/"
+  },
+  {
+   "id": "lungolago-desenzano",
+   "nombre": "Atardecer y copas en el puerto de Desenzano",
+   "donde": "Desenzano del Garda",
+   "base": "desenzano",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "El puerto viejo y la plaza Malvezzi son el rato de aperitivo y copas más animado del Garda sur.",
+   "enlace": "https://www.visitgarda.com/en/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Porto+Vecchio%2C+Desenzano+del+Garda%2C+Italia",
+   "fuente": "https://www.visitgarda.com/en/"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Missoltino",
+   "que_es": "pescado de agua dulce secado y a la plancha, típico de Como",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias de pueblos de la orilla oeste de Como",
+   "maps": "https://www.google.com/maps/search/?api=1&query=trattoria+missoltino%2C+Como%2C+Italia",
+   "fuente": "https://www.lakecomo.is/"
+  },
+  {
+   "plato": "Risotto con persico",
+   "que_es": "arroz con filetes de perca del lago",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "restaurantes de pueblos como Varenna o Bellagio",
+   "maps": "https://www.google.com/maps/search/?api=1&query=risotto+con+pesce+persico%2C+Varenna%2C+Italia",
+   "fuente": "https://www.lakecomo.is/"
+  },
+  {
+   "plato": "Pesce di lago a la mantequilla",
+   "que_es": "perca o lavarello con mantequilla y salvia",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias de Desenzano y Sirmione",
+   "maps": "https://www.google.com/maps/search/?api=1&query=pesce+di+lago+trattoria%2C+Sirmione%2C+Italia",
+   "fuente": "https://www.visitgarda.com/en/"
+  },
+  {
+   "plato": "Tortellini de Valeggio",
+   "que_es": "pasta rellena fina del sur del Garda",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias del Garda sur",
+   "maps": "https://www.google.com/maps/search/?api=1&query=tortellini+di+Valeggio%2C+Desenzano+del+Garda%2C+Italia",
+   "fuente": "https://www.visitgarda.com/en/"
+  },
+  {
+   "plato": "Margheritine di Stresa",
+   "que_es": "galletas dulces típicas del Lago Maggiore",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías de Stresa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=pasticceria+Stresa+margheritine%2C+Stresa%2C+Italia",
+   "fuente": "https://www.navigazionelaghi.it/blog/isole-del-lago-maggiore-alla-scoperta-delle-perle-del-golfo-borromeo/"
+  },
+  {
+   "plato": "Vino Lugana",
+   "que_es": "blanco fresco de la ribera sur del Garda",
+   "estilo": "bebida",
+   "coste": "medio",
+   "donde_probarlo": "bodegas y vinotecas de Sirmione y Desenzano",
+   "maps": "https://www.google.com/maps/search/?api=1&query=enoteca+Lugana%2C+Sirmione%2C+Italia",
+   "fuente": "https://www.visitgarda.com/en/"
+  },
+  {
+   "plato": "Spritz con cicchetti",
+   "que_es": "aperitivo con tapitas junto al lago",
+   "estilo": "bebida",
+   "coste": "bajo",
+   "donde_probarlo": "bares del paseo del embarcadero en Como y Varenna",
+   "maps": "https://www.google.com/maps/search/?api=1&query=aperitivo+lungolago%2C+Como%2C+Italia",
+   "fuente": "https://www.lakecomo.is/"
+  },
+  {
+   "plato": "Gelato artesano",
+   "que_es": "helado artesano para tomar paseando por el lago",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "heladerías del lungolago de Como y Sirmione",
+   "maps": "https://www.google.com/maps/search/?api=1&query=gelateria%2C+Como%2C+Italia",
+   "fuente": "https://www.lakecomo.is/"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Lungolago y Piazza Cavour",
+   "base": "como",
+   "plan": "aperitivo",
+   "descripcion": "Terrazas junto al embarcadero y bares del centro histórico de Como.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Cavour%2C+Como%2C+Italia",
+   "fuente": "https://www.lakecomo.is/"
+  },
+  {
+   "zona": "Puerto viejo de Desenzano",
+   "base": "desenzano",
+   "plan": "copas",
+   "descripcion": "Bares y copas en el puerto y el casco antiguo: el ambiente más vivo del Garda sur.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Porto+Vecchio%2C+Desenzano+del+Garda%2C+Italia",
+   "fuente": "https://www.visitgarda.com/en/"
+  },
+  {
+   "zona": "Embarcadero de Varenna",
+   "base": "varenna",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo tranquilo con vistas al lago al atardecer.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Varenna+lungolago%2C+Italia",
+   "fuente": "https://www.lakecomo.is/"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "como",
+   "coste": "bajo",
+   "para": "Grupos que priorizan precio y tren directo desde Milán.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Como"
+    }
+   ]
+  },
+  {
+   "tipo": "hostel",
+   "base": "desenzano",
+   "coste": "bajo",
+   "para": "Para moverse en tren por el Garda y llegar a Sirmione y Verona.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Desenzano+del+Garda"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "varenna",
+   "coste": "alto",
+   "para": "Grupos de 4-6 que quieren cocinar y estar en el pueblo.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Varenna--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Varenna"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "stresa",
+   "coste": "medio",
+   "para": "Parejas o grupos pequeños para las Islas Borromeas.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Stresa"
+    }
+   ]
+  },
+  {
+   "tipo": "camping",
+   "base": "desenzano",
+   "coste": "bajo",
+   "para": "Verano con tienda o bungaló; el Garda es zona de campings.",
+   "enlaces": [
+    {
+     "sitio": "Visit Garda",
+     "url": "https://www.visitgarda.com/en/"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Desenzano+del+Garda+camping"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "como",
+   "coste": "medio",
+   "para": "Quien prefiera comodidad cerca de la estación y el embarcadero.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Como"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Festival Internacional de Primavera Lago di Garda",
+   "donde": "Lago di Garda (Verona)",
+   "cuando": "cada año en primavera, la edición 2027 está anunciada para abril",
+   "meses": [
+    4
+   ],
+   "proxima_fecha": "2027-04-09",
+   "descripcion": "Festival no competitivo con grupos de folclore, música y danza, desfiles y excursiones.",
+   "enlace": "https://eaff.eu/en/news/2025-06-20-lago-di-garda-2026-the-most-beautiful-international-spring-festival-invites-you-to-the-la",
+   "fuente": "https://eaff.eu/en/news/2025-06-20-lago-di-garda-2026-the-most-beautiful-international-spring-festival-invites-you-to-the-la"
+  },
+  {
+   "nombre": "Centomiglia del Lario",
+   "donde": "Lago di Como",
+   "cuando": "cada año, a principios de octubre",
+   "meses": [
+    10
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Regata histórica de vela en el lago; Navigazione Laghi sustituye durante esos días el barco por bus.",
+   "enlace": "https://www.navigazionelaghi.it/",
+   "fuente": "https://www.navigazionelaghi.it/en/notices/"
+  },
+  {
+   "nombre": "Temporada de visitas a Isola del Garda",
+   "donde": "Isola del Garda",
+   "cuando": "cada año, de finales de marzo a octubre",
+   "meses": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Visitas guiadas a la villa y a los jardines durante toda la temporada.",
+   "enlace": "https://www.isoladelgarda.com/en/",
+   "fuente": "https://www.isoladelgarda.com/en/"
+  }
+ ],
+ "notas_honestas": [
+  "No verificamos webs oficiales de Isole Borromee/Stresa-Mottarone (bloquean bots): enlazamos a Navigazione Laghi y mapas.",
+  "Los nombres de playas (Jamaica Beach, Lido delle Bionde, Villa Olmo, Lenno) vienen de conocimiento general; abren por mapa, no por web oficial.",
+  "Eventos flojos: solo hay uno con fecha 2027 verificada (Garda); los demás son estacionales sin fecha confirmada.",
+  "Greenway, Viandante y villas: confirmad apertura por temporada en las webs; no hay precios ni horarios.",
+  "No hay ruta directa verificada a Malpensa ni Verona desde España."
+ ]
+}

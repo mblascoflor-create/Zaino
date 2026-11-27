@@ -1,0 +1,113 @@
+{
+ "actividades": {
+  "ferri-como-bellagio-varenna": [
+   45.812,
+   9.085
+  ],
+  "como-lungolago-duomo": [
+   45.81,
+   9.084
+  ],
+  "brunate-funicular": [
+   45.82,
+   9.093
+  ],
+  "greenway-lago-di-como": [
+   45.99,
+   9.2
+  ],
+  "villa-balbianello": [
+   45.986,
+   9.205
+  ],
+  "villa-carlotta": [
+   45.987,
+   9.213
+  ],
+  "sentiero-del-viandante": [
+   46.01,
+   9.285
+  ],
+  "aperitivo-varenna": [
+   46.01,
+   9.285
+  ],
+  "bano-lido-como": [
+   45.815,
+   9.071
+  ],
+  "sirmione-castello": [
+   45.492,
+   10.608
+  ],
+  "grotte-di-catullo": [
+   45.499,
+   10.609
+  ],
+  "terme-sirmione": [
+   45.491,
+   10.607
+  ],
+  "bano-garda-sirmione": [
+   45.499,
+   10.612
+  ],
+  "monte-baldo-funivia": [
+   45.762,
+   10.808
+  ],
+  "malcesine-limone-ferri": [
+   45.762,
+   10.808
+  ],
+  "isola-del-garda": [
+   45.57,
+   10.56
+  ],
+  "islas-borromeas": [
+   45.896,
+   8.53
+  ],
+  "deportes-agua-garda": [
+   45.469,
+   10.569
+  ],
+  "lungolago-desenzano": [
+   45.469,
+   10.538
+  ]
+ },
+ "noche": {
+  "Lungolago y Piazza Cavour": [
+   45.81,
+   9.084
+  ],
+  "Puerto viejo de Desenzano": [
+   45.469,
+   10.538
+  ],
+  "Embarcadero de Varenna": [
+   46.01,
+   9.285
+  ]
+ },
+ "eventos": {
+  "Festival Internacional de Primavera Lago di Garda": [
+   45.55,
+   10.57
+  ],
+  "Centomiglia del Lario": [
+   45.987,
+   9.257
+  ],
+  "Temporada de visitas a Isola del Garda": [
+   45.57,
+   10.56
+  ]
+ },
+ "dudosos": [
+  "ferri-como-bellagio-varenna",
+  "greenway-lago-di-como",
+  "malcesine-limone-ferri"
+ ]
+}

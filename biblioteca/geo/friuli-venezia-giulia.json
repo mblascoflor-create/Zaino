@@ -1,0 +1,112 @@
+{
+ "actividades": {
+  "piazza-unita-molo-audace": [
+   45.648,
+   13.768
+  ],
+  "cafes-historicos": [
+   45.65,
+   13.768
+  ],
+  "san-giusto": [
+   45.648,
+   13.775
+  ],
+  "barcola-bano": [
+   45.689,
+   13.755
+  ],
+  "miramare": [
+   45.701,
+   13.713
+  ],
+  "grotta-gigante": [
+   45.708,
+   13.757
+  ],
+  "osmize-carso": [
+   45.7,
+   13.8
+  ],
+  "strada-napoleonica": [
+   45.69,
+   13.79
+  ],
+  "canal-grande-borgo": [
+   45.65,
+   13.766
+  ],
+  "aperitivo-cittavecchia": [
+   45.647,
+   13.771
+  ],
+  "teatro-romano": [
+   45.646,
+   13.774
+  ],
+  "risiera-san-sabba": [
+   45.629,
+   13.79
+  ],
+  "aquileia": [
+   45.769,
+   13.368
+  ],
+  "collio-vino": [
+   45.94,
+   13.44
+  ],
+  "udine-centro": [
+   46.062,
+   13.235
+  ],
+  "tajut-udine": [
+   46.063,
+   13.234
+  ],
+  "cividale": [
+   46.093,
+   13.432
+  ],
+  "gorizia-nova-gorica": [
+   45.943,
+   13.622
+  ]
+ },
+ "noche": {
+  "Cittavecchia": [
+   45.647,
+   13.771
+  ],
+  "Canal Grande y Borgo Teresiano": [
+   45.65,
+   13.766
+  ],
+  "Piazza Matteotti y Via Mercatovecchio": [
+   46.063,
+   13.234
+  ]
+ },
+ "eventos": {
+  "Barcolana": [
+   45.69,
+   13.73
+  ],
+  "Mittelfest": [
+   46.093,
+   13.432
+  ],
+  "Friuli DOC": [
+   46.062,
+   13.235
+  ],
+  "Mercadillos de Navidad en Friuli-Venecia Julia": [
+   45.648,
+   13.768
+  ]
+ },
+ "dudosos": [
+  "collio-vino",
+  "osmize-carso"
+ ]
+}

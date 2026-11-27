@@ -1,0 +1,31 @@
+{
+  "zona": "roma",
+  "base": "centro",
+  "ciudad_referencia": "Roma",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 25,
+      "max": 32,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/rome/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": {
+      "min": 55,
+      "max": 177,
+      "fuente": "https://www.booking.com/city/it/rome.html?selected_currency=EUR | https://www.budgetyourtrip.com/italy/rome",
+      "calidad": "orientativo"
+    },
+    "comida_barata": {
+      "valor": 16.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Rome",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 1.5,
+      "fuente": "https://www.atac.roma.it/biglietti-e-abbonamenti",
+      "calidad": "verificado"
+    }
+  },
+  "notas": "hostel_noche: rango P25-P75 de 28 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=8.28, maximo=40.5); son precios 'desde' sin fechas concretas. doble_noche: min=55 es el precio 'From' mas bajo del titulo de la pagina de Booking.com para la ciudad (alojamiento mas barato listado, 2 adultos, 1 noche, sin fecha fija); max=177 es el precio medio de hotel para una pareja segun BudgetYourTrip (gasto declarado por viajeros). La horquilla mezcla ambas fuentes: es solo una guia aproximada, no un rango de apartamentos/dobles economicos garantizado. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Roma (rango Numbeo 12-25). transporte_billete: ATAC BIT 100 minutos, corsa singola."
+}

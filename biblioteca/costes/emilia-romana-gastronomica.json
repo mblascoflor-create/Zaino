@@ -1,0 +1,31 @@
+{
+  "zona": "emilia-romana-gastronomica",
+  "base": "bologna",
+  "ciudad_referencia": "Bolonia",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 25,
+      "max": 34,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/bologna/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": {
+      "min": 59,
+      "max": 151,
+      "fuente": "https://www.booking.com/city/it/bologna.html?selected_currency=EUR | https://www.budgetyourtrip.com/italy/bologna",
+      "calidad": "orientativo"
+    },
+    "comida_barata": {
+      "valor": 20.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Bologna",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 2.3,
+      "fuente": "https://www.tper.it/sites/default/files/Tariffe%20Area%20Urbana%20Bologna.pdf",
+      "calidad": "verificado"
+    }
+  },
+  "notas": "hostel_noche: rango P25-P75 de 10 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=22.0, maximo=35.0); son precios 'desde' sin fechas concretas. doble_noche: min=59 es el precio 'From' mas bajo del titulo de la pagina de Booking.com para la ciudad (alojamiento mas barato listado, 2 adultos, 1 noche, sin fecha fija); max=151 es el precio medio de hotel para una pareja segun BudgetYourTrip (gasto declarado por viajeros). La horquilla mezcla ambas fuentes: es solo una guia aproximada, no un rango de apartamentos/dobles economicos garantizado. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Bolonia (rango Numbeo 15-25). transporte_billete: TPER, billete ordinario area urbana de Bolonia 2.30 EUR (tambien con tarjeta contactless). El PDF no lleva fecha."
+}

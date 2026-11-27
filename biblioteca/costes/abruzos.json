@@ -1,0 +1,17 @@
+{
+  "zona": "abruzos",
+  "base": "pescara",
+  "ciudad_referencia": "Pescara",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": null,
+    "doble_noche": null,
+    "comida_barata": {
+      "valor": 20.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Pescara",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": null
+  },
+  "notas": "hostel_noche null: Hostelworld muestra 0 hostels en Pescara (\"no Hostels available in Pescara right now\"). doble_noche null: solo hay un dato suelto (Booking.com https://www.booking.com/city/it/pescara.html?selected_currency=EUR: precio 'From' del titulo = 70 EUR) y BudgetYourTrip no tiene media para esta ciudad, asi que no se puede dar rango. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Pescara (rango Numbeo 15-25). transporte_billete null: No se encontro tarifa urbana de TUA Pescara en ninguna pagina abierta (las paginas de TUA abiertas no la mostraban)."
+}

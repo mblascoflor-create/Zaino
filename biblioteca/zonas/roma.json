@@ -1,0 +1,820 @@
+{
+ "id": "roma",
+ "nombre": "Roma",
+ "nombre_corto": "Roma",
+ "lema": "Ruinas, aperitivo y atardeceres gratis",
+ "descripcion": "Ciudad enorme que se hace a pie y en metro: ruinas, miradores gratis, mercados y barrios de copas. Perfecta para un grupo sin coche y con poco presupuesto.",
+ "perfil": {
+  "mar": 0,
+  "montana": 0,
+  "ciudad": 3,
+  "campo": 0,
+  "fiesta": 2,
+  "calma": 0,
+  "cultura": 3,
+  "gastronomia": 3,
+  "naturaleza": 0,
+  "playa": 0,
+  "aventura": 0,
+  "postal": 3
+ },
+ "nivel_precio": "medio",
+ "nivel_precio_nota": "Alojamiento caro en el centro, pero comida callejera, miradores y mucha plaza gratis lo equilibran.",
+ "meses": {
+  "ideales": [
+   4,
+   5,
+   6,
+   9,
+   10
+  ],
+  "aceptables": [
+   3,
+   11
+  ],
+  "evitar": [
+   7,
+   8
+  ],
+  "nota": "En julio y agosto hace mucho calor y el centro se llena; abril-junio y septiembre-octubre son lo mejor."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "innecesario",
+  "nota": "Dentro de Roma el coche sobra: ZTL en el centro, aparcar es caro y el metro, tranvía y tren llegan a todo. Solo compensa para salir a pueblos sin tren.",
+  "aeropuerto_recogida": "FCO",
+  "operadores": [
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Hertz-Roma.FCO.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Hertz-Roma.FCO.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Avis-Roma.FCO.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Avis-Roma.FCO.AVIS.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Europcar-Roma.FCO.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Europcar-Roma.FCO.EUROPCAR.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "centro",
+   "nombre": "Centro (Monti, Termini, Esquilino)",
+   "por_que": "Cerca de Termini: metro, trenes a Ostia y Castelli y andando al Coliseo.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Monti%2C+Roma%2C+Italia"
+  },
+  {
+   "id": "trastevere",
+   "nombre": "Trastevere",
+   "por_que": "Calles empedradas, aperitivo y cenas; el mejor ambiente para salir de noche a pie.",
+   "sin_coche": true,
+   "ambiente": "fiesta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trastevere%2C+Roma%2C+Italia"
+  },
+  {
+   "id": "san-lorenzo",
+   "nombre": "San Lorenzo y Pigneto",
+   "por_que": "Barrios de estudiantes: alojamiento más barato y copas sin precio de turista.",
+   "sin_coche": true,
+   "ambiente": "fiesta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=San+Lorenzo%2C+Roma%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "FCO",
+    "nombre": "Roma – Fiumicino Leonardo da Vinci",
+    "ciudad": "Roma",
+    "a_la_base": "Tren Leonardo Express a Roma Termini en unos 32 minutos (según Trenitalia)."
+   },
+   {
+    "iata": "CIA",
+    "nombre": "Roma – Ciampino",
+    "ciudad": "Roma",
+    "a_la_base": "Bus o tren regional hasta Roma Termini; comprobad horarios antes de volar de noche."
+   }
+  ],
+  "desde_espana": "Roma es de las rutas más baratas desde España: Ryanair y Vueling vuelan desde Barcelona y Valencia, entre otras. Comparad FCO y CIA y sumad el traslado.",
+  "rutas_directas": [
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "FCO",
+    "aerolinea": "Vueling",
+    "nota": "según el buscador Omio; comprobad temporada",
+    "fuente": "https://www.omio.com.ar/vuelos/aeropuerto-de-barcelona-el-prat/aeropuerto-leonardo-da-vinci-fiumicino-de-roma-vlwvl"
+   },
+   {
+    "origen": "Valencia",
+    "origen_iata": "VLC",
+    "destino_iata": "CIA",
+    "aerolinea": "Ryanair",
+    "nota": "según Opodo y Momondo; comprobad temporada",
+    "fuente": "https://www.opodo.es/vuelos/aerolinea/FR/ryanair/ROM/roma/VLC/valencia/"
+   }
+  ],
+  "desde_italia": "Roma Termini es el nudo ferroviario de Italia: alta velocidad con Trenitalia e Italo desde Bolonia, Milán o Florencia. Mirad también FlixBus si vais con tiempo.",
+  "novedades": [
+   {
+    "nota": "Billete combinado tren+avión de iryo e ITA Airways: tren hasta Madrid o Barcelona y vuelo ITA a Fiumicino, en una sola compra.",
+    "fuente": "https://www.elperiodic.com/viajar-entre-comunitat-valenciana-italia-nunca-facil-funciona-billete-tren-avion_1002354"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "Centro a pie, metro y tranvía para distancias largas, y tren regional para Ostia o Castelli Romani. Sin coche.",
+  "tren": {
+   "nota": "Trenitalia para regionales (Ostia Antica, Frascati, Tivoli) y alta velocidad con Italo.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Solo trayectos dentro de Italia y Europa, no hace falta para moverse por Roma.",
+   "enlace": "https://www.flixbus.it/autobus/roma",
+   "fuente": "https://www.flixbus.it/azienda/stampa/flixbus-offerta-estiva-2026"
+  },
+  "ferry": [],
+  "camper": null
+ },
+ "actividades": [
+  {
+   "id": "coliseo-foro",
+   "nombre": "Coliseo, Foro Romano y Palatino",
+   "donde": "Roma",
+   "base": "centro",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Tres sitios de la Roma antigua con un solo billete combinado; empezad temprano para evitar colas.",
+   "consejo": "Reservad con antelación en la web oficial; en el Foro y el Palatino hay poca sombra.",
+   "enlace": "https://colosseo.it/es/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Colosseo%2C+Roma%2C+Italia",
+   "fuente": "https://colosseo.it/es/"
+  },
+  {
+   "id": "vaticano",
+   "nombre": "Museos Vaticanos y Capilla Sixtina",
+   "donde": "Roma",
+   "base": "centro",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Cuatro horas de arte, de la Galería de los Mapas a la Sixtina.",
+   "consejo": "Comprad la entrada en la web oficial y revisad ahí el calendario de días gratuitos.",
+   "enlace": "https://www.museivaticani.va/content/museivaticani/it/organizza-visita/tariffe-e-biglietti.html",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Musei+Vaticani%2C+Roma%2C+Italia",
+   "fuente": "https://www.museivaticani.va/content/museivaticani/it/organizza-visita/tariffe-e-biglietti.html"
+  },
+  {
+   "id": "san-pedro",
+   "nombre": "Basílica de San Pedro y plaza",
+   "donde": "Ciudad del Vaticano",
+   "base": "centro",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Entrar a la basílica es gratis (hay control de seguridad y código de vestimenta); la cúpula se paga aparte.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Basilica+di+San+Pietro%2C+Roma%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Basilica+di+San+Pietro%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Basilica+di+San+Pietro%2C+Roma%2C+Italia"
+  },
+  {
+   "id": "galleria-borghese",
+   "nombre": "Galería Borghese",
+   "donde": "Roma",
+   "base": "centro",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Bernini y Caravaggio en una villa; entras por turnos con hora fija.",
+   "consejo": "Reserva obligatoria con hora; id con tiempo.",
+   "enlace": "https://cultura.gov.it/luogo/museo-galleria-borghese",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Galleria+Borghese%2C+Roma%2C+Italia",
+   "fuente": "https://cultura.gov.it/luogo/museo-galleria-borghese"
+  },
+  {
+   "id": "trevi-panteon",
+   "nombre": "Fontana de Trevi, Panteón y Piazza Navona",
+   "donde": "Roma",
+   "base": "centro",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Paseo clásico entre las tres plazas, mucho mejor de noche y sin colas.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Fontana+di+Trevi%2C+Roma%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Fontana+di+Trevi%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Fontana+di+Trevi%2C+Roma%2C+Italia"
+  },
+  {
+   "id": "gianicolo",
+   "nombre": "Atardecer en el Gianicolo",
+   "donde": "Roma",
+   "base": "trastevere",
+   "tipo": "postal",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Mirador sobre toda la ciudad desde la colina; subid a pie desde Trastevere.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Terrazza+del+Gianicolo%2C+Roma%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Terrazza+del+Gianicolo%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Terrazza+del+Gianicolo%2C+Roma%2C+Italia"
+  },
+  {
+   "id": "pincio",
+   "nombre": "Terraza del Pincio y Villa Borghese",
+   "donde": "Roma",
+   "base": "centro",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Mirador sobre Piazza del Popolo y parque para pasear o alquilar una bici.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Terrazza+del+Pincio%2C+Roma%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Terrazza+del+Pincio%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Terrazza+del+Pincio%2C+Roma%2C+Italia"
+  },
+  {
+   "id": "aventino",
+   "nombre": "Giardino degli Aranci y ojo de la cerradura del Aventino",
+   "donde": "Roma",
+   "base": "trastevere",
+   "tipo": "postal",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Jardín con vista y, al lado, la cerradura por la que se ve la cúpula de San Pedro enmarcada.",
+   "consejo": "Preparad cámara y paciencia: suele haber cola para mirar por la cerradura.",
+   "enlace": "https://turismoroma.it/it/luoghi/aventino",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Giardino+degli+Aranci%2C+Roma%2C+Italia",
+   "fuente": "https://turismoroma.it/it/luoghi/aventino"
+  },
+  {
+   "id": "trastevere-paseo",
+   "nombre": "Trastevere de aperitivo",
+   "donde": "Roma",
+   "base": "trastevere",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Callejear por Trastevere y tomar un aperitivo en la calle antes de cenar.",
+   "consejo": "Los locales de la plaza son caros; alejaos dos calles para comer mejor.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Trastevere%2C+Roma%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trastevere%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Trastevere%2C+Roma%2C+Italia"
+  },
+  {
+   "id": "campo-fiori",
+   "nombre": "Campo de' Fiori y Piazza Navona por la mañana",
+   "donde": "Roma",
+   "base": "centro",
+   "tipo": "compras",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Mercado de frutas y especias por la mañana; de noche la plaza se convierte en zona de copas.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Campo+de%27+Fiori%2C+Roma%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Campo+de%27+Fiori%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Campo+de%27+Fiori%2C+Roma%2C+Italia"
+  },
+  {
+   "id": "testaccio",
+   "nombre": "Mercato Testaccio",
+   "donde": "Roma",
+   "base": "centro",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Mercado municipal con puestos de comida romana barata: trapizzino, supplì, pasta.",
+   "enlace": "https://turismoroma.it/en/places/mercato-rionale-testaccio",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+di+Testaccio%2C+Roma%2C+Italia",
+   "fuente": "https://turismoroma.it/en/places/mercato-rionale-testaccio"
+  },
+  {
+   "id": "porta-portese",
+   "nombre": "Mercadillo de Porta Portese",
+   "donde": "Roma",
+   "base": "trastevere",
+   "tipo": "compras",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "El mayor mercadillo de Roma, solo los domingos: ropa de segunda mano, discos y antigüedades.",
+   "consejo": "Regatead y cuidad la cartera.",
+   "enlace": "https://turismoroma.it/es/places/mercado-de-porta-portese",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Porta+Portese%2C+Roma%2C+Italia",
+   "fuente": "https://turismoroma.it/es/places/mercado-de-porta-portese"
+  },
+  {
+   "id": "barrio-judio",
+   "nombre": "Barrio judío y Portico d'Ottavia",
+   "donde": "Roma",
+   "base": "centro",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Paseo por el antiguo gueto, con las ruinas del Portico d'Ottavia y las alcachofas a la judía en las trattorias.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Portico+d%27Ottavia%2C+Roma%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Portico+d%27Ottavia%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Portico+d%27Ottavia%2C+Roma%2C+Italia"
+  },
+  {
+   "id": "ostia-antica",
+   "nombre": "Ostia Antica",
+   "donde": "Ostia Antica",
+   "base": "centro",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Ciudad portuaria romana casi intacta, a pocos minutos en tren de la ciudad y sin multitudes.",
+   "consejo": "Hay tren regional desde Roma Porta San Paolo; llevad agua.",
+   "enlace": "https://ostiaantica.cultura.gov.it",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Parco+Archeologico+di+Ostia+Antica%2C+Italia",
+   "fuente": "https://turismoroma.it/en/node/38408"
+  },
+  {
+   "id": "castelli",
+   "nombre": "Frascati y Castelli Romani en tren",
+   "donde": "Frascati",
+   "base": "centro",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "descripcion": "Día de campo cerca de Roma: pueblo con vino blanco, porchetta y vistas, a donde llega el tren regional.",
+   "consejo": "Línea regional desde Roma Termini; volved antes de que acabe el servicio.",
+   "enlace": "https://www.trenitalia.com/it/regionale/collegamenti-regionale/castelli-line.html",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Frascati%2C+Italia",
+   "fuente": "https://www.trenitalia.com/it/regionale/collegamenti-regionale/castelli-line.html"
+  },
+  {
+   "id": "pigneto-san-lorenzo",
+   "nombre": "Pigneto y San Lorenzo de noche",
+   "donde": "Roma",
+   "base": "san-lorenzo",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "musica"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Barrios de estudiantes y alternativos: bares, música y cerveza sin precios de postal.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Pigneto%2C+Roma%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Pigneto%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Pigneto%2C+Roma%2C+Italia"
+  },
+  {
+   "id": "appia-antica",
+   "nombre": "Via Appia Antica en bici",
+   "donde": "Roma",
+   "base": "centro",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza",
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Calzada romana original con tumbas y acueductos, ideal en bici o andando.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Via+Appia+Antica%2C+Roma%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Via+Appia+Antica%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Via+Appia+Antica%2C+Roma%2C+Italia"
+  },
+  {
+   "id": "tivoli",
+   "nombre": "Tivoli: Villa d'Este y Villa Adriana",
+   "donde": "Tivoli",
+   "base": "centro",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Excursión de día a las villas y jardines con fuentes; hay tren regional desde Roma.",
+   "consejo": "Comprobad horarios y días de cierre de cada villa.",
+   "enlace": "https://www.getyourguide.es/s/?q=Tivoli+Villa+d%27Este+Villa+Adriana",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Villa+d%27Este%2C+Tivoli%2C+Italia",
+   "fuente": "https://www.rome2rio.com/es/map/Roma/Tivoli"
+  },
+  {
+   "id": "san-pedro-cupula",
+   "nombre": "Cúpula de San Pedro",
+   "donde": "Ciudad del Vaticano",
+   "base": "centro",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "alto",
+   "ambiente": "mixto",
+   "descripcion": "Subida a la cúpula por escaleras estrechas para ver Roma entera desde arriba.",
+   "consejo": "Las colas son más cortas por la tarde.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Cupola+di+San+Pietro%2C+Roma%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cupola+di+San+Pietro%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Cupola+di+San+Pietro%2C+Roma%2C+Italia"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Cacio e pepe / carbonara / amatriciana",
+   "que_es": "pastas romanas clásicas con queso pecorino y guanciale",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias de Testaccio y San Lorenzo",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Testaccio%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Testaccio%2C+Roma%2C+Italia"
+  },
+  {
+   "plato": "Supplì",
+   "que_es": "croqueta de arroz con tomate y mozzarella",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "freidurías (friggitorie) y pizzerías al taglio",
+   "maps": "https://www.google.com/maps/search/?api=1&query=suppl%C3%AC%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=suppl%C3%AC%2C+Roma%2C+Italia"
+  },
+  {
+   "plato": "Pizza al taglio",
+   "que_es": "pizza romana por porciones al peso",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "pizzerías al taglio en cualquier barrio",
+   "maps": "https://www.google.com/maps/search/?api=1&query=pizza+al+taglio%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=pizza+al+taglio%2C+Roma%2C+Italia"
+  },
+  {
+   "plato": "Trapizzino",
+   "que_es": "bolsillo de pizza relleno de guisos romanos",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "Mercato Testaccio y barrio de Testaccio",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+di+Testaccio%2C+Roma%2C+Italia",
+   "fuente": "https://turismoroma.it/en/places/mercato-rionale-testaccio"
+  },
+  {
+   "plato": "Carciofi alla giudia",
+   "que_es": "alcachofas fritas a la judía",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias del barrio judío",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Portico+d%27Ottavia%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Portico+d%27Ottavia%2C+Roma%2C+Italia"
+  },
+  {
+   "plato": "Gelato",
+   "que_es": "helado artesano",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "heladerías artesanas; evitad las de colores muy fluorescentes",
+   "maps": "https://www.google.com/maps/search/?api=1&query=gelateria%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=gelateria%2C+Roma%2C+Italia"
+  },
+  {
+   "plato": "Maritozzo",
+   "que_es": "bollo de nata montada",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "cafeterías y panaderías para el desayuno",
+   "maps": "https://www.google.com/maps/search/?api=1&query=maritozzo%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=maritozzo%2C+Roma%2C+Italia"
+  },
+  {
+   "plato": "Spritz y aperitivo",
+   "que_es": "bebida con aperitivo para tapear",
+   "estilo": "bebida",
+   "coste": "medio",
+   "donde_probarlo": "bares de Trastevere, Campo de' Fiori y Pigneto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=aperitivo%2C+Trastevere%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=aperitivo%2C+Trastevere%2C+Roma%2C+Italia"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Trastevere",
+   "base": "trastevere",
+   "plan": "aperitivo",
+   "descripcion": "Callejuelas llenas de bares y terrazas desde el atardecer.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trastevere%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Trastevere%2C+Roma%2C+Italia"
+  },
+  {
+   "zona": "Campo de' Fiori",
+   "base": "centro",
+   "plan": "copas",
+   "descripcion": "Plaza que de día es mercado y de noche concentra bares.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Campo+de%27+Fiori%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Campo+de%27+Fiori%2C+Roma%2C+Italia"
+  },
+  {
+   "zona": "Pigneto",
+   "base": "san-lorenzo",
+   "plan": "copas",
+   "descripcion": "Bares alternativos, música en vivo y público local.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Pigneto%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Pigneto%2C+Roma%2C+Italia"
+  },
+  {
+   "zona": "San Lorenzo",
+   "base": "san-lorenzo",
+   "plan": "fiesta",
+   "descripcion": "Barrio universitario con bares y fiestas de estudiantes.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=San+Lorenzo%2C+Roma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=San+Lorenzo%2C+Roma%2C+Italia"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "centro",
+   "coste": "bajo",
+   "para": "Grupos con poco presupuesto que quieren estar cerca de Termini.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Roma"
+    },
+    {
+     "sitio": "Hostelworld",
+     "url": "https://www.hostelworld.com/hostels/europe/italy/rome/"
+    }
+   ]
+  },
+  {
+   "tipo": "hostel",
+   "base": "trastevere",
+   "coste": "medio",
+   "para": "Quien quiere dormir donde sale de noche.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Trastevere%2C+Roma"
+    },
+    {
+     "sitio": "Hostelworld",
+     "url": "https://www.hostelworld.com/hostels/europe/italy/rome/"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "centro",
+   "coste": "medio",
+   "para": "Grupos de 4 a 8 que prefieren cocina y espacio común.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Roma--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Roma"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "san-lorenzo",
+   "coste": "bajo",
+   "para": "Grupos que quieren ahorrar y no les importa estar fuera del centro histórico.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/San+Lorenzo%2C+Roma--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=San+Lorenzo%2C+Roma"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "centro",
+   "coste": "alto",
+   "para": "Quien prefiere privacidad y desayuno incluido.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Roma"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Natale di Roma",
+   "donde": "Roma",
+   "cuando": "cada año, en torno al 21 de abril",
+   "meses": [
+    4
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Desfile y recreaciones históricas del Gruppo Storico Romano, con entrada gratuita.",
+   "enlace": "https://turismoroma.it/en/node/170051",
+   "fuente": "https://turismoroma.it/en/node/170051"
+  },
+  {
+   "nombre": "Concerto del Primo Maggio",
+   "donde": "Roma",
+   "cuando": "cada año, 1 de mayo",
+   "meses": [
+    5
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Concierto gratuito multitudinario con artistas italianos.",
+   "enlace": "https://turismoroma.it/it/eventi/concerto-del-primo-maggio-2026",
+   "fuente": "https://turismoroma.it/it/eventi/concerto-del-primo-maggio-2026"
+  },
+  {
+   "nombre": "Festa de' Noantri",
+   "donde": "Trastevere",
+   "cuando": "cada año, en julio",
+   "meses": [
+    7
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Fiesta popular del barrio con procesión y música en la calle.",
+   "enlace": "https://turismoroma.it/it/eventi/festa-de-noantri-2026",
+   "fuente": "https://turismoroma.it/it/eventi/festa-de-noantri-2026"
+  },
+  {
+   "nombre": "Estate Romana",
+   "donde": "Roma",
+   "cuando": "cada verano, de junio a septiembre",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Ciclo de conciertos, cine al aire libre y espectáculos por toda la ciudad.",
+   "enlace": "https://turismoroma.it/it/node/159044",
+   "fuente": "https://turismoroma.it/it/node/159044"
+  }
+ ],
+ "notas_honestas": [
+  "No he verificado los precios ni los horarios de ningún sitio; mirad siempre la web oficial.",
+  "El primer domingo de cada mes hay entrada gratuita en museos y parques estatales (Domenica al Museo, https://siviaggia.it/notizie/domenica-al-museo-1-novembre/607806/), pero no he confirmado qué sitios romanos se incluyen ahora.",
+  "Rutas aéreas: solo dos con fuente de buscador, no de la aerolínea; faltan Madrid y otras ciudades.",
+  "Tivoli, Appia Antica y varios enlaces de actividad son solo mapa o búsqueda."
+ ]
+}

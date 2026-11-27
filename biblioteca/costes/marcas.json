@@ -1,0 +1,21 @@
+{
+  "zona": "marcas",
+  "base": "ancona",
+  "ciudad_referencia": "Ancona",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": null,
+    "doble_noche": null,
+    "comida_barata": {
+      "valor": 15.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Ancona",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 1.6,
+      "fuente": "https://www.conerobus.it/tariffe/tariffe-urbane-ed-extraurbane/tariffe-urbano-ancona/",
+      "calidad": "verificado"
+    }
+  },
+  "notas": "hostel_noche null: Hostelworld Ancona solo lista un hotel sin dormitorios (\"No Dorms Available\"). doble_noche null: solo hay un dato suelto (Booking.com https://www.booking.com/city/it/ancona.html?selected_currency=EUR: precio 'From' del titulo = 62 EUR) y BudgetYourTrip no tiene media para esta ciudad, asi que no se puede dar rango. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Ancona (rango Numbeo 8-25). transporte_billete: Conerobus Ancona, billete 60 min 1.60 EUR (100 min = 1.80; a bordo 3.60; maquina 2.00)."
+}

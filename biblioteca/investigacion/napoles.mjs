@@ -1,0 +1,10 @@
+import * as original from './napoles-amalfi.mjs';
+export const F = original.F;
+const ids = new Set(['spaccanapoli', 'napoli-sotterranea', 'quartieri-spagnoli', 'mann', 'sansevero', 'lungomare', 'pizza-sfogliatella', 'san-gregorio-armeno', 'movida-chiaia', 'pompeya', 'herculano', 'vesubio', 'capri', 'anacapri', 'procida-corricella', 'procida-playa', 'ischia-maronti', 'poseidon', 'castello-aragonese', 'plebiscito-castel-nuovo', 'vomero-santelmo', 'sanita', 'capodimonte', 'pignasecca', 'pio-monte-caravaggio', 'bellini-portalba', 'caserta', 'pozzuoli', 'santangelo-ischia', 'mortella']);
+const filtrar = datos => Object.fromEntries(Object.entries(datos).filter(([id]) => ids.has(id)));
+export const enlaces = filtrar(original.enlaces);
+export const consejos = filtrar(original.consejos);
+export const sitios = original.sitios;
+export const rutas = [];
+export const nuevas = [];
+export const fuentesAct = {'pizza-sfogliatella':[1,2], 'pignasecca':[2]};

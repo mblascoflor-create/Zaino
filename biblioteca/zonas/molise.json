@@ -1,0 +1,834 @@
+{
+ "id": "molise",
+ "nombre": "Molise",
+ "nombre_corto": "Molise",
+ "lema": "La región que casi nadie visita",
+ "descripcion": "Pueblos de montaña sin turistas, una ciudad romana entera en Sepino y una costa tranquila con Termoli como base. Es de lo más auténtico y barato de Italia, pero pequeña y pensada para ir con coche.",
+ "perfil": {
+  "mar": 1,
+  "montana": 1,
+  "ciudad": 0,
+  "campo": 3,
+  "fiesta": 1,
+  "calma": 3,
+  "cultura": 2,
+  "gastronomia": 2,
+  "naturaleza": 2,
+  "playa": 1,
+  "aventura": 0,
+  "postal": 2
+ },
+ "nivel_precio": "bajo",
+ "nivel_precio_nota": "Casi sin turismo de masas: comer y dormir cuesta menos que en la mayoría de regiones, salvo Termoli en pleno verano.",
+ "meses": {
+  "ideales": [
+   5,
+   6,
+   9
+  ],
+  "aceptables": [
+   4,
+   7,
+   10,
+   12,
+   1,
+   2,
+   3
+  ],
+  "evitar": [
+   8
+  ],
+  "nota": "Mayo, junio y septiembre para la playa de Termoli y el interior suave. En agosto Termoli se llena; el interior es duro en invierno, con nieve en Capracotta."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": true,
+ "coche": {
+  "necesidad": "imprescindible",
+  "nota": "Sin coche solo funcionan bien Termoli y Campobasso, unidas por tren. Agnone, Sepino, Pietrabbondante y los lagos del interior tienen transporte público escaso. No hay aeropuerto propio: lo normal es recoger el coche en Pescara.",
+  "aeropuerto_recogida": "PSR",
+  "operadores": [
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Hertz-Pescara.PSR.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Hertz-Pescara.PSR.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Europcar-Pescara.PSR.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Europcar-Pescara.PSR.EUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Avis-Pescara.PSR.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Avis-Pescara.PSR.AVIS.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "termoli",
+   "nombre": "Termoli",
+   "por_que": "Casco antiguo sobre el mar, playa de arena, estación de tren y FlixBus; la única base cómoda sin coche.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Termoli%2C+Italia"
+  },
+  {
+   "id": "campobasso",
+   "nombre": "Campobasso",
+   "por_que": "Capital de la región, con castillo, museo de los Misteri y tren a Termoli; punto de partida a Sepino.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Campobasso%2C+Italia"
+  },
+  {
+   "id": "agnone",
+   "nombre": "Agnone",
+   "por_que": "Pueblo de campanas y salchichas en el Alto Molise, a pocos km de Pietrabbondante y Capracotta; hace falta coche.",
+   "sin_coche": false,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Agnone%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "PSR",
+    "nombre": "Pescara – Abruzzo",
+    "ciudad": "Pescara",
+    "a_la_base": "Molise no tiene aeropuerto propio. Desde Pescara se llega a Termoli por la línea adriática o en FlixBus (Pescara aparece en la web de FlixBus de Termoli), o en coche de alquiler."
+   },
+   {
+    "iata": "BRI",
+    "nombre": "Bari – Karol Wojtyła",
+    "ciudad": "Bari",
+    "a_la_base": "Opción alternativa y más lejana: Bari tiene FlixBus a Termoli según su web. No verifiqué tiempos."
+   }
+  ],
+  "desde_espana": "No hay vuelos directos a Molise. Lo habitual es volar a Pescara (Ryanair ha volado Valencia–Pescara) o a Roma o Bari, y seguir en coche, bus o tren hasta Termoli.",
+  "rutas_directas": [
+   {
+    "origen": "Valencia",
+    "origen_iata": "VLC",
+    "destino_iata": "PSR",
+    "aerolinea": "Ryanair",
+    "nota": "llega a Pescara, no a Molise; ruta anunciada como nueva en invierno 2025, comprobad vigencia",
+    "fuente": "https://corporate.ryanair.com/novita/ryanair-annuncia-una-crescita-record-per-labruzzo/"
+   }
+  ],
+  "desde_italia": "A Termoli llegan FlixBus desde Roma, Bolonia, Milán, Florencia, Nápoles, Bari y Pescara (según su web) y trenes de la línea adriática. Desde Termoli, tren regional a Campobasso.",
+  "novedades": []
+ },
+ "moverse": {
+  "resumen": "Termoli y Campobasso se unen en tren y se hacen a pie. Para Agnone, Sepino, Pietrabbondante o los lagos, coche: los buses del interior pasan poco.",
+  "tren": {
+   "nota": "Trenitalia: línea adriática hasta Termoli y regional Termoli–Campobasso, de aproximadamente 1 h 50 min según datos previos. El interior tiene muy pocos servicios.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Termoli tiene una parada (Termoli Terminal Bus) con conexiones a Roma, Bari, Nápoles, Pescara, Bolonia y Milán. Para el interior hay bus regional con pocas salidas.",
+   "enlace": "https://www.flixbus.it/autobus/termoli",
+   "fuente": "https://www.flixbus.it/autobus/termoli"
+  },
+  "ferry": [
+   {
+    "operador": "NLG – Navigazione Libera del Golfo",
+    "ruta": "Termoli – Islas Tremiti",
+    "nota": "Barco rápido a San Domino y San Nicola; las salidas dependen de la temporada, comprobad al reservar.",
+    "enlace": "https://www.traghetti.com/navigazione-libera-del-golfo/termoli-tremiti",
+    "fuente": "https://www.traghetti.com/navigazione-libera-del-golfo/termoli-tremiti"
+   }
+  ],
+  "camper": {
+   "operador": "Roadsurfer",
+   "nota": "Alquiler de campers en Italia; enlace a la página general.",
+   "enlace": "https://roadsurfer.com/es/alquilar-camper/italia/",
+   "fuente": "https://roadsurfer.com/es/alquilar-camper/italia/"
+  }
+ },
+ "actividades": [
+  {
+   "id": "termoli-borgo",
+   "nombre": "Borgo antico de Termoli: catedral y castillo suevo",
+   "donde": "Termoli",
+   "base": "termoli",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Ciudadela sobre el Adriático con la catedral del siglo XII, el castillo suevo y Vico Il Castello, una de las calles más estrechas de Europa.",
+   "enlace": "https://fondoambiente.it/luoghi/borgo-antico-termoli",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Borgo+antico%2C+Termoli%2C+Italia",
+   "fuente": "https://fondoambiente.it/luoghi/borgo-antico-termoli",
+   "geo": [
+    42.001,
+    14.997
+   ]
+  },
+  {
+   "id": "termoli-playa",
+   "nombre": "Playa de Termoli",
+   "donde": "Termoli",
+   "base": "termoli",
+   "tipo": "playa",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Playa larga de arena junto a la ciudad, con establecimientos de pago y tramos libres; el plan de verano de la región.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Sant%27Antonio%2C+Termoli%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Sant%27Antonio%2C+Termoli%2C+Italia",
+   "fuente": "https://www.spiagge.it/stabilimenti-balneari/termoli/",
+   "geo": [
+    42.008,
+    14.986
+   ]
+  },
+  {
+   "id": "termoli-trabucco",
+   "nombre": "Atardecer junto al trabucco de Termoli",
+   "donde": "Termoli",
+   "base": "termoli",
+   "tipo": "postal",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Paseo por las murallas del borgo y el puerto, con los trabucchi, las plataformas de pesca de madera, y la luz del atardecer.",
+   "enlace": "https://travel.thewom.it/italia/molise/termoli-cosa-vedere.html",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trabucco%2C+Termoli%2C+Italia",
+   "fuente": "https://travel.thewom.it/italia/molise/termoli-cosa-vedere.html",
+   "geo": [
+    42.002,
+    14.999
+   ]
+  },
+  {
+   "id": "termoli-noche",
+   "nombre": "Aperitivo en el borgo y el lungomare de Termoli",
+   "donde": "Termoli",
+   "base": "termoli",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Aperitivo en las callejas del borgo y paseo por el paseo marítimo; en verano hay más ambiente, fuera de temporada es tranquilo.",
+   "enlace": "https://www.spiagge.it/magazine/scoprire-termoli-posti-imperdibili-estate-1/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungomare+Cristoforo+Colombo%2C+Termoli%2C+Italia",
+   "fuente": "https://www.spiagge.it/magazine/scoprire-termoli-posti-imperdibili-estate-1/",
+   "geo": [
+    42.003,
+    14.995
+   ]
+  },
+  {
+   "id": "tremiti",
+   "nombre": "Islas Tremiti desde Termoli",
+   "donde": "Islas Tremiti",
+   "base": "termoli",
+   "tipo": "agua",
+   "tipos_extra": [
+    "naturaleza",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Barco rápido desde Termoli a San Domino y San Nicola: calas de agua clara, cuevas y el monasterio fortificado.",
+   "consejo": "Las salidas cambian por temporada y el barco puede cancelarse por mal tiempo: comprobad horario de vuelta.",
+   "enlace": "https://www.traghetti.com/navigazione-libera-del-golfo/termoli-tremiti",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Isole+Tremiti%2C+Italia",
+   "fuente": "https://www.traghetti.com/navigazione-libera-del-golfo/termoli-tremiti",
+   "geo": [
+    42.123,
+    15.49
+   ]
+  },
+  {
+   "id": "larino-anfiteatro",
+   "nombre": "Larino: anfiteatro romano y casco medieval",
+   "donde": "Larino",
+   "base": "termoli",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Anfiteatro romano de casi 100 m de eje mayor, foro, termas con mosaicos y la basílica de San Pardo en el pueblo alto.",
+   "consejo": "Larino queda a unos 30 km de Termoli; id con coche y reservad una mañana.",
+   "enlace": "https://www.italia.it/en/molise/campobasso/larino",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Anfiteatro+romano%2C+Larino%2C+Italia",
+   "fuente": "https://www.italia.it/en/molise/campobasso/larino",
+   "geo": [
+    41.805,
+    14.919
+   ]
+  },
+  {
+   "id": "campobasso-monforte",
+   "nombre": "Castillo Monforte de Campobasso",
+   "donde": "Campobasso",
+   "base": "campobasso",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Fortaleza cuadrada con torres cilíndricas en lo alto de la ciudad, con vistas a las colinas y, en días claros, al Matese.",
+   "consejo": "Según italia.it, cierra los lunes.",
+   "enlace": "https://www.italia.it/it/molise/campobasso/luoghi-della-cultura/castello-monforte",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castello+Monforte%2C+Campobasso%2C+Italia",
+   "fuente": "https://www.italia.it/it/molise/campobasso/luoghi-della-cultura/castello-monforte",
+   "geo": [
+    41.562,
+    14.656
+   ]
+  },
+  {
+   "id": "campobasso-misteri",
+   "nombre": "Museo de los Misteri de Campobasso",
+   "donde": "Campobasso",
+   "base": "campobasso",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Trece máquinas procesionales del siglo XVIII con niños como figuras, que salen en Corpus Domini; la entrada es con ofrenda voluntaria.",
+   "consejo": "Para grupos, horario de lunes a sábado de 16:00 a 18:00; otros horarios, con reserva.",
+   "enlace": "https://fondoambiente.it/luoghi/museo-dei-misteri-campobasso-molise",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Museo+dei+Misteri%2C+Via+Trento+3%2C+Campobasso%2C+Italia",
+   "fuente": "https://fondoambiente.it/luoghi/museo-dei-misteri-campobasso-molise",
+   "geo": [
+    41.56,
+    14.66
+   ]
+  },
+  {
+   "id": "campobasso-noche",
+   "nombre": "Aperitivo en el centro de Campobasso",
+   "donde": "Campobasso",
+   "base": "campobasso",
+   "tipo": "fiesta",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Ciudad pequeña y universitaria: aperitivo y copas por el centro. Tranquilo entre semana.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Campobasso%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Campobasso%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Campobasso%2C+Italia",
+   "geo": [
+    41.56,
+    14.659
+   ]
+  },
+  {
+   "id": "saepinum",
+   "nombre": "Saepinum: la ciudad romana de Altilia",
+   "donde": "Sepino",
+   "base": "campobasso",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Ciudad romana casi entera con murallas de más de 1 km, puertas monumentales, basílica y teatro; la llaman la pequeña Pompeya de Molise.",
+   "consejo": "Según italia.it abre de martes a sábado, de 9:00 a 18:00.",
+   "enlace": "https://www.italia.it/en/molise/sepino/cultural-places/atilia-saepinum-archaeological-area",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Saepinum%2C+Altilia%2C+Sepino%2C+Italia",
+   "fuente": "https://www.italia.it/en/molise/sepino/cultural-places/atilia-saepinum-archaeological-area",
+   "geo": [
+    41.404,
+    14.617
+   ]
+  },
+  {
+   "id": "pietrabbondante",
+   "nombre": "Santuario samnita de Pietrabbondante",
+   "donde": "Pietrabbondante",
+   "base": "agnone",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Teatro y templo del santuario del pueblo samnita, en plena montaña del Alto Molise.",
+   "enlace": "https://www.italia.it/it/molise/pietrabbondante/luoghi-della-cultura/santuario-italico-di-pietrabbondante",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Santuario+Italico%2C+Pietrabbondante%2C+Italia",
+   "fuente": "https://www.italia.it/it/molise/pietrabbondante/luoghi-della-cultura/santuario-italico-di-pietrabbondante",
+   "geo": [
+    41.876,
+    14.221
+   ]
+  },
+  {
+   "id": "agnone-campanas",
+   "nombre": "Agnone: la fundición de campanas Marinelli",
+   "donde": "Agnone",
+   "base": "agnone",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Fundición de campanas con unos mil años de historia, autorizada a usar el escudo papal, y museo de la campana en el casco antiguo.",
+   "consejo": "Preguntad por las visitas antes de ir: no verifiqué horarios.",
+   "enlace": "https://campanemarinelli.com/en/marinelli-campane/storia-fonderia/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Pontificia+Fonderia+Marinelli%2C+Agnone%2C+Italia",
+   "fuente": "https://www.italia.it/it/molise/agnone",
+   "geo": [
+    41.811,
+    14.378
+   ]
+  },
+  {
+   "id": "isernia-paleolitico",
+   "nombre": "Isernia: museo del Paleolítico de La Pineta",
+   "donde": "Isernia",
+   "base": "campobasso",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Museo nacional junto al yacimiento de La Pineta, con restos de uno de los asentamientos humanos más antiguos de Europa.",
+   "consejo": "Isernia queda a unos 50 km de Campobasso; comprobad horarios y accesos antes.",
+   "enlace": "https://cultura.gov.it/luogo/museo-nazionale-del-paleolitico-di-isernia",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Museo+Nazionale+del+Paleolitico%2C+Isernia%2C+Italia",
+   "fuente": "https://cultura.gov.it/luogo/museo-nazionale-del-paleolitico-di-isernia",
+   "geo": [
+    41.6,
+    14.245
+   ]
+  },
+  {
+   "id": "castel-san-vincenzo",
+   "nombre": "Lago de Castel San Vincenzo",
+   "donde": "Castel San Vincenzo",
+   "base": "agnone",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "agua",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Embalse turquesa en las Mainarde, dentro del Parque Nacional de Abruzos, Lacio y Molise, rodeado de bosque y con una zona de playa de pago.",
+   "consejo": "No verifiqué si se puede nadar en todo el lago: preguntad o mirad las normas locales.",
+   "enlace": "https://fondoambiente.it/luoghi/lago-di-castel-san-vincenzo",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lago+di+Castel+San+Vincenzo%2C+Italia",
+   "fuente": "https://fondoambiente.it/luoghi/lago-di-castel-san-vincenzo",
+   "geo": [
+    41.659,
+    14.045
+   ]
+  },
+  {
+   "id": "capracotta-nieve",
+   "nombre": "Capracotta: nieve y esquí de fondo",
+   "donde": "Capracotta",
+   "base": "agnone",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "alto",
+   "ambiente": "mixto",
+   "meses": [
+    1,
+    2,
+    3
+   ],
+   "descripcion": "Pueblo famoso por sus nevadas, con pistas de esquí de fondo cuando hay nieve; es plan de invierno si el año acompaña.",
+   "consejo": "Depende de la nieve de cada año; comprobad si los remontes y pistas están abiertos.",
+   "enlace": "https://www.lapresse.it/cronaca/2024/01/09/molise-arrivata-la-prima-neve-a-capracotta-aprono-gli-impianti-da-sci/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Capracotta%2C+Italia",
+   "fuente": "https://www.lapresse.it/cronaca/2024/01/09/molise-arrivata-la-prima-neve-a-capracotta-aprono-gli-impianti-da-sci/",
+   "geo": [
+    41.835,
+    14.277
+   ]
+  },
+  {
+   "id": "agnone-quesos",
+   "nombre": "Quesos y embutidos de Agnone",
+   "donde": "Agnone",
+   "base": "agnone",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Caciocavallo de Agnone y salumi del Alto Molise en tiendas del pueblo; llevad pan y probad.",
+   "enlace": "https://www.italia.it/it/molise/agnone",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=caciocavallo%2C+Agnone%2C+Italia",
+   "fuente": "https://www.italia.it/it/molise/agnone",
+   "geo": [
+    41.811,
+    14.378
+   ]
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Cavatelli con ventricina",
+   "que_es": "pasta pequeña de huevo con salsa de ventricina, un embutido típico",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorias de Campobasso y del interior",
+   "maps": "https://www.google.com/maps/search/?api=1&query=trattoria%2C+Campobasso%2C+Italia",
+   "fuente": "https://www.italia.it/it/molise/cosa-fare/prodotti-piatti-tipici-molise"
+  },
+  {
+   "plato": "Brodetto de Termoli",
+   "que_es": "sopa de pescado de la costa, 'u vredette'",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "restaurantes de pescado del puerto de Termoli",
+   "maps": "https://www.google.com/maps/search/?api=1&query=porto%2C+Termoli%2C+Italia",
+   "fuente": "https://www.italia.it/it/molise/cosa-fare/prodotti-piatti-tipici-molise"
+  },
+  {
+   "plato": "Caciocavallo de Agnone",
+   "que_es": "queso de corteza dura y pasta amarilla",
+   "estilo": "mercado",
+   "coste": "medio",
+   "donde_probarlo": "tiendas de queso de Agnone",
+   "maps": "https://www.google.com/maps/search/?api=1&query=caciocavallo%2C+Agnone%2C+Italia",
+   "fuente": "https://www.italia.it/it/molise/cosa-fare/prodotti-piatti-tipici-molise"
+  },
+  {
+   "plato": "Cipollata de Isernia",
+   "que_es": "tortilla gruesa con mucha cebolla dulce",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorias de Isernia",
+   "maps": "https://www.google.com/maps/search/?api=1&query=trattoria%2C+Isernia%2C+Italia",
+   "fuente": "https://www.italia.it/it/molise/cosa-fare/prodotti-piatti-tipici-molise"
+  },
+  {
+   "plato": "Mozzarella de Bojano y scamorza",
+   "que_es": "quesos frescos y ahumados de leche de vaca",
+   "estilo": "mercado",
+   "coste": "bajo",
+   "donde_probarlo": "queserías de Bojano y mercados del interior",
+   "maps": "https://www.google.com/maps/search/?api=1&query=mozzarella%2C+Bojano%2C+Italia",
+   "fuente": "https://www.italia.it/it/molise/cosa-fare/prodotti-piatti-tipici-molise"
+  },
+  {
+   "plato": "Fusilli",
+   "que_es": "pasta enrollada que Molise reivindica como propia",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorias de Campobasso y Termoli",
+   "maps": "https://www.google.com/maps/search/?api=1&query=trattoria%2C+Termoli%2C+Italia",
+   "fuente": "https://www.italia.it/it/molise/cosa-fare/prodotti-piatti-tipici-molise"
+  },
+  {
+   "plato": "Ostie ripiene de Agnone",
+   "que_es": "obleas rellenas de miel, frutos secos y chocolate, típicas de Navidad",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías de Agnone",
+   "maps": "https://www.google.com/maps/search/?api=1&query=pasticceria%2C+Agnone%2C+Italia",
+   "fuente": "https://www.italia.it/it/molise/cosa-fare/prodotti-piatti-tipici-molise"
+  },
+  {
+   "plato": "Tintilia",
+   "que_es": "vino tinto DOC de la región, de uva autóctona",
+   "estilo": "bebida",
+   "coste": "medio",
+   "donde_probarlo": "bodegas y enotecas del Molise",
+   "maps": "https://www.google.com/maps/search/?api=1&query=enoteca%2C+Campobasso%2C+Italia",
+   "fuente": "https://www.italia.it/it/molise/cosa-fare/prodotti-piatti-tipici-molise"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Borgo antico de Termoli",
+   "base": "termoli",
+   "plan": "aperitivo",
+   "descripcion": "Callejas y murallas sobre el mar, con aperitivo al atardecer.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Borgo+antico%2C+Termoli%2C+Italia",
+   "fuente": "https://fondoambiente.it/luoghi/borgo-antico-termoli",
+   "geo": [
+    42.001,
+    14.997
+   ]
+  },
+  {
+   "zona": "Lungomare de Termoli",
+   "base": "termoli",
+   "plan": "copas",
+   "descripcion": "Paseo marítimo con locales abiertos hasta tarde en verano; tranquilo fuera de temporada.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungomare+Cristoforo+Colombo%2C+Termoli%2C+Italia",
+   "fuente": "https://www.spiagge.it/magazine/scoprire-termoli-posti-imperdibili-estate-1/",
+   "geo": [
+    42.003,
+    14.995
+   ]
+  },
+  {
+   "zona": "Centro de Campobasso",
+   "base": "campobasso",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo en el centro, de ambiente universitario y sin prisas.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Campobasso%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Campobasso%2C+Italia",
+   "geo": [
+    41.56,
+    14.659
+   ]
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "apartamento",
+   "base": "termoli",
+   "coste": "medio",
+   "para": "Grupos de 4 a 8 con cocina, cerca de la playa y el borgo.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Termoli--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Termoli"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "termoli",
+   "coste": "medio",
+   "para": "Grupos que prefieren comodidad cerca del mar.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Termoli"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "termoli",
+   "coste": "bajo",
+   "para": "Grupos pequeños con presupuesto ajustado.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Termoli"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "campobasso",
+   "coste": "bajo",
+   "para": "Para dormir en la capital y visitar Sepino y los museos.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Campobasso"
+    }
+   ]
+  },
+  {
+   "tipo": "agriturismo",
+   "base": "agnone",
+   "coste": "medio",
+   "para": "Grupos con coche que buscan campo y comida casera.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Agnone"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Ndocciata de Agnone",
+   "donde": "Agnone",
+   "cuando": "cada año, en diciembre, con desfile mayor a mediados de mes y versión menor el 24",
+   "meses": [
+    12
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Desfile de antorchas gigantes de abeto y retama que llevan los vecinos de cinco barrios; termina con una hoguera en la plaza.",
+   "enlace": "https://www.italia.it/it/molise/agnone",
+   "fuente": "https://www.touringclub.it/eventi/la-ndocciata-di-agnone"
+  },
+  {
+   "nombre": "Misteri di Campobasso",
+   "donde": "Campobasso",
+   "cuando": "cada año, en Corpus Domini (mayo o junio)",
+   "meses": [
+    5,
+    6
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Procesión de 13 'ingegni', máquinas con niños, creadas a mediados del siglo XVIII.",
+   "enlace": "https://fondoambiente.it/luoghi/museo-dei-misteri-campobasso-molise",
+   "fuente": "https://fondoambiente.it/luoghi/museo-dei-misteri-campobasso-molise"
+  },
+  {
+   "nombre": "MoliseCinema",
+   "donde": "Casacalenda",
+   "cuando": "cada año, en agosto, normalmente en la primera quincena",
+   "meses": [
+    8
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival de cine independiente con secciones competitivas, en un pueblo del Molise.",
+   "enlace": "https://www.visitmolise.eu/",
+   "fuente": "https://www.cinemaitaliano.info/news/19477/dal-6-all-11-agosto-torna-molisecinema.html"
+  },
+  {
+   "nombre": "Fiesta de San Basso",
+   "donde": "Termoli",
+   "cuando": "cada año, el 3 y 4 de agosto",
+   "meses": [
+    8
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Procesión marina con la estatua del patrón en una barca de pesca, escoltada por otras embarcaciones.",
+   "enlace": "https://www.visitmolise.eu/",
+   "fuente": "https://www.eventiesagre.it/Eventi_Religiosi/1849_San+Basso+Patrono+di+Termoli.html"
+  }
+ ],
+ "notas_honestas": [
+  "Molise es pequeña y sin aeropuerto: hay que combinar vuelo a Pescara con coche, bus o tren, y se nota en tiempo.",
+  "Sin coche solo se aprovechan bien Termoli y Campobasso; Agnone, Sepino y los lagos piden coche.",
+  "No hay vuelos directos desde España a la región; la única referencia verificada llega a Pescara.",
+  "No verifiqué horarios de los barcos a las Tremiti ni la temporada exacta; tampoco los buses del interior.",
+  "No pude confirmar si se puede nadar en el lago de Castel San Vincenzo ni los horarios de la fundición Marinelli.",
+  "Capracotta es sobre todo esquí de fondo y depende de la nieve; no hay estación grande.",
+  "Fechas de 2027 no publicadas en fuentes oficiales: proxima_fecha en null.",
+  "Aperitivo en Campobasso y playa de Termoli apoyados en mapa o fuentes generales; no hay web oficial verificada.",
+  "Coordenadas de geo aproximadas a 3 decimales."
+ ]
+}

@@ -1,0 +1,847 @@
+{
+ "id": "napoles",
+ "nombre": "Nápoles y su golfo",
+ "nombre_corto": "Nápoles",
+ "lema": "Pizza, ruinas y islas sin coche",
+ "descripcion": "Caos, pizza y vida de barrio en la ciudad, con Pompeya y el Vesubio en tren y las islas de Procida, Ischia y Capri en barco. Se hace entera sin coche y barata.",
+ "perfil": {
+  "mar": 3,
+  "montana": 1,
+  "ciudad": 3,
+  "campo": 0,
+  "fiesta": 2,
+  "calma": 1,
+  "cultura": 3,
+  "gastronomia": 3,
+  "naturaleza": 2,
+  "playa": 2,
+  "aventura": 2,
+  "postal": 3
+ },
+ "nivel_precio": "bajo",
+ "nivel_precio_nota": "Una de las ciudades más baratas de Italia para comer y moverse; los barcos a las islas son el gasto grande.",
+ "meses": {
+  "ideales": [
+   5,
+   6,
+   9
+  ],
+  "aceptables": [
+   4,
+   7,
+   10
+  ],
+  "evitar": [
+   8
+  ],
+  "nota": "Playa e islas de mayo a septiembre; agosto es el más caro y concurrido. En invierno la ciudad y Pompeya siguen bien, pero hay menos barcos."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "innecesario",
+  "nota": "Conducir en Nápoles es caótico, hay ZTL y robos de coche; Pompeya, Herculano y los barcos se alcanzan en tren y ferry. Solo ayuda para recorrer la costa.",
+  "aeropuerto_recogida": "NAP",
+  "operadores": [
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.it/noleggio-auto/Hertz-Napoli.NAP.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Hertz-Napoli.NAP.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.kayak.it/Europcar-Auto-a-noleggio-Napoli.NAP.AEUROPCAR.cla.ksp",
+    "fuente": "https://www.kayak.it/Europcar-Auto-a-noleggio-Napoli.NAP.AEUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.it/noleggio-auto/Avis-Napoli.NAP.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Avis-Napoli.NAP.AVIS.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "napoles",
+   "nombre": "Nápoles centro histórico",
+   "por_que": "Estación, puerto y metro a mano; desde aquí se hacen Pompeya, Herculano y los barcos.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Napoli%2C+Italia"
+  },
+  {
+   "id": "ischia",
+   "nombre": "Isla de Ischia",
+   "por_que": "Playas, termas y noche tranquila; base si queréis playa de verdad.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ischia+Porto%2C+Italia"
+  },
+  {
+   "id": "procida",
+   "nombre": "Isla de Procida",
+   "por_que": "Isla pequeña y barata para pasar una o dos noches.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Procida%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "NAP",
+    "nombre": "Nápoles – Capodichino",
+    "ciudad": "Nápoles",
+    "a_la_base": "Autobús Alibus a la estación de Nápoles Centrale y al puerto (según Trenitalia)."
+   }
+  ],
+  "desde_espana": "Vuelan Ryanair y Vueling desde Barcelona, entre otros; mirad también el combinado tren+avión de iryo e ITA Airways. Las rutas cambian por temporada.",
+  "rutas_directas": [
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "NAP",
+    "aerolinea": "Ryanair",
+    "nota": "según Opodo; comprobad temporada",
+    "fuente": "https://www.opodo.es/vuelos/aerolinea/FR/ryanair/NAP/napoles/BCN/barcelona/"
+   },
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "NAP",
+    "aerolinea": "Vueling",
+    "nota": "según Omio; comprobad temporada",
+    "fuente": "https://www.omio.com.ar/vuelos/barcelona/napoles"
+   }
+  ],
+  "desde_italia": "Desde Roma Termini hay tren de alta velocidad a Nápoles Centrale en algo más de una hora (Trenitalia o Italo); también hay FlixBus.",
+  "novedades": [
+   {
+    "nota": "El billete combinado tren+avión de iryo e ITA Airways también cubre Nápoles.",
+    "fuente": "https://www.elperiodic.com/viajar-entre-comunitat-valenciana-italia-nunca-facil-funciona-billete-tren-avion_1002354"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "Centro a pie y metro; Circumvesuviana a Pompeya y Herculano; ferris y aliscafos desde el puerto a las islas.",
+  "tren": {
+   "nota": "Trenitalia e Italo hasta Nápoles Centrale; Circumvesuviana (EAV) para Herculano y Pompeya.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Solo trayectos dentro de Italia, no desde España.",
+   "enlace": "https://www.flixbus.it/autobus/napoli",
+   "fuente": "https://www.flixbus.it/azienda/stampa/flixbus-offerta-estiva-2026"
+  },
+  "ferry": [
+   {
+    "operador": "Alilauro",
+    "ruta": "Nápoles (Beverello) – Ischia",
+    "nota": "Aliscafo; comprobad horarios por temporada.",
+    "enlace": "https://www.alilauro.it/it/tratte/napoli-beverello-ischia-ischia-napoli-beverello/",
+    "fuente": "https://www.alilauro.it/it/tratte/napoli-beverello-ischia-ischia-napoli-beverello/"
+   },
+   {
+    "operador": "SNAV",
+    "ruta": "Nápoles – Procida, Ischia y Capri",
+    "nota": "Aliscafos a las tres islas; horarios en su web.",
+    "enlace": "https://www.snav.it/en/orari-e-tratte",
+    "fuente": "https://www.snav.it/en/orari-e-tratte"
+   },
+   {
+    "operador": "Caremar",
+    "ruta": "Nápoles – Procida, Ischia y Capri",
+    "nota": "Ferris y aliscafos, normalmente más baratos que otros.",
+    "enlace": "https://shop.caremar.it/en/",
+    "fuente": "https://shop.caremar.it/en/"
+   }
+  ],
+  "camper": null
+ },
+ "actividades": [
+  {
+   "id": "spaccanapoli",
+   "nombre": "Spaccanapoli y el centro histórico",
+   "donde": "Nápoles",
+   "base": "napoles",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Calle recta que parte el centro antiguo: iglesias, talleres, graffitis y vida de barrio.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Spaccanapoli%2C+Napoli%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spaccanapoli%2C+Napoli%2C+Italia",
+   "fuente": "https://travel.thewom.it/italia/campania/napoli/spaccanapoli.html"
+  },
+  {
+   "id": "napoli-sotterranea",
+   "nombre": "Napoli Sotterranea",
+   "donde": "Nápoles",
+   "base": "napoles",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Visita guiada por cisternas y túneles griegos y romanos bajo el centro.",
+   "consejo": "Reservad en la web oficial.",
+   "enlace": "https://www.napolisotterranea.org/en/?p=597",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Napoli+Sotterranea%2C+Napoli%2C+Italia",
+   "fuente": "https://www.napolisotterranea.org/en/?p=597"
+  },
+  {
+   "id": "quartieri-spagnoli",
+   "nombre": "Quartieri Spagnoli",
+   "donde": "Nápoles",
+   "base": "napoles",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Calles estrechas con ropa tendida, murales y altares; lo más auténtico de la ciudad.",
+   "consejo": "Id de día y en grupo, sin bolsos a la vista.",
+   "enlace": "https://www.italia.it/es/campania/napoles/quartieri-spagnoli",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Quartieri+Spagnoli%2C+Napoli%2C+Italia",
+   "fuente": "https://www.italia.it/es/campania/napoles/quartieri-spagnoli"
+  },
+  {
+   "id": "mann",
+   "nombre": "Museo Arqueológico Nacional (MANN)",
+   "donde": "Nápoles",
+   "base": "napoles",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Las piezas de Pompeya y Herculano, incluidos mosaicos y esculturas.",
+   "consejo": "El primer domingo de mes la entrada suele ser gratis (Domenica al Museo); confirmadlo en la web del museo.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Museo+Archeologico+Nazionale+di+Napoli%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Museo+Archeologico+Nazionale+di+Napoli%2C+Italia",
+   "fuente": "https://siviaggia.it/notizie/domenica-al-museo-1-novembre/607806/"
+  },
+  {
+   "id": "sansevero",
+   "nombre": "Cappella Sansevero y Cristo velado",
+   "donde": "Nápoles",
+   "base": "napoles",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Capilla barroca con la escultura del Cristo velado, una de las más famosas de Italia.",
+   "consejo": "Comprad la entrada con hora.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Cappella+Sansevero%2C+Napoli%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cappella+Sansevero%2C+Napoli%2C+Italia",
+   "fuente": "https://www.museionline.info/napoli-musei-e-monumenti/museo-cappella-sansevero"
+  },
+  {
+   "id": "lungomare",
+   "nombre": "Lungomare, Castel dell'Ovo y atardecer",
+   "donde": "Nápoles",
+   "base": "napoles",
+   "tipo": "postal",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Paseo junto al mar hasta el castillo, con el Vesubio al fondo al atardecer.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Castel+dell%27Ovo%2C+Napoli%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castel+dell%27Ovo%2C+Napoli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Castel+dell%27Ovo%2C+Napoli%2C+Italia"
+  },
+  {
+   "id": "pizza-sfogliatella",
+   "nombre": "Ruta de pizza y sfogliatella",
+   "donde": "Nápoles",
+   "base": "napoles",
+   "tipo": "gastronomia",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Pizza a portafoglio de calle, pizza en pizzería de barrio y sfogliatella de pastelería.",
+   "consejo": "Pizzerías históricas tienen cola: pedid mesa o id a horas raras.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=pizzeria%2C+Centro+storico%2C+Napoli%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=pizzeria%2C+Centro+storico%2C+Napoli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=pizzeria%2C+Centro+storico%2C+Napoli%2C+Italia"
+  },
+  {
+   "id": "san-gregorio-armeno",
+   "nombre": "Via San Gregorio Armeno",
+   "donde": "Nápoles",
+   "base": "napoles",
+   "tipo": "compras",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Calle de talleres de belenes napolitanos, abierta todo el año.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Via+San+Gregorio+Armeno%2C+Napoli%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Via+San+Gregorio+Armeno%2C+Napoli%2C+Italia",
+   "fuente": "https://www.voloscontato.it/sagre-ed-eventi/a-napoli-il-natale-comincia-il-1-novembre-torna-la-fiera-dei-presepi-di-san-gregorio-armeno.php"
+  },
+  {
+   "id": "movida-chiaia",
+   "nombre": "Aperitivo en Piazza Bellini y Chiaia",
+   "donde": "Nápoles",
+   "base": "napoles",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "musica"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Plaza universitaria con bares y gente en la calle; y Chiaia, para ir arreglados.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+Bellini%2C+Napoli%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Bellini%2C+Napoli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+Bellini%2C+Napoli%2C+Italia"
+  },
+  {
+   "id": "pompeya",
+   "nombre": "Pompeya",
+   "donde": "Pompeya",
+   "base": "napoles",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Ciudad romana entera sepultada por el Vesubio; se llega en Circumvesuviana.",
+   "consejo": "Hay entradas nominativas y cupo diario: reservad en la web oficial.",
+   "enlace": "https://pompeiisites.org/en/?p=5183",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Parco+Archeologico+di+Pompei%2C+Italia",
+   "fuente": "https://pompeiisites.org/en/?p=5183"
+  },
+  {
+   "id": "herculano",
+   "nombre": "Herculano",
+   "donde": "Ercolano",
+   "base": "napoles",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Ciudad romana mejor conservada y más pequeña que Pompeya, a pocos minutos del tren.",
+   "consejo": "Combinadla con el Vesubio el mismo día.",
+   "enlace": "https://ercolano.cultura.gov.it/herculaneum/?lang=en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Parco+Archeologico+di+Ercolano%2C+Italia",
+   "fuente": "https://ercolano.cultura.gov.it/herculaneum/?lang=en"
+  },
+  {
+   "id": "vesubio",
+   "nombre": "Vesubio: sendero al Gran Cono",
+   "donde": "Ercolano",
+   "base": "napoles",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza",
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Subida a pie hasta el borde del cráter con vistas a todo el golfo.",
+   "consejo": "El billete se vende solo online y el acceso puede cerrarse por tiempo; mirad la web del parque.",
+   "enlace": "https://www.parconazionaledelvesuvio.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Vesuvio%2C+Gran+Cono%2C+Italia",
+   "fuente": "https://www.parconazionaledelvesuvio.it/"
+  },
+  {
+   "id": "capri",
+   "nombre": "Capri en barco",
+   "donde": "Capri",
+   "base": "napoles",
+   "tipo": "postal",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "alto",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "descripcion": "Día de isla con la plaza, miradores y rodeo en barco; el ferry sale del puerto de Nápoles.",
+   "consejo": "Comprad el barco pronto en verano; es el plan más caro.",
+   "enlace": "https://www.snav.it/en/orari-e-tratte",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Capri%2C+Italia",
+   "fuente": "https://www.capri.com/en/sights"
+  },
+  {
+   "id": "anacapri",
+   "nombre": "Anacapri y Monte Solaro",
+   "donde": "Anacapri",
+   "base": "napoles",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Telesilla hasta lo alto de Capri con la mejor vista de la isla y mucha menos gente.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Monte+Solaro%2C+Anacapri%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Monte+Solaro%2C+Anacapri%2C+Italia",
+   "fuente": "https://www.reidsitaly.com/destinations/campania/capri/sights/monte_solaro.html"
+  },
+  {
+   "id": "procida-corricella",
+   "nombre": "Corricella y casas de colores en Procida",
+   "donde": "Procida",
+   "base": "procida",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Puerto pesquero con casas de colores y callejuelas, a media hora de barco de Nápoles.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Marina+Corricella%2C+Procida%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Marina+Corricella%2C+Procida%2C+Italia",
+   "fuente": "https://it.netferry.com/guide/italia/golfo-di-napoli/procida"
+  },
+  {
+   "id": "procida-playa",
+   "nombre": "Playa de Chiaia en Procida",
+   "donde": "Procida",
+   "base": "procida",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Playa de arena oscura al pie de acantilados.",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Chiaia%2C+Procida%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Chiaia%2C+Procida%2C+Italia",
+   "fuente": "https://fondoambiente.it/luoghi/spiaggia-chiaia"
+  },
+  {
+   "id": "ischia-maronti",
+   "nombre": "Playa de los Maronti",
+   "donde": "Ischia",
+   "base": "ischia",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua",
+    "aventura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "descripcion": "La playa libre más larga de Ischia, con fumarolas y arena caliente.",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Spiaggia+dei+Maronti%2C+Ischia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+dei+Maronti%2C+Ischia%2C+Italia",
+   "fuente": "https://en.wikivoyage.org/wiki/Ischia"
+  },
+  {
+   "id": "poseidon",
+   "nombre": "Termas de los Jardines Poseidón",
+   "donde": "Forio, Ischia",
+   "base": "ischia",
+   "tipo": "bienestar",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "alto",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Parque de piscinas termales con vistas al mar en la isla.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Giardini+Poseidon+Terme%2C+Forio%2C+Ischia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Giardini+Poseidon+Terme%2C+Forio%2C+Ischia%2C+Italia",
+   "fuente": "https://www.visititaly.eu/tickets/ischia-poseidon-thermal-gardens"
+  },
+  {
+   "id": "castello-aragonese",
+   "nombre": "Castello Aragonese",
+   "donde": "Ischia Ponte",
+   "base": "ischia",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Fortaleza sobre un islote unido por un puente, con vistas y museos.",
+   "consejo": "Mirad la web oficial para horarios.",
+   "enlace": "https://castelloaragoneseischia.com",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castello+Aragonese%2C+Ischia%2C+Italia",
+   "fuente": "https://castelloaragoneseischia.com"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Pizza napolitana",
+   "que_es": "masa blanda y borde alto, margarita o marinara",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "pizzerías del centro histórico; también pizza a portafoglio",
+   "maps": "https://www.google.com/maps/search/?api=1&query=pizzeria%2C+Centro+storico%2C+Napoli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=pizzeria%2C+Centro+storico%2C+Napoli%2C+Italia"
+  },
+  {
+   "plato": "Sfogliatella",
+   "que_es": "hojaldre relleno de ricotta y sémola",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías del centro y de Via Toledo",
+   "maps": "https://www.google.com/maps/search/?api=1&query=sfogliatella%2C+Napoli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=sfogliatella%2C+Napoli%2C+Italia"
+  },
+  {
+   "plato": "Babà",
+   "que_es": "bizcocho empapado en ron",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías napolitanas",
+   "maps": "https://www.google.com/maps/search/?api=1&query=bab%C3%A0%2C+Napoli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=bab%C3%A0%2C+Napoli%2C+Italia"
+  },
+  {
+   "plato": "Pasta e patate con provola",
+   "que_es": "pasta cremosa con patata y queso ahumado",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias de barrio",
+   "maps": "https://www.google.com/maps/search/?api=1&query=trattoria%2C+Quartieri+Spagnoli%2C+Napoli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=trattoria%2C+Quartieri+Spagnoli%2C+Napoli%2C+Italia"
+  },
+  {
+   "plato": "Frittatina y cuoppo",
+   "que_es": "fritos de pasta y mar en cucurucho",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "puestos de fritos de calle en el centro",
+   "maps": "https://www.google.com/maps/search/?api=1&query=friggitoria%2C+Napoli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=friggitoria%2C+Napoli%2C+Italia"
+  },
+  {
+   "plato": "Spaghetti alle vongole",
+   "que_es": "pasta con almejas",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "restaurantes junto al puerto y en las islas",
+   "maps": "https://www.google.com/maps/search/?api=1&query=spaghetti+alle+vongole%2C+Napoli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=spaghetti+alle+vongole%2C+Napoli%2C+Italia"
+  },
+  {
+   "plato": "Mozzarella di bufala",
+   "que_es": "queso fresco de búfala",
+   "estilo": "mercado",
+   "coste": "medio",
+   "donde_probarlo": "queserías y mercados del golfo",
+   "maps": "https://www.google.com/maps/search/?api=1&query=mozzarella+di+bufala%2C+Napoli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=mozzarella+di+bufala%2C+Napoli%2C+Italia"
+  },
+  {
+   "plato": "Caffè napoletano",
+   "que_es": "café fuerte servido en barra",
+   "estilo": "bebida",
+   "coste": "bajo",
+   "donde_probarlo": "cafés de barrio",
+   "maps": "https://www.google.com/maps/search/?api=1&query=caff%C3%A8%2C+Napoli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=caff%C3%A8%2C+Napoli%2C+Italia"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Piazza Bellini",
+   "base": "napoles",
+   "plan": "copas",
+   "descripcion": "Plaza con bares y ambiente estudiantil, hasta tarde.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Bellini%2C+Napoli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+Bellini%2C+Napoli%2C+Italia"
+  },
+  {
+   "zona": "Chiaia",
+   "base": "napoles",
+   "plan": "aperitivo",
+   "descripcion": "Calles de aperitivo y copas, más arregladas.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Chiaia%2C+Napoli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Chiaia%2C+Napoli%2C+Italia"
+  },
+  {
+   "zona": "Lungomare",
+   "base": "napoles",
+   "plan": "aperitivo",
+   "descripcion": "Paseo junto al mar al atardecer, con bebida en la mano.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungomare+Caracciolo%2C+Napoli%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Lungomare+Caracciolo%2C+Napoli%2C+Italia"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "napoles",
+   "coste": "bajo",
+   "para": "Grupos con poco presupuesto en el centro.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Napoli"
+    },
+    {
+     "sitio": "Hostelworld",
+     "url": "https://www.hostelworld.com/hostels/europe/italy/naples/"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "napoles",
+   "coste": "medio",
+   "para": "Grupos de 4 a 8 que quieren cocina propia.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Napoli--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Napoli"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "napoles",
+   "coste": "medio",
+   "para": "Quien prefiere privacidad.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Napoli"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "ischia",
+   "coste": "medio",
+   "para": "Grupos pequeños que quieren playa y termas.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Ischia"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "procida",
+   "coste": "medio",
+   "para": "Dos o tres noches de isla tranquila.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Procida--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Procida"
+    }
+   ]
+  },
+  {
+   "tipo": "camping",
+   "base": "ischia",
+   "coste": "bajo",
+   "para": "Quien viaja en verano y quiere ahorrar.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Ischia"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Fiesta de San Gennaro",
+   "donde": "Nápoles",
+   "cuando": "cada año, 19 de septiembre (también 16 de diciembre y el sábado anterior al primer domingo de mayo)",
+   "meses": [
+    9,
+    12,
+    5
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Celebración del patrón con misa y la licuefacción de la sangre en la catedral.",
+   "enlace": "https://www.fanpage.it/napoli/san-gennaro-il-16-dicembre-e-il-giorno-del-miracolo-laico-quando-il-vesuvio-si-fermo/",
+   "fuente": "https://www.fanpage.it/napoli/san-gennaro-il-16-dicembre-e-il-giorno-del-miracolo-laico-quando-il-vesuvio-si-fermo/"
+  },
+  {
+   "nombre": "Ischia Film Festival",
+   "donde": "Ischia, Castello Aragonese",
+   "cuando": "cada año, finales de junio y principios de julio",
+   "meses": [
+    6,
+    7
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival de cine al aire libre en el castillo.",
+   "enlace": "https://www.italia.it/en/campania/ischia/things-to-do/event-ischia-film-festival",
+   "fuente": "https://www.italia.it/en/campania/ischia/things-to-do/event-ischia-film-festival"
+  },
+  {
+   "nombre": "Festa de Sant'Anna",
+   "donde": "Ischia Ponte",
+   "cuando": "cada año, finales de julio",
+   "meses": [
+    7
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Fiesta en el mar con barcas decoradas junto al Castello Aragonese.",
+   "enlace": "https://www.eventiesagre.it/Eventi_Storici/1278_Festa+a+Mare+agli+Scogli+di+Sant+Anna.html",
+   "fuente": "https://www.eventiesagre.it/Eventi_Storici/1278_Festa+a+Mare+agli+Scogli+di+Sant+Anna.html"
+  },
+  {
+   "nombre": "Belenes de San Gregorio Armeno",
+   "donde": "Nápoles",
+   "cuando": "cada año, desde noviembre hasta Navidad",
+   "meses": [
+    11,
+    12
+   ],
+   "proxima_fecha": null,
+   "descripcion": "La calle de los belenes se llena de puestos y gente en Navidad.",
+   "enlace": "https://www.voloscontato.it/sagre-ed-eventi/a-napoli-il-natale-comincia-il-1-novembre-torna-la-fiera-dei-presepi-di-san-gregorio-armeno.php",
+   "fuente": "https://www.voloscontato.it/sagre-ed-eventi/a-napoli-il-natale-comincia-il-1-novembre-torna-la-fiera-dei-presepi-di-san-gregorio-armeno.php"
+  }
+ ],
+ "notas_honestas": [
+  "No he verificado precios ni horarios; los barcos cambian por temporada, mirad cada web.",
+  "Vesubio: el acceso sin coche no lo he confirmado; mirad la web del parque.",
+  "Rutas aéreas: solo las de buscador, no de aerolínea; Medmar y Gescab no verificados.",
+  "Varios enlaces son mapa o búsqueda; sitios como MANN o Sansevero sin web oficial verificada.",
+  "Eventos: fuentes de prensa, no de la organización; sin fecha 2027 publicada."
+ ]
+}

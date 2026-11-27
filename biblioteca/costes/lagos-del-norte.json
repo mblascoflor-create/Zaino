@@ -1,0 +1,26 @@
+{
+  "zona": "lagos-del-norte",
+  "base": "como",
+  "ciudad_referencia": "Como",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": null,
+    "doble_noche": {
+      "min": 66,
+      "max": 234,
+      "fuente": "https://www.booking.com/city/it/como.html?selected_currency=EUR | https://www.budgetyourtrip.com/italy/como",
+      "calidad": "orientativo"
+    },
+    "comida_barata": {
+      "valor": 20.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Como",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 1.5,
+      "fuente": "https://www.asfautolinee.it/wp-content/uploads/2025/08/Tariffario_CO.pdf",
+      "calidad": "verificado"
+    }
+  },
+  "notas": "hostel_noche null: Hostelworld muestra 0 hostels en Como. doble_noche: min=66 es el precio 'From' mas bajo del titulo de la pagina de Booking.com para la ciudad (alojamiento mas barato listado, 2 adultos, 1 noche, sin fecha fija); max=234 es el precio medio de hotel para una pareja segun BudgetYourTrip (gasto declarado por viajeros). La horquilla mezcla ambas fuentes: es solo una guia aproximada, no un rango de apartamentos/dobles economicos garantizado. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Como (rango Numbeo 18-30). transporte_billete: ASF Autolinee Como, tarifas red urbana vigentes desde 1-sep-2025. El PDF esta desordenado: lo mas probable es 1.50 EUR (red urbana 75 min) y 2.00 EUR (area urbana 90 min); el titulo del PDF indexado muestra \"1,50\"."
+}

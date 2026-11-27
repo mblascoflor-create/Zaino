@@ -1,0 +1,833 @@
+{
+ "id": "costa-amalfitana",
+ "nombre": "Costa Amalfitana",
+ "nombre_corto": "Amalfitana",
+ "lema": "Pueblos colgados sobre el mar",
+ "descripcion": "Acantilados, calas con nombre y el Sentiero degli Dei a una hora de Nápoles. Es la zona más cara de Italia para un estudiante, pero se hace sin coche si organizáis bus y ferry.",
+ "perfil": {
+  "mar": 3,
+  "montana": 2,
+  "ciudad": 1,
+  "campo": 1,
+  "fiesta": 1,
+  "calma": 2,
+  "cultura": 2,
+  "gastronomia": 2,
+  "naturaleza": 3,
+  "playa": 2,
+  "aventura": 2,
+  "postal": 3
+ },
+ "nivel_precio": "alto",
+ "nivel_precio_nota": "Positano y Amalfi son de los destinos más caros de Italia; Salerno y Sorrento ahorran en alojamiento y comida.",
+ "meses": {
+  "ideales": [
+   5,
+   6,
+   9
+  ],
+  "aceptables": [
+   4,
+   7,
+   10
+  ],
+  "evitar": [
+   8,
+   1,
+   2
+  ],
+  "nota": "Mayo-junio y septiembre dan buen mar sin las masas; agosto está lleno y caro, y en invierno cierran muchos locales y se reducen los barcos."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "innecesario",
+  "nota": "Sin coche se llega a casi todo: bus SITA, ferry Travelmar y Circumvesuviana hasta Sorrento. La carretera es estrecha, el aparcamiento es escaso y caro y hay tráfico en verano. Solo compensa para un grupo pequeño con conductor con experiencia.",
+  "aeropuerto_recogida": "NAP",
+  "operadores": [
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.it/noleggio-auto/Hertz-Napoli.NAP.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Hertz-Napoli.NAP.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.kayak.it/Europcar-Auto-a-noleggio-Napoli.NAP.AEUROPCAR.cla.ksp",
+    "fuente": "https://www.kayak.it/Europcar-Auto-a-noleggio-Napoli.NAP.AEUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.it/noleggio-auto/Avis-Napoli.NAP.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Avis-Napoli.NAP.AVIS.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "amalfi",
+   "nombre": "Amalfi",
+   "por_que": "Centro de la costa: ferries Travelmar, bus SITA a Positano, Ravello y Agerola (Sentiero degli Dei), pero alojamiento caro.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Amalfi%2C+Italia"
+  },
+  {
+   "id": "sorrento",
+   "nombre": "Sorrento",
+   "por_que": "Llegas en tren Circumvesuviana desde Nápoles, hay hostales baratos y ferry/bus a la costa; algo más alejado de Amalfi.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sorrento%2C+Italia"
+  },
+  {
+   "id": "salerno",
+   "nombre": "Salerno",
+   "por_que": "La base más barata y con vida universitaria, con ferry a Amalfi y tren a Nápoles; lejos de Positano y del Sentiero.",
+   "sin_coche": true,
+   "ambiente": "fiesta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Salerno%2C+Italia"
+  },
+  {
+   "id": "praiano",
+   "nombre": "Praiano",
+   "por_que": "Pueblo tranquilo entre Positano y Amalfi, cerca de Marina di Praia y Furore, con parada de bus SITA.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Praiano%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "NAP",
+    "nombre": "Nápoles – Capodichino",
+    "ciudad": "Nápoles",
+    "a_la_base": "Bus Alibus a la estación y puerto de Nápoles; de ahí Circumvesuviana a Sorrento o ferry/tren a Salerno. Calculad 2-3 h hasta Amalfi con bus o ferry."
+   },
+   {
+    "iata": "QSR",
+    "nombre": "Salerno Costa d'Amalfi",
+    "ciudad": "Pontecagnano (Salerno)",
+    "a_la_base": "Bus Salerno Airlink (unos 40 min) a la estación de Salerno y de ahí ferry o SITA a Amalfi; pocos vuelos."
+   }
+  ],
+  "desde_espana": "Lo normal es volar a Nápoles (NAP) con low cost o con escala vía Roma/Milán. El aeropuerto de Salerno tiene Ryanair, Volotea y easyJet con pocas rutas (Roma, Milán, Turín...). Comprobad las rutas directas desde vuestro aeropuerto, no hay una verificada.",
+  "rutas_directas": [],
+  "desde_italia": "Tren Trenitalia/Italo hasta Nápoles o Salerno, luego Circumvesuviana a Sorrento o ferry/bus a la costa. FlixBus tiene paradas en Nápoles.",
+  "novedades": [
+   {
+    "nota": "El billete combinado tren+avión de iryo y ITA Airways (2026) también cubre Nápoles: iryo hasta Madrid/Barcelona y vuelo ITA de conexión.",
+    "fuente": "https://www.elperiodic.com/viajar-entre-comunitat-valenciana-italia-nunca-facil-funciona-billete-tren-avion_1002354"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "Sin coche: ferry Travelmar entre Salerno, Amalfi y Positano, y bus SITA por la carretera costera; Circumvesuviana hasta Sorrento. Con coche, aparcar es el problema.",
+  "tren": {
+   "nota": "Trenitalia/Italo hasta Nápoles o Salerno; Circumvesuviana (línea EAV) de Nápoles a Sorrento. La costa en sí no tiene tren.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "SITA Sud (costa) y FlixBus (larga distancia a Nápoles)",
+   "nota": "SITA une Salerno, Amalfi, Positano y Sorrento con tarifa Unico Costiera; algunos destinos exigen cambiar en Amalfi. FlixBus solo cubre llegadas dentro de Italia.",
+   "enlace": "https://www.sitabus.it/en/salerno-to-amalfi-coast-bus-timetable/",
+   "fuente": "https://www.sitabus.it/en/salerno-to-amalfi-coast-bus-timetable/"
+  },
+  "ferry": [
+   {
+    "operador": "Travelmar",
+    "ruta": "Salerno – Amalfi – Positano y pueblos intermedios (Maiori, Minori, Cetara)",
+    "nota": "Su web anuncia servicio todo el año; confirmad horarios y frecuencias fuera de verano.",
+    "enlace": "https://www.travelmar.it/",
+    "fuente": "https://www.travelmar.it/"
+   }
+  ],
+  "camper": null
+ },
+ "actividades": [
+  {
+   "id": "sentiero-degli-dei",
+   "nombre": "Sentiero degli Dei (Agerola – Nocelle – Positano)",
+   "donde": "Agerola / Nocelle / Positano",
+   "base": "amalfi",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Ruta de unas 3-4 h colgada sobre el mar, de Bomerano (Agerola) a Nocelle y bajada por escaleras a Positano. Es la excursión estrella.",
+   "consejo": "Sin coche: bus SITA hasta Bomerano y vuelta en bus o ferry desde Positano. Llevad agua y calzado con suela; la bajada final son cientos de escalones.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Sentiero+degli+Dei%2C+Agerola%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sentiero+degli+Dei%2C+Agerola%2C+Italia",
+   "fuente": "https://siviaggia.it/cammini/sentiero-degli-dei/538455/"
+  },
+  {
+   "id": "duomo-amalfi",
+   "nombre": "Duomo de Amalfi y Chiostro del Paradiso",
+   "donde": "Amalfi",
+   "base": "amalfi",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Catedral del siglo IX con escalinata, fachada de mosaicos y claustro árabe-normando con sarcófagos romanos.",
+   "consejo": "Abre a diario a partir de las 9:00 (según italia.it); comprobad el horario de cierre antes de ir.",
+   "enlace": "https://www.italia.it/it/campania/salerno/amalfi/duomo-di-sant-andrea",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Duomo+di+Sant%27Andrea%2C+Amalfi%2C+Italia",
+   "fuente": "https://www.italia.it/it/campania/salerno/amalfi/duomo-di-sant-andrea"
+  },
+  {
+   "id": "fiordo-di-furore",
+   "nombre": "Fiordo di Furore",
+   "donde": "Furore",
+   "base": "praiano",
+   "tipo": "playa",
+   "tipos_extra": [
+    "naturaleza",
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Calita de piedras encajada bajo un puente, entre acantilados y las casas de un antiguo pueblo de pescadores. Agua muy limpia.",
+   "consejo": "Se baja por escaleras desde el puente de la carretera (sin aparcamiento): id en bus SITA y bajad a pie. Solo coge sol en las horas centrales/tarde.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Fiordo+di+Furore%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Fiordo+di+Furore%2C+Italia",
+   "fuente": "https://www.positano.com/it/e/le-spiagge-di-praiano"
+  },
+  {
+   "id": "marina-di-praia",
+   "nombre": "Marina di Praia",
+   "donde": "Praiano",
+   "base": "praiano",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Playa de guijarros bajo una torre sarracena, con paseo por el acantilado y sitio para tomar algo; mucho más tranquila que Positano.",
+   "consejo": "Recibe sol sobre todo a mediodía; para el atardecer subid a la zona de Praiano.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Marina+di+Praia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Marina+di+Praia%2C+Italia",
+   "fuente": "https://www.positano.com/it/e/le-spiagge-di-praiano"
+  },
+  {
+   "id": "positano-spiaggia-grande",
+   "nombre": "Spiaggia Grande de Positano",
+   "donde": "Positano",
+   "base": "praiano",
+   "tipo": "playa",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "La playa de la postal: guijarros oscuros bajo las casas de colores. Se entra gratis a zonas libres y se alquilan tumbonas en las de pago.",
+   "consejo": "Si vais en grupo ajustado, llevad toalla y usad la zona libre; el coste se dispara con tumbonas y comida en primera línea.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Spiaggia+Grande%2C+Positano%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+Grande%2C+Positano%2C+Italia",
+   "fuente": "https://www.positano.com/it/e/le-spiagge-di-praiano"
+  },
+  {
+   "id": "ferry-amalfi-positano",
+   "nombre": "Barco entre pueblos con Travelmar",
+   "donde": "Amalfi / Positano / Salerno",
+   "base": "amalfi",
+   "tipo": "agua",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Ver la costa desde el mar: ferry entre Salerno, Amalfi, Positano y otros pueblos con parada en cada embarcadero, sin pelearse con el tráfico.",
+   "consejo": "La web de Travelmar dice servicio todo el año, pero fuera de verano hay menos frecuencias y la mar puede cancelar salidas: mirad el horario del día.",
+   "enlace": "https://www.travelmar.it/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Travelmar+Amalfi%2C+Molo+Darsena%2C+Amalfi%2C+Italia",
+   "fuente": "https://www.travelmar.it/"
+  },
+  {
+   "id": "villa-rufolo",
+   "nombre": "Villa Rufolo y sus jardines",
+   "donde": "Ravello",
+   "base": "amalfi",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal",
+    "naturaleza"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Villa del siglo XIII con torre morisca, claustro y jardines en terrazas sobre el mar que inspiraron a Wagner para el jardín de Klingsor en Parsifal.",
+   "consejo": "Según italia.it abre todos los días de 9:00 a 20:00. Se llega en bus SITA desde Amalfi.",
+   "enlace": "https://www.italia.it/it/campania/salerno/ravello/giardini-di-villa-rufolo",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Villa+Rufolo%2C+Ravello%2C+Italia",
+   "fuente": "https://www.italia.it/it/campania/salerno/ravello/giardini-di-villa-rufolo"
+  },
+  {
+   "id": "ravello-belvedere",
+   "nombre": "Terrazas y jardines panorámicos de Ravello",
+   "donde": "Ravello",
+   "base": "amalfi",
+   "tipo": "postal",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Paseo por el pueblo en lo alto, con plazas, miradores y villas-jardín sobre el mar; mucho más calmado que la costa.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Ravello+centro%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ravello+centro%2C+Italia",
+   "fuente": "https://siviaggia.it/idee-di-viaggio/giardini-belvedere-ravello/517198/"
+  },
+  {
+   "id": "ravello-festival",
+   "nombre": "Conciertos del Ravello Festival",
+   "donde": "Ravello",
+   "base": "amalfi",
+   "tipo": "musica",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "meses": [
+    7,
+    8,
+    9
+   ],
+   "descripcion": "En verano se monta un escenario sobre el mar en Villa Rufolo y Ravello se llena de música clásica y conciertos.",
+   "consejo": "Programa y fechas cambian cada año; mirad la web del festival antes de reservar alojamiento.",
+   "enlace": "https://villarufolo.com/the-festival-and-the-villa/?lang=en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Villa+Rufolo%2C+Ravello%2C+Italia",
+   "fuente": "https://villarufolo.com/the-festival-and-the-villa/?lang=en"
+  },
+  {
+   "id": "atrani",
+   "nombre": "Atrani al atardecer",
+   "donde": "Atrani",
+   "base": "amalfi",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "El pueblo más pequeño de Italia por habitantes, a 10 minutos andando de Amalfi: callejones, plaza sobre el mar y playa pequeña.",
+   "consejo": "Se llega a pie desde Amalfi por un paseo corto o con bus SITA (Atrani figura en la línea Salerno–Amalfi).",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Atrani%2C+Costiera+Amalfitana%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Atrani%2C+Costiera+Amalfitana%2C+Italia",
+   "fuente": "https://www.sitabus.it/en/salerno-to-amalfi-coast-bus-timetable/"
+  },
+  {
+   "id": "bus-sita-panoramico",
+   "nombre": "Trayecto panorámico en bus SITA",
+   "donde": "Sorrento / Positano / Amalfi",
+   "base": "amalfi",
+   "tipo": "postal",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "La carretera costera en bus es una atracción en sí misma: curvas sobre el mar, pueblos colgados y paradas para bajar a donde queráis.",
+   "consejo": "Sentaos en el lado del mar según el sentido; en verano van llenos y las colas son largas. Tarifa Unico Costiera según la web de SITA.",
+   "enlace": "https://www.sitabus.it/en/salerno-to-amalfi-coast-bus-timetable/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=SITA+Sud%2C+Amalfi%2C+Italia",
+   "fuente": "https://www.sitabus.it/en/salerno-to-amalfi-coast-bus-timetable/"
+  },
+  {
+   "id": "barco-excursion",
+   "nombre": "Excursión en barco por la costa",
+   "donde": "Amalfi / Positano",
+   "base": "amalfi",
+   "tipo": "agua",
+   "tipos_extra": [
+    "playa",
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "alto",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Barco compartido para ver calas y cuevas inaccesibles por tierra y bañarse en mar abierto; se divide entre el grupo.",
+   "consejo": "Comparad varias ofertas y mirad qué incluye (paradas para baño, duración) antes de pagar.",
+   "enlace": "https://www.getyourguide.es/s/?q=barco+costa+amalfitana",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Marina+Grande%2C+Amalfi%2C+Italia",
+   "fuente": "https://www.sitabus.it/en/salerno-to-amalfi-coast-bus-timetable/"
+  },
+  {
+   "id": "sorrento-vallone-mulini",
+   "nombre": "Centro de Sorrento y Vallone dei Mulini",
+   "donde": "Sorrento",
+   "base": "sorrento",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Paseo por el casco antiguo, callejones y el Vallone dei Mulini, un barranco con un viejo molino entre vegetación a pocos pasos de la plaza principal.",
+   "enlace": "https://www.italia.it/en/campania/naples/sorrento",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Vallone+dei+Mulini%2C+Sorrento%2C+Italia",
+   "fuente": "https://travel.thewom.it/italia/campania/vallone-dei-mulini-a-sorrento.html"
+  },
+  {
+   "id": "sorrento-limoncello",
+   "nombre": "Limones y limoncello de Sorrento",
+   "donde": "Sorrento",
+   "base": "sorrento",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Cata de limoncello y productos de limón en tiendas y pequeños productores; se aprende la diferencia entre el limón de Sorrento y el sfusato de Amalfi.",
+   "consejo": "Pedid probar antes de comprar; el limoncello de supermercado sale más barato que el de souvenir.",
+   "enlace": "https://www.getyourguide.es/s/?q=limoncello+Sorrento",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=limoncello+degustazione%2C+Sorrento%2C+Italia",
+   "fuente": "https://gazzettadelgusto.it/cibo/sfusato-amalfitano-pregiato-frutto-della-divina-costiera/"
+  },
+  {
+   "id": "sorrento-atardecer",
+   "nombre": "Atardecer en Marina Grande y miradores de Sorrento",
+   "donde": "Sorrento",
+   "base": "sorrento",
+   "tipo": "postal",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Barrio de pescadores con barcas y restaurantes sencillos, y miradores sobre el golfo de Nápoles para ver caer el sol con el Vesubio al fondo.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Marina+Grande%2C+Sorrento%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Marina+Grande%2C+Sorrento%2C+Italia",
+   "fuente": "https://www.italia.it/en/campania/naples/sorrento"
+  },
+  {
+   "id": "salerno-minerva",
+   "nombre": "Giardino della Minerva",
+   "donde": "Salerno",
+   "base": "salerno",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Huerto botánico medieval en terrazas en pleno casco antiguo, ligado a la Escuela Médica Salernitana.",
+   "enlace": "https://cultura.gov.it/luogo/orto-botanico-giardino-della-minerva",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Giardino+della+Minerva%2C+Salerno%2C+Italia",
+   "fuente": "https://cultura.gov.it/luogo/orto-botanico-giardino-della-minerva"
+  },
+  {
+   "id": "salerno-luci",
+   "nombre": "Luci d'Artista de Salerno",
+   "donde": "Salerno",
+   "base": "salerno",
+   "tipo": "postal",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    12,
+    1
+   ],
+   "descripcion": "Instalaciones de luz de artistas contemporáneos por calles y parques de Salerno en Navidad, con mercadillos y mucha gente paseando.",
+   "consejo": "Italia.it da el periodo aproximado (Navidad hasta finales de enero); las fechas exactas cambian cada año.",
+   "enlace": "https://www.italia.it/it/campania/salerno/salerno-le-luci-d-artista",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Luci+d%27Artista%2C+Salerno%2C+Italia",
+   "fuente": "https://www.italia.it/it/campania/salerno/salerno-le-luci-d-artista"
+  },
+  {
+   "id": "salerno-lungomare",
+   "nombre": "Lungomare Trieste y centro histórico de Salerno",
+   "donde": "Salerno",
+   "base": "salerno",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "medio_dia",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Paseo marítimo largo y casco antiguo con catedral, calles de bares y ambiente universitario; la base barata de la zona.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Lungomare+Trieste%2C+Salerno%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungomare+Trieste%2C+Salerno%2C+Italia",
+   "fuente": "https://www.italia.it/it/campania/salerno/salerno-le-luci-d-artista"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Limoncello",
+   "que_es": "licor de limón de la costa, de limón sfusato (Amalfi) o ovale (Sorrento); se toma frío al final de la comida",
+   "estilo": "bebida",
+   "coste": "bajo",
+   "donde_probarlo": "tiendas de productores en Amalfi y Sorrento, y tras la comida en trattorias",
+   "maps": "https://www.google.com/maps/search/?api=1&query=limoncello+Amalfi%2C+Italia",
+   "fuente": "https://www.positano.com/it/e/sapori-e-odori-della-costiera-amalfitana-2"
+  },
+  {
+   "plato": "Scialatielli ai frutti di mare",
+   "que_es": "pasta fresca gruesa con marisco, típica de la costa",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias de los pueblos pequeños (Praiano, Atrani, Cetara), mejor que en primera línea de Positano",
+   "maps": "https://www.google.com/maps/search/?api=1&query=trattoria+scialatielli+Praiano%2C+Italia",
+   "fuente": "https://www.positano.com/it/e/sapori-e-odori-della-costiera-amalfitana-2"
+  },
+  {
+   "plato": "Delizia al limone",
+   "que_es": "bizcocho relleno de crema de limón y glaseado, el postre símbolo de la costa",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías de Amalfi, Minori y Sorrento",
+   "maps": "https://www.google.com/maps/search/?api=1&query=pasticceria+delizia+al+limone+Amalfi%2C+Italia",
+   "fuente": "https://www.positano.com/it/e/sapori-e-odori-della-costiera-amalfitana-2"
+  },
+  {
+   "plato": "Colatura di alici di Cetara",
+   "que_es": "salsa de anchoas fermentadas para condimentar espagueti; producto artesano de Cetara",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "espagueti con colatura en trattorias de Cetara y Amalfi",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cetara%2C+Costiera+Amalfitana%2C+Italia",
+   "fuente": "https://www.positano.com/it/e/sapori-e-odori-della-costiera-amalfitana-2"
+  },
+  {
+   "plato": "Mozzarella, provola y ricotta de Agerola y Tramonti",
+   "que_es": "lácteos frescos de las montañas sobre la costa",
+   "estilo": "mercado",
+   "coste": "bajo",
+   "donde_probarlo": "queserías y latterías de Tramonti, Agerola y tiendas de Amalfi; sirven para bocadillos de picnic",
+   "maps": "https://www.google.com/maps/search/?api=1&query=caseificio+Agerola%2C+Italia",
+   "fuente": "https://www.positano.com/it/e/sapori-e-odori-della-costiera-amalfitana-2"
+  },
+  {
+   "plato": "Pasteles y galletas de Amalfi",
+   "que_es": "biscotti amalfitani, zeppole de San José y pastelería con limón y cítricos",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "cafés históricos y pastelerías de la plaza del Duomo de Amalfi",
+   "maps": "https://www.google.com/maps/search/?api=1&query=pasticceria+Piazza+Duomo%2C+Amalfi%2C+Italia",
+   "fuente": "https://www.positano.com/it/e/sapori-e-odori-della-costiera-amalfitana-2"
+  },
+  {
+   "plato": "Pizza napolitana en Salerno",
+   "que_es": "pizza de masa tierna con borde alto; en Salerno sale más barata que en Positano o Amalfi",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "pizzerías del centro histórico y alrededores de la estación de Salerno",
+   "maps": "https://www.google.com/maps/search/?api=1&query=pizzeria+Salerno%2C+Italia",
+   "fuente": "https://www.italia.it/it/campania/salerno/salerno-le-luci-d-artista"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Casco antiguo de Salerno (Via dei Mercanti y alrededores)",
+   "base": "salerno",
+   "plan": "copas",
+   "descripcion": "La zona con más bares y ambiente universitario de toda la costa; abre también en invierno.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Via+dei+Mercanti%2C+Salerno%2C+Italia",
+   "fuente": "https://www.italia.it/it/campania/salerno/salerno-le-luci-d-artista"
+  },
+  {
+   "zona": "Plaza Tasso y centro de Sorrento",
+   "base": "sorrento",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo en la plaza y copas por las calles cercanas; ambiente más turístico y menos barato.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Tasso%2C+Sorrento%2C+Italia",
+   "fuente": "https://www.italia.it/en/campania/naples/sorrento"
+  },
+  {
+   "zona": "Marina di Praia y Praiano",
+   "base": "praiano",
+   "plan": "aperitivo",
+   "descripcion": "Atardecer con una copa frente al mar; para salir de fiesta de verdad hay que bajar a Salerno o Sorrento.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Marina+di+Praia%2C+Praiano%2C+Italia",
+   "fuente": "https://www.positano.com/it/e/le-spiagge-di-praiano"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "sorrento",
+   "coste": "bajo",
+   "para": "grupos con poco presupuesto que quieran usar tren e ir en bus/ferry a la costa.",
+   "enlaces": [
+    {
+     "sitio": "Hostelworld",
+     "url": "https://www.hostelworld.com/hostels/europe/italy/sorrento/"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Sorrento"
+    }
+   ]
+  },
+  {
+   "tipo": "hostel",
+   "base": "salerno",
+   "coste": "bajo",
+   "para": "la base más barata, con ferries Travelmar a Amalfi y vida nocturna.",
+   "enlaces": [
+    {
+     "sitio": "Hostelworld",
+     "url": "https://www.hostelworld.com/hostels/europe/italy/salerno/"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Salerno"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "amalfi",
+   "coste": "alto",
+   "para": "grupos de 4-6 que repartan el coste; en temporada alta se agota con meses de antelación.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Amalfi--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Amalfi"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "praiano",
+   "coste": "medio",
+   "para": "grupos pequeños que busquen calma entre Positano y Amalfi.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Praiano"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Praiano--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "sorrento",
+   "coste": "medio",
+   "para": "grupos de 4-8 que quieran cocinar; sale más barato que la costa.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Sorrento--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Sorrento"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Fiesta de Sant'Andrea (Corsa del Santo)",
+   "donde": "Amalfi",
+   "cuando": "cada año, 26-27 de junio y 30 de noviembre",
+   "meses": [
+    6,
+    11
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Procesión, fuegos sobre el mar y carrera del busto del patrón escalinata abajo del Duomo.",
+   "enlace": "https://www.travelamalficoast.it/en/saint-andrew-celebration-in-amalfi",
+   "fuente": "https://www.travelamalficoast.it/en/saint-andrew-celebration-in-amalfi"
+  },
+  {
+   "nombre": "Fuegos de la Asunción en Positano y Maiori",
+   "donde": "Positano / Maiori",
+   "cuando": "cada año, 15 de agosto (Maiori sobre las 23:00, Positano a medianoche)",
+   "meses": [
+    8
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Procesión de la Virgen y fuegos artificiales desde el mar; se ven también desde barcos.",
+   "enlace": "https://simplyamalficoast.it/?p=6616",
+   "fuente": "https://simplyamalficoast.it/?p=6616"
+  },
+  {
+   "nombre": "Ravello Festival",
+   "donde": "Ravello",
+   "cuando": "cada año en verano, programa en la web oficial",
+   "meses": [
+    7,
+    8,
+    9
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Conciertos de música clásica y otros géneros en un escenario sobre el mar en Villa Rufolo.",
+   "enlace": "https://villarufolo.com/the-festival-and-the-villa/?lang=en",
+   "fuente": "https://www.italia.it/it/campania/salerno/ravello/giardini-di-villa-rufolo"
+  },
+  {
+   "nombre": "Luci d'Artista",
+   "donde": "Salerno",
+   "cuando": "cada año, de Navidad a finales de enero",
+   "meses": [
+    12,
+    1
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Luminarias de artistas contemporáneos por el centro de Salerno, con mercadillos navideños.",
+   "enlace": "https://www.italia.it/it/campania/salerno/salerno-le-luci-d-artista",
+   "fuente": "https://www.italia.it/it/campania/salerno/salerno-le-luci-d-artista"
+  }
+ ],
+ "notas_honestas": [
+  "No hay ruta aérea directa desde España verificada a NAP ni a QSR; se deja vacío rutas_directas.",
+  "No verifiqué horarios ni tarifas de SITA, Travelmar ni Circumvesuviana; hay que consultar las webs el día del viaje.",
+  "No se verificó ningún ferry Sorrento–Positano/Amalfi ni Capri; sin enlace seguro, queda fuera.",
+  "Faltan webs oficiales de Positano, Praiano y Sorrento; se usan mapas y guías en esos casos.",
+  "Las fechas de eventos de 2027 no están publicadas en las fuentes consultadas: todo queda como recurrente.",
+  "Información de aeropuertos (Salerno) viene de una guía privada (positano.com), no de la web del aeropuerto."
+ ]
+}

@@ -1,0 +1,17 @@
+{
+  "zona": "valle-de-aosta",
+  "base": "aosta",
+  "ciudad_referencia": "Aosta",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": null,
+    "doble_noche": null,
+    "comida_barata": {
+      "valor": 18.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Aosta?displayCurrency=EUR",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": null
+  },
+  "notas": "hostel_noche null: Hostelworld muestra 0 hostels en Aosta. doble_noche null: solo hay un dato suelto (Booking.com https://www.booking.com/city/it/aosta.html?selected_currency=EUR: precio 'From' del titulo = 65 EUR) y BudgetYourTrip no tiene media para esta ciudad, asi que no se puede dar rango. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Aosta (rango Numbeo 14-30). transporte_billete null: No se encontro tarifa urbana oficial de Aosta en las paginas abiertas."
+}

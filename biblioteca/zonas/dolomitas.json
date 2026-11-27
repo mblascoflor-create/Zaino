@@ -1,0 +1,957 @@
+{
+ "id": "dolomitas",
+ "nombre": "Dolomitas: Alto Adige y Cortina",
+ "nombre_corto": "Dolomitas",
+ "lema": "Picos de cuento, rutas y nieve",
+ "descripcion": "Las montañas más espectaculares de Italia: Seceda, Alpe di Siusi, Tre Cime y Braies en verano; esquí, trineo y mercadillos de Navidad en invierno. Bolzano sirve de base urbana y barata para moverse en transporte público.",
+ "perfil": {
+  "mar": 0,
+  "montana": 3,
+  "ciudad": 1,
+  "campo": 2,
+  "fiesta": 1,
+  "calma": 2,
+  "cultura": 1,
+  "gastronomia": 2,
+  "naturaleza": 3,
+  "playa": 0,
+  "aventura": 3,
+  "postal": 3
+ },
+ "nivel_precio": "alto",
+ "nivel_precio_nota": "Teleféricos, forfaits y alojamiento en Val Gardena y Cortina son de lo más caro de Italia; Bolzano y los rifugi lo suavizan.",
+ "meses": {
+  "ideales": [
+   6,
+   7,
+   8,
+   9,
+   12,
+   1,
+   2,
+   3
+  ],
+  "aceptables": [
+   5,
+   10
+  ],
+  "evitar": [
+   4,
+   11
+  ],
+  "nota": "Jun-sep para rutas y lagos; dic-mar para nieve y mercadillos. Abril y noviembre es entretiempo: muchos teleféricos y refugios cierran."
+ },
+ "calor_verano": "suave",
+ "nieve_invierno": true,
+ "coche": {
+  "necesidad": "util",
+  "nota": "Sin coche se hace Bolzano, Ortisei, Seceda y Alpe di Siusi con bus y teleférico. Con coche se llega a Tre Cime, Misurina, Funes y los puertos de montaña, pero hay peaje, accesos limitados en verano (Braies, Alpe di Siusi) y cadenas o neumáticos de invierno en temporada de nieve.",
+  "aeropuerto_recogida": "VRN",
+  "operadores": [
+   {
+    "nombre": "Sixt",
+    "enlace": "https://www.rentalcars.com/en/airport/it/vrn/sixt",
+    "fuente": "https://www.rentalcars.com/en/airport/it/vrn/sixt"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Avis-Verona.VRN.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Avis-Verona.VRN.AVIS.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Europcar-Verona.VRN.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Europcar-Verona.VRN.EUROPCAR.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "bolzano",
+   "nombre": "Bolzano",
+   "por_que": "Ciudad con tren, mercadillo de Navidad y buses a todos los valles; la opción más barata para un grupo sin coche.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Bolzano%2C+Italia"
+  },
+  {
+   "id": "ortisei",
+   "nombre": "Ortisei (Val Gardena)",
+   "por_que": "Teleféricos directos a Seceda y a la Alpe di Siusi, y esquí en invierno.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ortisei%2C+Val+Gardena%2C+Italia"
+  },
+  {
+   "id": "cortina",
+   "nombre": "Cortina d'Ampezzo",
+   "por_que": "Tre Cime, Cinque Torri y Misurina cerca; pueblo elegante y caro.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cortina+d%27Ampezzo%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "VRN",
+    "nombre": "Verona – Valerio Catullo",
+    "ciudad": "Verona",
+    "a_la_base": "Tren desde Verona Porta Nuova hacia Bolzano por la línea del Brennero; Verona queda a unos 90 km de Trento según Visit Trentino."
+   },
+   {
+    "iata": "VCE",
+    "nombre": "Venecia – Marco Polo",
+    "ciudad": "Venecia",
+    "a_la_base": "Bus directo del aeropuerto a Cortina (servicio Cortina Express); para Bolzano, tren desde Venecia con cambio."
+   },
+   {
+    "iata": "BZO",
+    "nombre": "Bolzano – Dolomiti",
+    "ciudad": "Bolzano",
+    "a_la_base": "A 57 km de Trento según Visit Trentino; vuelos muy limitados (Air A!ps)."
+   },
+   {
+    "iata": "INN",
+    "nombre": "Innsbruck",
+    "ciudad": "Innsbruck",
+    "a_la_base": "Alternativa por el norte: tren por el Brennero a Bolzano."
+   }
+  ],
+  "desde_espana": "El acceso realista es Verona (Volotea desde Barcelona y Madrid) o Venecia (low cost más variado); Bergamo y Treviso también sirven con bus o tren. Comparad en el buscador: las frecuencias cambian cada temporada.",
+  "rutas_directas": [
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "VRN",
+    "aerolinea": "Volotea",
+    "nota": "ruta existente según la prensa del sector; frecuencias y temporada sin verificar",
+    "fuente": "https://www.quotidianomotori.com/volo/volotea-verona-nuove-rotte-2026/"
+   },
+   {
+    "origen": "Madrid",
+    "origen_iata": "MAD",
+    "destino_iata": "VRN",
+    "aerolinea": "Volotea",
+    "nota": "ruta existente según la prensa del sector; frecuencias y temporada sin verificar",
+    "fuente": "https://www.quotidianomotori.com/volo/volotea-verona-nuove-rotte-2026/"
+   }
+  ],
+  "desde_italia": "Tren a Verona y regional hasta Bolzano (línea Verona–Brennero); desde Milán Bergamo hay FlixBus Orio al Serio–Bolzano. A Cortina, bus desde Venecia o desde Dobbiaco.",
+  "novedades": [
+   {
+    "nota": "Volotea estrenó en 2026 Verona–Málaga (desde el 1 de agosto, martes y sábado) y Verona–Menorca (desde el 2 de agosto, jueves y domingo). Comprobad si siguen en 2027.",
+    "fuente": "https://www.quotidianomotori.com/volo/volotea-verona-nuove-rotte-2026/"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "Sin coche: tren a Bolzano y buses regionales con la Mobilcard, más teleféricos para subir. Con coche se añaden Tre Cime, Misurina y Funes, con aparcamientos de pago y accesos con reserva en verano.",
+  "tren": {
+   "nota": "Trenitalia y Italo llegan hasta Verona; de ahí el tren regional sigue por el valle del Adigio a Trento, Bolzano y el Brennero.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "Südtirol Mobil (transporte público de Alto Adige)",
+   "nota": "La Mobilcard (1, 3 o 7 días) cubre buses, trenes y el trenino del Renon; no se confirma que incluya teleféricos. Se valida en cada viaje.",
+   "enlace": "https://www.suedtirolerland.it/it/service/trasporto-pubblico/mobilcard-alto-adige/",
+   "fuente": "https://www.suedtirolerland.it/it/service/trasporto-pubblico/mobilcard-alto-adige/"
+  },
+  "ferry": [],
+  "camper": {
+   "operador": "Roadsurfer",
+   "nota": "Alquiler de camper en Italia; solo hay página general del país, no de la zona. Encaja si queréis dormir sobre ruedas, pero en montaña el aparcamiento y los accesos tienen restricciones.",
+   "enlace": "https://roadsurfer.com/es/alquilar-camper/italia/",
+   "fuente": "https://roadsurfer.com/es/alquilar-camper/italia/"
+  }
+ },
+ "actividades": [
+  {
+   "id": "seceda",
+   "nombre": "Seceda: cresta de las Odle",
+   "donde": "Ortisei",
+   "base": "ortisei",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Cabinovia Ortisei–Furnes y funivia hasta la cresta a 2.519 m; vistas de 360° a las Odle y el Sella.",
+   "enlace": "https://www.valgardena.it/it/vacanze-estive-dolomiti/impianti/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Seceda%2C+Ortisei%2C+Italia",
+   "fuente": "https://www.valgardena.it/it/vacanze-estive-dolomiti/impianti/",
+   "consejo": "Abierta en verano de finales de mayo a principios de noviembre según valgardena.it."
+  },
+  {
+   "id": "alpe-siusi",
+   "nombre": "Alpe di Siusi en verano",
+   "donde": "Alpe di Siusi",
+   "base": "ortisei",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Los prados alpinos más grandes de Europa: paseos llanos entre malghe con el Sciliar y el Sassolungo de fondo.",
+   "consejo": "La carretera está cerrada al tráfico privado de 9:00 a 17:00; subid en cabinovia o con la línea de bus. Cabinovia Siusi–Alpe di Siusi desde finales de mayo; consultad fechas exactas en la web.",
+   "enlace": "https://www.seiseralm.it/it/info-e-service/mobilita/accesso-all-alpe-di-siusi.html",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Alpe+di+Siusi+en+verano%2C+Alpe+di+Siusi%2C+Italia",
+   "fuente": "https://www.seiseralm.it/it/info-e-service/mobilita/accesso-all-alpe-di-siusi.html"
+  },
+  {
+   "id": "tre-cime",
+   "nombre": "Giro de las Tre Cime di Lavaredo",
+   "donde": "Tre Cime di Lavaredo",
+   "base": "cortina",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Circuito de unos 9,5 km y 3 h desde el Rifugio Auronzo pasando por el Rifugio Lavaredo y el Locatelli; dificultad turística, unos 400 m de desnivel.",
+   "enlace": "https://www.dolomiti.it/it/itinerari/trekking/giro-delle-tre-cime-di-lavaredo",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Giro+de+las+Tre+Cime+di+Lavaredo%2C+Tre+Cime+di+Lavaredo%2C+Italia",
+   "fuente": "https://www.dolomiti.it/it/itinerari/trekking/giro-delle-tre-cime-di-lavaredo",
+   "consejo": "La carretera de acceso desde Misurina es de peaje; los refugios abren de junio a septiembre."
+  },
+  {
+   "id": "braies",
+   "nombre": "Lago di Braies",
+   "donde": "Lago di Braies",
+   "base": "bolzano",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal",
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Vuelta de 4 km al lago esmeralda, con barca de remos en verano; es el más fotografiado de Alto Adige.",
+   "enlace": "https://www.suedtirolerland.it/it/cultura-e-territorio/natura-e-paesaggio/laghi/lago-di-braies/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lago+di+Braies%2C+Lago+di+Braies%2C+Italia",
+   "fuente": "https://www.suedtirolerland.it/it/cultura-e-territorio/natura-e-paesaggio/laghi/lago-di-braies/",
+   "consejo": "De julio a septiembre el valle solo se alcanza en transporte público, a pie, en bici o con reserva online; la web de turismo anuncia la línea 442 desde Dobbiaco/Villabassa."
+  },
+  {
+   "id": "otzi",
+   "nombre": "Museo Arqueológico de Alto Adige (Ötzi)",
+   "donde": "Bolzano",
+   "base": "bolzano",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Aquí está Ötzi, la momia de 5.300 años hallada en el glaciar; buen plan de día de lluvia.",
+   "enlace": "https://iceman.it/en/the-iceman/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Museo+Arqueol%C3%B3gico+de+Alto+Adige+%28%C3%96tzi%29%2C+Bolzano%2C+Italia",
+   "fuente": "https://iceman.it/en/the-iceman/"
+  },
+  {
+   "id": "mercatino-bolzano",
+   "nombre": "Mercadillo de Navidad de Bolzano",
+   "donde": "Bolzano",
+   "base": "bolzano",
+   "tipo": "compras",
+   "tipos_extra": [
+    "gastronomia",
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    11,
+    12
+   ],
+   "descripcion": "Casetas en Piazza Walther con el abeto iluminado, vin brulé y dulces; es el mercado navideño más conocido de Italia.",
+   "enlace": "https://www.bolzano-bozen.it/en/blog-en/events-in-the-city-the-bolzano-christmas-market",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercadillo+de+Navidad+de+Bolzano%2C+Bolzano%2C+Italia",
+   "fuente": "https://www.bolzano-bozen.it/en/blog-en/events-in-the-city-the-bolzano-christmas-market",
+   "consejo": "Abre a finales de noviembre y sigue en diciembre; fechas de 2026 sin confirmar en la web consultada."
+  },
+  {
+   "id": "bolzano-centro",
+   "nombre": "Casco histórico y Portici de Bolzano",
+   "donde": "Bolzano",
+   "base": "bolzano",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Paseo por Piazza Walther, los soportales de Via dei Portici y Piazza delle Erbe con su mercado de frutas.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Via+dei+Portici%2C+Bolzano%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Casco+hist%C3%B3rico+y+Portici+de+Bolzano%2C+Bolzano%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it"
+  },
+  {
+   "id": "renon",
+   "nombre": "Renon: funivia, trenino y pirámides de tierra",
+   "donde": "Soprabolzano (Renon)",
+   "base": "bolzano",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Funivia desde Bolzano hasta Soprabolzano, trenino histórico y paseo hasta las pirámides de tierra con el Catinaccio al fondo.",
+   "enlace": "https://www.suedtirol.info/it/it/informazioni/mobilita/funivie-e-impianti-di-risalita-alto-adige/funivia-del-renon",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Renon%2C+Soprabolzano+%28Renon%29%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it/it/informazioni/mobilita/funivie-e-impianti-di-risalita-alto-adige/funivia-del-renon",
+   "consejo": "La Mobilcard cubre el trenino del Renon; confirmad si cubre también la funivia."
+  },
+  {
+   "id": "ferrata-tridentina",
+   "nombre": "Vía ferrata Brigata Tridentina (Pisciadù)",
+   "donde": "Passo Gardena",
+   "base": "ortisei",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "alto",
+   "ambiente": "mixto",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Clásica ferrata del Sella con cascada y puentes colgantes; dificultad media, exige arnés, casco y kit de ferrata.",
+   "enlace": "https://www.val-gardena.com/it/escursioni/dettaglio/ferrata-tridentina-pisciadu-dolomiti/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=V%C3%ADa+ferrata+Brigata+Tridentina+%28Pisciad%C3%B9%29%2C+Passo+Gardena%2C+Italia",
+   "fuente": "https://www.val-gardena.com/it/escursioni/dettaglio/ferrata-tridentina-pisciadu-dolomiti/",
+   "consejo": "Solo sin experiencia con guía de montaña; no entréis con mal tiempo ni en cuanto haya nieve."
+  },
+  {
+   "id": "esqui-val-gardena",
+   "nombre": "Esquí en Val Gardena y Dolomiti Superski",
+   "donde": "Val Gardena",
+   "base": "ortisei",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "alto",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "alto",
+   "ambiente": "social",
+   "meses": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "descripcion": "Pistas de la Val Gardena conectadas con el área Dolomiti Superski; forfait y material son el gasto grande del viaje.",
+   "enlace": "https://www.dolomitisuperski.com/it/Scopri/Zone-sciistiche/Val-Gardena/Impianti",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Esqu%C3%AD+en+Val+Gardena+y+Dolomiti+Superski%2C+Val+Gardena%2C+Italia",
+   "fuente": "https://www.dolomitisuperski.com/it/Scopri/Zone-sciistiche/Val-Gardena/Impianti",
+   "consejo": "Alquilad el material en el valle y comparad forfaits de varios días."
+  },
+  {
+   "id": "raquetas-siusi",
+   "nombre": "Raquetas y paseo invernal en Alpe di Siusi",
+   "donde": "Alpe di Siusi",
+   "base": "ortisei",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "meses": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "descripcion": "Senderos de invierno con raquetas por el altiplano nevado sin necesidad de esquiar.",
+   "enlace": "https://www.seiseralm.it/it/info-e-service/mobilita/cabinovia-alpe-di-siusi-inverno.html",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Raquetas+y+paseo+invernal+en+Alpe+di+Siusi%2C+Alpe+di+Siusi%2C+Italia",
+   "fuente": "https://www.seiseralm.it/it/info-e-service/mobilita/cabinovia-alpe-di-siusi-inverno.html",
+   "consejo": "La cabinovia de invierno abre del 4 de diciembre de 2026 al 4 de abril de 2027 y admite trineos, esquís y raquetas."
+  },
+  {
+   "id": "trineo-siusi",
+   "nombre": "Trineo en la Alpe di Siusi",
+   "donde": "Alpe di Siusi",
+   "base": "ortisei",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "meses": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "descripcion": "Bajada en trineo por las pistas de invierno; la cabinovia admite trineos para subir.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Alpe+di+Siusi%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trineo+en+la+Alpe+di+Siusi%2C+Alpe+di+Siusi%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it",
+   "consejo": "Se alquilan trineos en los valles; mirad las pistas habilitadas con el parte local."
+  },
+  {
+   "id": "cortina-faloria",
+   "nombre": "Cortina d'Ampezzo y sus teleféricos",
+   "donde": "Cortina d'Ampezzo",
+   "base": "cortina",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Pueblo olímpico con teleféricos de verano a miradores y senderos por las Tofane y Faloria.",
+   "enlace": "https://cortina.dolomiti.org/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cortina+d%27Ampezzo+y+sus+telef%C3%A9ricos%2C+Cortina+d%27Ampezzo%2C+Italia",
+   "fuente": "https://cortina.dolomiti.org/",
+   "consejo": "Los horarios de teleféricos están en la sección de impianti de la web de Cortina."
+  },
+  {
+   "id": "cinque-torri",
+   "nombre": "Cinque Torri: trincheras y refugios",
+   "donde": "Cinque Torri",
+   "base": "cortina",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Paseo entre torres de roca con trincheras de la Primera Guerra Mundial y refugios para comer.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Cinque+Torri%2C+Cortina+d%27Ampezzo%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cinque+Torri%2C+Cinque+Torri%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it"
+  },
+  {
+   "id": "misurina",
+   "nombre": "Lago di Misurina",
+   "donde": "Misurina",
+   "base": "cortina",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Paseo llano alrededor del lago con las Tre Cime al fondo; parada fácil antes o después de la ruta grande.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Lago+di+Misurina%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lago+di+Misurina%2C+Misurina%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it"
+  },
+  {
+   "id": "funes",
+   "nombre": "Val di Funes: Santa Maddalena y las Odle",
+   "donde": "Val di Funes",
+   "base": "bolzano",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Capilla de San Juan en Ranui con las Odle detrás; senderos como el Adolf Munkelweg bajo la pared norte.",
+   "enlace": "https://www.suedtirolerland.it/it/alto-adige/valle-isarco/funes/santa-maddalena-di-funes/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Val+di+Funes%2C+Val+di+Funes%2C+Italia",
+   "fuente": "https://www.suedtirolerland.it/it/alto-adige/valle-isarco/funes/santa-maddalena-di-funes/",
+   "consejo": "Rutas de la web de turismo: Adolf Munkel (bosque hasta cerca del Rifugio delle Odle) y Zannes–Malga Gampen (1,5 h de subida)."
+  },
+  {
+   "id": "rifugio-noche",
+   "nombre": "Dormir en un rifugio con media pensión",
+   "donde": "Alpe di Siusi",
+   "base": "ortisei",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "noche",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Subid a pie a un refugio, cenad canederli y dormid en litera con amanecer incluido.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Rifugio%2C+Alpe+di+Siusi%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Dormir+en+un+rifugio+con+media+pensi%C3%B3n%2C+Alpe+di+Siusi%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it",
+   "consejo": "Reservad con semanas de antelación; los refugios abren de junio a septiembre."
+  },
+  {
+   "id": "ortisei-pueblo",
+   "nombre": "Ortisei: tallas de madera y centro peatonal",
+   "donde": "Ortisei",
+   "base": "ortisei",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Centro peatonal con talleres de escultura en madera, tradición de la Val Gardena.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Centro+storico%2C+Ortisei%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ortisei%2C+Ortisei%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it"
+  },
+  {
+   "id": "aperitivo-ortisei",
+   "nombre": "Aperitivo y vin brulé en Ortisei",
+   "donde": "Ortisei",
+   "base": "ortisei",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Terrazas y bares junto a las pistas para un Aperol Spritz en verano o un vin brulé después de esquiar.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Ortisei%2C+Val+Gardena%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Aperitivo+y+vin+brul%C3%A9+en+Ortisei%2C+Ortisei%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it"
+  },
+  {
+   "id": "aperitivo-bolzano",
+   "nombre": "Aperitivo en los Portici de Bolzano",
+   "donde": "Bolzano",
+   "base": "bolzano",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Spritz y tapas de speck en las calles porticadas del centro; plan barato de cualquier estación.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+delle+Erbe%2C+Bolzano%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Aperitivo+en+los+Portici+de+Bolzano%2C+Bolzano%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Canederli (Knödel)",
+   "que_es": "albóndigas de pan con speck o queso, en caldo o con mantequilla",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "en rifugi y Stuben (casas de comida típicas) de montaña",
+   "maps": "https://www.google.com/maps/search/?api=1&query=rifugio+canederli%2C+Alpe+di+Siusi%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it"
+  },
+  {
+   "plato": "Speck y queso de malga",
+   "que_es": "jamón ahumado de Alto Adige con queso de pastor",
+   "estilo": "mercado",
+   "coste": "medio",
+   "donde_probarlo": "mercado de Piazza delle Erbe en Bolzano y malghe de altura",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+delle+Erbe%2C+Bolzano%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it"
+  },
+  {
+   "plato": "Strudel de manzana",
+   "que_es": "hojaldre fino relleno de manzana, pasas y canela",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "cafés de Bolzano y refugios de ruta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=strudel%2C+Bolzano%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it"
+  },
+  {
+   "plato": "Schlutzkrapfen",
+   "que_es": "raviolis de espinacas y ricota con mantequilla y queso",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "Stuben tradicionales de Val Gardena y Funes",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Schlutzkrapfen%2C+Ortisei%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it"
+  },
+  {
+   "plato": "Polenta con setas o queso",
+   "que_es": "polenta cremosa de plato único de montaña",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "refugios y trattorie de Cortina y Val Gardena",
+   "maps": "https://www.google.com/maps/search/?api=1&query=polenta%2C+Cortina+d%27Ampezzo%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it"
+  },
+  {
+   "plato": "Kaiserschmarrn",
+   "que_es": "tortita troceada con azúcar glas y compota de arándanos",
+   "estilo": "dulce",
+   "coste": "medio",
+   "donde_probarlo": "refugios de altura al final de la ruta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Kaiserschmarrn%2C+Alpe+di+Siusi%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it"
+  },
+  {
+   "plato": "Vin brulé (Glühwein)",
+   "que_es": "vino caliente con especias, típico de mercadillos y pistas",
+   "estilo": "bebida",
+   "coste": "bajo",
+   "donde_probarlo": "mercadillo de Bolzano y chiringuitos de pista",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Walther%2C+Bolzano%2C+Italia",
+   "fuente": "https://www.bolzano-bozen.it/en/blog-en/events-in-the-city-the-bolzano-christmas-market"
+  },
+  {
+   "plato": "Vinos de Alto Adige (Lagrein, Gewürztraminer)",
+   "que_es": "tintos y blancos de los viñedos de Bolzano",
+   "estilo": "bebida",
+   "coste": "medio",
+   "donde_probarlo": "vinotecas de Bolzano y la Strada del Vino",
+   "maps": "https://www.google.com/maps/search/?api=1&query=enoteca%2C+Bolzano%2C+Italia",
+   "fuente": "https://www.suedtirol.info/it"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Portici y Piazza delle Erbe",
+   "base": "bolzano",
+   "plan": "aperitivo",
+   "descripcion": "Spritz y copas en el centro peatonal de Bolzano.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+delle+Erbe%2C+Bolzano%2C+Italia",
+   "fuente": "https://www.bolzano-bozen.it/en/blog-en/events-in-the-city-the-bolzano-christmas-market"
+  },
+  {
+   "zona": "Ortisei centro y après-ski",
+   "base": "ortisei",
+   "plan": "copas",
+   "descripcion": "Bares y terrazas al pie de pistas en temporada de esquí.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ortisei%2C+Val+Gardena%2C+Italia",
+   "fuente": "https://www.dolomitisuperski.com/it/Scopri/Zone-sciistiche/Val-Gardena/Impianti"
+  },
+  {
+   "zona": "Corso Italia, Cortina",
+   "base": "cortina",
+   "plan": "aperitivo",
+   "descripcion": "Calle peatonal principal de Cortina, más sofisticada y cara.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Corso+Italia%2C+Cortina+d%27Ampezzo%2C+Italia",
+   "fuente": "https://cortina.dolomiti.org/"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "bolzano",
+   "coste": "bajo",
+   "para": "Grupos con poco presupuesto que se mueven en bus y tren.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Bolzano"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "ortisei",
+   "coste": "medio",
+   "para": "Grupos de 4-8 que quieren cocinar y esquiar o subir a Seceda.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Ortisei--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Ortisei"
+    }
+   ]
+  },
+  {
+   "tipo": "rifugio",
+   "base": "ortisei",
+   "coste": "medio",
+   "para": "Quien quiere una noche en altura con media pensión.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Alpe+di+Siusi"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "cortina",
+   "coste": "alto",
+   "para": "Grupos que priorizan Tre Cime y Cinque Torri.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Cortina+d%27Ampezzo"
+    }
+   ]
+  },
+  {
+   "tipo": "camping",
+   "base": "cortina",
+   "coste": "bajo",
+   "para": "Grupos con tienda o camper en verano.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Cortina+d%27Ampezzo+camping"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "bolzano",
+   "coste": "medio",
+   "para": "Grupos pequeños que quieren desayuno y ciudad.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Bolzano"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Bolzano--Italia/homes"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Christkindlmarkt de Bolzano",
+   "donde": "Bolzano",
+   "cuando": "cada año, desde finales de noviembre hasta Navidad",
+   "meses": [
+    11,
+    12
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Mercadillo en Piazza Walther con parque de Navidad en Via Isarco.",
+   "enlace": "https://www.bolzano-bozen.it/en/blog-en/events-in-the-city-the-bolzano-christmas-market",
+   "fuente": "https://www.bolzano-bozen.it/en/blog-en/events-in-the-city-the-bolzano-christmas-market"
+  },
+  {
+   "nombre": "Rock the Dolomites – Winter Music Festival",
+   "donde": "Selva di Val Gardena",
+   "cuando": "cada año, a finales de marzo (en 2026 fue del 19 al 28)",
+   "meses": [
+    3
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Conciertos de rock en refugios y bares de pista al cierre de la temporada de esquí.",
+   "enlace": "https://www.dolomitisuperski.com/en/experiences/events/Val-Gardena/2026/Rock-the-Dolomites-Winter-Music-Festival",
+   "fuente": "https://www.dolomitisuperski.com/en/experiences/events/Val-Gardena/2026/Rock-the-Dolomites-Winter-Music-Festival"
+  },
+  {
+   "nombre": "Apertura de invierno de la cabinovia de Alpe di Siusi",
+   "donde": "Alpe di Siusi",
+   "cuando": "cada año, inicio de diciembre hasta principios de abril",
+   "meses": [
+    12
+   ],
+   "proxima_fecha": "2026-12-04",
+   "descripcion": "Arranca la temporada de invierno en el altiplano; la cabinovia funciona del 4 dic 2026 al 4 abr 2027.",
+   "enlace": "https://www.seiseralm.it/it/info-e-service/mobilita/cabinovia-alpe-di-siusi-inverno.html",
+   "fuente": "https://www.seiseralm.it/it/info-e-service/mobilita/cabinovia-alpe-di-siusi-inverno.html"
+  },
+  {
+   "nombre": "Apertura de teleféricos de verano en Val Gardena",
+   "donde": "Ortisei y Seceda",
+   "cuando": "cada año, desde mayo hasta principios de noviembre",
+   "meses": [
+    5
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Abren Ortisei–Alpe di Siusi, Seceda y los remontes de la Alpe; en 2026 fue desde el 1 y el 22 de mayo.",
+   "enlace": "https://www.valgardena.it/it/vacanze-estive-dolomiti/impianti/",
+   "fuente": "https://www.valgardena.it/it/vacanze-estive-dolomiti/impianti/"
+  }
+ ],
+ "redes": [],
+ "notas_honestas": [
+  "No he verificado horarios ni precios de buses de montaña (Tre Cime, Funes, Passo Gardena); por eso esas actividades van con requiere_coche true.",
+  "Fecha del Christkindlmarkt de Bolzano de 2026 no publicada en la web consultada.",
+  "Venecia–Cortina en bus existe (Cortina Express) pero no se verificó operador oficial ni horarios.",
+  "No hay rutas aéreas España–BZO ni Ryanair verificadas; solo Volotea a Verona.",
+  "Falta una opción de bienestar o termas en Alto Adige; quedó fuera por no verificar fuente."
+ ]
+}

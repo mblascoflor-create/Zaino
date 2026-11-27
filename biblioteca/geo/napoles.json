@@ -1,0 +1,112 @@
+{
+ "actividades": {
+  "spaccanapoli": [
+   40.85,
+   14.256
+  ],
+  "napoli-sotterranea": [
+   40.851,
+   14.258
+  ],
+  "quartieri-spagnoli": [
+   40.843,
+   14.246
+  ],
+  "mann": [
+   40.853,
+   14.25
+  ],
+  "sansevero": [
+   40.849,
+   14.254
+  ],
+  "lungomare": [
+   40.828,
+   14.247
+  ],
+  "pizza-sfogliatella": [
+   40.85,
+   14.264
+  ],
+  "san-gregorio-armeno": [
+   40.85,
+   14.258
+  ],
+  "movida-chiaia": [
+   40.847,
+   14.25
+  ],
+  "pompeya": [
+   40.751,
+   14.489
+  ],
+  "herculano": [
+   40.806,
+   14.348
+  ],
+  "vesubio": [
+   40.821,
+   14.426
+  ],
+  "capri": [
+   40.552,
+   14.239
+  ],
+  "anacapri": [
+   40.559,
+   14.216
+  ],
+  "procida-corricella": [
+   40.759,
+   14.025
+  ],
+  "procida-playa": [
+   40.75,
+   14.02
+  ],
+  "ischia-maronti": [
+   40.704,
+   13.926
+  ],
+  "poseidon": [
+   40.727,
+   13.853
+  ],
+  "castello-aragonese": [
+   40.732,
+   13.964
+  ]
+ },
+ "noche": {
+  "Piazza Bellini": [
+   40.85,
+   14.25
+  ],
+  "Chiaia": [
+   40.834,
+   14.236
+  ],
+  "Lungomare": [
+   40.828,
+   14.247
+  ]
+ },
+ "eventos": {
+  "Fiesta de San Gennaro": [
+   40.853,
+   14.26
+  ],
+  "Ischia Film Festival": [
+   40.732,
+   13.964
+  ],
+  "Festa de Sant'Anna": [
+   40.733,
+   13.962
+  ],
+  "Belenes de San Gregorio Armeno": [
+   40.85,
+   14.258
+  ]
+ }
+}

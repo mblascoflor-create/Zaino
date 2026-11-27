@@ -1,0 +1,803 @@
+{
+ "id": "emilia-romana-gastronomica",
+ "nombre": "Emilia-Romaña gastronómica",
+ "nombre_corto": "Emilia-Romaña",
+ "lema": "Pasta, torres y Riviera en tren",
+ "descripcion": "Bolonia es universitaria, barata para comer y llena de pórticos; Módena y Parma son excursiones de tren con parmesano, balsámico y motores, y Rímini pone playa y fiesta en verano. Una zona donde se come mejor que en casi cualquier sitio de Italia sin necesitar coche.",
+ "perfil": {
+  "mar": 2,
+  "montana": 0,
+  "ciudad": 3,
+  "campo": 1,
+  "fiesta": 2,
+  "calma": 1,
+  "cultura": 2,
+  "gastronomia": 3,
+  "naturaleza": 0,
+  "playa": 2,
+  "aventura": 1,
+  "postal": 1
+ },
+ "nivel_precio": "medio",
+ "nivel_precio_nota": "Bolonia es más barata que Florencia o Milán para comer y dormir; la Riviera sube de precio en julio y agosto.",
+ "meses": {
+  "ideales": [
+   4,
+   5,
+   6,
+   9,
+   10
+  ],
+  "aceptables": [
+   3,
+   7,
+   11
+  ],
+  "evitar": [
+   8
+  ],
+  "nota": "Primavera y otoño para ciudades; la playa y la fiesta de Rímini solo de junio a septiembre. En la llanura hace bochorno en pleno verano y niebla en invierno."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "innecesario",
+  "nota": "Bolonia, Módena, Parma, Ferrara, Rávena y Rímini se enlazan en tren y las ciudades tienen ZTL y aparcamiento caro. El coche solo compensa para acetaie, caseríos de parmesano y el museo Lamborghini.",
+  "aeropuerto_recogida": "BLQ",
+  "operadores": [
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Europcar-Bolonia.BLQ.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Europcar-Bolonia.BLQ.EUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Avis-Bolonia.BLQ.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Avis-Bolonia.BLQ.AVIS.cla.ksp"
+   },
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Hertz-Bolonia.BLQ.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Hertz-Bolonia.BLQ.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Enterprise",
+    "enlace": "https://www.momondo.it/noleggio-auto/Enterprise-Bologna.BLQ.ENTERPRISE.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Enterprise-Bologna.BLQ.ENTERPRISE.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "bologna",
+   "nombre": "Bolonia",
+   "por_que": "Nudo de trenes, ambiente universitario y cena barata: desde aquí salen todas las excursiones.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Bolonia%2C+Italia"
+  },
+  {
+   "id": "modena",
+   "nombre": "Módena",
+   "por_que": "Más tranquila y pequeña; cómoda para Ferrari, balsámico y Parma.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=M%C3%B3dena%2C+Italia"
+  },
+  {
+   "id": "rimini",
+   "nombre": "Rímini",
+   "por_que": "Playa, discotecas y paseo marítimo en verano; a ~1 h de Bolonia en tren.",
+   "sin_coche": true,
+   "ambiente": "fiesta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=R%C3%ADmini%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "BLQ",
+    "nombre": "Bolonia – Guglielmo Marconi",
+    "ciudad": "Bolonia",
+    "a_la_base": "Hay lanzadera ferroviaria y bus hasta la estación Bologna Centrale en pocos minutos; comprobad opciones y precio en la web del aeropuerto."
+   },
+   {
+    "iata": "RMI",
+    "nombre": "Rímini – Federico Fellini",
+    "ciudad": "Rímini",
+    "a_la_base": "Aeropuerto pequeño de temporada junto a Rímini; desde él se llega al centro y a la estación en bus o taxi corto."
+   }
+  ],
+  "desde_espana": "Bolonia (BLQ) recibe vuelos low cost desde ciudades españolas, sobre todo Barcelona, y alternativa barata es volar a Milán Bérgamo (BGY) y subir en tren (1 h 30 aprox.). Comparad siempre fechas en el buscador: la oferta cambia por temporada.",
+  "rutas_directas": [],
+  "desde_italia": "Bolonia Centrale es el gran nudo: alta velocidad con Milán, Florencia, Venecia y Roma (Trenitalia/Italo) y regionales a Módena, Parma, Ferrara, Rávena y Rímini.",
+  "novedades": []
+ },
+ "moverse": {
+  "resumen": "Un grupo se mueve en tren regional desde Bolonia: Módena, Parma, Ferrara, Rávena y Rímini están a distancias de día. Dentro de las ciudades todo es a pie o en bici.",
+  "tren": {
+   "nota": "Trenes regionales baratos entre Bolonia, Módena, Parma, Ferrara, Rávena y Rímini; alta velocidad hacia Milán y Florencia. Comprad en Trenitalia o Italo y validad el billete regional antes de subir.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Rutas dentro de Italia desde Bolonia; sirve para ir a otras ciudades de Italia, no para llegar desde España.",
+   "enlace": "https://www.flixbus.it/autobus/bologna",
+   "fuente": "https://www.flixbus.it/azienda/stampa/flixbus-offerta-estiva-2026"
+  },
+  "ferry": [],
+  "camper": null
+ },
+ "actividades": [
+  {
+   "id": "san-luca",
+   "nombre": "Santuario de San Luca por el pórtico",
+   "donde": "Bolonia",
+   "base": "bologna",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Subir andando por el pórtico más largo del mundo hasta la colina y ver Bolonia al atardecer.",
+   "consejo": "Llevad agua y zapatillas cómodas: son muchas escaleras suaves.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Santuario+de+San+Luca+por+el+p%C3%B3rtico%2C+Bolonia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Santuario+de+San+Luca+por+el+p%C3%B3rtico%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Santuario+de+San+Luca+por+el+p%C3%B3rtico%2C+Bolonia%2C+Italia"
+  },
+  {
+   "id": "torre-asinelli",
+   "nombre": "Torre degli Asinelli y Due Torri",
+   "donde": "Bolonia",
+   "base": "bologna",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "alto",
+   "ambiente": "social",
+   "descripcion": "Subir los escalones de la torre medieval inclinada para ver los tejados rojos de Bolonia.",
+   "consejo": "Se sube por cupo de personas: reservad antes y llevad calzado cómodo.",
+   "enlace": "https://www.getyourguide.es/s/?q=Torre+Asinelli+Bolonia",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Torre+degli+Asinelli+y+Due+Torri%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Torre+degli+Asinelli+y+Due+Torri%2C+Bolonia%2C+Italia"
+  },
+  {
+   "id": "quadrilatero",
+   "nombre": "Quadrilatero y Mercato delle Erbe",
+   "donde": "Bolonia",
+   "base": "bologna",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Callejuelas de tiendas de pasta, mortadela y quesos, y mercado municipal para comer barato de pie.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Mercato+delle+Erbe%2C+Bolonia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+delle+Erbe%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Mercato+delle+Erbe%2C+Bolonia%2C+Italia"
+  },
+  {
+   "id": "plaza-maggiore",
+   "nombre": "Piazza Maggiore, Neptuno y San Petronio",
+   "donde": "Bolonia",
+   "base": "bologna",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "El corazón de Bolonia: la plaza, la fuente de Neptuno y la gran basílica gótica para pasear.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+Maggiore%2C+Bolonia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Maggiore%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+Maggiore%2C+Bolonia%2C+Italia"
+  },
+  {
+   "id": "santo-stefano",
+   "nombre": "Piazza Santo Stefano (las Siete Iglesias)",
+   "donde": "Bolonia",
+   "base": "bologna",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Plaza triangular con un conjunto de iglesias románicas entrelazadas; más tranquila que Maggiore.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+Santo+Stefano%2C+Bolonia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Santo+Stefano%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+Santo+Stefano%2C+Bolonia%2C+Italia"
+  },
+  {
+   "id": "zamboni-universidad",
+   "nombre": "Vida universitaria: Via Zamboni y Piazza Verdi",
+   "donde": "Bolonia",
+   "base": "bologna",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "musica"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "La universidad más antigua de Europa convierte la zona en un bar al aire libre cada noche, con precios de estudiante.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Piazza+Verdi%2C+Bolonia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Verdi%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+Verdi%2C+Bolonia%2C+Italia"
+  },
+  {
+   "id": "osterie-bolonia",
+   "nombre": "Cena en una osteria boloñesa",
+   "donde": "Bolonia",
+   "base": "bologna",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Tagliatelle al ragù, tortellini y una jarra de vino de la casa en una osteria del centro; mejor reservar mesa de grupo.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=osteria+tradizionale%2C+Bolonia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=osteria+tradizionale%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=osteria+tradizionale%2C+Bolonia%2C+Italia"
+  },
+  {
+   "id": "clase-pasta",
+   "nombre": "Clase de pasta fresca boloñesa",
+   "donde": "Bolonia",
+   "base": "bologna",
+   "tipo": "gastronomia",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Aprender a estirar la sfoglia y rellenar tortellini y luego comerlos entre todos.",
+   "enlace": "https://www.getyourguide.es/s/?q=clase+pasta+Bolonia",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Clase+de+pasta+fresca+bolo%C3%B1esa%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Clase+de+pasta+fresca+bolo%C3%B1esa%2C+Bolonia%2C+Italia"
+  },
+  {
+   "id": "ravena-mosaicos",
+   "nombre": "Mosaicos bizantinos de Rávena",
+   "donde": "Rávena",
+   "base": "bologna",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Basílica de San Vitale, mausoleo de Gala Placidia y San Apolinar: mosaicos del siglo V-VI Patrimonio UNESCO.",
+   "consejo": "Hay entrada combinada para varios monumentos; el centro se hace a pie.",
+   "enlace": "https://www.getyourguide.es/s/?q=mosaicos+R%C3%A1vena",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mosaicos+bizantinos+de+R%C3%A1vena%2C+R%C3%A1vena%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Mosaicos+bizantinos+de+R%C3%A1vena%2C+R%C3%A1vena%2C+Italia"
+  },
+  {
+   "id": "ferrara-bici",
+   "nombre": "Ferrara en bici por las murallas",
+   "donde": "Ferrara",
+   "base": "bologna",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "descripcion": "Alquilar bicis y rodear las murallas renacentistas y el castillo Estense en una ciudad plana.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Castello+Estense%2C+Ferrara%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castello+Estense%2C+Ferrara%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Castello+Estense%2C+Ferrara%2C+Italia"
+  },
+  {
+   "id": "modena-centro",
+   "nombre": "Duomo y Mercato Albinelli de Módena",
+   "donde": "Módena",
+   "base": "modena",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Catedral románica Patrimonio UNESCO y el mercado cubierto histórico para picar embutidos y quesos.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Mercato+Albinelli%2C+M%C3%B3dena%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+Albinelli%2C+M%C3%B3dena%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Mercato+Albinelli%2C+M%C3%B3dena%2C+Italia"
+  },
+  {
+   "id": "acetaia",
+   "nombre": "Acetaia: visita y cata de balsámico",
+   "donde": "Módena",
+   "base": "modena",
+   "tipo": "gastronomia",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Entrar en una bodega de vinagre balsámico tradicional y probarlo a gotas con parmesano.",
+   "consejo": "Casi todas están en el campo: id con coche o reservad un tour con transporte.",
+   "enlace": "https://www.getyourguide.es/s/?q=acetaia+aceto+balsamico+M%C3%B3dena",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Acetaia%3A+visita+y+cata+de+bals%C3%A1mico%2C+M%C3%B3dena%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Acetaia%3A+visita+y+cata+de+bals%C3%A1mico%2C+M%C3%B3dena%2C+Italia"
+  },
+  {
+   "id": "ferrari-maranello",
+   "nombre": "Museo Ferrari en Maranello",
+   "donde": "Maranello",
+   "base": "modena",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Coches de carreras y de calle de la marca más famosa de Italia, en su pueblo de origen.",
+   "consejo": "Se llega desde Módena en bus o taxi; comprobad horarios y reservad entrada.",
+   "enlace": "https://www.getyourguide.es/s/?q=Museo+Ferrari+Maranello",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Museo+Ferrari+en+Maranello%2C+Maranello%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Museo+Ferrari+en+Maranello%2C+Maranello%2C+Italia"
+  },
+  {
+   "id": "lamborghini",
+   "nombre": "Museo Lamborghini en Sant'Agata Bolognese",
+   "donde": "Sant'Agata Bolognese",
+   "base": "bologna",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Visita al museo y fábrica de la otra gran marca de la Motor Valley.",
+   "consejo": "Sin coche es incómodo: valorad tour con traslado desde Bolonia.",
+   "enlace": "https://www.getyourguide.es/s/?q=Lamborghini+museo+Bolonia",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Museo+Lamborghini+en+Sant%27Agata+Bolognese%2C+Sant%27Agata+Bolognese%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Museo+Lamborghini+en+Sant%27Agata+Bolognese%2C+Sant%27Agata+Bolognese%2C+Italia"
+  },
+  {
+   "id": "parma-dia",
+   "nombre": "Parma: Duomo, Baptisterio y jamón",
+   "donde": "Parma",
+   "base": "bologna",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Ciudad pequeña y elegante: catedral, baptisterio rosado y tabla de prosciutto con parmigiano en una salumeria.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Battistero+di+Parma%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Battistero+di+Parma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Battistero+di+Parma%2C+Italia"
+  },
+  {
+   "id": "caseificio",
+   "nombre": "Caseificio: ver hacer el Parmigiano-Reggiano",
+   "donde": "Parma",
+   "base": "modena",
+   "tipo": "gastronomia",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Ver de madrugada cómo se hacen las ruedas de queso y probar distintas curaciones.",
+   "consejo": "Se visita temprano y por la mañana; sin coche, reservad un tour con transporte.",
+   "enlace": "https://www.getyourguide.es/s/?q=visita+caseificio+Parmigiano+Reggiano",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Caseificio%3A+ver+hacer+el+Parmigiano-Reggiano%2C+Parma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Caseificio%3A+ver+hacer+el+Parmigiano-Reggiano%2C+Parma%2C+Italia"
+  },
+  {
+   "id": "rimini-playa",
+   "nombre": "Playa de Rímini",
+   "donde": "Rímini",
+   "base": "rimini",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Arena larga y plana, chiringuitos y baños con sombrilla de pago, a pocos pasos de la estación.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Rimini%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Rimini%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Rimini%2C+Italia"
+  },
+  {
+   "id": "rimini-noche",
+   "nombre": "Noche en la Riviera de Rímini",
+   "donde": "Rímini",
+   "base": "rimini",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "musica"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Copas en el paseo marítimo y discotecas de la costa en temporada de verano.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Lungomare+Marina+Centro%2C+R%C3%ADmini%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungomare+Marina+Centro%2C+R%C3%ADmini%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Lungomare+Marina+Centro%2C+R%C3%ADmini%2C+Italia"
+  },
+  {
+   "id": "rimini-centro",
+   "nombre": "Centro histórico de Rímini: Arco de Augusto y puente de Tiberio",
+   "donde": "Rímini",
+   "base": "rimini",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Monumentos romanos del año 27 a. C. y el barrio de pescadores de San Giuliano, con murales.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Ponte+di+Tiberio%2C+R%C3%ADmini%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ponte+di+Tiberio%2C+R%C3%ADmini%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Ponte+di+Tiberio%2C+R%C3%ADmini%2C+Italia"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Tagliatelle al ragù",
+   "que_es": "la auténtica «boloñesa»: pasta de huevo con ragú de carne cocinado lento",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "osterie del centro de Bolonia",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Osteria%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Osteria%2C+Bolonia%2C+Italia"
+  },
+  {
+   "plato": "Tortellini in brodo",
+   "que_es": "pasta rellena pequeña servida en caldo, plato de fiesta de Bolonia",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias de Bolonia y Módena",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trattoria%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Trattoria%2C+Bolonia%2C+Italia"
+  },
+  {
+   "plato": "Mortadella",
+   "que_es": "bocadillo de mortadela recién cortada, el bocata barato de Bolonia",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "tiendas del Quadrilatero",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Quadrilatero%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Quadrilatero%2C+Bolonia%2C+Italia"
+  },
+  {
+   "plato": "Tigelle y gnocco fritto",
+   "que_es": "panecillos y masa frita para rellenar con embutidos y quesos",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "tigellerie de Módena y Bolonia",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Modena+centro+storico%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Modena+centro+storico%2C+Italia"
+  },
+  {
+   "plato": "Parmigiano-Reggiano y Prosciutto di Parma",
+   "que_es": "queso curado y jamón de Parma en tabla",
+   "estilo": "mercado",
+   "coste": "medio",
+   "donde_probarlo": "salumerie y mercado de Parma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Salumeria%2C+Parma%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Salumeria%2C+Parma%2C+Italia"
+  },
+  {
+   "plato": "Piadina romagnola",
+   "que_es": "pan plano relleno de squacquerone y rúcula o embutido",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "chiringuitos y quioscos de Rímini y Rávena",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piadineria%2C+R%C3%ADmini%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piadineria%2C+R%C3%ADmini%2C+Italia"
+  },
+  {
+   "plato": "Zuppa inglese",
+   "que_es": "postre de bizcocho empapado en licor y crema",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "trattorias y pastelerías de la región",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Pasticceria%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Pasticceria%2C+Bolonia%2C+Italia"
+  },
+  {
+   "plato": "Lambrusco y Pignoletto",
+   "que_es": "tinto con burbujas de Módena y blanco burbujeante de Bolonia",
+   "estilo": "bebida",
+   "coste": "bajo",
+   "donde_probarlo": "osterie y enotecas del centro",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Enoteca%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Enoteca%2C+Bolonia%2C+Italia"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Via Zamboni y Piazza Verdi",
+   "base": "bologna",
+   "plan": "copas",
+   "descripcion": "Calles universitarias con bares y conciertos al aire libre casi todas las noches de curso.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Verdi%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+Verdi%2C+Bolonia%2C+Italia"
+  },
+  {
+   "zona": "Via del Pratello",
+   "base": "bologna",
+   "plan": "aperitivo",
+   "descripcion": "Calle de bares de ambiente más alternativo, muy buena para empezar la noche.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Via+del+Pratello%2C+Bolonia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Via+del+Pratello%2C+Bolonia%2C+Italia"
+  },
+  {
+   "zona": "Centro de Módena",
+   "base": "modena",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo tranquilo con lambrusco alrededor de Piazza Grande.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Grande%2C+M%C3%B3dena%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+Grande%2C+M%C3%B3dena%2C+Italia"
+  },
+  {
+   "zona": "Lungomare de Rímini",
+   "base": "rimini",
+   "plan": "fiesta",
+   "descripcion": "Paseo marítimo con bares y discotecas de la Riviera, solo en temporada.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungomare%2C+R%C3%ADmini%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Lungomare%2C+R%C3%ADmini%2C+Italia"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "bologna",
+   "coste": "bajo",
+   "para": "grupos con poco presupuesto que quieren estar cerca de la estación y de la zona universitaria.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Bolonia"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "bologna",
+   "coste": "medio",
+   "para": "grupos de 4-8 que quieren cocinar pasta fresca del mercado.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Bolonia"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Bolonia--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "modena",
+   "coste": "medio",
+   "para": "grupos pequeños que prefieren una base tranquila para Módena y Parma.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=M%C3%B3dena"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/M%C3%B3dena--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "rimini",
+   "coste": "bajo",
+   "para": "grupos de verano que quieren playa y fiesta a pie.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=R%C3%ADmini"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "rimini",
+   "coste": "medio",
+   "para": "grupos de 4-6 en la Riviera en temporada.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=R%C3%ADmini"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/R%C3%ADmini--Italia/homes"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Bologna Portici Festival",
+   "donde": "Bolonia",
+   "cuando": "Junio; en 2026 fue a principios de mes. Comprobad si se repite",
+   "meses": [
+    6
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Música, charlas y paseos guiados bajo los pórticos Patrimonio UNESCO.",
+   "enlace": "https://emiliaromagnaturismo.it/en/events/bologna-portici-festival-en",
+   "fuente": "https://emiliaromagnaturismo.it/en/events/bologna-portici-festival-en"
+  },
+  {
+   "nombre": "Motor Valley Fest",
+   "donde": "Módena",
+   "cuando": "Primavera; fechas en la web oficial",
+   "meses": [
+    5
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival de coches y motos con exposiciones y pruebas en las calles de Módena.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Motor+Valley+Fest%2C+M%C3%B3dena%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Motor+Valley+Fest%2C+M%C3%B3dena%2C+Italia"
+  },
+  {
+   "nombre": "Notte Rosa",
+   "donde": "Riviera Romañola",
+   "cuando": "Verano; fechas en la web oficial",
+   "meses": [
+    6,
+    7
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Fiesta de verano con conciertos y fuegos artificiales en la costa de la Riviera.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Notte+Rosa%2C+Riviera+Roma%C3%B1ola%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Notte+Rosa%2C+Riviera+Roma%C3%B1ola%2C+Italia"
+  },
+  {
+   "nombre": "Ravenna Festival",
+   "donde": "Rávena",
+   "cuando": "Verano; fechas en la web oficial",
+   "meses": [
+    6,
+    7
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival de música clásica, ópera y danza en teatros y monumentos.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Ravenna+Festival%2C+R%C3%A1vena%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Ravenna+Festival%2C+R%C3%A1vena%2C+Italia"
+  }
+ ],
+ "notas_honestas": [
+  "No pude abrir webs oficiales en esta sesión (límite de herramientas): casi todos los enlaces son mapa, Booking, Airbnb o GetYourGuide en patrón seguro.",
+  "Sin rutas aéreas directas verificadas para BLQ: la biblioteca previa solo citaba un comparador genérico, así que no las incluyo.",
+  "Fechas de Motor Valley Fest, Notte Rosa y Ravenna Festival sin verificar: son recurrentes, pero comprobad el año.",
+  "Rímini y su playa/fiesta solo funcionan de junio a septiembre; en invierno la zona es solo ciudad y comida.",
+  "El museo Lamborghini y las acetaie/caseifici se hacen mal sin coche; el resto sí es a pie o en tren."
+ ]
+}

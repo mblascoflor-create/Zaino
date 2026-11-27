@@ -1,0 +1,31 @@
+{
+  "zona": "puglia-salento",
+  "base": "bari",
+  "ciudad_referencia": "Bari",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 24,
+      "max": 27,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/bari/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": {
+      "min": 76,
+      "max": 146,
+      "fuente": "https://www.booking.com/city/it/bari.html?selected_currency=EUR | https://www.budgetyourtrip.com/italy/bari",
+      "calidad": "orientativo"
+    },
+    "comida_barata": {
+      "valor": 15.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Bari",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 1.0,
+      "fuente": "https://www.amtab.it/en/trasporto-pubblico-locale-sub-3/titoli-di-viaggio-e-tariffe-2",
+      "calidad": "verificado"
+    }
+  },
+  "notas": "hostel_noche: rango P25-P75 de 4 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=20.0, maximo=27.0); son precios 'desde' sin fechas concretas. doble_noche: min=76 es el precio 'From' mas bajo del titulo de la pagina de Booking.com para la ciudad (alojamiento mas barato listado, 2 adultos, 1 noche, sin fecha fija); max=146 es el precio medio de hotel para una pareja segun BudgetYourTrip (gasto declarado por viajeros). La horquilla mezcla ambas fuentes: es solo una guia aproximada, no un rango de apartamentos/dobles economicos garantizado. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Bari (rango Numbeo 10-20). transporte_billete: AMTAB Bari, billete sencillo urbano 1.00 EUR; a bordo 1.50. La pagina no indica fecha."
+}

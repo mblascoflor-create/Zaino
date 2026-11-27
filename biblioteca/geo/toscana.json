@@ -1,0 +1,112 @@
+{
+ "actividades": {
+  "uffizi": [
+   43.768,
+   11.255
+  ],
+  "piazzale-michelangelo-san-miniato": [
+   43.763,
+   11.265
+  ],
+  "mercato-centrale": [
+   43.777,
+   11.253
+  ],
+  "sant-ambrogio": [
+   43.771,
+   11.268
+  ],
+  "oltrarno-atardecer": [
+   43.768,
+   11.253
+  ],
+  "cafe-historico-florencia": [
+   43.771,
+   11.255
+  ],
+  "siena-campo": [
+   43.318,
+   11.331
+  ],
+  "siena-contrade-noche": [
+   43.318,
+   11.331
+  ],
+  "san-gimignano": [
+   43.468,
+   11.043
+  ],
+  "pisa-miracoli": [
+   43.723,
+   10.397
+  ],
+  "pisa-lungarno-noche": [
+   43.716,
+   10.4
+  ],
+  "lucca-murallas-bici": [
+   43.843,
+   10.502
+  ],
+  "saturnia": [
+   42.649,
+   11.511
+  ],
+  "bagni-san-filippo": [
+   42.915,
+   11.7
+  ],
+  "val-orcia": [
+   43.077,
+   11.679
+  ],
+  "chianti-vino": [
+   43.47,
+   11.255
+  ],
+  "duomo-florencia": [
+   43.773,
+   11.256
+  ],
+  "pisa-lucca-dia": [
+   43.723,
+   10.397
+  ]
+ },
+ "noche": {
+  "Santo Spirito": [
+   43.766,
+   11.247
+  ],
+  "Piazza del Campo y contrade": [
+   43.318,
+   11.331
+  ],
+  "Lungarno y Piazza delle Vettovaglie": [
+   43.716,
+   10.4
+  ]
+ },
+ "eventos": {
+  "Palio di Siena": [
+   43.318,
+   11.331
+  ],
+  "Calcio Storico Fiorentino": [
+   43.768,
+   11.262
+  ],
+  "Luminara di San Ranieri": [
+   43.716,
+   10.4
+  ],
+  "Lucca Comics & Games": [
+   43.843,
+   10.502
+  ]
+ },
+ "dudosos": [
+  "chianti-vino",
+  "val-orcia"
+ ]
+}

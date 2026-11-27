@@ -1,0 +1,31 @@
+{
+  "zona": "lombardia-milan",
+  "base": "milan-centro",
+  "ciudad_referencia": "Milán",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 18,
+      "max": 23,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/milan/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": {
+      "min": 52,
+      "max": 130,
+      "fuente": "https://www.booking.com/city/it/milan.html?selected_currency=EUR | https://www.budgetyourtrip.com/italy/milan",
+      "calidad": "orientativo"
+    },
+    "comida_barata": {
+      "valor": 15.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Milan",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 2.2,
+      "fuente": "https://atm.it/it/ViaggiaConNoi/Documents/TARIFFE%20ATM_ottobre2024.pdf",
+      "calidad": "verificado"
+    }
+  },
+  "notas": "hostel_noche: rango P25-P75 de 29 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=10.49, maximo=74.97); son precios 'desde' sin fechas concretas. doble_noche: min=52 es el precio 'From' mas bajo del titulo de la pagina de Booking.com para la ciudad (alojamiento mas barato listado, 2 adultos, 1 noche, sin fecha fija); max=130 es el precio medio de hotel para una pareja segun BudgetYourTrip (gasto declarado por viajeros). La horquilla mezcla ambas fuentes: es solo una guia aproximada, no un rango de apartamentos/dobles economicos garantizado. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Milan (rango Numbeo 10-18). transporte_billete: ATM, billete ordinario urbano Mi1-Mi3, 90 min, 2.20 EUR. OJO: documento oficial de tarifas fechado octubre 2024; no se ha podido confirmar si hay cambio posterior."
+}

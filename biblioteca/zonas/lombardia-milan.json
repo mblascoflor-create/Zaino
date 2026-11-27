@@ -1,0 +1,767 @@
+{
+ "id": "lombardia-milan",
+ "nombre": "Milán y Lombardía",
+ "nombre_corto": "Milán",
+ "lema": "Ciudad grande, Navigli y lagos",
+ "descripcion": "Milán es la ciudad más cosmopolita de Italia: Duomo, aperitivo en Navigli, moda y diseño. Desde ella, Bérgamo, Como, Pavía y Monza son excursiones fáciles en tren.",
+ "perfil": {
+  "mar": 0,
+  "montana": 0,
+  "ciudad": 3,
+  "campo": 0,
+  "fiesta": 2,
+  "calma": 0,
+  "cultura": 2,
+  "gastronomia": 2,
+  "naturaleza": 1,
+  "playa": 0,
+  "aventura": 0,
+  "postal": 2
+ },
+ "nivel_precio": "alto",
+ "nivel_precio_nota": "Es de las ciudades italianas más caras para dormir; los vuelos low cost a Bérgamo compensan algo.",
+ "meses": {
+  "ideales": [
+   4,
+   5,
+   6,
+   9,
+   10
+  ],
+  "aceptables": [
+   3,
+   7,
+   11,
+   12
+  ],
+  "evitar": [
+   8
+  ],
+  "nota": "En agosto media ciudad cierra por vacaciones y hay bochorno; en invierno hay niebla pero Navidad es animada."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "innecesario",
+  "nota": "Metro, tranvía y tren cubren Milán y las excursiones; el centro tiene ZTL y aparcar es caro. Solo tiene sentido si queréis explorar los lagos por vuestra cuenta.",
+  "aeropuerto_recogida": "MXP",
+  "operadores": [
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Hertz-Milan.MXP.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Hertz-Milan.MXP.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Alamo",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Alamo-Milan.MXP.ALAMO.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Alamo-Milan.MXP.ALAMO.cla.ksp"
+   },
+   {
+    "nombre": "Enterprise",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Enterprise-Milan.MXP.ENTERPRISE.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Enterprise-Milan.MXP.ENTERPRISE.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "milan-centro",
+   "nombre": "Milán centro (Duomo, Brera, Centrale)",
+   "por_que": "Con metro y estación cerca para todo: moda, museos y excursiones.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mil%C3%A1n+centro+%28Duomo%2C+Brera%2C+Centrale%29%2C+Italia"
+  },
+  {
+   "id": "navigli",
+   "nombre": "Navigli, Milán",
+   "por_que": "Barrio de canales con aperitivo y copas a pie; algo más ruidoso por la noche.",
+   "sin_coche": true,
+   "ambiente": "fiesta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Navigli%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "id": "bergamo",
+   "nombre": "Bérgamo",
+   "por_que": "Ciudad medieval tranquila y barata, a 1 h de Milán en tren y junto al aeropuerto BGY.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=B%C3%A9rgamo%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "BGY",
+    "nombre": "Milán Bérgamo – Orio al Serio",
+    "ciudad": "Bérgamo",
+    "a_la_base": "Hay bus directo a la estación de Milano Centrale y a Bérgamo; unos 50-60 minutos a Milán según tráfico. Comprobad operador y precio en la web del aeropuerto."
+   },
+   {
+    "iata": "MXP",
+    "nombre": "Milán Malpensa",
+    "ciudad": "Milán",
+    "a_la_base": "Tren Malpensa Express a Milán (Centrale y Cadorna), de unos 50 minutos; también hay buses."
+   },
+   {
+    "iata": "LIN",
+    "nombre": "Milán Linate",
+    "ciudad": "Milán",
+    "a_la_base": "Aeropuerto urbano, conectado con el centro en metro (unos 15-20 minutos); menos low cost."
+   }
+  ],
+  "desde_espana": "Barcelona-Milán Bérgamo es la ruta low cost más consolidada, con Ryanair. Comparad también Malpensa (MXP) y Linate (LIN), que reciben más aerolíneas.",
+  "rutas_directas": [
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "BGY",
+    "aerolinea": "Ryanair",
+    "nota": "ruta consolidada; comprobad días y temporada al reservar",
+    "fuente": "https://www.momondo.es/vuelos/barcelona/aeropuerto-de-bergamo-orio-al-serio-bgy"
+   }
+  ],
+  "desde_italia": "Milano Centrale tiene alta velocidad directa con Turín, Venecia, Bolonia, Florencia y Roma (Trenitalia e Italo).",
+  "novedades": []
+ },
+ "moverse": {
+  "resumen": "En Milán se va en metro, tranvía y a pie; para Bérgamo, Como, Pavía o Monza basta tren regional desde Centrale, Garibaldi o Cadorna.",
+  "tren": {
+   "nota": "Trenes regionales baratos a Bérgamo, Como, Pavía y Monza; alta velocidad a otras ciudades. Comprad en Trenitalia o Italo y validad el billete regional.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Rutas dentro de Italia desde Milán; no sirve para llegar desde España.",
+   "enlace": "https://www.flixbus.it/autobus/milano",
+   "fuente": "https://www.flixbus.it/azienda/stampa/flixbus-offerta-estiva-2026"
+  },
+  "ferry": [],
+  "camper": null
+ },
+ "actividades": [
+  {
+   "id": "duomo-terrazas",
+   "nombre": "Duomo y terrazas del tejado",
+   "donde": "Milán",
+   "base": "milan-centro",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "descripcion": "Subir por la azotea de mármol entre agujas y estatuas con vistas a la plaza.",
+   "consejo": "Elegid entrada con terrazas y reservad antes.",
+   "enlace": "https://www.getyourguide.es/s/?q=Duomo+Mil%C3%A1n+terrazas",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Duomo+y+terrazas+del+tejado%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Duomo+y+terrazas+del+tejado%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "id": "galleria",
+   "nombre": "Galleria Vittorio Emanuele II y La Scala",
+   "donde": "Milán",
+   "base": "milan-centro",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "2h",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Pasear bajo la cúpula de cristal y ver el teatro de la Scala por fuera.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Galleria+Vittorio+Emanuele+II%2C+Mil%C3%A1n%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Galleria+Vittorio+Emanuele+II%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Galleria+Vittorio+Emanuele+II%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "id": "castello-sempione",
+   "nombre": "Castello Sforzesco y Parque Sempione",
+   "donde": "Milán",
+   "base": "milan-centro",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Patio del castillo, sus museos y el parque hasta el Arco della Pace.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Castello+Sforzesco%2C+Mil%C3%A1n%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castello+Sforzesco%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Castello+Sforzesco%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "id": "brera",
+   "nombre": "Brera: calles, galerías y aperitivo",
+   "donde": "Milán",
+   "base": "milan-centro",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Barrio de adoquines, talleres y cafés; la Pinacoteca queda en medio.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Brera%2C+Mil%C3%A1n%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Brera%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Brera%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "id": "cenacolo",
+   "nombre": "Última Cena de Leonardo (Cenacolo)",
+   "donde": "Milán",
+   "base": "milan-centro",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Ver el mural de Leonardo en Santa Maria delle Grazie, con visita de 15 minutos.",
+   "consejo": "Reserva obligatoria con semanas de antelación; sin entrada no se entra.",
+   "enlace": "https://www.getyourguide.es/s/?q=%C3%9Altima+Cena+Leonardo+Mil%C3%A1n",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=%C3%9Altima+Cena+de+Leonardo+%28Cenacolo%29%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=%C3%9Altima+Cena+de+Leonardo+%28Cenacolo%29%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "id": "navigli-aperitivo",
+   "nombre": "Navigli: aperitivo junto a los canales",
+   "donde": "Milán",
+   "base": "navigli",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Spritz y buffet en los bares de los canales al atardecer.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Navigli%2C+Mil%C3%A1n%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Navigli%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Navigli%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "id": "mercadillo-navigli",
+   "nombre": "Mercadillo de antigüedades de Navigli",
+   "donde": "Milán",
+   "base": "navigli",
+   "tipo": "compras",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Puestos vintage y de segunda mano a lo largo del Naviglio Grande, normalmente el último domingo del mes.",
+   "consejo": "Comprobad la fecha del mes antes de ir.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Naviglio+Grande%2C+Mil%C3%A1n%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Naviglio+Grande%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Naviglio+Grande%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "id": "bosco-verticale",
+   "nombre": "Bosco Verticale, Porta Nuova e Isola",
+   "donde": "Milán",
+   "base": "milan-centro",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Rascacielos con árboles en balcones, la plaza Gae Aulenti y el barrio Isola.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Bosco+Verticale%2C+Mil%C3%A1n%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Bosco+Verticale%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Bosco+Verticale%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "id": "san-siro",
+   "nombre": "Estadio San Siro",
+   "donde": "Milán",
+   "base": "milan-centro",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Tour por el estadio de Milan e Inter o entrada para partido, según calendario.",
+   "consejo": "Los partidos se agotan: comprad con antelación.",
+   "enlace": "https://www.getyourguide.es/s/?q=San+Siro+tour+estadio",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Estadio+San+Siro%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Estadio+San+Siro%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "id": "citta-alta-bergamo",
+   "nombre": "Bérgamo: Città Alta y funicular",
+   "donde": "Bérgamo",
+   "base": "bergamo",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Subir en funicular a las murallas venecianas Patrimonio UNESCO y comer polenta con vistas.",
+   "consejo": "Desde Milán hay tren regional directo.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Citt%C3%A0+Alta%2C+B%C3%A9rgamo%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Citt%C3%A0+Alta%2C+B%C3%A9rgamo%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Citt%C3%A0+Alta%2C+B%C3%A9rgamo%2C+Italia"
+  },
+  {
+   "id": "como-lago",
+   "nombre": "Como: lago y funicular a Brunate",
+   "donde": "Como",
+   "base": "milan-centro",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Tren a Como, paseo por el lago y funicular a Brunate para ver los Alpes.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Funicolare+Como-Brunate%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Funicolare+Como-Brunate%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Funicolare+Como-Brunate%2C+Italia"
+  },
+  {
+   "id": "pavia",
+   "nombre": "Pavía: Ponte Coperto y centro universitario",
+   "donde": "Pavía",
+   "base": "milan-centro",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Ciudad universitaria con puente cubierto y Duomo, a unos 30 minutos en tren.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Ponte+Coperto%2C+Pav%C3%ADa%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ponte+Coperto%2C+Pav%C3%ADa%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Ponte+Coperto%2C+Pav%C3%ADa%2C+Italia"
+  },
+  {
+   "id": "monza",
+   "nombre": "Monza: Villa Real y parque",
+   "donde": "Monza",
+   "base": "milan-centro",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Parque enorme con la villa real y el circuito histórico de F1 (por fuera).",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Parco+di+Monza%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Parco+di+Monza%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Parco+di+Monza%2C+Italia"
+  },
+  {
+   "id": "moda-montenapoleone",
+   "nombre": "Quadrilatero della Moda",
+   "donde": "Milán",
+   "base": "milan-centro",
+   "tipo": "compras",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Pasear por las calles de las grandes firmas para mirar escaparates.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Via+Montenapoleone%2C+Mil%C3%A1n%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Via+Montenapoleone%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Via+Montenapoleone%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "id": "isola-noche",
+   "nombre": "Noche en Corso Como e Isola",
+   "donde": "Milán",
+   "base": "milan-centro",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "musica"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Bares y discotecas alrededor de Porta Garibaldi.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Corso+Como%2C+Mil%C3%A1n%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Corso+Como%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Corso+Como%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "id": "novecento",
+   "nombre": "Museo del Novecento",
+   "donde": "Milán",
+   "base": "milan-centro",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Arte italiano del siglo XX en el Arengario, con vistas al Duomo.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Museo+del+Novecento%2C+Mil%C3%A1n%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Museo+del+Novecento%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Museo+del+Novecento%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "id": "san-lorenzo",
+   "nombre": "Columnas romanas de San Lorenzo",
+   "donde": "Milán",
+   "base": "navigli",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Plaza con columnas romanas del siglo II, llena de estudiantes por la noche.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Colonne+di+San+Lorenzo%2C+Mil%C3%A1n%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Colonne+di+San+Lorenzo%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Colonne+di+San+Lorenzo%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "id": "mercato-centrale",
+   "nombre": "Mercato Centrale en Milano Centrale",
+   "donde": "Milán",
+   "base": "milan-centro",
+   "tipo": "gastronomia",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Mercado gastronómico con puestos de pizza, pasta y dulces dentro de la estación.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Mercato+Centrale%2C+Milano+Centrale%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+Centrale%2C+Milano+Centrale%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Mercato+Centrale%2C+Milano+Centrale%2C+Italia"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Risotto alla milanese",
+   "que_es": "arroz con azafrán y mantequilla, plato típico de la ciudad",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias de Brera y Navigli",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trattoria%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Trattoria%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "plato": "Cotoletta alla milanese",
+   "que_es": "chuleta de ternera empanada y frita, con hueso",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorias del centro",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trattoria%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Trattoria%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "plato": "Ossobuco",
+   "que_es": "jarrete de ternera estofado, se come con risotto",
+   "estilo": "trattoria",
+   "coste": "alto",
+   "donde_probarlo": "trattorias tradicionales",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trattoria%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Trattoria%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "plato": "Casoncelli alla bergamasca",
+   "que_es": "pasta rellena con mantequilla, salvia y panceta",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "Città Alta de Bérgamo",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Citt%C3%A0+Alta%2C+B%C3%A9rgamo%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Citt%C3%A0+Alta%2C+B%C3%A9rgamo%2C+Italia"
+  },
+  {
+   "plato": "Aperitivo milanés",
+   "que_es": "spritz o negroni con buffet incluido",
+   "estilo": "bebida",
+   "coste": "bajo",
+   "donde_probarlo": "bares de Navigli y Brera",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Navigli%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Navigli%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "plato": "Panettone",
+   "que_es": "bizcocho dulce con frutas confitadas, típico en Navidad",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías de toda la ciudad",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Pasticceria%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Pasticceria%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "plato": "Panzerotti",
+   "que_es": "empanadillas fritas rellenas de queso y tomate",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "puestos del centro",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Panzerotti%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Panzerotti%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "plato": "Polenta e osei",
+   "que_es": "pastel de Bérgamo con forma de polenta y pajaritos de mazapán",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías de Città Alta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Pasticceria%2C+Citt%C3%A0+Alta%2C+B%C3%A9rgamo%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Pasticceria%2C+Citt%C3%A0+Alta%2C+B%C3%A9rgamo%2C+Italia"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Navigli",
+   "base": "navigli",
+   "plan": "aperitivo",
+   "descripcion": "Canales con aperitivo al atardecer y copas hasta tarde.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Navigli%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Navigli%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "zona": "Corso Como e Isola",
+   "base": "milan-centro",
+   "plan": "fiesta",
+   "descripcion": "Zona de discotecas y bares alrededor de Porta Garibaldi.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Corso+Como%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Corso+Como%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "zona": "Colonne di San Lorenzo",
+   "base": "navigli",
+   "plan": "copas",
+   "descripcion": "Plaza con bares y mucha gente joven, con ambiente de calle.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Colonne+di+San+Lorenzo%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Colonne+di+San+Lorenzo%2C+Mil%C3%A1n%2C+Italia"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "milan-centro",
+   "coste": "bajo",
+   "para": "grupos ajustados que quieren estar cerca de la estación.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Mil%C3%A1n"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "navigli",
+   "coste": "medio",
+   "para": "grupos de 4-8 que quieren cocinar y vivir Navigli.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Mil%C3%A1n"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Mil%C3%A1n--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "milan-centro",
+   "coste": "alto",
+   "para": "quien prefiera comodidad y no compartir baño.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Mil%C3%A1n"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "bergamo",
+   "coste": "bajo",
+   "para": "grupos que quieren una base barata y tranquila junto al aeropuerto BGY.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=B%C3%A9rgamo"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/B%C3%A9rgamo--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "bergamo",
+   "coste": "medio",
+   "para": "grupos de 4-6 que quieren Città Alta.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=B%C3%A9rgamo"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/B%C3%A9rgamo--Italia/homes"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Salone del Mobile.Milano",
+   "donde": "Milán",
+   "cuando": "Cada año, en abril",
+   "meses": [
+    4
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Semana del diseño con ferias e instalaciones por toda la ciudad (Fuorisalone).",
+   "enlace": "https://www.salonemilano.it/en",
+   "fuente": "https://www.salonemilano.it/en"
+  },
+  {
+   "nombre": "Milano Fashion Week",
+   "donde": "Milán",
+   "cuando": "Cada año, febrero-marzo y septiembre",
+   "meses": [
+    2,
+    3,
+    9
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Desfiles y eventos de moda por la ciudad; muchos son de acreditación, pero hay ambiente en la calle.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Milano+Fashion+Week%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Milano+Fashion+Week%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "nombre": "Fiera de Sant'Ambrogio (Oh Bej! Oh Bej!)",
+   "donde": "Milán",
+   "cuando": "Cada año, alrededor del 7 de diciembre",
+   "meses": [
+    12
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Feria navideña junto al Castello Sforzesco, el día del patrón.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Fiera+de+Sant%27Ambrogio+%28Oh+Bej%21+Oh+Bej%21%29%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Fiera+de+Sant%27Ambrogio+%28Oh+Bej%21+Oh+Bej%21%29%2C+Mil%C3%A1n%2C+Italia"
+  },
+  {
+   "nombre": "Carnevale Ambrosiano",
+   "donde": "Milán",
+   "cuando": "Cada año, febrero-marzo",
+   "meses": [
+    2,
+    3
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Carnaval propio de Milán, con desfiles en el centro.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Carnevale+Ambrosiano%2C+Mil%C3%A1n%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Carnevale+Ambrosiano%2C+Mil%C3%A1n%2C+Italia"
+  }
+ ],
+ "notas_honestas": [
+  "No pude abrir webs oficiales en esta sesión (límite de herramientas): casi todos los enlaces son mapa, Booking, Airbnb o GetYourGuide en patrón seguro.",
+  "Solo una ruta aérea verificada (BCN-BGY, Ryanair); faltan MXP/LIN con fuente.",
+  "Fechas de Sant'Ambrogio, Fashion Week y Carnevale Ambrosiano sin fuente oficial verificada, y fecha del mercadillo de Navigli aproximada.",
+  "Tiempos de aeropuerto a Milán aproximados: comprobad en la web del aeropuerto.",
+  "Cenacolo y San Siro: entradas con enlace de GetYourGuide, no web oficial."
+ ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "zaino",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "iconos": "node tools/iconos.cjs",
+    "biblioteca": "node biblioteca/construir.mjs",
+    "test": "node tests/motor.test.mjs && node tests/ia.test.mjs && node tests/sql_rls.test.mjs && node tests/sql_biblioteca.test.mjs",
+    "test:navegador": "python3 tests/e2e/escenarios.py && python3 tests/e2e/supabase_e2e.py && python3 tests/e2e/run_groups.py",
+    "desplegar": "node tools/desplegar.mjs",
+    "test:servidor": "deno run -A tests/funciones.test.ts"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.16",
+    "@supabase/supabase-js": "2.119.0",
+    "esbuild": "^0.25.0"
+  }
+}

@@ -1,0 +1,117 @@
+{
+ "actividades": {
+  "seceda": [
+   46.567,
+   11.72
+  ],
+  "alpe-siusi": [
+   46.54,
+   11.62
+  ],
+  "tre-cime": [
+   46.619,
+   12.303
+  ],
+  "braies": [
+   46.694,
+   12.085
+  ],
+  "otzi": [
+   46.498,
+   11.356
+  ],
+  "mercatino-bolzano": [
+   46.498,
+   11.356
+  ],
+  "bolzano-centro": [
+   46.498,
+   11.355
+  ],
+  "renon": [
+   46.52,
+   11.42
+  ],
+  "ferrata-tridentina": [
+   46.54,
+   11.8
+  ],
+  "esqui-val-gardena": [
+   46.56,
+   11.67
+  ],
+  "raquetas-siusi": [
+   46.54,
+   11.62
+  ],
+  "trineo-siusi": [
+   46.54,
+   11.62
+  ],
+  "cortina-faloria": [
+   46.54,
+   12.136
+  ],
+  "cinque-torri": [
+   46.52,
+   12.04
+  ],
+  "misurina": [
+   46.583,
+   12.254
+  ],
+  "funes": [
+   46.64,
+   11.73
+  ],
+  "rifugio-noche": [
+   46.54,
+   11.62
+  ],
+  "ortisei-pueblo": [
+   46.574,
+   11.671
+  ],
+  "aperitivo-ortisei": [
+   46.574,
+   11.671
+  ],
+  "aperitivo-bolzano": [
+   46.498,
+   11.355
+  ]
+ },
+ "noche": {
+  "Portici y Piazza delle Erbe": [
+   46.498,
+   11.352
+  ],
+  "Ortisei centro y après-ski": [
+   46.574,
+   11.671
+  ],
+  "Corso Italia, Cortina": [
+   46.54,
+   12.136
+  ]
+ },
+ "eventos": {
+  "Christkindlmarkt de Bolzano": [
+   46.498,
+   11.356
+  ],
+  "Rock the Dolomites – Winter Music Festival": [
+   46.56,
+   11.76
+  ],
+  "Apertura de invierno de la cabinovia de Alpe di Siusi": [
+   46.54,
+   11.62
+  ],
+  "Apertura de teleféricos de verano en Val Gardena": [
+   46.574,
+   11.671
+  ]
+ },
+ "dudosos": []
+}

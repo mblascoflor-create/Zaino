@@ -1,0 +1,31 @@
+{
+  "zona": "veneto-venecia",
+  "base": "venecia",
+  "ciudad_referencia": "Venecia",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 19,
+      "max": 39,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/venice/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": {
+      "min": 65,
+      "max": 101,
+      "fuente": "https://www.booking.com/city/it/venice.html?selected_currency=EUR | https://www.budgetyourtrip.com/italy/venice",
+      "calidad": "orientativo"
+    },
+    "comida_barata": {
+      "valor": 20.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Venice",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 9.5,
+      "fuente": "https://www.veneziaunica.it/it/acquista-i-biglietti/trasporto-pubblico-a-venezia",
+      "calidad": "verificado"
+    }
+  },
+  "notas": "hostel_noche: rango P25-P75 de 8 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=15.77, maximo=61.0); son precios 'desde' sin fechas concretas. doble_noche: min=65 es el precio 'From' mas bajo del titulo de la pagina de Booking.com para la ciudad (alojamiento mas barato listado, 2 adultos, 1 noche, sin fecha fija); max=101 es el precio medio de hotel para una pareja segun BudgetYourTrip (gasto declarado por viajeros). La horquilla mezcla ambas fuentes: es solo una guia aproximada, no un rango de apartamentos/dobles economicos garantizado. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Venecia (rango Numbeo 15-25). transporte_billete: ACTV Biglietto Ordinario 75 minutos: la pagina oficial indica \"da 9,50 EUR\" (vaporetto/bus en Venecia; es el precio turista, no el de residente). No es comparable con otras ciudades."
+}

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+tests/shots/
+public/config.js
+supabase/.temp/
+*.zip
+tests/e2e/fonts
+dist-artefacto/
+dist-funciones/

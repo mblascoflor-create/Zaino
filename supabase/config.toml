@@ -1,0 +1,9 @@
+# Configuración mínima para el CLI de Supabase (supabase link / functions deploy).
+# project_id es solo un nombre local; el proyecto real se elige con `supabase link`.
+project_id = "zaino"
+
+[functions.motor]
+verify_jwt = false  # la sesión se comprueba dentro de la función (compatible con las claves nuevas de Supabase)
+
+[functions.zaino-ia]
+verify_jwt = false  # la sesión se comprueba dentro de la función (compatible con las claves nuevas de Supabase)

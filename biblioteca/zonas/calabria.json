@@ -1,0 +1,795 @@
+{
+ "id": "calabria",
+ "nombre": "Calabria",
+ "nombre_corto": "Calabria",
+ "lema": "Calas de postal y sur sin masificar",
+ "descripcion": "Costa degli Dei con Tropea y Capo Vaticano, Scilla sobre el mar, la Sila de bosques y lagos y una cocina muy picante. Poco turismo internacional y precios bajos, pero mucho mejor con coche.",
+ "perfil": {
+  "mar": 3,
+  "montana": 2,
+  "ciudad": 1,
+  "campo": 1,
+  "fiesta": 1,
+  "calma": 3,
+  "cultura": 1,
+  "gastronomia": 2,
+  "naturaleza": 2,
+  "playa": 3,
+  "aventura": 1,
+  "postal": 3
+ },
+ "nivel_precio": "bajo",
+ "nivel_precio_nota": "Es de las regiones más baratas de Italia para dormir y comer; solo Tropea sube en pleno verano.",
+ "meses": {
+  "ideales": [
+   5,
+   6,
+   9
+  ],
+  "aceptables": [
+   4,
+   7,
+   10
+  ],
+  "evitar": [
+   8
+  ],
+  "nota": "Junio y septiembre dan mar cálido sin la masificación de agosto; en julio-agosto hace mucho calor, aunque la Sila es un respiro."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "imprescindible",
+  "nota": "Fuera de la línea de tren de la costa (Pizzo, Tropea, Scilla, Reggio) los pueblos, calas y parques de montaña tienen poco transporte público. Para Capo Vaticano, Sila y Le Castella el coche es casi obligatorio.",
+  "aeropuerto_recogida": "SUF",
+  "operadores": [
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Europcar-Lamezia-Terme.SUF.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Europcar-Lamezia-Terme.SUF.EUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Enterprise",
+    "enlace": "https://www.momondo.es/alquiler-de-coches/Enterprise-Lamezia-Terme.SUF.ENTERPRISE.cla.ksp",
+    "fuente": "https://www.momondo.es/alquiler-de-coches/Enterprise-Lamezia-Terme.SUF.ENTERPRISE.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "tropea",
+   "nombre": "Tropea",
+   "por_que": "Casco sobre acantilado, playas a pie y tren; base mixta y fácil para un grupo.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Tropea%2C+Italia"
+  },
+  {
+   "id": "capo-vaticano",
+   "nombre": "Capo Vaticano / Ricadi",
+   "por_que": "Calas cercanas y faro; poca vida nocturna.",
+   "sin_coche": false,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Capo+Vaticano%2C+Ricadi%2C+Italia"
+  },
+  {
+   "id": "reggio",
+   "nombre": "Reggio Calabria",
+   "por_que": "Ciudad con museo, paseo marítimo y tren a Scilla; vida de ciudad pequeña.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Reggio+Calabria%2C+Italia"
+  },
+  {
+   "id": "cosenza",
+   "nombre": "Cosenza y Sila",
+   "por_que": "Ciudad universitaria y puerta a la Sila, Diamante y Le Castella; mejor con coche.",
+   "sin_coche": false,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cosenza%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "SUF",
+    "nombre": "Lamezia Terme",
+    "ciudad": "Lamezia Terme",
+    "a_la_base": "Lamezia Airlink de Trenitalia conecta el aeropuerto con la estación y de ahí tren regional a Pizzo y Tropea."
+   },
+   {
+    "iata": "REG",
+    "nombre": "Reggio Calabria – Tito Minniti",
+    "ciudad": "Reggio Calabria",
+    "a_la_base": "Cerca de la ciudad; sirve para Reggio y Scilla; comprobad transporte público."
+   },
+   {
+    "iata": "CRV",
+    "nombre": "Crotone – Sant'Anna",
+    "ciudad": "Crotone",
+    "a_la_base": "Útil para Le Castella y el Área Marina Protegida; mejor con coche."
+   }
+  ],
+  "desde_espana": "Ryanair ha unido Madrid con Lamezia en verano (ruta de 2025). Desde el resto de España suele hacer falta escala o volar a Sicilia/Nápoles y seguir en tren o ferry.",
+  "rutas_directas": [
+   {
+    "origen": "Madrid",
+    "origen_iata": "MAD",
+    "destino_iata": "SUF",
+    "aerolinea": "Ryanair",
+    "nota": "estacional (verano 2025); comprobad si sigue",
+    "fuente": "https://italiabsolutely.com/news/transportation/calabria-takes-centre-stage-in-ryanair-s-international-network-202504081736"
+   }
+  ],
+  "desde_italia": "Desde Roma o Nápoles hay trenes (Intercity) hasta Lamezia Terme y Reggio Calabria por la costa tirrena; son varias horas. Desde Sicilia, el ferry de Mesina a Villa San Giovanni.",
+  "novedades": [
+   {
+    "nota": "Ryanair añadió cinco rutas internacionales a Calabria en verano 2025, entre ellas Madrid-Lamezia.",
+    "fuente": "https://italiabsolutely.com/news/transportation/calabria-takes-centre-stage-in-ryanair-s-international-network-202504081736"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "La línea de tren de la costa une Pizzo, Tropea, Scilla y Reggio, pero para calas y la Sila hace falta coche o excursión organizada.",
+  "tren": {
+   "nota": "Tren regional de Trenitalia por la costa tirrena; Lamezia Airlink conecta el aeropuerto con la estación.",
+   "enlace": "https://www.trenitalia.com/it/regionale/collegamenti-regionale/lamezia-airlink.html"
+  },
+  "bus": null,
+  "ferry": [
+   {
+    "operador": "Caronte & Tourist",
+    "ruta": "Villa San Giovanni - Mesina",
+    "nota": "Más de 120 travesías diarias, 24 horas; para combinar Calabria y Sicilia.",
+    "enlace": "https://booking.carontetourist.it/en",
+    "fuente": "https://www.carontetourist.it/en/caronte-tourist"
+   }
+  ],
+  "camper": null
+ },
+ "actividades": [
+  {
+   "id": "tropea-centro",
+   "nombre": "Casco antiguo de Tropea y Santa Maria dell'Isola",
+   "donde": "Tropea",
+   "base": "tropea",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Callejuelas sobre el acantilado y el santuario en el islote frente al mar: la imagen más famosa de Calabria.",
+   "enlace": "https://www.visititaly.eu/it/visit-tropea",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Santuario+di+Santa+Maria+dell%27Isola%2C+Tropea%2C+Italia",
+   "fuente": "https://www.visititaly.eu/it/visit-tropea"
+  },
+  {
+   "id": "tropea-playa",
+   "nombre": "Playa de Tropea (la Rotonda y Marina dell'Isola)",
+   "donde": "Tropea",
+   "base": "tropea",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Arena clara y agua turquesa al pie del casco antiguo, a pie desde el pueblo.",
+   "enlace": "https://www.visititaly.eu/it/luoghi-e-itinerari/spiagge-piu-belle-di-tropea",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+della+Rotonda%2C+Tropea%2C+Italia",
+   "fuente": "https://www.visititaly.eu/it/luoghi-e-itinerari/spiagge-piu-belle-di-tropea"
+  },
+  {
+   "id": "tropea-atardecer",
+   "nombre": "Atardecer desde el mirador de Tropea",
+   "donde": "Tropea",
+   "base": "tropea",
+   "tipo": "postal",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Mirador sobre el mar con puesta de sol, y paseo posterior por las calles del centro.",
+   "enlace": "https://www.greenme.it/viaggi/italia/tropea-la-sera/",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Belvedere+di+Tropea%2C+Italia",
+   "fuente": "https://www.greenme.it/viaggi/italia/tropea-la-sera/"
+  },
+  {
+   "id": "capo-vaticano-faro",
+   "nombre": "Sendero y faro de Capo Vaticano",
+   "donde": "Capo Vaticano (Ricadi)",
+   "base": "capo-vaticano",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Camino por el promontorio hasta el faro con vistas a las Eolias en días claros.",
+   "enlace": "https://www.italia.it/it/calabria/cosa-fare/capo-vaticano",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Faro+di+Capo+Vaticano%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/cosa-fare/capo-vaticano"
+  },
+  {
+   "id": "grotticelle",
+   "nombre": "Playa de Grotticelle",
+   "donde": "Ricadi",
+   "base": "capo-vaticano",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua",
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Calas de arena y roca con agua cristalina; hay que bajar un sendero.",
+   "enlace": "https://calabriastraordinaria.it/en/places/grotticelle-ricadi",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Grotticelle%2C+Ricadi%2C+Italia",
+   "fuente": "https://calabriastraordinaria.it/en/places/grotticelle-ricadi"
+  },
+  {
+   "id": "snorkel-capo-vaticano",
+   "nombre": "Snorkel y kayak en la Costa degli Dei",
+   "donde": "Capo Vaticano",
+   "base": "capo-vaticano",
+   "tipo": "agua",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Excursión en kayak o snorkel por las calas y cuevas de la costa; reservad con antelación.",
+   "enlace": "https://www.getyourguide.es/s/?q=Capo+Vaticano+kayak+snorkel",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Capo+Vaticano%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/cosa-fare/capo-vaticano"
+  },
+  {
+   "id": "eolie-tropea",
+   "nombre": "Excursión en barco a Stromboli y las Eolias",
+   "donde": "Tropea",
+   "base": "tropea",
+   "tipo": "agua",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "alto",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Barco desde Tropea a Stromboli, Panarea o Lipari; en Stromboli, volcán activo visible desde el mar.",
+   "enlace": "https://www.civitatis.com/it/tropea/escursione-stromboli/",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Porto+di+Tropea%2C+Italia",
+   "fuente": "https://www.civitatis.com/it/tropea/escursione-stromboli/"
+  },
+  {
+   "id": "scilla-chianalea",
+   "nombre": "Chianalea de Scilla",
+   "donde": "Scilla",
+   "base": "reggio",
+   "tipo": "postal",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Barrio de pescadores con casas a pie de agua, la 'pequeña Venecia' calabresa; tren desde Reggio.",
+   "enlace": "https://www.italia.it/it/calabria/reggio-calabria/scilla",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Chianalea%2C+Scilla%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/reggio-calabria/scilla"
+  },
+  {
+   "id": "scilla-castillo",
+   "nombre": "Castillo Ruffo de Scilla",
+   "donde": "Scilla",
+   "base": "reggio",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Fortaleza sobre el peñón con vistas al estrecho de Mesina.",
+   "enlace": "https://calabriastraordinaria.it/en/places/ruffo-castle-scilla",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castello+Ruffo%2C+Scilla%2C+Italia",
+   "fuente": "https://calabriastraordinaria.it/en/places/ruffo-castle-scilla"
+  },
+  {
+   "id": "pizzo",
+   "nombre": "Pizzo Calabro y Castello Murat",
+   "donde": "Pizzo",
+   "base": "tropea",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Pueblo sobre el mar con castillo donde fue fusilado Murat; en tren desde Lamezia o Tropea.",
+   "enlace": "https://www.italia.it/it/calabria/costa-degli-dei/pizzo-calabro",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castello+Murat%2C+Pizzo%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/costa-degli-dei/pizzo-calabro"
+  },
+  {
+   "id": "tartufo-pizzo",
+   "nombre": "Tartufo di Pizzo",
+   "donde": "Pizzo",
+   "base": "tropea",
+   "tipo": "gastronomia",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Helado de avellana y chocolate con corazón fundido, el dulce más famoso de la costa.",
+   "enlace": "https://calabriastraordinaria.it/en/destinations/pizzo-calabro-the-city-of-the-icecream",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+della+Repubblica%2C+Pizzo%2C+Italia",
+   "fuente": "https://calabriastraordinaria.it/en/destinations/pizzo-calabro-the-city-of-the-icecream"
+  },
+  {
+   "id": "reggio-museo",
+   "nombre": "Museo Arqueológico (Bronces de Riace)",
+   "donde": "Reggio Calabria",
+   "base": "reggio",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Las dos estatuas griegas de bronce halladas en el mar, de las mejores de la Antigüedad.",
+   "enlace": "https://www.museoarcheologicoreggiocalabria.it/the-collections?lang=en",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=MArRC+Museo+Archeologico+Nazionale%2C+Reggio+Calabria%2C+Italia",
+   "fuente": "https://www.museoarcheologicoreggiocalabria.it/the-collections?lang=en"
+  },
+  {
+   "id": "reggio-lungomare",
+   "nombre": "Lungomare Falcomatà y atardecer sobre el estrecho",
+   "donde": "Reggio Calabria",
+   "base": "reggio",
+   "tipo": "postal",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Paseo marítimo con vistas al Etna y Sicilia, y copas en el centro al anochecer.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Lungomare+Falcomat%C3%A0%2C+Reggio+Calabria%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungomare+Falcomat%C3%A0%2C+Reggio+Calabria%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/reggio-calabria/scilla"
+  },
+  {
+   "id": "sila",
+   "nombre": "Parque Nacional de la Sila",
+   "donde": "Sila",
+   "base": "cosenza",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Bosques, lagos y senderos señalizados en la meseta; fresco incluso en agosto.",
+   "enlace": "https://www.italia.it/it/calabria/cosenza/cosa-fare/parco-nazionale-della-sila",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Parco+Nazionale+della+Sila%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/cosenza/cosa-fare/parco-nazionale-della-sila"
+  },
+  {
+   "id": "treno-sila",
+   "nombre": "Treno de la Sila",
+   "donde": "Sila",
+   "base": "cosenza",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Tren histórico que cruza los bosques de la Sila; comprobad si opera ese día.",
+   "enlace": "https://www.italia.it/it/calabria/cosa-fare/treno-della-sila-in-calabria",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Stazione+di+Moccone%2C+Sila%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/cosa-fare/treno-della-sila-in-calabria"
+  },
+  {
+   "id": "le-castella",
+   "nombre": "Le Castella y Capo Rizzuto",
+   "donde": "Isola di Capo Rizzuto",
+   "base": "cosenza",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Castillo aragonés sobre el agua dentro del Área Marina Protegida: baño y snorkel entre roca y arena.",
+   "consejo": "Está a más de una hora de Cosenza; mejor dormir en la zona de Crotone.",
+   "enlace": "https://www.italia.it/it/calabria/crotone/area-marina-protetta-capo-rizzuto",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Le+Castella%2C+Isola+di+Capo+Rizzuto%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/crotone/area-marina-protetta-capo-rizzuto"
+  },
+  {
+   "id": "diamante",
+   "nombre": "Diamante y sus murales",
+   "donde": "Diamante",
+   "base": "cosenza",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Pueblo con más de cien murales en las paredes y paseo marítimo; hay tren en la costa.",
+   "enlace": "https://calabriastraordinaria.it/en/destinations/diamante-the-mural-and-chilli-pepper-town",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Diamante%2C+Italia",
+   "fuente": "https://calabriastraordinaria.it/en/destinations/diamante-the-mural-and-chilli-pepper-town"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "'Nduja",
+   "que_es": "embutido picante untable, muy típico; en bocadillo o con pasta",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "tiendas y bocaterías de Tropea y Spilinga",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spilinga%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/cosa-fare/peperoncino"
+  },
+  {
+   "plato": "Cebolla roja de Tropea",
+   "que_es": "cebolla dulce IGP, cruda o en mermelada y bocadillos",
+   "estilo": "mercado",
+   "coste": "bajo",
+   "donde_probarlo": "tiendas de productos típicos de Tropea",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Tropea%2C+Italia",
+   "fuente": "https://www.visititaly.eu/it/visit-tropea/cipolla-di-tropea-icona-storica-gastronomica-e-culturale"
+  },
+  {
+   "plato": "Tartufo di Pizzo",
+   "que_es": "helado artesano con corazón de chocolate fundido",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "heladerías de la Piazza della Repubblica de Pizzo",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Pizzo%2C+Italia",
+   "fuente": "https://calabriastraordinaria.it/en/destinations/pizzo-calabro-the-city-of-the-icecream"
+  },
+  {
+   "plato": "Pez espada de Scilla",
+   "que_es": "pez espada a la plancha o a la 'ghiotta' con tomate y alcaparras",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "restaurantes de pescado de Chianalea",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Chianalea%2C+Scilla%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/reggio-calabria/scilla"
+  },
+  {
+   "plato": "Fileja con 'nduja",
+   "que_es": "pasta fresca enrollada, con salsa de tomate y 'nduja",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorias de pueblo del interior y de Tropea",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Tropea%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/cosa-fare/peperoncino"
+  },
+  {
+   "plato": "Pecorino crotonese y caciocavallo",
+   "que_es": "quesos DOP de oveja y vaca, fuertes y salados",
+   "estilo": "mercado",
+   "coste": "bajo",
+   "donde_probarlo": "queserías y tiendas de la Sila y Crotone",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Crotone%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/cosenza/cosa-fare/parco-nazionale-della-sila"
+  },
+  {
+   "plato": "Peperoncino",
+   "que_es": "guindilla calabresa en aceite o relleno, base de todos los platos",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "puestos y tiendas de Diamante",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Diamante%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/cosa-fare/evento-festival-peperoncino-diamante"
+  },
+  {
+   "plato": "Vino de Cirò",
+   "que_es": "tinto de uva Gaglioppo, uno de los más antiguos de Italia",
+   "estilo": "bebida",
+   "coste": "medio",
+   "donde_probarlo": "enotecas y bodegas de Cirò Marina",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cir%C3%B2+Marina%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/crotone/area-marina-protetta-capo-rizzuto"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Centro de Tropea",
+   "base": "tropea",
+   "plan": "aperitivo",
+   "descripcion": "Aperitivo y paseo por el casco antiguo y el mirador al caer el sol.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Corso+Vittorio+Emanuele%2C+Tropea%2C+Italia",
+   "fuente": "https://www.greenme.it/viaggi/italia/tropea-la-sera/"
+  },
+  {
+   "zona": "Lungomare de Reggio",
+   "base": "reggio",
+   "plan": "copas",
+   "descripcion": "Paseo marítimo y bares del centro; plan de ciudad tranquila.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungomare+Falcomat%C3%A0%2C+Reggio+Calabria%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Lungomare+Falcomat%C3%A0%2C+Reggio+Calabria%2C+Italia"
+  },
+  {
+   "zona": "Plaza de Pizzo",
+   "base": "tropea",
+   "plan": "aperitivo",
+   "descripcion": "Terrazas sobre el mar con aperitivo y heladerías abiertas hasta tarde.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+della+Repubblica%2C+Pizzo%2C+Italia",
+   "fuente": "https://www.italia.it/it/calabria/costa-degli-dei/pizzo-calabro"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "tropea",
+   "coste": "bajo",
+   "para": "grupos con presupuesto muy ajustado.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Tropea"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "tropea",
+   "coste": "medio",
+   "para": "grupos de 4-8 con cocina.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Tropea--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Tropea"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "capo-vaticano",
+   "coste": "medio",
+   "para": "grupos con coche que quieren estar cerca de las calas.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Ricadi--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Capo+Vaticano"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "reggio",
+   "coste": "medio",
+   "para": "quien prefiere habitación propia en ciudad.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Reggio+Calabria"
+    }
+   ]
+  },
+  {
+   "tipo": "camping",
+   "base": "capo-vaticano",
+   "coste": "bajo",
+   "para": "grupos con tienda o caravana.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Capo+Vaticano"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "cosenza",
+   "coste": "bajo",
+   "para": "base para la Sila y Diamante con coche.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Cosenza"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Festival del Peperoncino",
+   "donde": "Diamante",
+   "cuando": "cada año, septiembre (fechas en la web oficial)",
+   "meses": [
+    9
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival dedicado a la guindilla con degustaciones, conciertos y concursos.",
+   "enlace": "https://www.italia.it/it/calabria/cosa-fare/evento-festival-peperoncino-diamante",
+   "fuente": "https://www.italia.it/it/calabria/cosa-fare/evento-festival-peperoncino-diamante"
+  },
+  {
+   "nombre": "Kaulonia Tarantella Festival",
+   "donde": "Caulonia",
+   "cuando": "cada año, agosto (fechas en la web oficial)",
+   "meses": [
+    8
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival de música y danza de tarantela en el casco antiguo.",
+   "enlace": "https://calabriastraordinaria.it/en/events/kaulonia-tarantella-festival",
+   "fuente": "https://calabriastraordinaria.it/en/events/kaulonia-tarantella-festival"
+  },
+  {
+   "nombre": "Margini Festival",
+   "donde": "Paola",
+   "cuando": "cada año, agosto (fechas en la web oficial)",
+   "meses": [
+    8
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival participativo de arte y música en directo en el barrio de Cancello.",
+   "enlace": "https://www.italia.it/en/calabria/things-to-do/margini-festival-event",
+   "fuente": "https://www.italia.it/en/calabria/things-to-do/margini-festival-event"
+  },
+  {
+   "nombre": "Fiesta de la cebolla roja",
+   "donde": "Tropea y alrededores",
+   "cuando": "cada año, en verano (fechas en la web)",
+   "meses": [
+    7,
+    8
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Fiesta con degustaciones de cebolla roja y comida local.",
+   "enlace": "https://www.ilturista.info/blog/sagra-cipolla-rossa-tropea/",
+   "fuente": "https://www.ilturista.info/blog/sagra-cipolla-rossa-tropea/"
+  }
+ ],
+ "notas_honestas": [
+  "Calabria es difícil sin coche fuera de la línea de tren de la costa.",
+  "No verifiqué horarios, precios ni si el Treno della Sila opera en cada fecha.",
+  "Ryanair Madrid-Lamezia es de verano 2025; hay que confirmar si sigue.",
+  "Reggio (noche) y Cirò solo tienen fuente genérica; sin locales concretos.",
+  "Faltan transporte público de la Sila y Pollino, y no incluyo Pollino ni Aspromonte."
+ ]
+}

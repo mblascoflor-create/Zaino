@@ -1,0 +1,120 @@
+{
+ "actividades": {
+  "castello-cagliari": [
+   39.217,
+   9.113
+  ],
+  "bastione-saint-remy": [
+   39.216,
+   9.115
+  ],
+  "mercato-san-benedetto": [
+   39.22,
+   9.121
+  ],
+  "poetto": [
+   39.2,
+   9.17
+  ],
+  "molentargius": [
+   39.23,
+   9.16
+  ],
+  "sella-del-diavolo": [
+   39.176,
+   9.2
+  ],
+  "anfiteatro-romano": [
+   39.222,
+   9.12
+  ],
+  "villasimius-capo-carbonara": [
+   39.138,
+   9.52
+  ],
+  "su-nuraxi": [
+   39.706,
+   8.992
+  ],
+  "trenino-verde": [
+   39.65,
+   9.13
+  ],
+  "bastioni-alghero": [
+   40.558,
+   8.317
+  ],
+  "centro-alghero": [
+   40.557,
+   8.32
+  ],
+  "grotta-nettuno": [
+   40.567,
+   8.168
+  ],
+  "capo-caccia-porto-conte": [
+   40.561,
+   8.16
+  ],
+  "nuraghe-palmavera": [
+   40.595,
+   8.263
+  ],
+  "la-pelosa": [
+   40.841,
+   8.208
+  ],
+  "cala-goloritze": [
+   40.1,
+   9.69
+  ],
+  "cala-luna-barco": [
+   40.28,
+   9.63
+  ],
+  "grotta-bue-marino": [
+   40.25,
+   9.62
+  ],
+  "costa-smeralda-maddalena": [
+   41.185,
+   9.38
+  ],
+  "orgosolo-mamoiada": [
+   40.25,
+   9.36
+  ]
+ },
+ "noche": {
+  "Marina y Castello": [
+   39.215,
+   9.115
+  ],
+  "Bastioni de Alghero": [
+   40.558,
+   8.317
+  ],
+  "Poetto": [
+   39.2,
+   9.17
+  ]
+ },
+ "eventos": {
+  "Festa di Sant'Efisio": [
+   39.207,
+   9.115
+  ],
+  "Carnevale Storico de Mamoiada": [
+   40.216,
+   9.285
+  ],
+  "Cavalcata Sarda": [
+   40.72,
+   8.56
+  ]
+ },
+ "dudosos": [
+  "orgosolo-mamoiada",
+  "costa-smeralda-maddalena"
+ ]
+}

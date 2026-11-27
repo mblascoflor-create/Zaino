@@ -1,0 +1,31 @@
+{
+  "zona": "trento",
+  "base": "trento",
+  "ciudad_referencia": "Trento",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 25.0,
+      "max": 25.0,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/trento/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": {
+      "min": 75,
+      "max": 138,
+      "fuente": "https://www.booking.com/city/it/trento.html?selected_currency=EUR | https://www.budgetyourtrip.com/italy/trento",
+      "calidad": "orientativo"
+    },
+    "comida_barata": {
+      "valor": 17.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Trento",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 1.2,
+      "fuente": "https://www.provincia.tn.it/content/download/20917/287832/file/Tariffario_servizi_trasporto_pubblico.pdf",
+      "calidad": "verificado"
+    }
+  },
+  "notas": "hostel_noche: rango min-max de 1 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=25.0, maximo=25.0); son precios 'desde' sin fechas concretas. Solo 1 hostel con precio de dorm; min=max. doble_noche: min=75 es el precio 'From' mas bajo del titulo de la pagina de Booking.com para la ciudad (alojamiento mas barato listado, 2 adultos, 1 noche, sin fecha fija); max=138 es el precio medio de hotel para una pareja segun BudgetYourTrip (gasto declarado por viajeros). La horquilla mezcla ambas fuentes: es solo una guia aproximada, no un rango de apartamentos/dobles economicos garantizado. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Trento (rango Numbeo 12-25). transporte_billete: Tarifario del transporte publico de la Provincia de Trento (actualizado oct-2025): billete urbano 70 min 1.20 EUR; a bordo 2.00. El documento no usa la etiqueta \"corsa semplice\"."
+}

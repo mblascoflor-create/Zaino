@@ -1,0 +1,697 @@
+{
+ "id": "basilicata-matera",
+ "nombre": "Basilicata y Matera",
+ "nombre_corto": "Matera",
+ "lema": "Ciudad-cueva y pueblos de piedra",
+ "descripcion": "Los Sassi de Matera (UNESCO), iglesias excavadas en la roca, el cañón de la Murgia y pueblos colgados en los Dolomitas Lucanas. Es de las zonas más baratas y menos masificadas del sur, con cena de tres platos por poco.",
+ "perfil": {
+  "mar": 1,
+  "montana": 2,
+  "ciudad": 2,
+  "campo": 2,
+  "fiesta": 0,
+  "calma": 3,
+  "cultura": 3,
+  "gastronomia": 2,
+  "naturaleza": 2,
+  "playa": 1,
+  "aventura": 2,
+  "postal": 3
+ },
+ "nivel_precio": "bajo",
+ "nivel_precio_nota": "Matera es más cara que el resto de Basilicata pero sigue por debajo de las grandes ciudades italianas; comida y alojamiento asequibles.",
+ "meses": {
+  "ideales": [
+   4,
+   5,
+   6,
+   9,
+   10
+  ],
+  "aceptables": [
+   3,
+   11
+  ],
+  "evitar": [
+   7,
+   8
+  ],
+  "nota": "En verano la piedra de los Sassi acumula mucho calor; primavera y otoño son mucho mejores para caminar. En invierno hace fresco y hay menos ambiente."
+ },
+ "calor_verano": "extremo",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "util",
+  "nota": "Matera se hace a pie, pero Craco, Castelmezzano, Pietrapertosa y Maratea exigen coche. Para ahorrar, alquilad un coche solo los días de excursión (desde Bari).",
+  "aeropuerto_recogida": "BRI",
+  "operadores": [
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.it/noleggio-auto/Hertz-Bari.BRI.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Hertz-Bari.BRI.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.it/noleggio-auto/Europcar-Bari.BRI.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Europcar-Bari.BRI.EUROPCAR.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "matera",
+   "nombre": "Matera",
+   "por_que": "Los Sassi, la Murgia y casi todo se visita a pie; ambiente tranquilo, muy turístico de día.",
+   "sin_coche": true,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Matera%2C+Italia"
+  },
+  {
+   "id": "castelmezzano",
+   "nombre": "Castelmezzano / Pietrapertosa",
+   "por_que": "Pueblos de montaña junto al Volo dell'Angelo; muy poco transporte, solo con coche.",
+   "sin_coche": false,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castelmezzano%2C+Italia"
+  },
+  {
+   "id": "maratea",
+   "nombre": "Maratea",
+   "por_que": "Costa tirrénica con calas y el Cristo Redentor; lejos de Matera (muchas horas), mejor como parada aparte.",
+   "sin_coche": false,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Maratea%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "BRI",
+    "nombre": "Bari – Karol Wojtyła",
+    "ciudad": "Bari",
+    "a_la_base": "Matera no tiene aeropuerto: son unos 65 km desde Bari; hay tren regional (Ferrovie Appulo Lucane) o coche, alrededor de una hora."
+   }
+  ],
+  "desde_espana": "Ryanair conecta Madrid con Bari; desde otras ciudades españolas hay pocas rutas directas, así que contad con escala o con llegar vía Roma o Nápoles. Mirad también vuelos a Brindisi y Nápoles como alternativas.",
+  "rutas_directas": [
+   {
+    "origen": "Madrid",
+    "origen_iata": "MAD",
+    "destino_iata": "BRI",
+    "aerolinea": "Ryanair",
+    "nota": "Listada en ryanair.com; comprobad si es estacional.",
+    "fuente": "https://www.ryanair.com/"
+   }
+  ],
+  "desde_italia": "FlixBus llega a Bari y desde allí tren regional o bus a Matera; también hay buses desde Roma o Nápoles. Cuenta con transbordos y mucho tiempo.",
+  "novedades": []
+ },
+ "moverse": {
+  "resumen": "Matera se recorre a pie (con cuestas y escaleras); para Craco, Dolomitas Lucanas o Maratea hace falta coche. Entre Bari y Matera, tren o bus regional.",
+  "tren": {
+   "nota": "Conexión regional Bari–Matera con Ferrovie Appulo Lucane; no hay red útil para el resto de Basilicata.",
+   "enlace": "https://www.rome2rio.com/es/map/Bari/Matera"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Larga distancia dentro de Italia; el slug de Bari está verificado en flixbus.it. No cubre la llegada desde España.",
+   "enlace": "https://www.flixbus.it/autobus/bari",
+   "fuente": "https://www.flixbus.it/azienda/stampa/flixbus-offerta-estiva-2026"
+  },
+  "ferry": [],
+  "camper": {
+   "operador": "Roadsurfer",
+   "nota": "Alquiler de camper en Italia; enlazamos la página general del país, sin oficina verificada en esta zona.",
+   "enlace": "https://roadsurfer.com/es/alquilar-camper/italia/",
+   "fuente": "https://roadsurfer.com/es/alquilar-camper/italia/"
+  }
+ },
+ "actividades": [
+  {
+   "id": "sasso-caveoso",
+   "nombre": "Sasso Caveoso",
+   "donde": "Matera",
+   "base": "matera",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Barrio-cueva con casas excavadas en la roca, iglesias rupestres y vistas al cañón; paseo con escaleras.",
+   "consejo": "Calzado cómodo: hay muchas cuestas.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Sasso+Caveoso%2C+Matera%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sasso+Caveoso%2C+Matera%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Sasso+Caveoso%2C+Matera%2C+Italia"
+  },
+  {
+   "id": "sasso-barisano",
+   "nombre": "Sasso Barisano",
+   "donde": "Matera",
+   "base": "matera",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "El otro gran barrio de los Sassi, con calles estrechas, miradores y cuevas convertidas en tiendas y restaurantes.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Sasso+Barisano%2C+Matera%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sasso+Barisano%2C+Matera%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Sasso+Barisano%2C+Matera%2C+Italia"
+  },
+  {
+   "id": "casa-grotta",
+   "nombre": "Casa Grotta di Vico Solitario",
+   "donde": "Matera",
+   "base": "matera",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Vivienda-cueva conservada como se habitaba hace un siglo, con cama, establo y mobiliario.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Casa+Grotta+di+Vico+Solitario%2C+Matera%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Casa+Grotta+di+Vico+Solitario%2C+Matera%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Casa+Grotta+di+Vico+Solitario%2C+Matera%2C+Italia"
+  },
+  {
+   "id": "chiese-rupestri",
+   "nombre": "Iglesias rupestres de Santa Maria de Idris y San Pietro Barisano",
+   "donde": "Matera",
+   "base": "matera",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Iglesias excavadas en la roca con frescos bizantinos y vistas desde Monterrone.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Santa+Maria+de+Idris%2C+Matera%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Santa+Maria+de+Idris%2C+Matera%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Santa+Maria+de+Idris%2C+Matera%2C+Italia"
+  },
+  {
+   "id": "palombaro-lungo",
+   "nombre": "Palombaro Lungo",
+   "donde": "Matera",
+   "base": "matera",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Enorme cisterna subterránea bajo la plaza principal, con sala de columnas y agua cristalina.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Palombaro+Lungo%2C+Matera%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Palombaro+Lungo%2C+Matera%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Palombaro+Lungo%2C+Matera%2C+Italia"
+  },
+  {
+   "id": "musma",
+   "nombre": "MUSMA, museo de escultura en cueva",
+   "donde": "Matera",
+   "base": "matera",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Museo de escultura contemporánea dentro de un palacio-cueva excavado.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=MUSMA%2C+Matera%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=MUSMA%2C+Matera%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=MUSMA%2C+Matera%2C+Italia"
+  },
+  {
+   "id": "cattedrale-matera",
+   "nombre": "Catedral de Matera y Piazza Duomo",
+   "donde": "Matera",
+   "base": "matera",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Catedral apuliana del siglo XIII sobre el Sasso Barisano, con vista panorámica.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Cattedrale+di+Matera%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cattedrale+di+Matera%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Cattedrale+di+Matera%2C+Italia"
+  },
+  {
+   "id": "mirador-murgia",
+   "nombre": "Belvedere de la Murgia",
+   "donde": "Matera",
+   "base": "matera",
+   "tipo": "postal",
+   "tipos_extra": [
+    "naturaleza"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Al otro lado del cañón, vista completa de los Sassi, sobre todo al atardecer y de noche con luces.",
+   "consejo": "Se puede ir en coche o a pie por los senderos del cañón.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Belvedere+Murgia+Timone%2C+Matera%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Belvedere+Murgia+Timone%2C+Matera%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Belvedere+Murgia+Timone%2C+Matera%2C+Italia"
+  },
+  {
+   "id": "parco-murgia-senderos",
+   "nombre": "Senderos del Parque de la Murgia Materana",
+   "donde": "Matera",
+   "base": "matera",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Bajad al barranco de la Gravina y subid al otro lado por sendas entre iglesias rupestres.",
+   "consejo": "Llevad agua; sin sombra en verano.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Parco+della+Murgia+Materana%2C+Matera%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Parco+della+Murgia+Materana%2C+Matera%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Parco+della+Murgia+Materana%2C+Matera%2C+Italia"
+  },
+  {
+   "id": "noche-sassi",
+   "nombre": "Sassi de noche",
+   "donde": "Matera",
+   "base": "matera",
+   "tipo": "postal",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Paseo nocturno con iluminación y aperitivo en terrazas de los Sassi; ambiente tranquilo.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Sassi+di+Matera%2C+Italia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sassi+di+Matera%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Sassi+di+Matera%2C+Italia%2C+Italia"
+  },
+  {
+   "id": "pan-matera",
+   "nombre": "Pan de Matera IGP",
+   "donde": "Matera",
+   "base": "matera",
+   "tipo": "gastronomia",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Probar el pan de Matera y sus dulces en los hornos del centro, con aceite o cruschi.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Panificio+Matera%2C+Italia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Panificio+Matera%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Panificio+Matera%2C+Italia%2C+Italia"
+  },
+  {
+   "id": "craco",
+   "nombre": "Craco, pueblo fantasma",
+   "donde": "Craco",
+   "base": "matera",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Pueblo abandonado por un deslizamiento, usado en rodajes de cine; solo se visita con guía.",
+   "consejo": "Reservad y confirmad el horario de visita.",
+   "enlace": "https://www.getyourguide.es/s/?q=Craco+Matera+visita+guiada",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Craco%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Craco%2C+Italia%2C+Italia"
+  },
+  {
+   "id": "volo-angelo",
+   "nombre": "Il Volo dell'Angelo",
+   "donde": "Castelmezzano",
+   "base": "castelmezzano",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "alto",
+   "requiere_coche": true,
+   "requiere_reserva": true,
+   "esfuerzo": "medio",
+   "ambiente": "social",
+   "descripcion": "Tirolina entre Castelmezzano y Pietrapertosa a gran altura sobre el valle.",
+   "consejo": "Reservad con antelación.",
+   "enlace": "https://www.getyourguide.es/s/?q=Volo+dell%27Angelo+Castelmezzano",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Volo+dell%27Angelo%2C+Castelmezzano%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Volo+dell%27Angelo%2C+Castelmezzano%2C+Italia"
+  },
+  {
+   "id": "sette-pietre",
+   "nombre": "Sendero de las Sette Pietre",
+   "donde": "Castelmezzano",
+   "base": "castelmezzano",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Ruta a pie entre Castelmezzano y las rocas de las Dolomitas Lucanas.",
+   "consejo": "Informaos del estado del camino antes de ir.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Castelmezzano%2C+Italia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Castelmezzano%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Castelmezzano%2C+Italia%2C+Italia"
+  },
+  {
+   "id": "maratea-cristo",
+   "nombre": "Cristo Redentor de Maratea",
+   "donde": "Maratea",
+   "base": "maratea",
+   "tipo": "postal",
+   "tipos_extra": [
+    "cultura"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Gran estatua de Cristo en la cima del monte San Biagio con vistas al Tirreno.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Cristo+Redentore%2C+Maratea%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cristo+Redentore%2C+Maratea%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Cristo+Redentore%2C+Maratea%2C+Italia"
+  },
+  {
+   "id": "maratea-calas",
+   "nombre": "Calas de Maratea",
+   "donde": "Maratea",
+   "base": "maratea",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Calas y playas de la costa tirrénica con aguas claras.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Maratea+spiaggia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Maratea+spiaggia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Maratea+spiaggia%2C+Italia"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Pane di Matera",
+   "que_es": "pan de sémola de grano duro con denominación IGP",
+   "estilo": "mercado",
+   "coste": "bajo",
+   "donde_probarlo": "hornos del centro de Matera",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Panificio+Matera%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Panificio+Matera%2C+Italia%2C+Italia"
+  },
+  {
+   "plato": "Crapiata",
+   "que_es": "sopa de legumbres y cereales típica de los Sassi",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorie del barrio de los Sassi",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trattoria+Matera%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Trattoria+Matera%2C+Italia%2C+Italia"
+  },
+  {
+   "plato": "Cavatelli con cruschi",
+   "que_es": "pasta casera con pimientos secos crujientes",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorie de Matera",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Matera%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Matera%2C+Italia%2C+Italia"
+  },
+  {
+   "plato": "Peperoni cruschi de Senise",
+   "que_es": "pimientos secos fritos, crujientes; snack o acompañamiento",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "tiendas de productos locales",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Senise%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Senise%2C+Italia%2C+Italia"
+  },
+  {
+   "plato": "Lucanica",
+   "que_es": "salchicha lucana especiada, asada",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "trattorie y carnicerías",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Macelleria+Matera%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Macelleria+Matera%2C+Italia%2C+Italia"
+  },
+  {
+   "plato": "Caciocavallo podolico",
+   "que_es": "queso de vaca curado, intenso",
+   "estilo": "mercado",
+   "coste": "medio",
+   "donde_probarlo": "tiendas de productos locales",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Matera%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Matera%2C+Italia%2C+Italia"
+  },
+  {
+   "plato": "Amaro Lucano",
+   "que_es": "licor de hierbas de Pisticci, digestivo",
+   "estilo": "bebida",
+   "coste": "bajo",
+   "donde_probarlo": "tras la cena en cualquier bar",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Pisticci%2C+Italia%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Pisticci%2C+Italia%2C+Italia"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Piazza Vittorio Veneto",
+   "base": "matera",
+   "plan": "aperitivo",
+   "descripcion": "Plaza animada con terrazas y bares, base del aperitivo en Matera.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Vittorio+Veneto%2C+Matera%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Piazza+Vittorio+Veneto%2C+Matera%2C+Italia"
+  },
+  {
+   "zona": "Sassi de noche",
+   "base": "matera",
+   "plan": "copas",
+   "descripcion": "Bares y terrazas excavadas en las cuevas con ambiente tranquilo.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Sasso+Barisano%2C+Matera%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Sasso+Barisano%2C+Matera%2C+Italia"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "matera",
+   "coste": "bajo",
+   "para": "Grupos con presupuesto ajustado.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Matera"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Matera--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "matera",
+   "coste": "medio",
+   "para": "Grupos de 4-8 que quieren cocinar y dormir en un Sasso.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Matera"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Matera--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "matera",
+   "coste": "alto",
+   "para": "Quienes quieran un hotel-cueva y tengan más presupuesto.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Matera"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Matera--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "matera",
+   "coste": "medio",
+   "para": "Parejas o grupos pequeños que busquen desayuno incluido.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Matera"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Matera--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "agriturismo",
+   "base": "castelmezzano",
+   "coste": "medio",
+   "para": "Con coche; calma y producto local.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Castelmezzano"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Castelmezzano--Italia/homes"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Festa della Bruna",
+   "donde": "Matera",
+   "cuando": "cada año, 2 de julio",
+   "meses": [
+    7
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Procesión de la Virgen de la Bruna con carro triunfal, desfile histórico y fuegos artificiales.",
+   "enlace": "https://www.basilicataturistica.it/",
+   "fuente": "https://www.basilicataturistica.it/"
+  },
+  {
+   "nombre": "Carnevale de Tricarico",
+   "donde": "Tricarico",
+   "cuando": "cada año, de enero a febrero; fechas en la web oficial",
+   "meses": [
+    1,
+    2
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Carnaval lucano con máscaras tradicionales de toros y vacas.",
+   "enlace": "https://www.basilicataturistica.it/",
+   "fuente": "https://www.basilicataturistica.it/"
+  },
+  {
+   "nombre": "Festa di San Biagio",
+   "donde": "Maratea",
+   "cuando": "cada año, 3 de febrero",
+   "meses": [
+    2
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Fiesta del patrón con procesión del Santo.",
+   "enlace": "https://www.basilicataturistica.it/",
+   "fuente": "https://www.basilicataturistica.it/"
+  }
+ ],
+ "notas_honestas": [
+  "Búsqueda web y fetch agotados: casi todos los enlaces de actividades son el patrón seguro de mapa; no hay web oficial verificada de Casa Grotta, MUSMA, Craco ni Volo dell'Angelo.",
+  "Los tres eventos enlazan a la portada de basilicataturistica.it sin abrir esa página en esta sesión; fechas no confirmadas con fuente oficial.",
+  "Ruta Madrid–Bari de Ryanair: fuente es la portada de ryanair.com, no una página de ruta.",
+  "Craco y Volo dell'Angelo: condiciones de acceso y reserva no verificadas."
+ ]
+}

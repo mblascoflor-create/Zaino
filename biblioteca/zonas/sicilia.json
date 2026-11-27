@@ -1,0 +1,1053 @@
+{
+ "id": "sicilia",
+ "nombre": "Sicilia",
+ "nombre_corto": "Sicilia",
+ "lema": "Volcán, mercados y mar de postal",
+ "descripcion": "Etna, mercados callejeros, templos griegos, calas con agua transparente y la mejor comida barata de Italia. Es una isla grande: elegid dos bases (Palermo + Catania/Siracusa) y no intentéis verlo todo.",
+ "perfil": {
+  "mar": 3,
+  "montana": 2,
+  "ciudad": 3,
+  "campo": 1,
+  "fiesta": 2,
+  "calma": 1,
+  "cultura": 3,
+  "gastronomia": 3,
+  "naturaleza": 3,
+  "playa": 3,
+  "aventura": 2,
+  "postal": 3
+ },
+ "nivel_precio": "bajo",
+ "nivel_precio_nota": "Comer, moverse en bus y alojarse es barato, salvo en Taormina y en agosto, cuando suben los precios.",
+ "meses": {
+  "ideales": [
+   4,
+   5,
+   6,
+   9,
+   10
+  ],
+  "aceptables": [
+   3,
+   11
+  ],
+  "evitar": [
+   7,
+   8
+  ],
+  "nota": "Mayo-junio y septiembre-octubre: mar bañable, menos gente y sin el calor de julio-agosto, que es muy fuerte en el interior y en la costa sur."
+ },
+ "calor_verano": "alto",
+ "nieve_invierno": false,
+ "coche": {
+  "necesidad": "util",
+  "nota": "Palermo, Catania y Siracusa (Ortigia) se hacen sin coche y con ZTL en los centros. El coche compensa para Zingaro, Scala dei Turchi, Alcantara y la costa oeste; en ciudad es un lío de aparcamiento. Entre ciudades principales hay bus y tren.",
+  "aeropuerto_recogida": "CTA",
+  "operadores": [
+   {
+    "nombre": "Hertz",
+    "enlace": "https://www.momondo.it/noleggio-auto/Hertz-Catania.CTA.HERTZ.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Hertz-Catania.CTA.HERTZ.cla.ksp"
+   },
+   {
+    "nombre": "Europcar",
+    "enlace": "https://www.momondo.it/noleggio-auto/Europcar-Catania.CTA.EUROPCAR.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Europcar-Catania.CTA.EUROPCAR.cla.ksp"
+   },
+   {
+    "nombre": "Avis",
+    "enlace": "https://www.momondo.it/noleggio-auto/Avis-Catania.CTA.AVIS.cla.ksp",
+    "fuente": "https://www.momondo.it/noleggio-auto/Avis-Catania.CTA.AVIS.cla.ksp"
+   }
+  ]
+ },
+ "bases": [
+  {
+   "id": "palermo",
+   "nombre": "Palermo",
+   "por_que": "Mercados, comida callejera, Monreale y Mondello en bus; ciudad intensa y barata.",
+   "sin_coche": true,
+   "ambiente": "fiesta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Palermo%2C+Italia"
+  },
+  {
+   "id": "catania",
+   "nombre": "Catania",
+   "por_que": "Etna, Taormina y Alcantara a mano, pescadería y vida nocturna universitaria.",
+   "sin_coche": true,
+   "ambiente": "fiesta",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Catania%2C+Italia"
+  },
+  {
+   "id": "siracusa",
+   "nombre": "Siracusa (Ortigia)",
+   "por_que": "Isla peatonal con mar, mercado y Val di Noto cerca; plan tranquilo.",
+   "sin_coche": true,
+   "ambiente": "mixto",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ortigia%2C+Siracusa%2C+Italia"
+  },
+  {
+   "id": "san-vito",
+   "nombre": "San Vito Lo Capo",
+   "por_que": "Playa larga junto a la reserva del Zingaro; mucho mejor en verano.",
+   "sin_coche": false,
+   "ambiente": "calma",
+   "maps": "https://www.google.com/maps/search/?api=1&query=San+Vito+Lo+Capo%2C+Italia"
+  }
+ ],
+ "llegar": {
+  "aeropuertos": [
+   {
+    "iata": "CTA",
+    "nombre": "Catania – Fontanarossa",
+    "ciudad": "Catania",
+    "a_la_base": "Bus Alibus al centro de Catania (el aeropuerto está pegado a la ciudad); para Siracusa, bus o tren desde Catania."
+   },
+   {
+    "iata": "PMO",
+    "nombre": "Palermo – Falcone Borsellino",
+    "ciudad": "Palermo",
+    "a_la_base": "Hay tren y bus al centro de Palermo; comprobad horarios en Trenitalia antes de volar."
+   },
+   {
+    "iata": "TPS",
+    "nombre": "Trapani – Birgi",
+    "ciudad": "Trapani",
+    "a_la_base": "Útil para San Vito Lo Capo, Egadi y Zingaro: bus o coche hasta Trapani y luego a San Vito."
+   },
+   {
+    "iata": "CIY",
+    "nombre": "Comiso",
+    "ciudad": "Comiso (Ragusa)",
+    "a_la_base": "Aeropuerto pequeño en el sureste; sin coche es incómodo, lo normal es bus o coche hasta Ragusa/Siracusa."
+   }
+  ],
+  "desde_espana": "Vueling vuela desde Barcelona a Palermo, Catania y Comiso (los de Comiso eran de verano). Ryanair tiene base en Catania, Palermo y Trapani y, según prensa del sector, añade en el invierno 2026-27 Valencia y Alicante a Catania. Mirad las fechas reales en el buscador.",
+  "rutas_directas": [
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "PMO",
+    "aerolinea": "Vueling",
+    "nota": "refuerzo en verano 2026; ruta ya existente",
+    "fuente": "https://forbes.es/turismo/430847/vueling-estrena-la-ruta-barcelona-comiso-italia-y-refuerza-la-conexion-con-sicilia/"
+   },
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "CTA",
+    "aerolinea": "Vueling",
+    "nota": "refuerzo en verano 2026; ruta ya existente",
+    "fuente": "https://forbes.es/turismo/430847/vueling-estrena-la-ruta-barcelona-comiso-italia-y-refuerza-la-conexion-con-sicilia/"
+   },
+   {
+    "origen": "Barcelona",
+    "origen_iata": "BCN",
+    "destino_iata": "CIY",
+    "aerolinea": "Vueling",
+    "nota": "estacional: 13 junio-8 septiembre en 2026, dos vuelos semanales",
+    "fuente": "https://forbes.es/turismo/430847/vueling-estrena-la-ruta-barcelona-comiso-italia-y-refuerza-la-conexion-con-sicilia/"
+   },
+   {
+    "origen": "Valencia",
+    "origen_iata": "VLC",
+    "destino_iata": "CTA",
+    "aerolinea": "Ryanair",
+    "nota": "nueva en el invierno 2026-27 según prensa del sector; confirmad en la web",
+    "fuente": "https://www.airtraveler.club/news/ryanair-adds-17-new-winter-routes-sicily-88-total/"
+   },
+   {
+    "origen": "Alicante",
+    "origen_iata": "ALC",
+    "destino_iata": "CTA",
+    "aerolinea": "Ryanair",
+    "nota": "nueva en el invierno 2026-27 según prensa del sector; confirmad en la web",
+    "fuente": "https://www.airtraveler.club/news/ryanair-adds-17-new-winter-routes-sicily-88-total/"
+   }
+  ],
+  "desde_italia": "Desde Roma o Nápoles hay trenes y FlixBus que cruzan el estrecho de Mesina hasta Palermo, Catania o Siracusa; son muchas horas, así que para un fin de semana largo mejor volar (Ryanair y otras salen de Bolonia, Milán y Roma).",
+  "novedades": [
+   {
+    "nota": "Ryanair programa 88 rutas en Sicilia en invierno 2026-27, 17 nuevas, con aviones basados en Catania, Palermo y Trapani.",
+    "fuente": "https://www.balarm.it/news/ryanair-punta-sulla-sicilia-17-nuove-rotte-il-programma-record-per-l-inverno-170822"
+   }
+  ]
+ },
+ "moverse": {
+  "resumen": "Entre Palermo, Catania, Siracusa y Cefalù tenéis tren y bus; para calas, reservas y pueblos del interior el coche es más cómodo. Dentro de cada ciudad, a pie.",
+  "tren": {
+   "nota": "Trenitalia cubre Palermo-Cefalù, Catania-Taormina, Catania-Siracusa y Palermo-Agrigento; es lento pero barato. Comprad en la web o en máquina.",
+   "enlace": "https://www.trenitalia.com/"
+  },
+  "bus": {
+   "operador": "FlixBus",
+   "nota": "Une Palermo, Catania, Siracusa y otras ciudades; suele ser más rápido que el tren entre Palermo y Catania.",
+   "enlace": "https://www.flixbus.it/tratte-autobus/palermo-siracusa",
+   "fuente": "https://www.flixbus.it/tratte-autobus/palermo-siracusa"
+  },
+  "ferry": [
+   {
+    "operador": "Caronte & Tourist",
+    "ruta": "Villa San Giovanni (Calabria) - Mesina",
+    "nota": "Más de 120 travesías diarias, 24 horas, admite vehículos. Sirve para combinar Calabria y Sicilia.",
+    "enlace": "https://booking.carontetourist.it/en",
+    "fuente": "https://www.carontetourist.it/en/caronte-tourist"
+   },
+   {
+    "operador": "Caronte & Tourist",
+    "ruta": "Milazzo - Islas Eolias",
+    "nota": "Salidas desde Milazzo (cerca de Mesina); la página explica cómo llegar a Milazzo.",
+    "enlace": "https://www.carontetourist.it/en/aeolian-islands/how-to-get-from-milazzo",
+    "fuente": "https://www.carontetourist.it/en/aeolian-islands/how-to-get-from-milazzo"
+   },
+   {
+    "operador": "Liberty Lines",
+    "ruta": "Trapani - Islas Egadi (Favignana, Levanzo)",
+    "nota": "Aliscafos en temporada; consultad frecuencias en su web.",
+    "enlace": "https://www.libertylines.it/destinazioni/favignana/",
+    "fuente": "https://www.libertylines.it/destinazioni/favignana/"
+   }
+  ],
+  "camper": null
+ },
+ "actividades": [
+  {
+   "id": "ballaro",
+   "nombre": "Mercado de Ballarò",
+   "donde": "Palermo",
+   "base": "palermo",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Puestos de pescado, fruta y fritos en el mercado más vivo del centro histórico; se come de pie probando de todo.",
+   "consejo": "Id por la mañana: por la tarde casi todo recoge.",
+   "enlace": "https://www.italia.it/it/sicilia/palermo/ballaro",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+di+Ballar%C3%B2%2C+Palermo%2C+Italia",
+   "fuente": "https://www.italia.it/it/sicilia/palermo/ballaro"
+  },
+  {
+   "id": "vucciria-capo",
+   "nombre": "Mercados históricos de Palermo",
+   "donde": "Palermo",
+   "base": "palermo",
+   "tipo": "postal",
+   "tipos_extra": [
+    "gastronomia"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Ruta a pie entre Vucciria, Capo y Ballarò por los mercados históricos, con paradas para picar.",
+   "enlace": "https://www.balarm.it/news/ci-sono-piccoli-tesori-e-cose-incredibili-il-tour-per-sette-mercati-storici-di-palermo-163429",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+della+Vucciria%2C+Palermo%2C+Italia",
+   "fuente": "https://www.balarm.it/news/ci-sono-piccoli-tesori-e-cose-incredibili-il-tour-per-sette-mercati-storici-di-palermo-163429"
+  },
+  {
+   "id": "normanni-palatina",
+   "nombre": "Palacio de los Normandos y Capilla Palatina",
+   "donde": "Palermo",
+   "base": "palermo",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Los mosaicos dorados de la Capilla Palatina son lo más espectacular del centro de Palermo.",
+   "consejo": "Entradas y horarios en la web de la Fondazione Federico II; confirmad que está abierta el día que vayáis.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Palazzo+dei+Normanni%2C+Palermo%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Palazzo+dei+Normanni%2C+Palermo%2C+Italia",
+   "fuente": "https://www.balarm.it/news/magazine/la-fondazione-federico-ii-presenta-il-nuovo-sito-5894"
+  },
+  {
+   "id": "monreale",
+   "nombre": "Catedral y claustro de Monreale",
+   "donde": "Monreale",
+   "base": "palermo",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Catedral normanda cubierta de mosaicos y claustro árabe-normando, a las afueras de Palermo, accesible en bus urbano.",
+   "enlace": "https://www.italia.it/it/sicilia/palermo/duomo-di-monreale",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Duomo+di+Monreale%2C+Italia",
+   "fuente": "https://www.italia.it/it/sicilia/palermo/duomo-di-monreale"
+  },
+  {
+   "id": "mondello",
+   "nombre": "Playa de Mondello",
+   "donde": "Mondello (Palermo)",
+   "base": "palermo",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "La playa urbana de Palermo, de arena fina y agua clara, a la que se llega en la línea 806 de AMAT.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Mondello%2C+Palermo%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+Mondello%2C+Palermo%2C+Italia",
+   "fuente": "https://www.balarm.it/news/a-palermo-potenziata-la-linea-806-per-mondello-le-novita-dall-amat-per-l-estate-136460"
+  },
+  {
+   "id": "cefalu",
+   "nombre": "Cefalù: playa, catedral y La Rocca",
+   "donde": "Cefalù",
+   "base": "palermo",
+   "tipo": "playa",
+   "tipos_extra": [
+    "cultura",
+    "naturaleza"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "descripcion": "Pueblo marinero con playa urbana, catedral normanda y subida a La Rocca para ver el pueblo desde arriba; en tren desde Palermo.",
+   "consejo": "Tren regional desde Palermo Centrale; el baño es de mayo a octubre.",
+   "enlace": "https://www.italia.it/it/sicilia/palermo/lido-di-cefalu",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Cefal%C3%B9%2C+Italia",
+   "fuente": "https://www.italia.it/it/sicilia/palermo/lido-di-cefalu"
+  },
+  {
+   "id": "zingaro",
+   "nombre": "Reserva del Zingaro",
+   "donde": "San Vito Lo Capo / Scopello",
+   "base": "san-vito",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "playa",
+    "agua"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Sendero costero de calas de agua transparente sin construcciones: baño y snorkel entre caminata y caminata.",
+   "consejo": "Llevad agua, calzado cerrado y comida; dentro no hay chiringuitos.",
+   "enlace": "https://www.italia.it/it/sicilia/trapani/riserva-dello-zingaro",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Riserva+dello+Zingaro%2C+Italia",
+   "fuente": "https://www.italia.it/it/sicilia/trapani/riserva-dello-zingaro"
+  },
+  {
+   "id": "san-vito-playa",
+   "nombre": "Playa de San Vito Lo Capo",
+   "donde": "San Vito Lo Capo",
+   "base": "san-vito",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Larga playa de arena blanca con el monte Monaco detrás; ambiente de verano con mucha gente joven.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+San+Vito+Lo+Capo%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+San+Vito+Lo+Capo%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Spiaggia+di+San+Vito+Lo+Capo%2C+Italia"
+  },
+  {
+   "id": "egadi",
+   "nombre": "Excursión a Favignana (islas Égadas)",
+   "donde": "Favignana",
+   "base": "san-vito",
+   "tipo": "agua",
+   "tipos_extra": [
+    "playa",
+    "aventura"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Aliscafo desde Trapani, bicicleta de alquiler y baño en calas como Cala Rossa.",
+   "enlace": "https://www.libertylines.it/destinazioni/favignana/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Favignana%2C+Italia",
+   "fuente": "https://www.libertylines.it/destinazioni/favignana/"
+  },
+  {
+   "id": "etna",
+   "nombre": "Subir al Etna (cráteres de altura)",
+   "donde": "Etna",
+   "base": "catania",
+   "tipo": "aventura",
+   "tipos_extra": [
+    "naturaleza",
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "alto",
+   "ambiente": "mixto",
+   "descripcion": "Teleférico y buses 4x4 hasta unos 3.000 m, con guía; sin coche, mirad tours desde Catania.",
+   "consejo": "Llevad ropa de abrigo y botas incluso en verano; el tiempo en la cima cambia deprisa.",
+   "enlace": "https://funiviaetna.com/",
+   "enlace_tipo": "reserva",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Funivia+dell%27Etna%2C+Nicolosi%2C+Italia",
+   "fuente": "https://funiviaetna.com/"
+  },
+  {
+   "id": "pescheria-catania",
+   "nombre": "La Pescheria de Catania",
+   "donde": "Catania",
+   "base": "catania",
+   "tipo": "gastronomia",
+   "tipos_extra": [
+    "compras"
+   ],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Mercado de pescado a cielo abierto junto a la Piazza Duomo, con vendedores gritando y puestos de marisco para comer ahí.",
+   "consejo": "Mejor a primera hora; las tardes son más de bares.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=La+Pescheria%2C+Catania%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=La+Pescheria%2C+Catania%2C+Italia",
+   "fuente": "https://www.citymapsicilia.it/en/structure/the-pescheria/"
+  },
+  {
+   "id": "monastero-benedettini",
+   "nombre": "Monasterio de los Benedictinos",
+   "donde": "Catania",
+   "base": "catania",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "2h",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": true,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Uno de los mayores monasterios de Europa, hoy universidad, con claustros y visita guiada.",
+   "enlace": "https://www.monasterodeibenedettini.it/en/contacts-and-info/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Monastero+dei+Benedettini%2C+Catania%2C+Italia",
+   "fuente": "https://www.monasterodeibenedettini.it/en/contacts-and-info/"
+  },
+  {
+   "id": "catania-noche",
+   "nombre": "Atardecer y copas por el centro de Catania",
+   "donde": "Catania",
+   "base": "catania",
+   "tipo": "fiesta",
+   "tipos_extra": [
+    "musica"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Aperitivo por Via Etnea y salida por las calles del centro, donde coincide mucha gente de la universidad.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Via+Etnea%2C+Catania%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Via+Etnea%2C+Catania%2C+Italia",
+   "fuente": "https://www.lasicilia.it/news/archivio-storico/958469/movida-in-pescheria-a-catania-un-equilibrio-possibile-sospeso-fra-tradizione-e-futuro.html"
+  },
+  {
+   "id": "taormina-teatro",
+   "nombre": "Teatro Greco de Taormina",
+   "donde": "Taormina",
+   "base": "catania",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Teatro antiguo con el Etna y el mar de fondo; tren a Taormina-Giardini y bus o taxi a la parte alta.",
+   "enlace": "https://www.visitsicily.info/en/il-teatro-greco-di-taormina/",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Teatro+Antico+di+Taormina%2C+Italia",
+   "fuente": "https://www.visitsicily.info/en/il-teatro-greco-di-taormina/"
+  },
+  {
+   "id": "isola-bella",
+   "nombre": "Isola Bella",
+   "donde": "Taormina",
+   "base": "catania",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua",
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Isleta unida a la costa por una lengua de arena con marea baja; reserva natural ideal para snorkel.",
+   "enlace": "https://visitsicily.inera.it/en/?p=75173",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Isola+Bella%2C+Taormina%2C+Italia",
+   "fuente": "https://visitsicily.inera.it/en/?p=75173"
+  },
+  {
+   "id": "alcantara",
+   "nombre": "Gole dell'Alcantara",
+   "donde": "Motta Camastra",
+   "base": "catania",
+   "tipo": "naturaleza",
+   "tipos_extra": [
+    "aventura",
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "bajo",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "mixto",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Cañón de lava negra por el que se camina con vadeadores dentro del agua helada.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Gole+dell%27Alcantara%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Gole+dell%27Alcantara%2C+Italia",
+   "fuente": "https://www.enjoysicilia.it/en/taormina-area/parco-fluviale-alcantara/gole-alcantara"
+  },
+  {
+   "id": "ortigia",
+   "nombre": "Ortigia y mercado de Siracusa",
+   "donde": "Siracusa",
+   "base": "siracusa",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "gastronomia",
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "manana",
+   "coste": "gratis",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "mixto",
+   "descripcion": "Isla peatonal con catedral, Fonte Aretusa y el mercado de Via De Benedictis, que es también street food.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Ortigia%2C+Siracusa%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Ortigia%2C+Siracusa%2C+Italia",
+   "fuente": "https://www.gamberorosso.it/notizie/mercato-ortigia-siracusa-street-food/"
+  },
+  {
+   "id": "neapolis",
+   "nombre": "Parque Arqueológico de la Neapolis",
+   "donde": "Siracusa",
+   "base": "siracusa",
+   "tipo": "cultura",
+   "tipos_extra": [],
+   "duracion": "2h",
+   "momento": "manana",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Teatro griego, anfiteatro romano y la Oreja de Dionisio, a pie desde el centro de Siracusa.",
+   "enlace": "https://www.italia.it/it/sicilia/siracusa/luoghi-della-cultura/parco-archeologico-neapolis",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Parco+Archeologico+della+Neapolis%2C+Siracusa%2C+Italia",
+   "fuente": "https://www.italia.it/it/sicilia/siracusa/luoghi-della-cultura/parco-archeologico-neapolis"
+  },
+  {
+   "id": "val-di-noto",
+   "nombre": "Noto y el barroco del Val di Noto",
+   "donde": "Noto",
+   "base": "siracusa",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "cualquiera",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "descripcion": "Ciudad barroca patrimonio UNESCO en bus o tren desde Siracusa; si queréis más, seguid a Ragusa Ibla y Módica.",
+   "enlace": "https://www.italia.it/it/sicilia/val-di-noto",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Noto%2C+Italia",
+   "fuente": "https://www.italia.it/it/sicilia/val-di-noto"
+  },
+  {
+   "id": "fontane-bianche",
+   "nombre": "Playa de Fontane Bianche",
+   "donde": "Fontane Bianche (Siracusa)",
+   "base": "siracusa",
+   "tipo": "playa",
+   "tipos_extra": [
+    "agua"
+   ],
+   "duracion": "medio_dia",
+   "momento": "cualquiera",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "meses": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "descripcion": "Playa de arena clara y agua turquesa a unos 15 km de Siracusa; la preferida de los locales en verano.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Fontane+Bianche%2C+Siracusa%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Fontane+Bianche%2C+Siracusa%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Fontane+Bianche%2C+Siracusa%2C+Italia"
+  },
+  {
+   "id": "valle-templos",
+   "nombre": "Valle de los Templos",
+   "donde": "Agrigento",
+   "base": "palermo",
+   "tipo": "cultura",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "dia_completo",
+   "momento": "tarde",
+   "coste": "medio",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "medio",
+   "ambiente": "tranquilo",
+   "descripcion": "Templos dóricos entre olivos con vistas al mar; al atardecer, la luz es la mejor.",
+   "consejo": "Tren o bus desde Palermo a Agrigento; id con tiempo de sobra para volver.",
+   "enlace": "https://cultura.gov.it/luogo/parco-archeologico-e-paesaggistico-della-valle-dei-templi",
+   "enlace_tipo": "oficial",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Valle+dei+Templi%2C+Agrigento%2C+Italia",
+   "fuente": "https://cultura.gov.it/luogo/parco-archeologico-e-paesaggistico-della-valle-dei-templi"
+  },
+  {
+   "id": "scala-turchi",
+   "nombre": "Scala dei Turchi",
+   "donde": "Realmonte (Agrigento)",
+   "base": "palermo",
+   "tipo": "playa",
+   "tipos_extra": [
+    "postal"
+   ],
+   "duracion": "medio_dia",
+   "momento": "tarde",
+   "coste": "gratis",
+   "requiere_coche": true,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "tranquilo",
+   "meses": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "descripcion": "Acantilado blanco en forma de escalera sobre el mar, combinable con el Valle de los Templos.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Scala+dei+Turchi%2C+Realmonte%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Scala+dei+Turchi%2C+Realmonte%2C+Italia",
+   "fuente": "https://www.spiagge.it/magazine/scala-dei-turchi/"
+  },
+  {
+   "id": "ortigia-atardecer",
+   "nombre": "Atardecer y aperitivo en Ortigia",
+   "donde": "Siracusa",
+   "base": "siracusa",
+   "tipo": "postal",
+   "tipos_extra": [
+    "fiesta"
+   ],
+   "duracion": "2h",
+   "momento": "noche",
+   "coste": "bajo",
+   "requiere_coche": false,
+   "requiere_reserva": false,
+   "esfuerzo": "bajo",
+   "ambiente": "social",
+   "descripcion": "Paseo por el borde del mar de la isla al caer el sol y aperitivo en las plazas del casco antiguo.",
+   "enlace": "https://www.google.com/maps/search/?api=1&query=Lungomare+di+Levante%2C+Ortigia%2C+Italia",
+   "enlace_tipo": "mapa",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungomare+di+Levante%2C+Ortigia%2C+Italia",
+   "fuente": "https://www.balarm.it/news/ortigia-in-pillole-quello-che-c-e-da-sapere-per-goderti-l-isola-senza-tempo-di-siracusa-119161"
+  }
+ ],
+ "comida": [
+  {
+   "plato": "Arancine",
+   "que_es": "bolas de arroz fritas rellenas de ragú, queso o mantequilla",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "puestos y freidurías del centro de Palermo y Catania",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+di+Ballar%C3%B2%2C+Palermo%2C+Italia",
+   "fuente": "https://www.italia.it/it/sicilia/palermo/ballaro"
+  },
+  {
+   "plato": "Panelle y crocchè",
+   "que_es": "tortas de harina de garbanzo y croquetas de patata, en bocadillo",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "puestos de Ballarò y Vucciria",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+della+Vucciria%2C+Palermo%2C+Italia",
+   "fuente": "https://www.italia.it/it/sicilia/palermo/ballaro"
+  },
+  {
+   "plato": "Pani ca meusa",
+   "que_es": "bocadillo de bazo y pulmón de ternera, clásico palermitano",
+   "estilo": "street",
+   "coste": "bajo",
+   "donde_probarlo": "puestos de los mercados de Vucciria y Capo",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Mercato+del+Capo%2C+Palermo%2C+Italia",
+   "fuente": "https://www.balarm.it/news/ci-sono-piccoli-tesori-e-cose-incredibili-il-tour-per-sette-mercati-storici-di-palermo-163429"
+  },
+  {
+   "plato": "Pasta alla Norma",
+   "que_es": "macarrones con tomate, berenjena frita y ricotta salata, típica de Catania",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorias del centro de Catania, mejor lejos de la Piazza Duomo",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Via+Etnea%2C+Catania%2C+Italia",
+   "fuente": "https://www.gamberorosso.it/notizie/rubriche/miniguide/mercato-ottocentesco-catania/"
+  },
+  {
+   "plato": "Granita con brioche",
+   "que_es": "hielo granizado de limón, almendra o pistacho, con bollo para mojar",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "cafeterías del centro de Catania y Taormina, para desayunar",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Duomo%2C+Catania%2C+Italia",
+   "fuente": "https://www.gamberorosso.it/notizie/rubriche/miniguide/mercato-ottocentesco-catania/"
+  },
+  {
+   "plato": "Cannolo siciliano",
+   "que_es": "tubo crujiente relleno de ricotta dulce",
+   "estilo": "dulce",
+   "coste": "bajo",
+   "donde_probarlo": "pastelerías y obradores de Palermo y Catania; pedidlo relleno al momento",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Palermo+centro%2C+Italia",
+   "fuente": "https://www.italia.it/it/sicilia/palermo/ballaro"
+  },
+  {
+   "plato": "Pescado fresco y pez espada",
+   "que_es": "pez espada a la plancha o en rollitos, con marisco del día",
+   "estilo": "mercado",
+   "coste": "medio",
+   "donde_probarlo": "puestos de la Pescheria de Catania y el mercado de Ortigia",
+   "maps": "https://www.google.com/maps/search/?api=1&query=La+Pescheria%2C+Catania%2C+Italia",
+   "fuente": "https://www.gamberorosso.it/notizie/mercato-ortigia-siracusa-street-food/"
+  },
+  {
+   "plato": "Cuscús de pescado",
+   "que_es": "cuscús con caldo de pescado, plato símbolo de San Vito Lo Capo",
+   "estilo": "trattoria",
+   "coste": "medio",
+   "donde_probarlo": "restaurantes familiares de San Vito Lo Capo",
+   "maps": "https://www.google.com/maps/search/?api=1&query=San+Vito+Lo+Capo%2C+Italia",
+   "fuente": "https://www.italia.it/it/sicilia/cosa-fare/evento-cous-cous-fest"
+  },
+  {
+   "plato": "Busiate al pesto trapanese",
+   "que_es": "pasta en espiral con pesto de tomate, almendra y albahaca",
+   "estilo": "trattoria",
+   "coste": "bajo",
+   "donde_probarlo": "trattorias de Trapani y San Vito Lo Capo",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Trapani%2C+Italia",
+   "fuente": "https://www.italia.it/it/sicilia/cosa-fare/evento-cous-cous-fest"
+  }
+ ],
+ "noche": [
+  {
+   "zona": "Vucciria y Kalsa",
+   "base": "palermo",
+   "plan": "copas",
+   "descripcion": "Plazas y calles del centro histórico llenas de gente joven con copas en la calle.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Caracciolo%2C+Palermo%2C+Italia",
+   "fuente": "https://www.balarm.it/news/ci-sono-piccoli-tesori-e-cose-incredibili-il-tour-per-sette-mercati-storici-di-palermo-163429"
+  },
+  {
+   "zona": "Pescheria y Via Etnea",
+   "base": "catania",
+   "plan": "fiesta",
+   "descripcion": "Bares y música en las calles alrededor de la Pescheria y Via Etnea; ambiente universitario.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Piazza+Duomo%2C+Catania%2C+Italia",
+   "fuente": "https://www.lasicilia.it/news/archivio-storico/958469/movida-in-pescheria-a-catania-un-equilibrio-possibile-sospeso-fra-tradizione-e-futuro.html"
+  },
+  {
+   "zona": "Ortigia al atardecer",
+   "base": "siracusa",
+   "plan": "aperitivo",
+   "descripcion": "Paseo por el borde del mar de la isla con aperitivo al caer el sol.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungomare+di+Levante%2C+Ortigia%2C+Italia",
+   "fuente": "https://www.balarm.it/news/ortigia-in-pillole-quello-che-c-e-da-sapere-per-goderti-l-isola-senza-tempo-di-siracusa-119161"
+  },
+  {
+   "zona": "Paseo marítimo de San Vito",
+   "base": "san-vito",
+   "plan": "aperitivo",
+   "descripcion": "Atardecer en la playa y paseo con aperitivo; más tranquilo que en las ciudades.",
+   "maps": "https://www.google.com/maps/search/?api=1&query=Lungomare%2C+San+Vito+Lo+Capo%2C+Italia",
+   "fuente": "https://www.google.com/maps/search/?api=1&query=Lungomare%2C+San+Vito+Lo+Capo%2C+Italia"
+  }
+ ],
+ "alojamiento": [
+  {
+   "tipo": "hostel",
+   "base": "palermo",
+   "coste": "bajo",
+   "para": "grupos con poco presupuesto y ganas de salir por el centro.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Palermo"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "catania",
+   "coste": "medio",
+   "para": "grupos de 4-8 que quieren cocina y salón, cerca de Via Etnea.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Catania--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Catania"
+    }
+   ]
+  },
+  {
+   "tipo": "hostel",
+   "base": "catania",
+   "coste": "bajo",
+   "para": "viajeros solos o parejas con presupuesto muy ajustado.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Catania"
+    }
+   ]
+  },
+  {
+   "tipo": "bnb",
+   "base": "siracusa",
+   "coste": "medio",
+   "para": "grupos pequeños que prefieren dormir en Ortigia.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Siracusa"
+    },
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/Siracusa--Italia/homes"
+    }
+   ]
+  },
+  {
+   "tipo": "apartamento",
+   "base": "san-vito",
+   "coste": "medio",
+   "para": "grupos que van en verano a playa y Zingaro, con coche.",
+   "enlaces": [
+    {
+     "sitio": "Airbnb",
+     "url": "https://www.airbnb.es/s/San%20Vito%20Lo%20Capo--Italia/homes"
+    },
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=San+Vito+Lo+Capo"
+    }
+   ]
+  },
+  {
+   "tipo": "hotel",
+   "base": "palermo",
+   "coste": "medio",
+   "para": "quien prefiere habitación propia y desayuno.",
+   "enlaces": [
+    {
+     "sitio": "Booking",
+     "url": "https://www.booking.com/searchresults.es.html?ss=Palermo"
+    }
+   ]
+  }
+ ],
+ "eventos": [
+  {
+   "nombre": "Festino de Santa Rosalía",
+   "donde": "Palermo",
+   "cuando": "cada año, noche del 14 al 15 de julio",
+   "meses": [
+    7
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Procesión de la patrona con carro triunfal por el centro y fuegos artificiales junto al mar.",
+   "enlace": "https://www.voloscontato.it/sagre-ed-eventi/festa-di-santa-rosalia-2026-a-palermo-quando-dove-e-info.php",
+   "fuente": "https://www.voloscontato.it/sagre-ed-eventi/festa-di-santa-rosalia-2026-a-palermo-quando-dove-e-info.php"
+  },
+  {
+   "nombre": "Fiesta de Sant'Agata",
+   "donde": "Catania",
+   "cuando": "cada año, del 3 al 5 de febrero",
+   "meses": [
+    2
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Tres días de procesiones y velas por el centro de Catania en honor a la patrona.",
+   "enlace": "https://www.visitsicily.info/en/feast-of-santagatha-in-catania/",
+   "fuente": "https://www.visitsicily.info/en/feast-of-santagatha-in-catania/"
+  },
+  {
+   "nombre": "Infiorata di Noto",
+   "donde": "Noto",
+   "cuando": "cada año, mayo (fechas en la web oficial)",
+   "meses": [
+    5
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Alfombras de flores en la calle principal del casco barroco.",
+   "enlace": "https://www.visitsicily.info/evento-new/infiorata-di-noto-2026/",
+   "fuente": "https://www.visitsicily.info/evento-new/infiorata-di-noto-2026/"
+  },
+  {
+   "nombre": "Cous Cous Fest",
+   "donde": "San Vito Lo Capo",
+   "cuando": "cada año, septiembre (fechas en la web oficial)",
+   "meses": [
+    9
+   ],
+   "proxima_fecha": null,
+   "descripcion": "Festival internacional de cuscús con degustaciones, concursos y conciertos en la playa.",
+   "enlace": "https://www.italia.it/it/sicilia/cosa-fare/evento-cous-cous-fest",
+   "fuente": "https://www.italia.it/it/sicilia/cosa-fare/evento-cous-cous-fest"
+  }
+ ],
+ "notas_honestas": [
+  "Sicilia es grande: en un viaje corto elegid una zona (oeste o este), no las dos.",
+  "No he verificado horarios, precios ni frecuencias de bus/tren; comprobadlos antes de ir.",
+  "Para varios sitios de Palermo y Catania el enlace es el mapa porque no verifiqué una web oficial.",
+  "Rutas aéreas Ryanair VLC/ALC-CTA vienen de prensa del sector, no de Ryanair; hay que confirmarlas en la web.",
+  "Fontane Bianche y San Vito solo tienen enlace de mapa; Gole dell'Alcantara tiene fuente privada (enjoysicilia).",
+  "Falta ampliar alojamiento en Taormina/Catania y verificar Hostelworld."
+ ]
+}

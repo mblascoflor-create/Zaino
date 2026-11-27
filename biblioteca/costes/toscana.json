@@ -1,0 +1,31 @@
+{
+  "zona": "toscana",
+  "base": "florencia",
+  "ciudad_referencia": "Florencia",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 14,
+      "max": 20,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/florence/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": {
+      "min": 50,
+      "max": 135,
+      "fuente": "https://www.booking.com/city/it/florence.html?selected_currency=EUR | https://www.budgetyourtrip.com/italy/florence",
+      "calidad": "orientativo"
+    },
+    "comida_barata": {
+      "valor": 24.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Florence",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 2.0,
+      "fuente": "https://www.at-bus.it/en/ticket",
+      "calidad": "verificado"
+    }
+  },
+  "notas": "hostel_noche: rango P25-P75 de 15 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=6.21, maximo=100.0); son precios 'desde' sin fechas concretas. doble_noche: min=50 es el precio 'From' mas bajo del titulo de la pagina de Booking.com para la ciudad (alojamiento mas barato listado, 2 adultos, 1 noche, sin fecha fija); max=135 es el precio medio de hotel para una pareja segun BudgetYourTrip (gasto declarado por viajeros). La horquilla mezcla ambas fuentes: es solo una guia aproximada, no un rango de apartamentos/dobles economicos garantizado. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Florencia (rango Numbeo 19-30). transporte_billete: Autolinee Toscane, billete urbano ordinario (Urbano capoluogo) 2.00 EUR; a bordo 3.00; por SMS 2.40 (90 min en Florencia). La pagina no nombra Florencia explicitamente pero cubre las capitales de provincia."
+}

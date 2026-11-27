@@ -1,0 +1,31 @@
+{
+  "zona": "napoles",
+  "base": "napoles",
+  "ciudad_referencia": "Nápoles",
+  "fecha_consulta": "2026-11-11",
+  "datos": {
+    "hostel_noche": {
+      "min": 18,
+      "max": 23,
+      "fuente": "https://www.hostelworld.com/st/hostels/europe/italy/naples/",
+      "calidad": "orientativo"
+    },
+    "doble_noche": {
+      "min": 47,
+      "max": 87,
+      "fuente": "https://www.booking.com/city/it/naples.html?selected_currency=EUR | https://www.budgetyourtrip.com/italy/naples",
+      "calidad": "orientativo"
+    },
+    "comida_barata": {
+      "valor": 15.0,
+      "fuente": "https://www.numbeo.com/cost-of-living/in/Naples",
+      "calidad": "orientativo"
+    },
+    "transporte_billete": {
+      "valor": 1.3,
+      "fuente": "https://www.napolike.it/biglietti-abbonamenti-trasporti-napoli",
+      "calidad": "orientativo"
+    }
+  },
+  "notas": "hostel_noche: rango P25-P75 de 17 precios 'Dorms From' (EUR/cama) listados hoy en la pagina de ciudad de Hostelworld (minimo=14.0, maximo=47.12); son precios 'desde' sin fechas concretas. doble_noche: min=47 es el precio 'From' mas bajo del titulo de la pagina de Booking.com para la ciudad (alojamiento mas barato listado, 2 adultos, 1 noche, sin fecha fija); max=87 es el precio medio de hotel para una pareja segun BudgetYourTrip (gasto declarado por viajeros). La horquilla mezcla ambas fuentes: es solo una guia aproximada, no un rango de apartamentos/dobles economicos garantizado. comida_barata: Numbeo 'Meal at an Inexpensive Restaurant' en Napoles (rango Numbeo 10-20). transporte_billete: NO verificado en fuente oficial: anm.it bloquea la lectura (robots_disallowed). Dato de napolike.it (portal no oficial, actualizado jul-2026): corsa singola ANM 1.30 EUR en bus/tram/trolebus/funicular; metro lineas 1 y 6 = 1.50 EUR. Confirmar en anm.it."
+}

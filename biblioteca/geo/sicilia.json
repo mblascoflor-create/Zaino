@@ -1,0 +1,132 @@
+{
+ "actividades": {
+  "ballaro": [
+   38.111,
+   13.358
+  ],
+  "vucciria-capo": [
+   38.118,
+   13.362
+  ],
+  "normanni-palatina": [
+   38.111,
+   13.354
+  ],
+  "monreale": [
+   38.08,
+   13.292
+  ],
+  "mondello": [
+   38.209,
+   13.32
+  ],
+  "cefalu": [
+   38.039,
+   14.022
+  ],
+  "zingaro": [
+   38.092,
+   12.795
+  ],
+  "san-vito-playa": [
+   38.174,
+   12.735
+  ],
+  "egadi": [
+   37.934,
+   12.327
+  ],
+  "etna": [
+   37.734,
+   15.0
+  ],
+  "pescheria-catania": [
+   37.504,
+   15.088
+  ],
+  "monastero-benedettini": [
+   37.503,
+   15.083
+  ],
+  "catania-noche": [
+   37.503,
+   15.087
+  ],
+  "taormina-teatro": [
+   37.852,
+   15.292
+  ],
+  "isola-bella": [
+   37.847,
+   15.298
+  ],
+  "alcantara": [
+   37.832,
+   15.236
+  ],
+  "ortigia": [
+   37.06,
+   15.293
+  ],
+  "neapolis": [
+   37.078,
+   15.275
+  ],
+  "val-di-noto": [
+   36.892,
+   15.069
+  ],
+  "fontane-bianche": [
+   36.987,
+   15.139
+  ],
+  "valle-templos": [
+   37.29,
+   13.587
+  ],
+  "scala-turchi": [
+   37.29,
+   13.473
+  ],
+  "ortigia-atardecer": [
+   37.058,
+   15.293
+  ]
+ },
+ "noche": {
+  "Vucciria y Kalsa": [
+   38.118,
+   13.364
+  ],
+  "Pescheria y Via Etnea": [
+   37.504,
+   15.088
+  ],
+  "Ortigia al atardecer": [
+   37.058,
+   15.293
+  ],
+  "Paseo marítimo de San Vito": [
+   38.174,
+   12.735
+  ]
+ },
+ "eventos": {
+  "Festino de Santa Rosalía": [
+   38.116,
+   13.362
+  ],
+  "Fiesta de Sant'Agata": [
+   37.502,
+   15.087
+  ],
+  "Infiorata di Noto": [
+   36.892,
+   15.069
+  ],
+  "Cous Cous Fest": [
+   38.174,
+   12.735
+  ]
+ }
+}
