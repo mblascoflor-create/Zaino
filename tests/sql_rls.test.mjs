@@ -53,6 +53,7 @@ ok((await como(U.pol, 'select count(*)::int n from respuestas_privadas')).rows[0
 // Una respuesta de la versión anterior conserva su disponibilidad al migrar.
 await como(U.pol, `update respuestas set data=data || '{"meses":[7],"dias":5}'::jsonb where viaje_id=$1 and miembro='m2'`, [v]);
 await db.exec(fs.readFileSync(new URL('../supabase/migrations/20261122000001_fechas_privadas.sql', import.meta.url), 'utf8'));
+await db.exec(fs.readFileSync(new URL('../supabase/migrations/20261127000001_endurecer_validaciones.sql', import.meta.url), 'utf8'));
 const pubPol = (await como(U.ana, "select data from respuestas where miembro='m2'")).rows[0].data;
 const privPol = (await como(U.pol, "select data from respuestas_privadas where miembro='m2'")).rows[0].data;
 ok(!('meses' in pubPol) && !('dias' in pubPol) && privPol.meses[0]===7 && privPol.dias===5 && privPol.presMax===300, 'la migración privatiza las fechas y conserva el presupuesto');
@@ -85,6 +86,44 @@ await como(tarde, `select public.salir_viaje($1)`, [r.code]);
 ok((await como(tarde, 'select count(*)::int n from viajes')).rows[0].n === 0, 'quien sale del viaje deja de verlo');
 await como(U.ana, `select public.quitar_integrante($1, 'm2')`, [r.code]);
 ok((await como(U.ana, 'select count(*)::int n from respuestas')).rows[0].n === 0 && (await como(U.pol, 'select count(*)::int n from viajes')).rows[0].n === 0, 'al quitar a Pol se borran sus respuestas y pierde el acceso');
+// 10b. Regresiones del informe del Tester (migración 20261127000001): A1, A2, A3
+{
+  const AV = 'data:image/jpeg;base64,/9j/4AAQSkZJRg==';
+  const r2 = (await como(U.ana, `select public.crear_viaje($1::jsonb) as r`, [JSON.stringify({ titulo: 'Reg', jefe: 'm1', integrantes: [{ id: 'm1', nombre: 'Ana' }, { id: 'm2', nombre: 'Pol' }] })])).rows[0].r;
+  await como(U.pol, `select public.unirse_viaje($1, 'm2', null)`, [r2.token]);
+  const v2 = r2.id;
+  // A1: avatar
+  await como(U.pol, `insert into respuestas(viaje_id, miembro, data) values ($1, 'm2', $2::jsonb)`, [v2, JSON.stringify({ avatar: AV })]);
+  ok(true, 'A1: un avatar JPEG en base64 se acepta');
+  for (const mal of ['a)"><img src=x onerror=alert(1)><span x="', "data:image/png;base64,AAAA", "data:image/jpeg;base64,AA')\"><script>", 7, null, { x: 1 }]) {
+    const e = await falla(U.pol, `update respuestas set data=$2::jsonb where viaje_id=$1 and miembro='m2'`, [v2, JSON.stringify({ avatar: mal })]);
+    ok(/respuestas_avatar_valido/.test(e || ''), 'A1: el servidor rechaza el avatar ' + JSON.stringify(mal).slice(0, 40));
+  }
+  // A2: parche que no es objeto
+  for (const mal of ['[1,2]', '"x"', '7', 'null', 'true']) {
+    ok(/patch_no_valido/.test(await falla(U.pol, `select public.parchear_viaje($1, $2::jsonb)`, [r2.code, mal]) || ''), 'A2: un participante no puede mandar un parche ' + mal);
+    ok(/patch_no_valido/.test(await falla(U.ana, `select public.parchear_viaje($1, $2::jsonb)`, [r2.code, mal]) || ''), 'A2: ni la organizadora (' + mal + ')');
+  }
+  ok((await como(U.ana, 'select data from viajes where id=$1', [v2])).rows[0].data.integrantes.length === 2, 'A2: los datos del viaje siguen intactos tras los parches no válidos');
+  await como(U.ana, `select public.parchear_viaje($1, '{"eleccion":{"zona":"roma","por":"m1"},"plan":{"zona":"roma","dias":[]}}')`, [r2.code]);
+  for (const mal of ['{"eleccion":{"__delete__":true}}', '{"eleccion":"x"}', '{"eleccion":{"zona":"paris"}}', '{"eleccion":{"por":"m2"}}']) {
+    ok(/solo_organizador/.test(await falla(U.pol, `select public.parchear_viaje($1, $2::jsonb)`, [r2.code, mal]) || ''), 'A2: un participante no toca la elección ' + mal);
+  }
+  ok(/solo_organizador/.test(await falla(U.pol, `select public.parchear_viaje($1, '{"plan":{"zona":"paris"}}')`, [r2.code]) || ''), 'A2: un participante no cambia plan.zona');
+  ok(/plan_no_valido/.test(await falla(U.pol, `select public.parchear_viaje($1, '{"plan":"x"}')`, [r2.code]) || '') && /plan_no_valido/.test(await falla(U.pol, `select public.parchear_viaje($1, '{"plan":{"__delete__":true}}')`, [r2.code]) || ''), 'A2: ni borra ni sustituye el plan por un escalar');
+  await como(U.pol, `select public.parchear_viaje($1, '{"plan":{"zona":"roma","editado":true}}')`, [r2.code]);
+  const d2 = (await como(U.ana, 'select data from viajes where id=$1', [v2])).rows[0].data;
+  ok(d2.eleccion.zona === 'roma' && d2.plan.editado === true && d2.plan.zona === 'roma', 'A2: editar el plan sin cambiar la zona sigue funcionando');
+  // A3: ids de integrantes
+  for (const id of ['m2"><img src=x onerror=alert(1)>', 'x1', 'm', 'm1234', '7']) {
+    ok(/integrantes_no_validos/.test(await falla(U.ana, `select public.crear_viaje($1::jsonb)`, [JSON.stringify({ jefe: 'm1', integrantes: [{ id: 'm1', nombre: 'A' }, { id, nombre: 'X' }] })]) || ''), 'A3: crear_viaje rechaza el id ' + id);
+    ok(/integrantes_no_validos/.test(await falla(U.ana, `select public.parchear_viaje($1, $2::jsonb)`, [r2.code, JSON.stringify({ integrantes: [{ id: 'm1', nombre: 'Ana' }, { id, nombre: 'X' }] })]) || ''), 'A3: parchear_viaje rechaza el id ' + id);
+  }
+  ok(/integrantes_no_validos/.test(await falla(U.ana, `select public.crear_viaje($1::jsonb)`, [JSON.stringify({ jefe: 'm"x', integrantes: [] })]) || ''), 'A3: crear_viaje rechaza un jefe raro');
+  ok(/datos_no_validos/.test(await falla(U.ana, `select public.crear_viaje('[1]'::jsonb)`) || ''), 'crear_viaje rechaza datos que no son un objeto');
+  await como(U.ana, `select public.parchear_viaje($1, '{"integrantes":[{"id":"m1","nombre":"Ana"},{"id":"m2","nombre":"Pol"},{"id":"m10","nombre":"Zoe"}]}')`, [r2.code]);
+  ok((await como(U.ana, 'select data from viajes where id=$1', [v2])).rows[0].data.integrantes.length === 3, 'A3: ids válidos (m10) siguen aceptándose');
+}
 // 11. RGPD
 await como(U.ana, `select public.borrar_mis_datos()`);
 ok((await db.query('select count(*)::int n from viajes')).rows[0].n === 0, 'borrar mis datos elimina el viaje que organizaba con todo lo suyo');

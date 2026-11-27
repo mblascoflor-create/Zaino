@@ -28,8 +28,83 @@ def abrir(pg, code):
     if pg.locator('[data-open="%s"]' % code).count(): pg.click('[data-open="%s"]' % code)
     pg.wait_for_timeout(1200)
 
+def regresiones(b):
+    """Regresiones del informe del Tester: A1 (avatar), A3 (id de integrante), A4 (reintento), A6 (borrar mis datos)."""
+    VIAJE = "{titulo:'Reg', jefe:'m1', integrantes:[{id:'m1',nombre:'Ana'},{id:'m2',nombre:'Pol'}], fechas:{modo:'mes',mes:7}, dias:4, destinos:[]}"
+    def nuevo(ns, trip=VIAJE, rol='jefe'):
+        Hn.reset_db()  # los «móviles» comparten la base «default»
+        ctx, pg = Hn.device(b, 'Reg-' + ns); pg.goto(URL); pg.wait_for_timeout(1500)
+        code = pg.evaluate("""async () => { const d = await ZSTORE.crearViaje(%s);
+          localStorage.setItem('zaino.viajes', JSON.stringify([{code:d.code, miembro:'m1', nombre:'Ana', rol:'%s', titulo:'Reg'}]));
+          localStorage.setItem('zaino.ult', JSON.stringify(d.code)); return d.code; }""" % (trip, rol))
+        return ctx, pg, code
+    def abrir_viaje(pg):
+        pg.reload(); pg.wait_for_timeout(1500)
+        pg.evaluate("document.querySelector('[data-open]') && document.querySelector('[data-open]').click()"); pg.wait_for_timeout(1200)
+    resp = "{nombre:'Pol', done:true, %s origen:{ciudad:'Madrid',iata:'MAD',pais:'es'}, prioridades:['playa'], updatedAt:Date.now()}"
+    # A1: avatar malicioso de otro miembro
+    ctx, pg, code = nuevo('reg1')
+    evil = 'a)"><img src=x onerror="window.__xss=(window.__xss||0)+1"><span x="'
+    pg.evaluate("ZSTORE.db.doc('viajes2/%s/resp/m2').set(%s)" % (code, resp % ("avatar:%s," % json.dumps(evil))))
+    abrir_viaje(pg)
+    ok(pg.evaluate("window.__xss||0") == 0 and pg.locator('img[src="x"]').count() == 0, 'A1. Un avatar malicioso de otro miembro no ejecuta nada ni mete elementos')
+    ok('Pol' in pg.text_content('#app') and pg.locator('.av.s').count() >= 2, 'A1. y el grupo se pinta igual (con la inicial en vez del avatar)')
+    good = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBD'
+    pg.evaluate("ZSTORE.db.doc('viajes2/%s/resp/m2').set(%s)" % (code, resp % ("avatar:%s," % json.dumps(good)))); pg.wait_for_timeout(1500)
+    ok(pg.locator('.av.s[style*="data:image/jpeg;base64"]').count() >= 1, 'A1. Un avatar JPEG válido sí se pinta')
+    ctx.close()
+    # A3: id de integrante malicioso
+    ctx, pg, code = nuevo('reg3', "{titulo:'Reg', jefe:'m1', integrantes:[{id:'m1',nombre:'Ana'},{id:'m2\"><img src=x onerror=\"window.__xss=(window.__xss||0)+1\">', nombre:'Pol'}], fechas:{modo:'mes',mes:7}, dias:4, destinos:[]}")
+    abrir_viaje(pg)
+    pg.evaluate("document.querySelector('[data-tab=gastos]').click()"); pg.wait_for_timeout(800)
+    pg.evaluate("document.getElementById('b-gasto') && document.getElementById('b-gasto').click()"); pg.wait_for_timeout(800)
+    ok(pg.evaluate("window.__xss||0") == 0 and pg.locator('#sheet img[src="x"], #app img[src="x"]').count() == 0, 'A3. Un id de integrante malicioso no ejecuta nada en «Añadir gasto»')
+    ok(pg.locator('#g-p option').count() == 2, 'A3. y el selector «Pagó» sigue con sus dos personas', pg.locator('#g-p option').count())
+    ctx.close()
+    # A4: el cálculo falla y vuelve la red → se reintenta solo; si no vuelve, sale «Reintentar»
+    ctx, pg, code = nuevo('reg4')
+    pg.reload(); pg.wait_for_timeout(1500)
+    pg.evaluate("() => {window.ZAINO_REINTENTO_MS=60; window.__calls=[]; window.__fallar=true; const orig=ZSTORE.motor; ZSTORE.motor=function(c,a,z){ window.__calls.push(a+':'+(window.__fallar?'FALLA':'ok')); return window.__fallar ? Promise.reject({message:'red caida'}) : orig.apply(ZSTORE,arguments); }; }")
+    pg.evaluate("ZSTORE.db.doc('viajes2/%s/resp/m1').set({nombre:'Ana', done:true, origen:{ciudad:'Madrid',iata:'MAD',pais:'es'}, prioridades:['playa'], updatedAt:Date.now()})" % code)
+    pg.evaluate("document.querySelector('[data-open]') && document.querySelector('[data-open]').click()"); pg.wait_for_timeout(900)
+    pg.evaluate("window.__fallar=false"); pg.wait_for_timeout(2500)
+    calls = pg.evaluate("window.__calls")
+    ok(any(c == 'calcular:ok' for c in calls), 'A4. Tras fallar una vez y volver la red, la app reintenta sola el cálculo', calls)
+    ok(pg.evaluate("ZSTORE.db.doc('viajes2/%s/res/actual').get().then(s=>s.exists)" % code), 'A4. y se guardan los resultados')
+    ok('Calculando propuestas' not in pg.text_content('#app'), 'A4. y la pantalla ya no se queda en «Calculando propuestas…»')
+    ctx.close()
+    ctx, pg, code = nuevo('reg4b')
+    pg.reload(); pg.wait_for_timeout(1500)
+    pg.evaluate("() => {window.ZAINO_REINTENTO_MS=40; window.__calls=[]; ZSTORE.motor=function(c,a,z){ window.__calls.push(a); return Promise.reject({message:'caido'}); }; }")
+    pg.evaluate("ZSTORE.db.doc('viajes2/%s/resp/m1').set({nombre:'Ana', done:true, origen:{ciudad:'Madrid',iata:'MAD',pais:'es'}, prioridades:['playa'], updatedAt:Date.now()})" % code)
+    pg.evaluate("document.querySelector('[data-open]') && document.querySelector('[data-open]').click()"); pg.wait_for_timeout(3000)
+    ok(pg.locator('#b-reint').count() >= 1 and len(pg.evaluate("window.__calls")) == 5, 'A4. Con la red caída del todo: 1 intento + 4 reintentos y aparece el botón «Reintentar»', pg.evaluate("window.__calls"))
+    n = len(pg.evaluate("window.__calls"));     pg.evaluate("() => { ZSTORE.motor=function(c,a,z){ window.__calls.push(a+':ok'); return Promise.resolve(null); }; }")
+    pg.locator('#b-reint').first.click(); pg.wait_for_timeout(600)
+    ok(len(pg.evaluate("window.__calls")) > n, 'A4. Pulsar «Reintentar» vuelve a pedir el cálculo', pg.evaluate("window.__calls"))
+    ctx.close()
+    # A6: borrar mis datos avisa de que los viajes que organizas se borran para todos
+    ctx, pg, code = nuevo('reg6')
+    abrir_viaje(pg); pg.evaluate("document.querySelector('[data-tab=perfil]').click()"); pg.wait_for_timeout(500)
+    pg.evaluate("document.querySelector('details.card summary') && [...document.querySelectorAll('details.card')].forEach(d=>d.open=true)")
+    pg.click('#b-borrarme'); pg.wait_for_timeout(300)
+    aviso = pg.text_content('#z-bm')
+    ok('ENTERO' in aviso and 'todo el grupo' in aviso and pg.locator('#b-bm-si').is_disabled(), 'A6. Si organizas un viaje, avisa de que se borra entero para todos y el botón empieza bloqueado')
+    pg.check('#bm-ent'); ok(not pg.locator('#b-bm-si').is_disabled(), 'A6. Hay que marcar la confirmación para poder borrar')
+    ctx.close()
+    ctx, pg, code = nuevo('reg6b', rol='grupo')
+    abrir_viaje(pg); pg.evaluate("document.querySelector('[data-tab=perfil]').click()"); pg.wait_for_timeout(500)
+    pg.evaluate("[...document.querySelectorAll('details.card')].forEach(d=>d.open=true)")
+    pg.click('#b-borrarme'); pg.wait_for_timeout(300)
+    ok('ENTERO' not in pg.text_content('#z-bm') and not pg.locator('#b-bm-si').is_disabled(), 'A6. Quien no organiza nada no ve el aviso extra')
+    ctx.close()
+
 def main():
     Hn.build_site(); Hn.serve(); Hn.reset_db()
+    if '--regresiones' in sys.argv:  # solo las regresiones del informe del Tester (rápido)
+        with sync_playwright() as p:
+            b = p.chromium.launch(); regresiones(b); b.close()
+        f = [r for r in RES if not r['ok']]; print('\n%d de %d pasan' % (len(RES) - len(f), len(RES))); return
     with sync_playwright() as p:
         b = p.chromium.launch()
         cA, A = Hn.device(b, 'Ana')
@@ -158,6 +233,10 @@ def main():
         errs = []
         for pg in (A, Pp, L, M, X, Zp): errs += ['%s: %s' % (pg.name, e) for e in pg.errors if 'favicon' not in e]
         ok(not errs, 'Sin errores de JavaScript en ningún móvil', errs[:3])
+        for c in (cA, cP, cX, cM, cL, cZ, cX): 
+            try: c.close()
+            except Exception: pass
+        regresiones(b)
         b.close()
     os.makedirs(os.path.join(Hn.ROOT, 'tests', 'shots'), exist_ok=True)
     json.dump(RES, open(os.path.join(Hn.ROOT, 'tests', 'shots', 'escenarios.json'), 'w'), ensure_ascii=False, indent=1)
