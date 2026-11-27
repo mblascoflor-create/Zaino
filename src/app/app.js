@@ -82,7 +82,7 @@ function avisoRed(){
   var b=$('#red-aviso');
   if(!b){ b=document.createElement('div'); b.id='red-aviso'; b.className='red-aviso'; b.setAttribute('role','status'); document.body.appendChild(b); }
   var off = navigator.onLine===false && !redOculta;
-  if(off && !b.textContent){ b.innerHTML='<span>Sin conexión — guardaremos cuando vuelva</span><button type="button" class="red-x" aria-label="Ocultar aviso">×</button>';
+  if(off && !b.textContent){ b.innerHTML='<span>Sin conexión — lo que añadas no se guardará hasta que vuelva la red</span><button type="button" class="red-x" aria-label="Ocultar aviso">×</button>';
     $('.red-x', b).addEventListener('click', function(){ redOculta=true; avisoRed(); }); }
   else if(!off) b.innerHTML='';
   document.body.classList.toggle('sin-red', off);
