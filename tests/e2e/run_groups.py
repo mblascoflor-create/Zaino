@@ -98,6 +98,9 @@ def answer(page, prof, log):
         elif st=='nota':
             if prof.get('nota'): page.fill('#i-nota', prof['nota']); ok(page)
             else: page.click('#fl-skip')
+        elif st=='afinar':
+            # puerta del cuestionario corto: por defecto se afina (respuestas completas, como antes)
+            page.click('#fl-skip' if prof.get('afinar', True) else '#fl-ok')  # ghost = «Afinar el plan», principal = «Enviar mis respuestas»
         elif st=='base':
             page.click('.flow .opt >> nth=%d' % prof.get('base',0))
         elif st=='fin':

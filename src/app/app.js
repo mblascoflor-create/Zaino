@@ -633,7 +633,29 @@ function pasosPreguntas(t, a){
     html:function(a){ return '<div class="cities">'+sugerencias.map(function(s){ return '<button type="button" class="chip" data-s="'+esc(s)+'">+ '+esc(s)+'</button>'; }).join('')+'</div><textarea id="i-nota" maxlength="240" placeholder="Escribe aquí">'+esc(a.nota||'')+'</textarea>'; },
     wire:function(el,a){ var tx=$('#i-nota',el); tx.addEventListener('input',function(){ a.nota=tx.value; }); on('[data-s]','click',function(e,b){ var s=b.dataset.s; if(tx.value.indexOf(s)===-1){ tx.value=(tx.value.trim()?tx.value.trim()+'. ':'')+s; a.nota=tx.value; } b.classList.add('on'); }, el); },
     cta:'Terminar', skip:'Nada más'});
-  return L;
+  return cuestionarioCorto(L, a, bg);
+}
+/* Cuestionario corto: un núcleo de ~10 pantallas con lo que más cambia el plan y, al final, una puerta
+   «Afinar» con el resto (opcionales). Si alguien ya contestó alguna de las opcionales (borrador antiguo
+   o editando respuestas), se le enseña la lista completa para no perder nada ni saltar de pantalla. */
+var PREGUNTAS_AFINAR = ['clima','nieve','nieveAct','playa','ciudad','momento','duelo2','andar','noche','duelo1','comida','capricho','agobio','nota'];
+function afinarActivo(a){
+  if(a._afinar) return a._afinar==='si';
+  return PREGUNTAS_AFINAR.some(function(id){ var v=a[id]; return v!==undefined && v!==null && v!=='' && !(Array.isArray(v) && !v.length); });
+}
+function cuestionarioCorto(L, a, bg){
+  var extra = L.filter(function(st){ return PREGUNTAS_AFINAR.indexOf(st.id)>-1; });
+  if(!extra.length) return L;
+  var nucleo = L.filter(function(st){ return PREGUNTAS_AFINAR.indexOf(st.id)===-1; });
+  var abierto = afinarActivo(a);
+  // Textos de la puerta: propuesta de ChatGPT (turno 27-nov 20:30). Enviar va como principal: quien ya ha
+  // terminado sale a un toque; afinar es opcional.
+  var puerta = {id:'afinar', bg:bg(), t:['Lo básico','ya está'], s:'Con lo que has respondido ya vale. Si afinas ('+extra.length+' preguntas rápidas más), el plan encajará mejor contigo.',
+    html:function(){ return '<div aria-hidden="true" style="width:150px;margin:18px auto 0">'+ART.q('estrella')+'</div>'; },
+    cta:'Enviar mis respuestas', skip:'Afinar el plan',
+    before:function(a){ a._afinar='no'; },
+    onSkip:function(a){ a._afinar='si'; }};
+  return nucleo.concat([puerta]).concat(abierto ? extra : []);
 }
 function mazoAbierto(t, a, mes){
   // sin destino fijo: planes reales de los destinos que mejor van con lo que llevas respondido (y lo que ya respondió el grupo)
