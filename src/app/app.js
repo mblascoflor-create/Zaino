@@ -54,19 +54,43 @@ function gastoCol(c){ return db.collection('viajes2/'+c+'/gastos'); }
 function listaCol(c){ return db.collection('viajes2/'+c+'/lista'); }
 function escribir(p){ return Promise.resolve(p).catch(function(e){ if(e && (e.code==='invalid_argument'||e.code==='not_granted')) { canWrite=false; } throw e; }); }
 
-function suscribir(code){
-  if(live.code===code) return;
+// refrescar: vuelve a abrir las escuchas del mismo viaje (p. ej. al recuperar la red) sin vaciar lo que ya se ve.
+function suscribir(code, refrescar){
+  if(live.code===code && !refrescar) return;
   live.unsubs.forEach(function(u){ try{ u(); }catch(e){} });
-  live = {code:code, trip:null, resps:{}, gastos:[], lista:[], res:null, unsubs:[], loaded:false};
+  if(refrescar && live.code===code) live.unsubs=[];
+  else live = {code:code, trip:null, resps:{}, gastos:[], lista:[], res:null, unsubs:[], loaded:false};
   if(!db) return;
-  live.unsubs.push(tripRef(code).onSnapshot(function(s){ live.trip = s.exists ? s.data() : null; live.loaded=true; cambio(); }, function(){ live.loaded=true; cambio(); }));
+  live.unsubs.push(tripRef(code).onSnapshot(function(s){ live.trip = s.exists ? s.data() : null; live.loaded=true; cambio(); }, function(){ live.loaded=true; cambio(false); }));
   live.unsubs.push(respCol(code).onSnapshot(function(qs){ var r={}; qs.docs.forEach(function(d){ r[d.id]=d.data(); }); live.resps=r; cambio(); }, function(){}));
   live.unsubs.push(db.doc('viajes2/'+code+'/res/actual').onSnapshot(function(s){ live.res = s.exists ? s.data() : null; cambio(); }, function(){}));
   live.unsubs.push(listaCol(code).onSnapshot(function(qs){ live.lista = qs.docs.map(function(d){ return Object.assign({id:d.id}, d.data()); }).sort(function(a,b){ return (a.ts||0)-(b.ts||0); }); cambio(); }, function(){}));
   live.unsubs.push(gastoCol(code).onSnapshot(function(qs){ live.gastos = qs.docs.map(function(d){ return Object.assign({id:d.id}, d.data()); }).sort(function(a,b){ return (b.ts||0)-(a.ts||0); }); cambio(); }, function(){}));
 }
 var cambioT=null;
-function cambio(){ clearTimeout(cambioT); cambioT=setTimeout(function(){ autoPlan(); if(!S.flow && !S.sheet) render(true); }, 80); }
+// Con una hoja abierta no se repinta (se perdería lo que escribes): los datos ya están al día en `live`,
+// se avisa con «Hay cambios nuevos» y la vista se repinta al cerrar la hoja (cerrarHoja).
+// cambio(false): no llegó nada nuevo (p. ej. falló la lectura sin red); repinta igual pero no avisa.
+var cambioNuevo=false;
+function cambio(nuevo){ if(nuevo!==false) cambioNuevo=true; clearTimeout(cambioT); cambioT=setTimeout(function(){ var n=cambioNuevo; cambioNuevo=false; autoPlan(); if(!S.flow && !S.sheet) render(true); else if(S.sheet && n) avisoCambios(); }, 80); }
+function avisoCambios(){ var a=$('#sheet-nuevo'); if(a && !a.textContent) a.textContent='Hay cambios nuevos · los verás al cerrar'; }
+
+/* ---------- conexión ---------- */
+// Banner fijo fuera de #app (render no lo borra). role=status: los lectores de pantalla lo anuncian sin interrumpir.
+var redOculta=false;
+function avisoRed(){
+  var b=$('#red-aviso');
+  if(!b){ b=document.createElement('div'); b.id='red-aviso'; b.className='red-aviso'; b.setAttribute('role','status'); document.body.appendChild(b); }
+  var off = navigator.onLine===false && !redOculta;
+  if(off && !b.textContent){ b.innerHTML='<span>Sin conexión — lo que añadas no se guardará hasta que vuelva la red</span><button type="button" class="red-x" aria-label="Ocultar aviso">×</button>';
+    $('.red-x', b).addEventListener('click', function(){ redOculta=true; avisoRed(); }); }
+  else if(!off) b.innerHTML='';
+  document.body.classList.toggle('sin-red', off);
+}
+window.addEventListener('offline', function(){ redOculta=false; avisoRed(); });
+window.addEventListener('online', function(){ var habia=document.body.classList.contains('sin-red'); redOculta=false; avisoRed();
+  if(live.code && db) suscribir(live.code, true); // relee lo que cambió mientras no había red
+  if(habia) toast('Conexión recuperada'); });
 
 /* ---------- zonas ---------- */
 function zona(id){ return ZMAP[id]||null; }
@@ -117,7 +141,7 @@ async function init(){
   try{ var res = await fetch('biblioteca.json'); var data = await res.json(); ZRAW = data.zonas||[]; }catch(e){ ZRAW=[]; }
   ZONAS = ZRAW.map(function(z){ try{ return ENG.normalizar(z); }catch(e){ return null; } }).filter(Boolean);
   ZONAS.forEach(function(z){ ZMAP[z.id]=z; });
-  render();
+  render(); avisoRed();
   window.ZAINO_ZONAS = ZONAS;
   try{ await ZSTORE.init(); db = ZSTORE.db; downloads = ZSTORE.downloads; }
   catch(e){ console.error(e); db=null; errorInicio = (e && (e.message||e.code)) || 'error'; }
@@ -260,7 +284,7 @@ function paso(n,t,d){ return '<div class="row" style="align-items:flex-start;gap
 /* ---------- hojas inferiores ---------- */
 function hoja(html, wireFn){
   cerrarHoja();
-  var bg=document.createElement('div'); bg.className='sheet-bg'; bg.id='sheet'; bg.innerHTML='<div class="sheet" role="dialog" aria-modal="true"><div class="grab"></div>'+html+'</div>';
+  var bg=document.createElement('div'); bg.className='sheet-bg'; bg.id='sheet'; bg.innerHTML='<div class="sheet-nuevo" id="sheet-nuevo" role="status"></div><div class="sheet" role="dialog" aria-modal="true"><div class="grab"></div>'+html+'</div>';
   document.body.appendChild(bg); S.sheet=true;
   bg.addEventListener('click', function(e){ if(e.target===bg) cerrarHoja(); });
   if(wireFn) wireFn(bg);
