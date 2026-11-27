@@ -43,15 +43,29 @@ export function crearLLM({ proveedor, modelo, clave, fetchImpl = fetch, timeoutM
     async chat({ system, messages, tools }) {
       const contents = [];
       for (const m of messages) {
-        if (m.role === 'user') contents.push({ role: 'user', parts: [{ text: m.content }] });
-        else if (m.role === 'assistant') contents.push({ role: 'model', parts: [...(m.content ? [{ text: m.content }] : []), ...(m.llamadas || []).map(l => ({ functionCall: { name: l.nombre, args: l.args } }))] });
-        else if (m.role === 'tool') contents.push({ role: 'user', parts: [{ functionResponse: { name: m.nombre, response: { resultado: m.content } } }] });
+        if (m.role === 'user') contents.push({ role: 'user', parts: [{ text: String(m.content) }] });
+        else if (m.role === 'assistant') {
+          // Gemini 3.x exige devolver la "firma de pensamiento" (thoughtSignature) en la parte functionCall tal cual llegó
+          const parts = [...(m.content ? [{ text: String(m.content) }] : []), ...(m.llamadas || []).map(l => ({ functionCall: { name: l.nombre, args: l.args }, ...(l.firma ? { thoughtSignature: l.firma } : {}) }))];
+          if (parts.length) contents.push({ role: 'model', parts });
+        } else if (m.role === 'tool') {
+          // todas las respuestas de herramientas de un mismo turno van juntas en UN mensaje de usuario
+          const parte = { functionResponse: { name: m.nombre, response: { resultado: m.content } } };
+          const last = contents[contents.length - 1];
+          if (last && last.role === 'user' && last.parts.every(p => p.functionResponse)) last.parts.push(parte); else contents.push({ role: 'user', parts: [parte] });
+        }
       }
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(modelo)}:generateContent?key=${encodeURIComponent(clave)}`;
-      const j = await conTiempo(url, { method: 'POST', headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ systemInstruction: { parts: [{ text: system }] }, contents, tools: [{ functionDeclarations: tools.map(t => ({ name: t.nombre, description: t.descripcion, parameters: t.esquema })) }] }) });
+      // Gemini admite un subconjunto de OpenAPI: quitamos minimum/maximum y no mandamos "parameters" vacío
+      const limpia = (e) => { if (!e || typeof e !== 'object') return e; if (Array.isArray(e)) return e.map(limpia); const o = {}; for (const k of Object.keys(e)) { if (k === 'minimum' || k === 'maximum') continue; o[k] = limpia(e[k]); } return o; };
+      const decl = tools.map(t => { const p = limpia(t.esquema); const vacio = !p || !p.properties || !Object.keys(p.properties).length; return { name: t.nombre, description: t.descripcion, ...(vacio ? {} : { parameters: p }) }; });
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(modelo)}:generateContent`;
+      const j = await conTiempo(url, { method: 'POST', headers: { 'content-type': 'application/json', 'x-goog-api-key': clave },
+        body: JSON.stringify({ systemInstruction: { parts: [{ text: system }] }, contents, tools: [{ functionDeclarations: decl }] }) });
       const parts = (j.candidates && j.candidates[0] && j.candidates[0].content && j.candidates[0].content.parts) || [];
-      return { texto: parts.filter(p => p.text).map(p => p.text).join('\n'), llamadas: parts.filter(p => p.functionCall).map((p, i) => ({ id: 'g' + i + '_' + Date.now(), nombre: p.functionCall.name, args: p.functionCall.args || {} })), fin: j.candidates && j.candidates[0] && j.candidates[0].finishReason };
+      // los "pensamientos" (thought:true) no son texto para el usuario
+      return { texto: parts.filter(p => p.text && !p.thought).map(p => p.text).join('\n'),
+        llamadas: parts.filter(p => p.functionCall).map((p, i) => ({ id: 'g' + i + '_' + Date.now(), nombre: p.functionCall.name, args: p.functionCall.args || {}, firma: p.thoughtSignature })),
+        fin: j.candidates && j.candidates[0] && j.candidates[0].finishReason };
     }
   };
   throw new Error('proveedor_desconocido');

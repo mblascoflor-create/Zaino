@@ -93,10 +93,21 @@ export function validarTexto(texto, salidas) {
   return { ok: !raros.length, raros };
 }
 
+// Historial que llega del navegador: solo roles user/assistant, texto, 800 caracteres por mensaje, últimos 6,
+// y sin empezar por una respuesta del asistente (algunos proveedores exigen empezar por el usuario).
+export function limpiarHistorial(historial) {
+  const h = (Array.isArray(historial) ? historial : [])
+    .filter(m => m && (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string' && m.content.trim())
+    .map(m => ({ role: m.role, content: m.content.slice(0, 800) }))
+    .slice(-6);
+  while (h.length && h[0].role !== 'user') h.shift();
+  return h;
+}
+
 export async function responder({ llm, pregunta, historial = [], contexto }) {
   if (!llm) return { disponible: false, texto: null };
   const ej = ejecutor(contexto), tools = herramientas(), salidas = [], propuestas = [];
-  const messages = historial.slice(-6).concat([{ role: 'user', content: String(pregunta).slice(0, 800) }]);
+  const messages = limpiarHistorial(historial).concat([{ role: 'user', content: String(pregunta).slice(0, 800) }]);
   for (let paso = 0; paso < MAX_PASOS; paso++) {
     const r = await llm.chat({ system: SISTEMA, messages, tools });
     if (!r.llamadas || !r.llamadas.length) {

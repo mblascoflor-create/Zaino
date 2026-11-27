@@ -88,7 +88,15 @@ var ZSTORE = (function(){
       unirse: function(token, miembro, nombre){ return sb.rpc('unirse_viaje', {p_token:token, p_miembro:miembro||null, p_nombre:nombre||null}).then(err); },
       token: function(code){ return tokens[code] || null; },
       motor: function(code, accion, zona){ return sb.functions.invoke('motor', {body:{code:code, accion:accion, zona:zona||null}}).then(function(r){ if(r.error) throw r.error; return r.data; }); },
-      ia: function(code, pregunta, historial){ return sb.functions.invoke('zaino-ia', {body:{code:code, pregunta:pregunta, historial:historial||[]}}).then(function(r){ if(r.error) return {error:'ia_no_disponible'}; return r.data; }, function(){ return {error:'ia_no_disponible'}; }); },
+      ia: function(code, pregunta, historial){ return sb.functions.invoke('zaino-ia', {body:{code:code, pregunta:pregunta, historial:historial||[]}}).then(function(r){
+        if(r.error){
+          // supabase-js entrega el 429 como FunctionsHttpError: el cuerpo ({error:'limite_diario'}) está en error.context
+          var c = r.error.context;
+          if(c && c.status===429) return {error:'limite_diario'};
+          return {error:'ia_no_disponible'};
+        }
+        return r.data;
+      }, function(){ return {error:'ia_no_disponible'}; }); },
       salir: function(code){ return sb.rpc('salir_viaje', {p_code:code}).then(err); },
       quitar: function(code, m){ return sb.rpc('quitar_integrante', {p_code:code, p_miembro:m}).then(err); },
       regenerar: function(code){ return sb.rpc('regenerar_invitacion', {p_code:code}).then(function(r){ var t=err(r); tokens[code]=t; return t; }); },
