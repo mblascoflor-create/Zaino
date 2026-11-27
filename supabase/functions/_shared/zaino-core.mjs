@@ -1406,7 +1406,7 @@ var SERVIDOR = (function(){
     if(fechas.mes && !(trip.fechas && (trip.fechas.modo==='fijas' || trip.fechas.mes))) t2.fechas = {modo:'mes', mes:fechas.mes};
     var A = ENG.agregar(t2, R);
     var plan = ENG.construirPlan(Z, A, t2, {base: (trip.eleccion||{}).base || null});
-    plan.presTier = A.presTier; plan.firmaRespuestas = firma(pub);
+    plan.presTier = A.presTier; plan.mes = A.mes || 0; plan.firmaRespuestas = firma(pub); // mes y presTier del servidor: el móvil no ve las fechas ni el presupuesto privados
     // nunca guardamos cifras privadas en el plan
     delete plan.presupuesto;
     return plan;

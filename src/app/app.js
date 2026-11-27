@@ -10,6 +10,11 @@ var live = {code:null, trip:null, resps:{}, gastos:[], unsubs:[], loaded:false};
 
 /* ---------- utilidades ---------- */
 function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+// Avatares: solo se pintan si son una imagen JPEG en base64 (lo que genera la app); cualquier otra cosa se ignora.
+function avatarOk(s){ return typeof s==='string' && s.length<=60000 && /^data:image\/jpeg;base64,[A-Za-z0-9+\/]+={0,2}$/.test(s); }
+function avatarEstilo(s){ return avatarOk(s) ? "background-image:url('"+esc(s)+"')" : ''; }
+// Ids de integrantes: m1..m999 (el servidor también lo exige).
+function idOk(s){ return /^m[0-9]{1,3}$/.test(String(s)); }
 function $(sel, root){ return (root||document).querySelector(sel); }
 function $$(sel, root){ return Array.prototype.slice.call((root||document).querySelectorAll(sel)); }
 function on(sel, ev, fn, root){ $$(sel, root).forEach(function(el){ el.addEventListener(ev, function(e){ fn(e, el); }); }); }
@@ -66,7 +71,10 @@ function cambio(){ clearTimeout(cambioT); cambioT=setTimeout(function(){ autoPla
 /* ---------- zonas ---------- */
 function zona(id){ return ZMAP[id]||null; }
 function respsArr(){ return Object.keys(live.resps).map(function(k){ return Object.assign({miembro:k}, live.resps[k]); }); }
-function agregado(){ return ENG.agregar(live.trip||{}, respsArr()); }
+// Con plan hecho, días, mes y gasto salen del plan (los calculó el servidor con las respuestas privadas, que este móvil no ve).
+function agregado(){ var A=ENG.agregar(live.trip||{}, respsArr()), p=live.trip && live.trip.plan;
+  if(p){ if(p.dias && p.dias.length) A.dias=p.dias.length; if(p.mes!=null) A.mes=p.mes; if(p.presTier) A.presTier=p.presTier; }
+  return A; }
 function firma(){ return respsArr().filter(function(r){ return r.done; }).map(function(r){ return r.miembro+':'+(r.updatedAt||0); }).sort().join('|'); }
 function todosRespondieron(){ var t=live.trip; if(!t) return false; var R=live.resps; return (t.integrantes||[]).length>0 && t.integrantes.every(function(m){ return R[m.id] && R[m.id].done; }); }
 
@@ -75,9 +83,21 @@ var pidiendo = {};
 function pedirMotor(accion, zonaId){
   var code = live.code; if(!code || !db) return Promise.resolve();
   var k = accion+':'+code+':'+(zonaId||''); if(pidiendo[k]) return pidiendo[k];
-  pidiendo[k] = ZSTORE.motor(code, accion, zonaId).catch(function(e){ console.warn('motor', e); if(accion!=='calcular') toast('No se pudo calcular ahora. Revisa la conexión y vuelve a intentarlo.'); return null; }).then(function(x){ delete pidiendo[k]; return x; });
+  pidiendo[k] = ZSTORE.motor(code, accion, zonaId).then(function(x){ if(accion==='calcular') delete calcFallos[code]; return x; }, function(e){ console.warn('motor', e); if(accion==='calcular') falloCalculo(code); else { delete ultimaFirmaPedida['p'+code]; toast('No se pudo calcular ahora. Revisa la conexión y vuelve a intentarlo.'); } return null; }).then(function(x){ delete pidiendo[k]; return x; });
   return pidiendo[k];
 }
+// Si el cálculo falla no se queda «Calculando…» para siempre: se olvida la firma pedida y se reintenta
+// con espera creciente (2, 4, 8 y 16 s). Pasado eso, sale el botón «Reintentar» (o se reintenta solo si el grupo cambia).
+var calcFallos = {}, REINTENTOS = 4;
+function falloCalculo(code){
+  delete ultimaFirmaPedida['c'+code]; delete ultimaFirmaPedida['p'+code];
+  var r = calcFallos[code] || (calcFallos[code] = {n:0, t:null, next:0, f:''});
+  r.n++; r.f = firma(); clearTimeout(r.t);
+  if(r.n<=REINTENTOS){ var espera = (window.ZAINO_REINTENTO_MS||2000)*Math.pow(2, r.n-1); r.next = Date.now()+espera; r.t = setTimeout(function(){ if(live.code===code) autoPlan(); }, espera); }
+  else r.next = Infinity;
+  if(live.code===code && !S.flow && !S.sheet) render(true);
+}
+function reintentarCalculo(){ var code=live.code; if(!code) return; if(calcFallos[code]) clearTimeout(calcFallos[code].t); delete calcFallos[code]; delete ultimaFirmaPedida['c'+code]; delete ultimaFirmaPedida['p'+code]; autoPlan(); render(true); }
 function generar(forzar){ return pedirMotor('planear', forzar || (live.trip && live.trip.eleccion && live.trip.eleccion.zona) || null); }
 function destinoFijo(t){ return (t.destinos||[]).length===1 ? t.destinos[0] : null; }
 var ultimaFirmaPedida = {};
@@ -86,6 +106,7 @@ function autoPlan(){
   if(!miEntrada(live.code)) return;
   var hechos = respsArr().filter(function(r){ return r.done; }).length; if(!hechos) return;
   var f = firma();
+  var cf = calcFallos[live.code]; if(cf && cf.f===f && Date.now()<cf.next) return; // esperando para reintentar
   if((!live.res || live.res.firma!==f) && ultimaFirmaPedida['c'+live.code]!==f){ ultimaFirmaPedida['c'+live.code]=f; pedirMotor('calcular'); }
   // Con el destino fijado al crear el viaje, el plan sale solo en cuanto responde todo el grupo.
   if(destinoFijo(t) && todosRespondieron() && (!t.plan || (!t.plan.editado && (t.plan.firmaRespuestas!==f || t.plan.motor!==ENG.VERSION))) && ultimaFirmaPedida['p'+live.code]!==f){ ultimaFirmaPedida['p'+live.code]=f; pedirMotor('planear'); }
@@ -155,7 +176,7 @@ var wires=[];
 function conectar(){ var w=wires; wires=[]; w.forEach(function(f){ try{ f(); }catch(e){ console.error(e); } }); }
 function wire(f){ wires.push(f); }
 
-function cabecera(extra){ var p=perfil(); return '<div class="top"><div class="brand">'+MARCA.palabra()+'<i>viajes en grupo</i></div>'+(extra||'')+(p.foto?'<span class="av s" style="background-image:url('+p.foto+')"></span>':'')+'</div>'; }
+function cabecera(extra){ var p=perfil(); return '<div class="top"><div class="brand">'+MARCA.palabra()+'<i>viajes en grupo</i></div>'+(extra||'')+(avatarOk(p.foto)?'<span class="av s" style="'+avatarEstilo(p.foto)+'"></span>':'')+'</div>'; }
 function avisoSinDB(){
   if(sinDB) return '<div class="note"><b>No podemos conectar con Zaino.</b> '+(errorInicio==='sin_db' ? 'Entra en tu cuenta de Claude (gratis) y recarga: esta versión de prueba la necesita.' : 'Revisa tu conexión y recarga.')+(errorInicio && /anonymous|anonim/i.test(errorInicio) ? ' (En el servidor falta activar el acceso sin registro.)' : '')+'</div>';
   if(ZSTORE.modo==='compartido' && ZSTORE.puedeEscribir===false) return '<div class="note"><b>Ahora mismo solo puedes mirar.</b> Para responder y crear viajes, pide a quien te pasó el enlace que te invite por correo como «Editor» (menú Compartir del artefacto) y vuelve a abrirlo.</div>';
@@ -359,7 +380,7 @@ function crearViaje(){
         {v:'varios', label:'Dudamos entre 2 o 3', sub:'Las respuestas decidirán cuál', art:'postal'}]}),
     ].concat(a.destModo==='no' ? [] : [
       {id:'destinos', bg:colores[2], t:[a.destModo==='uno'?'¿Cuál?':'¿Entre cuáles?'], s:a.destModo==='uno'?'Toca uno.':'Toca dos o tres.',
-        html:function(a){ return '<div class="opts three">'+ZONAS.map(function(Z){ var onx=a.destinos.indexOf(Z.id)>-1; return '<button type="button" class="opt'+(onx?' on':'')+'" data-z="'+Z.id+'"><span class="il" style="background:'+Z.bg+';border:2px solid #30231F;overflow:hidden">'+ART.emblema(Z)+'</span><span class="tx"><span class="cap">'+esc(Z.corto)+'</span></span></button>'; }).join('')+'</div>'; },
+        html:function(a){ return '<div class="opts three">'+ZONAS.map(function(Z){ var onx=a.destinos.indexOf(Z.id)>-1; return '<button type="button" class="opt'+(onx?' on':'')+'" data-z="'+esc(Z.id)+'"><span class="il" style="background:'+Z.bg+';border:2px solid #30231F;overflow:hidden">'+ART.emblema(Z)+'</span><span class="tx"><span class="cap">'+esc(Z.corto)+'</span></span></button>'; }).join('')+'</div>'; },
         wire:function(el,a,F){ on('[data-z]','click',function(e,b){ var id=b.dataset.z; var i=a.destinos.indexOf(id); if(a.destModo==='uno'){ a.destinos=[id]; } else { if(i>-1) a.destinos.splice(i,1); else { if(a.destinos.length>=3) a.destinos.shift(); a.destinos.push(id); } } $$('[data-z]',el).forEach(function(x){ x.classList.toggle('on', a.destinos.indexOf(x.dataset.z)>-1); }); F.refresh(); if(a.destModo==='uno') setTimeout(F.next,260); }, el); },
         valid:function(a){ return a.destModo==='uno' ? a.destinos.length===1 : a.destinos.length>=2; }, cta: a.destModo==='uno'?null:'Seguir', ft: a.destModo==='uno'?false:undefined}
     ]).concat([
@@ -450,7 +471,7 @@ async function unirseToken(token){
       wire:function(el,a,F){
         on('[data-m]','click',function(e,b){ if(b.disabled) return; a.m=b.dataset.m; a.nuevo=''; $('#i-nuevo',el).value=''; $$('[data-m]',el).forEach(function(x){ x.classList.toggle('on',x===b); }); F.refresh(); }, el);
         $('#i-nuevo',el).addEventListener('input', function(e){ a.nuevo=e.target.value; if(a.nuevo.trim()){ a.m=null; $$('[data-m]',el).forEach(function(x){ x.classList.remove('on'); }); } F.refresh(); });
-        if(yo && !a.m && !a.nuevo){ var hit=ints.filter(function(m){ return !m.ocupado && m.nombre.trim().toLowerCase()===yo.trim().toLowerCase(); })[0]; if(hit){ a.m=hit.id; var b=$('[data-m="'+hit.id+'"]',el); if(b) b.classList.add('on'); F.refresh(); } } },
+        if(yo && !a.m && !a.nuevo){ var hit=ints.filter(function(m){ return !m.ocupado && m.nombre.trim().toLowerCase()===yo.trim().toLowerCase(); })[0]; if(hit){ a.m=hit.id; var b=$('[data-m="'+esc(hit.id)+'"]',el); if(b) b.classList.add('on'); F.refresh(); } } },
       valid:function(a){ return !!a.m || (a.nuevo||'').trim().length>=2; }, cta:'Entrar'}
   ]; }, onDone:async function(a){
       var r=null;
@@ -731,7 +752,7 @@ function respuestaLimpia(a, nombre){
   if(r.innegociable==='nada') delete r.innegociable;
   if(a.presSinMax) delete r.presMax;
   r.v = 2;
-  var p=perfil(); if(p.foto) r.avatar = p.foto;
+  var p=perfil(); if(avatarOk(p.foto)) r.avatar = p.foto;
   return r;
 }
 async function guardarRespuestas(code, miembro, nombre, a, t){
@@ -775,7 +796,7 @@ function vistaViaje(){
   if(!Z){
     var todos = hechos===ints.length;
     if(me && yoHecho) html += seccionPropuestas(t, me, soyJefe && todos && !!live.res && !live.res.provisional);
-    html += '<div class="card stack" style="margin-top:12px"><div class="lab">El grupo</div>'+ints.map(function(m){ var r=R[m.id]; return '<div class="row"><span class="av s" style="'+(r&&r.avatar?'background-image:url('+r.avatar+')':'')+'">'+(r&&r.avatar?'':inicial(m.nombre))+'</span><span class="grow">'+esc(m.nombre)+(m.id===t.jefe?' <span class="muted">· organiza</span>':'')+'</span>'+(r&&r.done?'<span class="pill ok">Listo</span>':'<span class="pill">Pendiente</span>')+'</div>'; }).join('')+
+    html += '<div class="card stack" style="margin-top:12px"><div class="lab">El grupo</div>'+ints.map(function(m){ var r=R[m.id]; return '<div class="row"><span class="av s" style="'+avatarEstilo(r&&r.avatar)+'">'+(avatarOk(r&&r.avatar)?'':inicial(m.nombre))+'</span><span class="grow">'+esc(m.nombre)+(m.id===t.jefe?' <span class="muted">· organiza</span>':'')+'</span>'+(r&&r.done?'<span class="pill ok">Listo</span>':'<span class="pill">Pendiente</span>')+'</div>'; }).join('')+
       (todos ? '' : '<div class="hr"></div><div class="lab">Invita a los que faltan</div>'+botonesCompartir(t))+
       (soyJefe && destinoFijo(t) && hechos>0 && hechos<ints.length ? '<button class="btn ghost full" id="b-gen">Sacar el plan ya con '+hechos+' respuesta'+(hechos>1?'s':'')+'</button>' : '')+
       '<button class="lnk" id="b-grupo" style="align-self:flex-start">'+(soyJefe?'Añadir o quitar gente · cambiar el enlace':'Ver el grupo · salir del viaje')+'</button>'+
@@ -837,7 +858,11 @@ function fichaPropuesta(t, p, res, me, soyJefe){
 }
 function seccionPropuestas(t, me, soyJefe){
   var res = live.res;
-  if(!res || !res.propuestas) return '<div class="card" style="margin-top:12px"><p class="muted" style="margin:0">Calculando propuestas…</p></div>';
+  if(!res || !res.propuestas){
+    var cf = calcFallos[t.code];
+    if(cf && cf.n>REINTENTOS){ wire(function(){ on('#b-reint','click',reintentarCalculo); }); return '<div class="card stack" style="margin-top:12px"><p class="muted" style="margin:0">No se han podido calcular las propuestas. Revisa la conexión y vuelve a intentarlo.</p><button class="btn sm" id="b-reint">Reintentar</button></div>'; }
+    return '<div class="card" style="margin-top:12px"><p class="muted" style="margin:0">Calculando propuestas…</p></div>';
+  }
   var h = '<section class="stack" style="margin-top:16px;gap:12px"><div class="row" style="align-items:center"><h2 class="d grow" style="margin:0">'+(res.propuestas.length>1?'Vuestras propuestas':'Vuestro destino')+'</h2>'+(res.provisional?'<span class="pill warn">Provisional</span>':'<span class="pill ok">Con todo el grupo</span>')+'</div>';
   if(res.provisional) h += '<p class="muted" style="margin:0;font-size:14px">Salen de '+res.respondidos.length+' de '+res.n_total+' respuestas. Cuando responda el resto pueden cambiar.</p>';
   var G = res.grupo||{}, F = res.fechas||{};
@@ -943,7 +968,7 @@ function subResumen(t, Z, A){
   h += '<button type="button" class="btn full" data-goto="dias">Ver el día a día</button>';
   var RP = ENG.reparto(Z, A, t.plan);
   if(RP.length>1) h += '<div class="card stack"><div class="lab">Lo de cada uno</div>'+RP.map(function(p){ var m=(t.integrantes||[]).filter(function(x){ return x.nombre===p.nombre; })[0]||{}; var r=live.resps[m.id]||{};
-      return '<div class="person"><span class="av" style="'+(r.avatar?'background-image:url('+r.avatar+')':'')+'">'+(r.avatar?'':inicial(p.nombre))+'</span><div class="grow"><b>'+esc(p.nombre)+'</b>'+
+      return '<div class="person"><span class="av" style="'+avatarEstilo(r.avatar)+'">'+(avatarOk(r.avatar)?'':inicial(p.nombre))+'</span><div class="grow"><b>'+esc(p.nombre)+'</b>'+
         (p.suyo?'<p style="font-size:14px;margin-top:2px"><span class="pill mine">Su plan</span> '+esc(p.suyo.nombre)+' <span class="muted m" style="font-size:12px">día '+p.suyo.dia+'</span></p>':'')+
         (p.mios.length?'<p class="muted" style="font-size:13px;margin-top:4px">También pensado para '+esc(p.nombre)+': '+p.mios.map(function(x){ return esc(x.nombre.split(/[:(]/)[0].trim())+' (día '+x.dia+')'; }).join(' · ')+'</p>':'')+
         p.falta.map(function(f){ return '<p class="muted" style="font-size:13px;margin-top:4px">'+esc(f)+'</p>'; }).join('')+'</div></div>'; }).join('')+'</div>';
@@ -967,7 +992,7 @@ function dato(l,v){ return '<div><div class="lab">'+l+'</div><b>'+esc(v)+'</b></
 function opiniones(t, Z, corto){
   var R=live.resps;
   return (t.integrantes||[]).map(function(m){ var r=R[m.id]; var lst = r&&r.done ? ENG.opinion(r, Z) : []; if(corto) lst = lst.slice(0,6);
-    return '<div class="person"><span class="av" style="'+(r&&r.avatar?'background-image:url('+r.avatar+')':'')+'">'+(r&&r.avatar?'':inicial(m.nombre))+'</span><div class="grow"><b>'+esc(m.nombre)+'</b>'+(lst.length?'<ul>'+lst.map(function(x){ return '<li>'+esc(x)+'</li>'; }).join('')+'</ul>':'<p class="muted" style="font-size:14px">Todavía no ha respondido.</p>')+'</div></div>'; }).join('');
+    return '<div class="person"><span class="av" style="'+avatarEstilo(r&&r.avatar)+'">'+(avatarOk(r&&r.avatar)?'':inicial(m.nombre))+'</span><div class="grow"><b>'+esc(m.nombre)+'</b>'+(lst.length?'<ul>'+lst.map(function(x){ return '<li>'+esc(x)+'</li>'; }).join('')+'</ul>':'<p class="muted" style="font-size:14px">Todavía no ha respondido.</p>')+'</div></div>'; }).join('');
 }
 
 var MOM = {manana:'Mañana', dia:'Todo el día', comida:'Comida', tarde:'Tarde', merienda:'Merienda', cena:'Cena', noche:'Noche'};
@@ -1206,7 +1231,7 @@ function hojaGestionGrupo(t){
   var ocupado = function(id){ return !!(t.miembros && t.miembros[id]); };
   hoja('<div class="stack"><h2 class="d">El grupo</h2>'+t.integrantes.map(function(m){ var hecho=R[m.id]&&R[m.id].done;
       var estado = m.id===t.jefe ? '<span class="pill">Organiza</span>' : (hecho ? '<span class="pill ok">Respondió</span>' : (ocupado(m.id) ? '<span class="pill">Dentro</span>' : '<span class="pill">Sin entrar</span>'));
-      return '<div class="row"><span class="grow">'+esc(m.nombre)+(m.id===me.miembro?' (tú)':'')+'</span>'+estado+(soyJefe && m.id!==t.jefe ? '<button class="btn xs ghost" data-quitar="'+m.id+'" data-n="'+esc(m.nombre)+'">Quitar</button>' : '')+'</div>'; }).join('')+
+      return '<div class="row"><span class="grow">'+esc(m.nombre)+(m.id===me.miembro?' (tú)':'')+'</span>'+estado+(soyJefe && m.id!==t.jefe ? '<button class="btn xs ghost" data-quitar="'+esc(m.id)+'" data-n="'+esc(m.nombre)+'">Quitar</button>' : '')+'</div>'; }).join('')+
     (soyJefe ? '<form class="row" id="f-add"><input type="text" id="i-add" maxlength="24" placeholder="Nombre nuevo" class="grow"><button class="btn sm ink" type="submit">Añadir</button></form>' : '')+
     '<div id="z-conf"></div><div class="hr"></div>'+
     (soyJefe ? '<button class="btn ghost full" id="b-regen-link">Cambiar el enlace de invitación</button><p class="muted" style="font-size:12px">El enlace viejo deja de funcionar. Quien ya está dentro sigue dentro.</p>' : '<button class="btn ghost full" id="b-salir">Salir de este viaje</button><p class="muted" style="font-size:12px">Se borran tus respuestas de este viaje. Tus gastos se quedan para que las cuentas cuadren.</p>')+
@@ -1362,7 +1387,7 @@ function vistaGastos(){
   html += '<button class="btn full" id="b-gasto" style="margin:12px 0">Añadir gasto</button>';
   html += '<div class="card stack"><div class="lab">Balance</div>'+ints.map(function(m){ var v=Math.round((B.neto[m.id]||0)*100)/100; return '<div class="bal"><span class="row"><span class="av s">'+inicial(m.nombre)+'</span>'+esc(m.nombre)+(me&&me.miembro===m.id?' <span class="muted">(tú)</span>':'')+'</span><span class="num '+(v>0.005?'pos':(v<-0.005?'neg':''))+'">'+(v>0.005?'+':'')+dinero(v)+'</span></div>'; }).join('')+'</div>';
   if(B.mov.length) html += '<div class="card stack" style="margin-top:12px"><div class="lab">Para quedar en paz</div>'+B.mov.map(function(x){ return '<div class="bal"><span><b>'+esc(nm[x.de]||'?')+'</b> paga a <b>'+esc(nm[x.a]||'?')+'</b></span><span class="num">'+dinero(x.v)+'</span></div>'; }).join('')+'</div>';
-  html += '<div class="card stack" style="margin-top:12px"><div class="lab">Movimientos</div>'+(G.length?G.map(function(g){ var entre=(g.entre&&g.entre.length&&g.entre.length<ints.length)?g.entre.map(function(id){ return nm[id]||'?'; }).join(', '):'todos'; return '<div class="bal"><span class="grow"><b>'+esc(g.concepto)+'</b><br><span class="muted" style="font-size:13px">Pagó '+esc(nm[g.pagadoPor]||'?')+' · entre '+esc(entre)+'</span></span><span class="num">'+dinero(+g.importe||0)+'</span><button class="btn xs ghost" data-edit-g="'+g.id+'" aria-label="Editar">Editar</button></div>'; }).join(''):'<p class="muted">Aún no hay gastos. Apunta el primero: el piso, los billetes, la cena…</p>')+'</div>';
+  html += '<div class="card stack" style="margin-top:12px"><div class="lab">Movimientos</div>'+(G.length?G.map(function(g){ var entre=(g.entre&&g.entre.length&&g.entre.length<ints.length)?g.entre.map(function(id){ return nm[id]||'?'; }).join(', '):'todos'; return '<div class="bal"><span class="grow"><b>'+esc(g.concepto)+'</b><br><span class="muted" style="font-size:13px">Pagó '+esc(nm[g.pagadoPor]||'?')+' · entre '+esc(entre)+'</span></span><span class="num">'+dinero(+g.importe||0)+'</span><button class="btn xs ghost" data-edit-g="'+esc(g.id)+'" aria-label="Editar">Editar</button></div>'; }).join(''):'<p class="muted">Aún no hay gastos. Apunta el primero: el piso, los billetes, la cena…</p>')+'</div>';
   wire(function(){ on('#b-gasto','click',function(){ hojaGasto(t, null); }); on('[data-edit-g]','click',function(e,b){ hojaGasto(t, G.filter(function(g){ return g.id===b.dataset.editG; })[0]); }); });
   return html;
 }
@@ -1372,8 +1397,8 @@ function hojaGasto(t, g, pre){
   hoja('<form class="stack" id="f-g" novalidate><h2 class="d">'+(g?'Editar gasto':'Nuevo gasto')+'</h2>'+
     '<label class="f">Concepto<input type="text" id="g-c" maxlength="60" required value="'+esc(g?g.concepto:(pre.concepto||''))+'" placeholder="Ej. Cena del sábado"></label>'+
     '<label class="f">Importe (€)<input type="number" id="g-i" inputmode="decimal" step="0.01" min="0.01" required value="'+(g?(+g.importe).toFixed(2):(pre.importe||''))+'" placeholder="0,00"></label>'+
-    '<label class="f">Pagó<select id="g-p">'+ints.map(function(m){ return '<option value="'+m.id+'"'+(m.id===pagador?' selected':'')+'>'+esc(m.nombre)+'</option>'; }).join('')+'</select></label>'+
-    '<div class="lab">Entre quién se reparte</div><div class="stack" style="gap:6px">'+ints.map(function(m){ return '<label class="chk"><input type="checkbox" value="'+m.id+'" class="g-e"'+(entre.indexOf(m.id)>-1?' checked':'')+'> '+esc(m.nombre)+'</label>'; }).join('')+'</div>'+
+    '<label class="f">Pagó<select id="g-p">'+ints.map(function(m){ return '<option value="'+esc(m.id)+'"'+(m.id===pagador?' selected':'')+'>'+esc(m.nombre)+'</option>'; }).join('')+'</select></label>'+
+    '<div class="lab">Entre quién se reparte</div><div class="stack" style="gap:6px">'+ints.map(function(m){ return '<label class="chk"><input type="checkbox" value="'+esc(m.id)+'" class="g-e"'+(entre.indexOf(m.id)>-1?' checked':'')+'> '+esc(m.nombre)+'</label>'; }).join('')+'</div>'+
     '<div class="err" id="g-err" hidden></div><button class="btn full" type="submit">'+(g?'Guardar cambios':'Añadir')+'</button>'+(g?'<div id="g-del"><button type="button" class="btn ghost full" id="g-b-del">Borrar este gasto</button></div>':'')+'</form>', function(el){
     $('#f-g',el).addEventListener('submit', function(e){ e.preventDefault(); var c=$('#g-c',el).value.trim(), imp=Math.round(parseFloat(String($('#g-i',el).value).replace(',','.'))*100)/100, pg=$('#g-p',el).value, en=$$('.g-e',el).filter(function(x){ return x.checked; }).map(function(x){ return x.value; });
       var er=$('#g-err',el); if(!c || !(imp>0)){ er.hidden=false; er.textContent='Pon un concepto y un importe mayor que cero.'; return; } if(!en.length){ er.hidden=false; er.textContent='Marca al menos a una persona.'; return; }
@@ -1469,7 +1494,7 @@ function hojaConfirmar(t, r, por){
 function vistaPerfil(){
   var p=perfil(), L=misViajes();
   var html = cabecera()+'<h2 class="d" style="margin-bottom:12px">Perfil</h2>';
-  html += '<div class="card stack"><div class="row" style="gap:14px"><span class="av" style="width:86px;height:86px;font-size:34px;'+(p.foto?'background-image:url('+p.foto+')':'')+'">'+(p.foto?'':inicial(p.nombre||'?'))+'</span><div class="stack" style="gap:6px"><label class="btn sm ghost" for="i-foto" style="cursor:pointer">'+(p.foto?'Cambiar foto':'Poner foto')+'</label><input type="file" id="i-foto" accept="image/*" hidden>'+(p.foto?'<button class="lnk" id="b-sinfoto">Quitar foto</button>':'')+'</div></div>'+
+  html += '<div class="card stack"><div class="row" style="gap:14px"><span class="av" style="width:86px;height:86px;font-size:34px;'+avatarEstilo(p.foto)+'">'+(avatarOk(p.foto)?'':inicial(p.nombre||'?'))+'</span><div class="stack" style="gap:6px"><label class="btn sm ghost" for="i-foto" style="cursor:pointer">'+(p.foto?'Cambiar foto':'Poner foto')+'</label><input type="file" id="i-foto" accept="image/*" hidden>'+(p.foto?'<button class="lnk" id="b-sinfoto">Quitar foto</button>':'')+'</div></div>'+
     '<label class="f">Tu nombre<input type="text" id="i-nombre" maxlength="24" value="'+esc(p.nombre||'')+'" placeholder="Cómo te llaman"></label><p class="muted" style="font-size:13px">La foto la verá tu grupo junto a tus respuestas. Se guarda en este móvil.</p></div>';
   html += '<div class="card stack" style="margin-top:12px"><div class="lab">Mis viajes</div>'+(L.length?L.map(function(v){ return '<div class="row"><button class="lnk grow" style="text-align:left" data-open="'+esc(v.code)+'">'+esc(v.titulo||v.code)+'</button><span class="m muted" style="font-size:12px">'+esc(v.code)+'</span><span id="q-'+esc(v.code)+'"><button class="btn xs ghost" data-q="'+esc(v.code)+'">Quitar</button></span></div>'; }).join(''):'<p class="muted">Ninguno todavía.</p>')+'</div>';
   html += '<details class="card" style="margin-top:12px"><summary><b>Cómo invitar a tu grupo</b></summary><div class="stack" style="margin-top:10px;font-size:14px"><p>Abre el viaje y dale a <b>Enviar por WhatsApp</b> (o copia el enlace). Quien lo abra elige su nombre y responde desde su móvil: no hace falta registrarse ni instalar nada.</p><p>Para tenerla como app: en el iPhone, Safari → Compartir → «Añadir a pantalla de inicio». En Android, Chrome → menú → «Instalar app».</p></div></details>';
@@ -1481,8 +1506,15 @@ function vistaPerfil(){
     $('#i-foto').addEventListener('change',function(e){ var f=e.target.files&&e.target.files[0]; if(!f) return; var rd=new FileReader(); rd.onload=function(){ var im=new Image(); im.onload=function(){ var c=document.createElement('canvas'); c.width=c.height=128; var x=c.getContext('2d'); var s=Math.min(im.width,im.height); x.drawImage(im,(im.width-s)/2,(im.height-s)/2,s,s,0,0,128,128); var q=perfil(); q.foto=c.toDataURL('image/jpeg',0.78); ls('perfil',q); render(); toast('Foto guardada'); }; im.src=rd.result; }; rd.readAsDataURL(f); });
     on('#b-sinfoto','click',function(){ var q=perfil(); q.foto=''; ls('perfil',q); render(); });
     on('[data-open]','click',function(e,b){ abrirViaje(b.dataset.open); });
-    on('[data-q]','click',function(e,b){ var c=b.dataset.q; var z=$('#q-'+c); z.innerHTML='<button class="btn xs" data-qs="'+c+'">Sí, quitar</button>'; on('[data-qs]','click',function(){ quitarMiViaje(c); render(); toast('Quitado de este móvil'); }, z); });
-    on('#b-borrarme','click',function(){ var z=$('#z-bm'); z.innerHTML='<div class="note">Se borran tus respuestas (también las privadas) de todos tus viajes y sales de ellos. Los gastos que apuntaste se quedan para que las cuentas del grupo cuadren. No se puede deshacer.</div><div class="row" style="margin-top:8px"><button class="btn grow" id="b-bm-si">Borrar</button><button class="btn ghost grow" id="b-bm-no">Cancelar</button></div>'; on('#b-bm-no','click',function(){ render(); }, z); on('#b-bm-si','click',function(){ ZSTORE.borrarMisDatos().then(function(){ try{ Object.keys(localStorage).filter(function(k){ return /^zaino/.test(k); }).forEach(function(k){ localStorage.removeItem(k); }); }catch(e){} location.hash=''; location.reload(); }, function(){ toast('No se pudo borrar: revisa la conexión'); }); }, z); });
+    on('[data-q]','click',function(e,b){ var c=b.dataset.q; var z=$('#q-'+c); z.innerHTML='<button class="btn xs" data-qs="'+esc(c)+'">Sí, quitar</button>'; on('[data-qs]','click',function(){ quitarMiViaje(c); render(); toast('Quitado de este móvil'); }, z); });
+    on('#b-borrarme','click',function(){ var z=$('#z-bm');
+      // Los viajes que organizas se borran enteros para todo el grupo: hay que avisarlo y pedir confirmación expresa.
+      var org=misViajes().filter(function(v){ return v.rol==='jefe'; });
+      z.innerHTML='<div class="note">Se borran tus respuestas (también las privadas) de todos tus viajes y sales de ellos. Los gastos que apuntaste en los viajes de otras personas se quedan para que las cuentas del grupo cuadren. No se puede deshacer.</div>'+
+        (org.length ? '<div class="note" id="bm-aviso" style="margin-top:8px"><b>Cuidado: organizas '+(org.length===1?'este viaje':'estos '+org.length+' viajes')+' y se borra'+(org.length===1?'':'n')+' ENTERO'+(org.length===1?'':'S')+' para todo el grupo</b> ('+esc(org.map(function(v){ return '«'+(v.titulo||v.code)+'»'; }).join(', '))+'): plan, gastos, lista y respuestas de los demás. Si quieres que sigan existiendo, no pulses borrar.</div><label class="chk" style="margin-top:8px"><input type="checkbox" id="bm-ent"> Entiendo que se borra para todos y no se puede deshacer</label>' : '')+
+        '<div class="row" style="margin-top:8px"><button class="btn grow" id="b-bm-si"'+(org.length?' disabled':'')+'>Borrar</button><button class="btn ghost grow" id="b-bm-no">Cancelar</button></div>';
+      if(org.length) on('#bm-ent','change',function(e){ $('#b-bm-si',z).disabled=!e.target.checked; }, z);
+      on('#b-bm-no','click',function(){ render(); }, z); on('#b-bm-si','click',function(){ ZSTORE.borrarMisDatos().then(function(){ try{ Object.keys(localStorage).filter(function(k){ return /^zaino/.test(k); }).forEach(function(k){ localStorage.removeItem(k); }); }catch(e){} location.hash=''; location.reload(); }, function(){ toast('No se pudo borrar: revisa la conexión'); }); }, z); });
     on('#b-reset','click',function(){ var z=$('#reset'); z.innerHTML='<div class="note">Se borran tu nombre, tu foto y la lista de viajes de este móvil. Los viajes siguen existiendo para el resto del grupo.</div><div class="row" style="margin-top:8px"><button class="btn grow" id="b-r-si">Borrar</button><button class="btn ghost grow" id="b-r-no">Cancelar</button></div>'; on('#b-r-no','click',function(){ render(); }); on('#b-r-si','click',function(){ try{ Object.keys(localStorage).filter(function(k){ return k.indexOf('zaino.')===0; }).forEach(function(k){ localStorage.removeItem(k); }); }catch(e){} S.view='viajes'; render(); toast('Datos borrados'); }); });
   });
   return html;

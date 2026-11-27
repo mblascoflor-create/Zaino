@@ -206,8 +206,11 @@ def run(names):
                         R['dias'].append(pj.locator('.agenda .day').inner_text())
                     pj.locator('[data-ir-dia]').nth(1).click()
                     if pj.locator('.slot-edit').count():
-                        pj.locator('.agenda-slot:has(.slot-edit) > summary').first.click()
-                        pj.locator('.slot-edit summary').first.click()
+                        # «Editar parada» vive dentro de un .agenda-slot cerrado: se abre primero la parada y luego la edición
+                        parada = pj.locator('.agenda-slot:has(.slot-edit)').first
+                        if not parada.evaluate('el => el.open'): parada.locator(':scope > summary').click()
+                        edicion = parada.locator('.slot-edit')
+                        if not edicion.evaluate('el => el.open'): edicion.locator('summary').click()
                         assert pj.locator('.slot-edit[open] .ed').is_visible()
                     Hn.shot(pj, gname+'-11-dia2', full=True)
             # tarjeta a tamaño real

@@ -1,9 +1,9 @@
 // Escenarios del motor de compatibilidad v5 (se ejecutan de verdad con la biblioteca real).
 import fs from 'node:fs'; import vm from 'node:vm';
 const ctx = { console }; vm.createContext(ctx);
-for (const f of ['src/core/data.js', 'src/core/engine.js', 'src/core/compat.js']) vm.runInContext(fs.readFileSync(f, 'utf8'), ctx, { filename: f });
-vm.runInContext('this.ENG=ENG; this.COMPAT=COMPAT;', ctx);
-const { ENG, COMPAT } = ctx;
+for (const f of ['src/core/data.js', 'src/core/engine.js', 'src/core/compat.js', 'src/core/servidor.js']) vm.runInContext(fs.readFileSync(f, 'utf8'), ctx, { filename: f });
+vm.runInContext('this.ENG=ENG; this.COMPAT=COMPAT; this.SERVIDOR=SERVIDOR;', ctx);
+const { ENG, COMPAT, SERVIDOR } = ctx;
 const lib = JSON.parse(fs.readFileSync('public/biblioteca.json', 'utf8'));
 const ZS = lib.zonas.map(z => ENG.normalizar(z));
 let fallos = 0; const ok = (c, m, extra) => { console.log((c ? '✓ ' : '✗ ') + m + (extra ? '  · ' + extra : '')); if (!c) fallos++; };
@@ -90,6 +90,16 @@ const resumen = r => r.propuestas.map(p => p.tipo + ':' + nombre(p.zona) + ' ' +
   const b = res(viaje(2), R).propuestas[0];
   const bruto = Math.round(0.6 * b.media + 0.4 * b.minimo);
   ok(Math.abs(b.compat - bruto) <= 8, 'Extra. El % mostrado sale de la fórmula (0,6·media + 0,4·mínimo ± ajustes de temporada/vuelos)', `${b.compat}% = ${b.formula}`); }
+
+// A5. Con días/meses/presupuesto privados el plan lleva mes y gasto del servidor (el móvil solo ve lo público)
+{ const trip = { code: 'ABC123', integrantes: [{ id: 'm1', nombre: 'Ana' }, { id: 'm2', nombre: 'Pol' }], fechas: { modo: 'abierto' }, destinos: ['puglia-salento'], presupuesto: 600 };
+  const pub = ['m1', 'm2'].map((id, i) => P(id, ['Ana', 'Pol'][i], { prioridades: ['playa'] }));
+  const priv = { m1: { meses: [9], dias: 3, presMax: 250, presIdeal: 200 }, m2: { meses: [9], dias: 3, presMax: 300, presIdeal: 250 } };
+  const plan = SERVIDOR.planear(ZS, trip, pub, priv, 'puglia-salento');
+  const Acli = ENG.agregar(trip, pub);
+  ok(plan.dias.length === 3 && plan.mes === 9 && plan.presTier === 'ajustado', 'A5. El plan guarda días, mes y gasto calculados con lo privado', `días ${plan.dias.length} · mes ${plan.mes} · gasto ${plan.presTier}`);
+  ok(Acli.dias !== plan.dias.length && Acli.mes !== plan.mes, 'A5. (el cálculo solo con lo público sale distinto: por eso la app debe usar el plan)', `cliente días ${Acli.dias} mes ${Acli.mes}`);
+  ok(!JSON.stringify(plan).match(/250|300|presMax|presIdeal/), 'A5. y el plan sigue sin cifras privadas'); }
 
 console.log(fallos ? `\n${fallos} prueba(s) fallida(s)` : '\nTodas las pruebas del motor pasan');
 process.exitCode = fallos ? 1 : 0;
