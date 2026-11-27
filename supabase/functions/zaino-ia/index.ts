@@ -3,7 +3,7 @@
 // Llamada: POST { code, pregunta, historial? }
 import { CORS, json, cargarViaje, ZS, ENG, COMPAT } from '../_shared/comun.ts';
 import { crearLLM } from '../_shared/llm.mjs';
-import { responder } from '../_shared/ia_core.mjs';
+import { responder, limpiarHistorial } from '../_shared/ia_core.mjs';
 
 const LIMITE_DIARIO = Number(Deno.env.get('IA_LIMITE_DIARIO') ?? '40'); // preguntas por viaje y día
 
@@ -18,7 +18,7 @@ Deno.serve(async (req) => {
     if (!v) return json({ error: 'sin_permiso' }, 403);
     const { data: dentro } = await v.db.rpc('ia_contar', { p_viaje: v.id, p_limite: LIMITE_DIARIO });
     if (dentro === false) return json({ error: 'limite_diario' }, 429);
-    const r = await responder({ llm, pregunta, historial: (Array.isArray(historial) ? historial : []) as any,
+    const r = await responder({ llm, pregunta, historial: limpiarHistorial(historial) as any, // máx. 6 mensajes, 800 car. cada uno, solo user/assistant
       contexto: { ENG, COMPAT, ZS, viaje: v.trip, resultados: v.resultados, plan: v.trip.plan ?? null, pub: v.pub, priv: v.priv } });
     return json(r);
   } catch (e) {
