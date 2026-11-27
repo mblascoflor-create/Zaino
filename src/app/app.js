@@ -362,13 +362,25 @@ function wireOpts(st){
       var v=b.dataset.v;
       if(st.tipo==='multi'){
         var a=(ans[st.id]||[]).slice(); var i=a.indexOf(v);
-        if(i>-1) a.splice(i,1); else { if(st.exclusivo){ if(v===st.exclusivo) a=[]; else a=a.filter(function(x){ return x!==st.exclusivo; }); } if(st.max && a.length>=st.max) a.shift(); a.push(v); }
+        if(i>-1){ a.splice(i,1); avisoMax(el, 0); }
+        else {
+          if(st.exclusivo){ if(v===st.exclusivo) a=[]; else a=a.filter(function(x){ return x!==st.exclusivo; }); }
+          if(st.max && a.length>=st.max){ avisoMax(el, st.max); return; } // no borramos en silencio lo ya elegido
+          a.push(v); avisoMax(el, 0);
+        }
         ans[st.id]=a; $$('.opt',el).forEach(function(x){ var o=a.indexOf(x.dataset.v)>-1; x.classList.toggle('on',o); x.setAttribute('aria-pressed',o); }); F.refresh();
       } else {
-        ans[st.id] = (st.num ? +v : v); $$('.opt',el).forEach(function(x){ x.classList.toggle('on', x===b); }); setTimeout(F.next, 260);
+        ans[st.id] = (st.num ? +v : v); $$('.opt',el).forEach(function(x){ x.classList.toggle('on', x===b); x.setAttribute('aria-pressed', x===b); }); setTimeout(F.next, 260);
       }
     }, el);
   };
+}
+// Aviso visible (y leído por lectores de pantalla) cuando se intenta pasar del máximo; n=0 lo oculta.
+function avisoMax(el, n){
+  var box=$('.lim', el);
+  if(!n){ if(box) box.hidden=true; return; }
+  if(!box){ box=document.createElement('p'); box.className='lim'; box.setAttribute('role','status'); var o=$('.opts', el); if(o) o.after(box); else $('.body', el).appendChild(box); }
+  box.hidden=false; box.textContent='Ya tienes '+n+'. Quita una para elegir otra.';
 }
 function paso_(st){ // completa html/wire de los tipos de opción
   if(st.tipo==='single' || st.tipo==='multi'){
@@ -405,7 +417,7 @@ function crearViaje(){
     ].concat(a.destModo==='no' ? [] : [
       {id:'destinos', bg:colores[2], t:[a.destModo==='uno'?'¿Cuál?':'¿Entre cuáles?'], s:a.destModo==='uno'?'Toca uno.':'Toca dos o tres.',
         html:function(a){ return '<div class="opts three">'+ZONAS.map(function(Z){ var onx=a.destinos.indexOf(Z.id)>-1; return '<button type="button" class="opt'+(onx?' on':'')+'" data-z="'+esc(Z.id)+'"><span class="il" style="background:'+Z.bg+';border:2px solid #30231F;overflow:hidden">'+ART.emblema(Z)+'</span><span class="tx"><span class="cap">'+esc(Z.corto)+'</span></span></button>'; }).join('')+'</div>'; },
-        wire:function(el,a,F){ on('[data-z]','click',function(e,b){ var id=b.dataset.z; var i=a.destinos.indexOf(id); if(a.destModo==='uno'){ a.destinos=[id]; } else { if(i>-1) a.destinos.splice(i,1); else { if(a.destinos.length>=3) a.destinos.shift(); a.destinos.push(id); } } $$('[data-z]',el).forEach(function(x){ x.classList.toggle('on', a.destinos.indexOf(x.dataset.z)>-1); }); F.refresh(); if(a.destModo==='uno') setTimeout(F.next,260); }, el); },
+        wire:function(el,a,F){ on('[data-z]','click',function(e,b){ var id=b.dataset.z; var i=a.destinos.indexOf(id); if(a.destModo==='uno'){ a.destinos=[id]; } else { if(i>-1) a.destinos.splice(i,1); else { if(a.destinos.length>=3){ avisoMax(el, 3); return; } a.destinos.push(id); } avisoMax(el, 0); } $$('[data-z]',el).forEach(function(x){ x.classList.toggle('on', a.destinos.indexOf(x.dataset.z)>-1); }); F.refresh(); if(a.destModo==='uno') setTimeout(F.next,260); }, el); },
         valid:function(a){ return a.destModo==='uno' ? a.destinos.length===1 : a.destinos.length>=2; }, cta: a.destModo==='uno'?null:'Seguir', ft: a.destModo==='uno'?false:undefined}
     ]).concat([
       paso_({id:'fModo', tipo:'single', bg:colores[3], t:['¿Y las fechas?'], layout:'rows', opts:[
