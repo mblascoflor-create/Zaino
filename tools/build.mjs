@@ -21,11 +21,13 @@ fs.writeFileSync(path.join(OUT, 'app.js'), '/* Zaino ' + VERSION + ' */\n' + js)
 execFileSync(process.execPath, ['--check', path.join(OUT, 'app.js')]);
 
 // 3. index.html
-let head = rd('src/app/head.html').replace('<meta name="claude:viewport-fit-sides" content="cover">\n', '');
+let head = rd('src/app/head.html').replace('<meta name="claude:viewport-fit-sides" content="cover">\n', '')
+  // Título para buscadores (propuesta SEO de Gemini, turno 27-nov 20:30). El de la versión de prueba (dist-artefacto) no cambia.
+  .replace('<title>Zaino</title>', '<title>Organizar viaje a Italia en grupo gratis | Zaino</title>');
 const html = '<!doctype html><html lang="es"><head><meta charset="utf-8">' +
   '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">' +
-  '<meta name="theme-color" content="#f1f2e9"><meta name="description" content="Cada uno responde desde su móvil y sale el viaje que os encaja a todos.">' +
-  '<meta property="og:title" content="Zaino · viajes en grupo"><meta property="og:description" content="Responde unas preguntas desde tu móvil y sale el plan del grupo.">' +
+  '<meta name="theme-color" content="#f1f2e9"><meta name="description" content="¿Viaje a Italia con amigos? Responded unas preguntas desde el móvil y descubrid qué destino, fechas y planes encajan a todo el grupo. Gratis, sin registro.">' +
+  '<meta property="og:title" content="Organizar viaje a Italia en grupo | Zaino"><meta property="og:description" content="Responde unas preguntas desde tu móvil y sale el plan del grupo.">' +
   '<meta property="og:image" content="icons/icon-512.png"><meta name="referrer" content="no-referrer">' +
   '<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/favicon.svg" type="image/svg+xml"><link rel="icon" href="icons/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png">' +
   '<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Zaino">' +
